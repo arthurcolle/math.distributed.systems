@@ -5,13 +5,16 @@
     "summary": "Identify the exact cutoff hypotheses that make a two-loop renormalization factor split into one-loop factors, or produce a finite counterexample.",
     "track": "research",
     "status": "open",
-    "codes": ["81T05", "43A35"],
+    "codes": [
+      "81T05",
+      "43A35"
+    ],
     "source_card": "wilson-factorization-target",
     "adversarial_test": "Test disjoint loops whose cutoff terms share a large-field polymer; check whether the factorization is uniform in cutoff and separation.",
     "deliverable": "A quantified lemma with a proof or minimal counterexample, source citations, and exact dependency on the manuscript hypotheses.",
-    "number": null,
+    "number": 1,
     "owner": "",
-    "url": "https://github.com/arthurcolle/math.distributed.systems/issues/new/choose"
+    "url": "https://github.com/arthurcolle/math.distributed.systems/issues/1"
   },
   {
     "id": "pit-factor-transfer",
@@ -19,13 +22,16 @@
     "summary": "Close or refute the factor-complexity step needed to turn the stated permanent border lower bound into a characteristic-zero hitting set.",
     "track": "research",
     "status": "open",
-    "codes": ["68Q01", "12D05"],
+    "codes": [
+      "68Q01",
+      "12D05"
+    ],
     "source_card": "conditional-pit-grid",
     "adversarial_test": "Check approximative complexity, field characteristic, threshold effectivity, and the exact hypotheses of Bürgisser's corrected theorem.",
     "deliverable": "A dependency graph with a self-contained factor lemma, precise parameters, and counterexamples to stronger variants.",
-    "number": null,
+    "number": 2,
     "owner": "",
-    "url": "https://github.com/arthurcolle/math.distributed.systems/issues/new/choose"
+    "url": "https://github.com/arthurcolle/math.distributed.systems/issues/2"
   },
   {
     "id": "collatz-neighbor",
@@ -33,13 +39,16 @@
     "summary": "Generalize the two-point affine criterion for n and n+d and measure which merger-only residue classes survive finite-step descent.",
     "track": "computation",
     "status": "open",
-    "codes": ["11B05", "37B02"],
+    "codes": [
+      "11B05",
+      "37B02"
+    ],
     "source_card": "collatz-two-point",
     "adversarial_test": "Include wraparound residues and pairs that reach the trivial cycle out of phase; compare q=0 alone against q=0,1.",
     "deliverable": "A reproducible count table with independent implementation, exact affine proof, and clear separation from a Collatz resolution.",
-    "number": null,
+    "number": 3,
     "owner": "",
-    "url": "https://github.com/arthurcolle/math.distributed.systems/issues/new/choose"
+    "url": "https://github.com/arthurcolle/math.distributed.systems/issues/3"
   },
   {
     "id": "mot-spectral-lean",
@@ -47,13 +56,16 @@
     "summary": "Prove in Lean that two two-asset laws have matching marginals and covariance spectra but different basket payoff prices.",
     "track": "formalization",
     "status": "open",
-    "codes": ["60E05", "90C08"],
+    "codes": [
+      "60E05",
+      "90C08"
+    ],
     "source_card": "mot-spectral-no-go",
     "adversarial_test": "Check all probability weights, martingale means, characteristic polynomials, and the exact payoff value in both laws.",
     "deliverable": "A compiling Lean file with theorem statements, pinned toolchain information, and #print axioms output.",
-    "number": null,
+    "number": 4,
     "owner": "",
-    "url": "https://github.com/arthurcolle/math.distributed.systems/issues/new/choose"
+    "url": "https://github.com/arthurcolle/math.distributed.systems/issues/4"
   },
   {
     "id": "lp-face-counterexample",
@@ -61,13 +73,16 @@
     "summary": "Give a finite rational polytope whose optimal face and coordinate behavior refute the overstrong LP reading in the release audit.",
     "track": "formalization",
     "status": "open",
-    "codes": ["90C05", "52B12"],
+    "codes": [
+      "90C05",
+      "52B12"
+    ],
     "source_card": "bounded-face-lp-no-go",
     "adversarial_test": "Separate bounded optimal face from bounded whole feasible region and check the intended quantifiers over objective functions.",
     "deliverable": "A small rational example, paper proof, and optional Lean theorem with no sorry in claimed proved statements.",
-    "number": null,
+    "number": 5,
     "owner": "",
-    "url": "https://github.com/arthurcolle/math.distributed.systems/issues/new/choose"
+    "url": "https://github.com/arthurcolle/math.distributed.systems/issues/5"
   },
   {
     "id": "source-audit",
@@ -75,12 +90,14 @@
     "summary": "Choose an unaudited OpenAI or Anthropic family and record its exact theorem, dependencies, available formal artifact, and unresolved gaps.",
     "track": "source-audit",
     "status": "open",
-    "codes": ["68V15"],
+    "codes": [
+      "68V15"
+    ],
     "source_card": "",
     "adversarial_test": "Check statement strength, proof scope, axioms, counterexamples, version drift, and whether the linked artifact is the cited version.",
     "deliverable": "A source-grounded audit card with stable links and a status that distinguishes manuscript claim from replayed theorem.",
-    "number": null,
+    "number": 6,
     "owner": "",
-    "url": "https://github.com/arthurcolle/math.distributed.systems/issues/new/choose"
+    "url": "https://github.com/arthurcolle/math.distributed.systems/issues/6"
   }
 ]
