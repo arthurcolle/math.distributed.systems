@@ -1,0 +1,40 @@
+name: Propose a research task
+description: Define a precise proof obligation or counterexample search.
+title: "Task: "
+labels: ["task-proposal"]
+body:
+  - type: input
+    id: area
+    attributes:
+      label: Relevant MSC codes or fields
+      placeholder: "81T05, 43A35"
+    validations:
+      required: true
+  - type: textarea
+    id: statement
+    attributes:
+      label: Exact bridge lemma or target
+      description: Include hypotheses, quantifiers, and conclusion. Mark conjectural steps.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Source and dependencies
+      description: Link precise theorem statements or committed source versions.
+    validations:
+      required: true
+  - type: textarea
+    id: stress
+    attributes:
+      label: Adversarial test
+      description: Give a counterexample search or boundary case that could falsify the proposal.
+    validations:
+      required: true
+  - type: textarea
+    id: deliverable
+    attributes:
+      label: Bounded deliverable
+      description: What could a contributor submit and a reviewer verify?
+    validations:
+      required: true

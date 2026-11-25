@@ -1,0 +1,61 @@
+msc_class,title,selected_areas,areas_with_cards,review_state
+03,Mathematical logic and foundations,17,0,unreviewed
+05,Combinatorics,17,0,unreviewed
+06,"Order, lattices, ordered algebraic structures",17,0,unreviewed
+08,General algebraic systems,17,0,unreviewed
+11,Number theory,17,2,partial
+12,Field theory and polynomials,17,1,partial
+13,Commutative algebra,17,0,unreviewed
+14,Algebraic geometry,17,1,partial
+15,Linear and multilinear algebra; matrix theory,17,0,unreviewed
+16,Associative rings and algebras,17,0,unreviewed
+17,Nonassociative rings and algebras,17,0,unreviewed
+18,Category theory; homological algebra,17,1,partial
+19,\(K\)-theory,17,0,unreviewed
+20,Group theory and generalizations,17,0,unreviewed
+22,"Topological groups, Lie groups",17,0,unreviewed
+26,Real functions,17,0,unreviewed
+28,Measure and integration,17,0,unreviewed
+30,Functions of a complex variable,17,1,partial
+31,Potential theory,17,0,unreviewed
+32,Several complex variables and analytic spaces,17,0,unreviewed
+33,Special functions,17,0,unreviewed
+34,Ordinary differential equations,17,0,unreviewed
+35,Partial differential equations,17,1,partial
+37,Dynamical systems and ergodic theory,17,1,partial
+39,Difference and functional equations,17,0,unreviewed
+40,"Sequences, series, summability",17,0,unreviewed
+41,Approximations and expansions,17,0,unreviewed
+42,Harmonic analysis on Euclidean spaces,17,0,unreviewed
+43,Abstract harmonic analysis,17,1,partial
+44,"Integral transforms, operational calculus",12,0,unreviewed
+45,Integral equations,17,0,unreviewed
+46,Functional analysis,17,0,unreviewed
+47,Operator theory,17,2,partial
+49,Calculus of variations and optimal control; optimization,17,0,unreviewed
+51,Geometry,17,1,partial
+52,Convex and discrete geometry,17,2,partial
+53,Differential geometry,17,0,unreviewed
+54,General topology,17,1,partial
+55,Algebraic topology,17,1,partial
+57,Manifolds and cell complexes,17,0,unreviewed
+58,"Global analysis, analysis on manifolds",17,0,unreviewed
+60,Probability theory and stochastic processes,17,2,partial
+62,Statistics,17,0,unreviewed
+65,Numerical analysis,17,3,partial
+68,Computer science,17,2,partial
+70,Mechanics of particles and systems,17,0,unreviewed
+74,Mechanics of deformable solids,17,0,unreviewed
+76,Fluid mechanics,17,0,unreviewed
+78,"Optics, electromagnetic theory",17,0,unreviewed
+80,"Classical thermodynamics, heat transfer",17,0,unreviewed
+81,Quantum theory,17,2,partial
+82,"Statistical mechanics, structure of matter",17,0,unreviewed
+83,Relativity and gravitational theory,17,0,unreviewed
+85,Astronomy and astrophysics,9,0,unreviewed
+86,Geophysics,14,0,unreviewed
+90,"Operations research, mathematical programming",17,2,partial
+91,"Game theory, economics, finance, and other social and behavioral sciences",16,0,unreviewed
+92,Biology and other natural sciences,16,0,unreviewed
+93,Systems theory; control,16,0,unreviewed
+94,"Information and communication theory, circuits",16,1,partial

@@ -1,0 +1,34 @@
+name: Join the math swarm
+description: Introduce yourself and the kind of mathematical work you want to contribute.
+title: "Join: "
+labels: ["join-request"]
+body:
+  - type: markdown
+    attributes:
+      value: "Welcome. Share only public information. You can also claim any open research task directly by commenting on it."
+  - type: dropdown
+    id: role
+    attributes:
+      label: Contribution track
+      options:
+        - Paper proof or counterexample
+        - Lean formalization
+        - Computational certificate
+        - Source and literature audit
+        - Research task design
+    validations:
+      required: true
+  - type: textarea
+    id: interests
+    attributes:
+      label: Fields or tasks of interest
+      description: Link a task issue if you already have one in mind.
+    validations:
+      required: true
+  - type: textarea
+    id: first_step
+    attributes:
+      label: First concrete contribution
+      description: A bounded deliverable you could attempt; this can change after discussion.
+    validations:
+      required: true

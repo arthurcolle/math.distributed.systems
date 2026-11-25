@@ -1,0 +1,18 @@
+[
+  {
+    "id": "upstream-openai-379-20261124",
+    "title": "Euclidean tensor geometry and its applications to complexity and combinatorics",
+    "abstractClaim": "Current upstream family 379 adds the square matrix multiplication exponent 9/4 over every field and a fixed-petal exponential sunflower bound, among other results. This replaces the older family-379 title in the local checkout.",
+    "catalog": "OpenAI upstream, November 24 update",
+    "status": "Primary source and Lean scope read; full proofs not independently replayed",
+    "path": "https://github.com/openai/math/blob/3344da59991ed94f9ba711217b29c1d760badfa6/lean/docs/379.md"
+  },
+  {
+    "id": "upstream-openai-380-20261124",
+    "title": "Strongly polynomial linear programming and superpolynomial polytope diameter",
+    "abstractClaim": "Current upstream family 380 pairs a strongly polynomial LP algorithm with simple rational polytopes of superpolynomial edge diameter. The Lean scope covers rational RAM programs and the rational polytope refutation.",
+    "catalog": "OpenAI upstream, November 24 update",
+    "status": "Primary source and Lean scope read; full proofs not independently replayed",
+    "path": "https://github.com/openai/math/blob/3344da59991ed94f9ba711217b29c1d760badfa6/lean/docs/380.md"
+  }
+]

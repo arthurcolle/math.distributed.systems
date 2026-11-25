@@ -1,0 +1,1001 @@
+id,code,top_class,subclass,title
+1,03A05,03,03A,Philosophical and critical aspects of logic and foundations
+2,05A05,05,05A,"Permutations, words, matrices"
+3,06A05,06,06A,Total orders
+4,08A02,08,08A,"Relational systems, laws of composition"
+5,11A05,11,11A,Multiplicative structure; Euclidean algorithm; greatest common divisors
+6,12D05,12,12D,Polynomials in real and complex fields: factorization
+7,13A02,13,13A,Graded rings
+8,14A05,14,14A,Relevant commutative algebra
+9,15A03,15,15A,"Vector spaces, linear dependence, rank, lineability"
+10,16B50,16,16B,Category-theoretic methods and results in associative algebras (except as in 16D90)
+11,17A01,17,17A,General theory of nonassociative rings and algebras
+12,18A05,18,18A,Definitions and generalizations in theory of categories
+13,19A13,19,19A,Stability for projective modules
+14,20A05,20,20A,Axiomatics and elementary properties of groups
+15,22A05,22,22A,Structure of general topological groups
+16,26A03,26,26A,"Foundations: limits and generalizations, elementary topology of the line"
+17,28A05,28,28A,"Classes of sets (Borel fields, \(\sigma\)-rings, etc.), measurable sets, Suslin sets, analytic sets"
+18,30A05,30,30A,Monogenic and polygenic functions of one complex variable
+19,31A05,31,31A,"Harmonic, subharmonic, superharmonic functions in two dimensions"
+20,32A05,32,32A,"Power series, series of functions of several complex variables"
+21,33B10,33,33B,Exponential and trigonometric functions
+22,34A05,34,34A,"Explicit solutions, first integrals of ordinary differential equations"
+23,35A01,35,35A,"Existence problems for PDEs: global existence, local existence, non-existence"
+24,37A05,37,37A,Dynamical aspects of measure-preserving transformations
+25,39A05,39,39A,General theory of difference equations
+26,40A05,40,40A,Convergence and divergence of series and sequences
+27,41A05,41,41A,Interpolation in approximation theory
+28,42A05,42,42A,"Trigonometric polynomials, inequalities, extremal problems"
+29,43A05,43,43A,"Measures on groups and semigroups, etc."
+30,44A05,44,44A,General integral transforms
+31,45A05,45,45A,Linear integral equations
+32,46A03,46,46A,General theory of locally convex spaces
+33,47A05,47,47A,"General (adjoints, conjugates, products, inverses, domains, ranges, etc.)"
+34,49J05,49,49J,Existence theories for free problems in one independent variable
+35,51A05,51,51A,General theory of linear incidence geometry and projective geometries
+36,52A01,52,52A,Axiomatic and generalized convexity
+37,53A04,53,53A,Curves in Euclidean and related spaces
+38,54A05,54,54A,"Topological spaces and generalizations (closure spaces, etc.)"
+39,55M05,55,55M,Duality in algebraic topology
+40,57K10,57,57K,Knot theory
+41,58A03,58,58A,Topos-theoretic approach to differentiable manifolds
+42,60A05,60,60A,Axioms; other general questions in probability
+43,62A01,62,62A,Foundations and philosophical topics in statistics
+44,65A05,65,65A,Tables in numerical analysis
+45,68M01,68,68M,General theory of computer systems
+46,70A05,70,70A,"Axiomatics, foundations"
+47,74A05,74,74A,Kinematics of deformation
+48,76A02,76,76A,Foundations of fluid mechanics
+49,78A02,78,78A,Foundations in optics and electromagnetic theory
+50,80A05,80,80A,Foundations of thermodynamics and heat transfer
+51,81P05,81,81P,General and philosophical questions in quantum theory
+52,82B03,82,82B,Foundations of equilibrium statistical mechanics
+53,83A05,83,83A,Special relativity
+54,85A04,85,85A,General questions in astronomy and astrophysics
+55,86A04,86,86A,General questions in geophysics
+56,90B05,90,90B,"Inventory, storage, reservoirs"
+57,91A05,91,91A,2-person games
+58,92B05,92,92B,General biology and biomathematics
+59,93A05,93,93A,Axiomatic systems theory
+60,94A05,94,94A,Communication theory
+61,03B05,03,03B,Classical propositional logic
+62,05B05,05,05B,Combinatorial aspects of block designs
+63,06B05,06,06B,Structure theory of lattices
+64,08B05,08,08B,"Equational logic, Mal'tsev conditions"
+65,11B05,11,11B,"Density, gaps, topology"
+66,12E05,12,12E,"Polynomials in general fields (irreducibility, etc.)"
+67,13B02,13,13B,Extension theory of commutative rings
+68,14B05,14,14B,Singularities in algebraic geometry
+69,15B05,15,15B,"Toeplitz, Cauchy, and related matrices"
+70,16D10,16,16D,General module theory in associative algebras
+71,17B01,17,17B,"Identities, free Lie (super)algebras"
+72,18B05,18,18B,"Categories of sets, characterizations"
+73,19B10,19,19B,Stable range conditions
+74,20B05,20,20B,General theory for finite permutation groups
+75,22B05,22,22B,General properties and structure of LCA groups
+76,26B05,26,26B,Continuity and differentiation questions
+77,28B05,28,28B,"Vector-valued set functions, measures and integrals"
+78,30B10,30,30B,Power series (including lacunary series) in one complex variable
+79,31B05,31,31B,"Harmonic, subharmonic, superharmonic functions in higher dimensions"
+80,32B05,32,32B,"Analytic algebras and generalizations, preparation theorems"
+81,33C05,33,33C,"Classical hypergeometric functions, \({}_2F_1\)"
+82,34B05,34,34B,Linear boundary value problems for ordinary differential equations
+83,35B05,35,35B,"Oscillation, zeros of solutions, mean value theorems, etc. in context of PDEs"
+84,37B02,37,37B,Dynamics in general topological spaces
+85,39B05,39,39B,General theory of functional equations and inequalities
+86,40B05,40,40B,Multiple sequences and series
+87,41A10,41,41A,Approximation by polynomials
+88,42B05,42,42B,Fourier series and coefficients in several variables
+89,43A07,43,43A,"Means on groups, semigroups, etc.; amenable groups"
+90,44A10,44,44A,Laplace transform
+91,45B05,45,45B,Fredholm integral equations
+92,46B03,46,46B,Isomorphic theory (including renorming) of Banach spaces
+93,47B01,47,47B,Operators on Banach spaces
+94,49K05,49,49K,Optimality conditions for free problems in one independent variable
+95,51B05,51,51B,General theory of nonlinear incidence geometry
+96,52B05,52,52B,"Combinatorial properties of polytopes and polyhedra (number of faces, shortest paths, etc.)"
+97,53B05,53,53B,Linear and affine connections
+98,54B05,54,54B,Subspaces in general topology
+99,55N05,55,55N,?ech types
+100,57M05,57,57M,"Fundamental group, presentations, free differential calculus"
+101,58B05,58,58B,Homotopy and topological questions for infinite-dimensional manifolds
+102,60B05,60,60B,Probability measures on topological spaces
+103,62B05,62,62B,Sufficient statistics and fields
+104,65B05,65,65B,"Extrapolation to the limit, deferred corrections"
+105,68N01,68,68N,General topics in the theory of software
+106,70B05,70,70B,Kinematics of a particle
+107,74B05,74,74B,Classical linear elasticity
+108,76B03,76,76B,"Existence, uniqueness, and regularity theory for incompressible inviscid fluids"
+109,78M05,78,78M,Method of moments applied to problems in optics and electromagnetic theory
+110,80M10,80,80M,"Finite element, Galerkin and related methods applied to problems in thermodynamics and heat transfer"
+111,81Q05,81,81Q,"Closed and approximate solutions to the Schrödinger, Dirac, Klein-Gordon and other equations of quantum mechanics"
+112,82C03,82,82C,Foundations of time-dependent statistical mechanics
+113,83B05,83,83B,Observational and experimental questions in relativity and gravitational theory
+114,85A05,85,85A,Galactic and stellar dynamics
+115,86A05,86,86A,"Hydrology, hydrography, oceanography"
+116,90C05,90,90C,Linear programming
+117,91B02,91,91B,"Fundamental topics (basic mathematics, methodology; applicable to economics in general)"
+118,92C05,92,92C,Biophysics
+119,93B03,93,93B,"Attainable sets, reachability"
+120,94B05,94,94B,Linear codes (general theory)
+121,03C05,03,03C,"Equational classes, universal algebra in model theory"
+122,05C05,05,05C,Trees
+123,06C05,06,06C,"Modular lattices, Desarguesian lattices"
+124,08C05,08,08C,Categories of algebras
+125,11C08,11,11C,Polynomials in number theory
+126,12F05,12,12F,Algebraic field extensions
+127,13C05,13,13C,"Structure, classification theorems for modules and ideals in commutative rings"
+128,14C05,14,14C,Parametrization (Chow and Hilbert schemes)
+129,15A04,15,15A,"Linear transformations, semilinear transformations"
+130,16E05,16,16E,"Syzygies, resolutions, complexes in associative algebras"
+131,17C05,17,17C,Identities and free Jordan structures
+132,18C05,18,18C,Equational categories
+133,19C09,19,19C,Central extensions and Schur multipliers
+134,20C05,20,20C,Group rings of finite groups and their modules (group-theoretic aspects)
+135,22C05,22,22C,Compact groups
+136,26C05,26,26C,"Real polynomials: analytic properties, etc."
+137,28C05,28,28C,"Integration theory via linear functionals (Radon measures, Daniell integrals, etc.), representing set functions and measures"
+138,30C10,30,30C,Polynomials and rational functions of one complex variable
+139,31C05,31,31C,"Harmonic, subharmonic, superharmonic functions on other spaces"
+140,32C05,32,32C,"Real-analytic manifolds, real-analytic spaces"
+141,33D05,33,33D,"\(q\)-gamma functions, \(q\)-beta functions and integrals"
+142,34C05,34,34C,"Topological structure of integral curves, singular points, limit cycles of ordinary differential equations"
+143,35C05,35,35C,Solutions to PDEs in closed form
+144,37C05,37,37C,Dynamical systems involving smooth mappings and diffeomorphisms
+145,39A06,39,39A,Linear difference equations
+146,40C05,40,40C,Matrix methods for summability
+147,41A15,41,41A,Spline approximation
+148,42C05,42,42C,"Orthogonal functions and polynomials, general theory of nontrigonometric harmonic analysis"
+149,43A10,43,43A,"Measure algebras on groups, semigroups, etc."
+150,44A12,44,44A,Radon transform
+151,45C05,45,45C,Eigenvalue problems for integral equations
+152,46C05,46,46C,Hilbert and pre-Hilbert spaces: geometry and topology (including spaces with semidefinite inner product)
+153,47C05,47,47C,Linear operators in algebras
+154,49L12,49,49L,Hamilton-Jacobi equations in optimal control and differential games
+155,51C05,51,51C,"Ring geometry (Hjelmslev, Barbilian, etc.)"
+156,52C05,52,52C,Lattices and convex bodies in \(2\) dimensions (aspects of discrete geometry)
+157,53C05,53,53C,Connections (general theory)
+158,54C05,54,54C,Continuous maps
+159,55P05,55,55P,"Homotopy extension properties, cofibrations in algebraic topology"
+160,57N16,57,57N,Geometric structures on manifolds of high or arbitrary dimension
+161,58C05,58,58C,Real-valued functions on manifolds
+162,60C05,60,60C,Combinatorial probability
+163,62C05,62,62C,General considerations in statistical decision theory
+164,65C05,65,65C,Monte Carlo methods
+165,68P01,68,68P,General topics in the theory of data
+166,70C20,70,70C,Statics
+167,74C05,74,74C,"Small-strain, rate-independent theories of plasticity (including rigid-plastic and elasto-plastic materials)"
+168,76D03,76,76D,"Existence, uniqueness, and regularity theory for incompressible viscous fluids"
+169,78A05,78,78A,Geometric optics
+170,80A10,80,80A,Classical and relativistic thermodynamics
+171,81R05,81,81R,Finite-dimensional groups and algebras motivated by physics and their representations
+172,82D03,82,82D,Statistical mechanics in condensed matter (general)
+173,83C05,83,83C,"Einstein's equations (general structure, canonical formalism, Cauchy problems)"
+174,85A15,85,85A,Galactic and stellar structure
+175,86A08,86,86A,Climate science and climate modeling
+176,90B06,90,90B,"Transportation, logistics and supply chain management"
+177,91C05,91,91C,Measurement theory in the social and behavioral sciences
+178,92D10,92,92D,Genetics and epigenetics
+179,93C05,93,93C,Linear systems in control theory
+180,94C05,94,94C,Analytic circuit theory
+181,03D03,03,03D,"Thue and Post systems, etc."
+182,05D05,05,05D,Extremal set theory
+183,06D05,06,06D,Structure and representation theory of distributive lattices
+184,08A05,08,08A,Structure theory of algebraic structures
+185,11D04,11,11D,Linear Diophantine equations
+186,12G05,12,12G,Galois cohomology
+187,13D02,13,13D,"Syzygies, resolutions, complexes and commutative rings"
+188,14D05,14,14D,"Structure of families (Picard-Lefschetz, monodromy, etc.)"
+189,15B10,15,15B,Orthogonal matrices
+190,16G10,16,16G,Representations of associative Artinian rings
+191,17D05,17,17D,Alternative rings
+192,18D15,18,18D,"Closed categories (closed monoidal and Cartesian closed categories, etc.)"
+193,19D06,19,19D,\(Q\)- and plus-constructions
+194,20D05,20,20D,Finite simple groups and their classification
+195,22D05,22,22D,General properties and structure of locally compact groups
+196,26D05,26,26D,Inequalities for trigonometric functions and polynomials
+197,28D05,28,28D,Measure-preserving transformations
+198,30D05,30,30D,"Functional equations in the complex plane, iteration and composition of analytic functions of one complex variable"
+199,31D05,31,31D,Axiomatic potential theory
+200,32D05,32,32D,Domains of holomorphy
+201,33E05,33,33E,Elliptic functions and integrals
+202,34D05,34,34D,Asymptotic properties of solutions to ordinary differential equations
+203,35D30,35,35D,Weak solutions to PDEs
+204,37D05,37,37D,Dynamical systems with hyperbolic orbits and sets
+205,39B12,39,39B,"Iteration theory, iterative and composite equations"
+206,40D05,40,40D,General theorems on summability
+207,41A17,41,41A,"Inequalities in approximation (Bernstein, Jackson, Nikol'ski?-type inequalities)"
+208,42A10,42,42A,Trigonometric approximation
+209,43A15,43,43A,"\(L^p\)-spaces and other function spaces on groups, semigroups, etc."
+210,44A15,44,44A,"Special integral transforms (Legendre, Hilbert, etc.)"
+211,45D05,45,45D,Volterra integral equations
+212,46E05,46,46E,"Lattices of continuous, differentiable or analytic functions"
+213,47D03,47,47D,Groups and semigroups of linear operators
+214,49M05,49,49M,Numerical methods based on necessary conditions
+215,51D05,51,51D,Abstract (Maeda) geometries
+216,52A05,52,52A,Convex sets without dimension restrictions (aspects of convex geometry)
+217,53D05,53,53D,Symplectic manifolds (general theory)
+218,54D05,54,54D,Connected and locally connected spaces (general aspects)
+219,55Q05,55,55Q,"Homotopy groups, general; sets of homotopy classes"
+220,57P05,57,57P,Local properties of generalized manifolds
+221,58D05,58,58D,Groups of diffeomorphisms and homeomorphisms as manifolds
+222,60D05,60,60D,Geometric probability and stochastic geometry
+223,62D05,62,62D,"Sampling theory, sample surveys"
+224,65D05,65,65D,Numerical interpolation
+225,68Q01,68,68Q,General topics in the theory of computing
+226,70E05,70,70E,Motion of the gyroscope
+227,74D05,74,74D,Linear constitutive equations for materials with memory
+228,76E05,76,76E,Parallel shear flows in hydrodynamic stability
+229,78M10,78,78M,"Finite element, Galerkin and related methods applied to problems in optics and electromagnetic theory"
+230,80M12,80,80M,Finite volume methods applied to problems in thermodynamics and heat transfer
+231,81S05,81,81S,Commutation relations and statistics as related to quantum mechanics (general)
+232,82M10,82,82M,"Finite element, Galerkin and related methods applied to problems in statistical mechanics"
+233,83D05,83,83D,"Relativistic gravitational theories other than Einstein's, including asymmetric field theories"
+234,85A20,85,85A,Planetary atmospheres
+235,86A10,86,86A,Meteorology and atmospheric physics
+236,90C06,90,90C,Large-scale problems in mathematical programming
+237,91D10,91,91D,"Models of societies, social and urban evolution"
+238,92E10,92,92E,"Molecular structure (graph-theoretic methods, methods of differential topology, etc.)"
+239,93D05,93,93D,"Lyapunov and other classical stabilities (Lagrange, Poisson, \(L^p, l^p\), etc.) in control theory"
+240,94D05,94,94D,"Fuzzy sets and logic (in connection with information, communication, or circuits theory)"
+241,03E02,03,03E,Partition relations
+242,05E05,05,05E,Symmetric functions and generalizations
+243,06E05,06,06E,Structure theory of Boolean algebras
+244,08B10,08,08B,"Congruence modularity, congruence distributivity"
+245,11E04,11,11E,Quadratic forms over general fields
+246,12H05,12,12H,Differential algebra
+247,13E05,13,13E,Commutative Noetherian rings and modules
+248,14E05,14,14E,Rational and birational maps
+249,15A06,15,15A,Linear equations (linear algebraic aspects)
+250,16H05,16,16H,"Separable algebras (e.g., quaternion algebras, Azumaya algebras, etc.)"
+251,17A05,17,17A,Power-associative rings
+252,18E05,18,18E,"Preadditive, additive categories"
+253,19E08,19,19E,\(K\)-theory of schemes
+254,20E05,20,20E,Free nonabelian groups
+255,22E05,22,22E,Local Lie groups
+256,26E05,26,26E,Real-analytic functions
+257,28E05,28,28E,Nonstandard measure theory
+258,30E05,30,30E,Moment problems and interpolation problems in the complex plane
+259,31E05,31,31E,Potential theory on fractals and metric spaces
+260,32E05,32,32E,"Holomorphically convex complex spaces, reduction theory"
+261,33F05,33,33F,Numerical approximation and evaluation of special functions
+262,34E05,34,34E,Asymptotic expansions of solutions to ordinary differential equations
+263,35E05,35,35E,Fundamental solutions to PDEs and systems of PDEs with constant coefficients
+264,37E05,37,37E,Dynamical systems involving maps of the interval
+265,39A10,39,39A,Additive difference equations
+266,40E05,40,40E,Tauberian theorems
+267,41A20,41,41A,Approximation by rational functions
+268,42B08,42,42B,Summability in several variables
+269,43A17,43,43A,"Analysis on ordered groups, \(H^p\)-theory"
+270,44A20,44,44A,Integral transforms of special functions
+271,45E05,45,45E,Integral equations with kernels of Cauchy type
+272,46F05,46,46F,"Topological linear spaces of test functions, distributions and ultradistributions"
+273,47E05,47,47E,General theory of ordinary differential operators
+274,49N05,49,49N,Linear optimal control problems
+275,51E05,51,51E,General block designs in finite geometry
+276,52B10,52,52B,Three-dimensional polytopes
+277,53E10,53,53E,Flows related to mean curvature
+278,54E05,54,54E,Proximity structures and generalizations
+279,55R05,55,55R,Fiber spaces in algebraic topology
+280,57Q05,57,57Q,General topology of complexes
+281,58E05,58,58E,"Abstract critical point theory (Morse theory, Lyusternik-Shnirel'man theory, etc.) in infinite-dimensional spaces"
+282,60E05,60,60E,Probability distributions: general theory
+283,62E10,62,62E,Characterization and structure theory of statistical distributions
+284,65E05,65,65E,"General theory of numerical methods in complex analysis (potential theory, etc.)"
+285,68R01,68,68R,General topics of discrete mathematics in relation to computer science
+286,70F05,70,70F,Two-body problems
+287,74E05,74,74E,Inhomogeneity in solid mechanics
+288,76F02,76,76F,Fundamentals of turbulence
+289,78A10,78,78A,Physical optics
+290,80A17,80,80A,Thermodynamics of continua
+291,81T05,81,81T,Axiomatic quantum field theory; operator algebras
+292,82B05,82,82B,Classical equilibrium statistical mechanics (general)
+293,83E05,83,83E,Geometrodynamics and the holographic principle
+294,85A25,85,85A,Radiative transfer in astronomy and astrophysics
+295,86A15,86,86A,"Seismology (including tsunami modeling), earthquakes"
+296,90B10,90,90B,Deterministic network models in operations research
+297,91E10,91,91E,Cognitive psychology
+298,92B10,92,92B,"Taxonomy, cladistics, statistics in mathematical biology"
+299,93E03,93,93E,Stochastic systems in control theory (general)
+300,94A08,94,94A,"Image processing (compression, reconstruction, etc.) in information and communication theory"
+301,03F03,03,03F,Proof theory in general (including proof-theoretic semantics)
+302,05A10,05,05A,"Factorials, binomial coefficients, combinatorial functions"
+303,06F05,06,06F,Ordered semigroups and monoids
+304,08C10,08,08C,Axiomatic model classes
+305,11F03,11,11F,Modular and automorphic functions
+306,12J05,12,12J,Normed fields
+307,13F05,13,13F,"Dedekind, Prüfer, Krull and Mori rings and their generalizations"
+308,14F06,14,14F,Sheaves in algebraic geometry
+309,15B15,15,15B,Fuzzy matrices
+310,16K20,16,16K,Finite-dimensional division rings
+311,17B05,17,17B,Structure theory for Lie algebras and superalgebras
+312,18F05,18,18F,Local categories and functors
+313,19F05,19,19F,Generalized class field theory (\(K\)-theoretic aspects)
+314,20F05,20,20F,"Generators, relations, and presentations of groups"
+315,22F05,22,22F,General theory of group and pseudogroup actions
+316,26A06,26,26A,One-variable calculus
+317,28A10,28,28A,Real- or complex-valued set functions
+318,30F10,30,30F,Compact Riemann surfaces and uniformization
+319,31A10,31,31A,"Integral representations, integral operators, integral equations methods in two dimensions"
+320,32F10,32,32F,"\(q\)-convexity, \(q\)-concavity"
+321,33B15,33,33B,"Gamma, beta and polygamma functions"
+322,34F05,34,34F,Ordinary differential equations and systems with randomness
+323,35F05,35,35F,Linear first-order PDEs
+324,37F05,37,37F,Dynamical systems involving relations and correspondences in one complex variable
+325,39B22,39,39B,Functional equations for real functions
+326,40F05,40,40F,Absolute and strong summability
+327,41A21,41,41A,Padé approximation
+328,42C10,42,42C,"Fourier series in special orthogonal functions (Legendre polynomials, Walsh functions, etc.)"
+329,43A20,43,43A,"\(L^1\)-algebras on groups, semigroups, etc."
+330,44A30,44,44A,Multiple integral transforms
+331,45F05,45,45F,Systems of nonsingular linear integral equations
+332,46G05,46,46G,Derivatives of functions in infinite-dimensional spaces
+333,47F05,47,47F,General theory of partial differential operators
+334,49Q05,49,49Q,Minimal surfaces and optimization
+335,51F05,51,51F,Absolute planes in metric geometry
+336,52C07,52,52C,Lattices and convex bodies in \(n\) dimensions (aspects of discrete geometry)
+337,53Z05,53,53Z,Applications of differential geometry to physics
+338,54F05,54,54F,"Linearly ordered topological spaces, generalized ordered spaces, and partially ordered spaces"
+339,55S05,55,55S,Primary cohomology operations in algebraic topology
+340,57R05,57,57R,Triangulating
+341,58H05,58,58H,Pseudogroups and differentiable groupoids
+342,60F05,60,60F,Central limit and other weak theorems
+343,62F03,62,62F,Parametric hypothesis testing
+344,65F05,65,65F,Direct numerical methods for linear systems and matrix inversion
+345,68T01,68,68T,General topics in artificial intelligence
+346,70G10,70,70G,"Generalized coordinates; event, impulse-energy, configuration, state, or phase space for problems in mechanics"
+347,74F05,74,74F,Thermal effects in solid mechanics
+348,76G25,76,76G,General aerodynamics and subsonic flows
+349,78M12,78,78M,"Finite volume methods, finite integration techniques applied to problems in optics and electromagnetic theory"
+350,80M15,80,80M,Boundary element methods applied to problems in thermodynamics and heat transfer
+351,81U05,81,81U,\(2\)-body potential quantum scattering theory
+352,82C05,82,82C,Classical dynamic and nonequilibrium statistical mechanics (general)
+353,83F05,83,83F,Relativistic cosmology
+354,85A30,85,85A,Hydrodynamic and hydromagnetic problems in astronomy and astrophysics
+355,86A20,86,86A,"Potentials, prospecting"
+356,90C08,90,90C,"Special problems of linear programming (transportation, multi-index, data envelopment analysis, etc.)"
+357,91F10,91,91F,"History, political science"
+358,92C10,92,92C,Biomechanics
+359,93A10,93,93A,General systems
+360,94B10,94,94B,Convolutional codes
+361,03G05,03,03G,Logical aspects of Boolean algebras
+362,05B07,05,05B,Triple systems
+363,06A06,06,06A,"Partial orders, general"
+364,08A30,08,08A,"Subalgebras, congruence relations"
+365,11G05,11,11G,Elliptic curves over global fields
+366,12K05,12,12K,Near-fields
+367,13G05,13,13G,Integral domains
+368,14G05,14,14G,Rational points
+369,15A09,15,15A,Theory of matrix inversion and generalized inverses
+370,16L30,16,16L,"Noncommutative local and semilocal rings, perfect rings"
+371,17C10,17,17C,Structure theory for Jordan algebras
+372,18G05,18,18G,Projectives and injectives (category-theoretic aspects)
+373,19G05,19,19G,Stability for quadratic modules
+374,20G05,20,20G,Representation theory for linear algebraic groups
+375,22A10,22,22A,Analysis on general topological groups
+376,26B10,26,26B,"Implicit function theorems, Jacobians, transformations with several variables"
+377,28B10,28,28B,"Group- or semigroup-valued set functions, measures and integrals"
+378,30G06,30,30G,Non-Archimedean function theory
+379,31B10,31,31B,"Integral representations, integral operators, integral equations methods in higher dimensions"
+380,32G05,32,32G,Deformations of complex structures
+381,33C10,33,33C,"Bessel and Airy functions, cylinder functions, \({}_0F_1\)"
+382,34G10,34,34G,Linear differential equations in abstract spaces
+383,35G05,35,35G,Linear higher-order PDEs
+384,37G05,37,37G,Normal forms for dynamical systems
+385,39A12,39,39A,Discrete version of topics in analysis
+386,40G05,40,40G,"Cesàro, Euler, Nörlund and Hausdorff methods"
+387,41A25,41,41A,"Rate of convergence, degree of approximation"
+388,42A15,42,42A,Trigonometric interpolation
+389,43A22,43,43A,"Homomorphisms and multipliers of function spaces on groups, semigroups, etc."
+390,44A35,44,44A,Convolution as an integral transform
+391,45G05,45,45G,Singular nonlinear integral equations
+392,46H05,46,46H,General theory of topological algebras
+393,47G10,47,47G,Integral operators
+394,49R05,49,49R,Variational methods for eigenvalues of operators
+395,51G05,51,51G,"Ordered geometries (ordered incidence structures, etc.)"
+396,52A07,52,52A,Convex sets in topological vector spaces (aspects of convex geometry)
+397,53A05,53,53A,Surfaces in Euclidean and related spaces
+398,54G05,54,54G,"Extremally disconnected spaces, \(F\)-spaces, etc."
+399,55T05,55,55T,General theory of spectral sequences in algebraic topology
+400,57S05,57,57S,Topological properties of groups of homeomorphisms or diffeomorphisms
+401,58J05,58,58J,"Elliptic equations on manifolds, general theory"
+402,60G05,60,60G,Foundations of stochastic processes
+403,62G05,62,62G,Nonparametric estimation
+404,65G20,65,65G,Algorithms with automatic result verification
+405,68U01,68,68U,General topics in computing methodologies
+406,70H03,70,70H,Lagrange's equations
+407,74G05,74,74G,Explicit solutions of equilibrium problems in solid mechanics
+408,76H05,76,76H,Transonic flows
+409,78A15,78,78A,Electron optics
+410,80A19,80,80A,"Diffusive and convective heat and mass transfer, heat flow"
+411,81V05,81,81V,"Strong interaction, including quantum chromodynamics"
+412,82D05,82,82D,Statistical mechanics of gases
+413,83A99,83,83A,Special relativity
+414,85A35,85,85A,Statistical astronomy
+415,86A22,86,86A,Inverse problems in geophysics
+416,90B15,90,90B,Stochastic network models in operations research
+417,91G05,91,91G,Actuarial mathematics
+418,92D15,92,92D,Problems related to evolution
+419,93B05,93,93B,Controllability
+420,94C11,94,94C,"Switching theory, applications of Boolean algebras to circuits and networks"
+421,03H05,03,03H,Nonstandard models in mathematics
+422,05C07,05,05C,Vertex degrees
+423,06B10,06,06B,"Lattice ideals, congruence relations"
+424,08B15,08,08B,Lattices of varieties
+425,11H06,11,11H,Lattices and convex bodies (number-theoretic aspects)
+426,12L05,12,12L,Decidability and field theory
+427,13H05,13,13H,Regular local rings
+428,14H05,14,14H,Algebraic functions and function fields in algebraic geometry
+429,15B30,15,15B,Matrix Lie algebras
+430,16N20,16,16N,"Jacobson radical, quasimultiplication"
+431,17D10,17,17D,Mal'tsev rings and algebras
+432,18M05,18,18M,"Monoidal categories, symmetric monoidal categories"
+433,19J05,19,19J,Finiteness and other obstructions in \(K_0\)
+434,20H05,20,20H,"Unimodular groups, congruence subgroups (group-theoretic aspects)"
+435,22B10,22,22B,Structure of group algebras of LCA groups
+436,26C10,26,26C,Real polynomials: location of zeros
+437,28C10,28,28C,"Set functions and measures on topological groups or semigroups, Haar measures, invariant measures"
+438,30H05,30,30H,Spaces of bounded analytic functions of one complex variable
+439,31C10,31,31C,Pluriharmonic and plurisubharmonic functions
+440,32H02,32,32H,"Holomorphic mappings, (holomorphic) embeddings and related questions in several complex variables"
+441,33D15,33,33D,"Basic hypergeometric functions in one variable, \({}_r\phi_s\)"
+442,34H05,34,34H,Control problems involving ordinary differential equations
+443,35H10,35,35H,Hypoelliptic equations
+444,37H05,37,37H,General theory of random and stochastic dynamical systems
+445,39B32,39,39B,Functional equations for complex functions
+446,40H05,40,40H,Functional analytic methods in summability
+447,41A27,41,41A,Inverse theorems in approximation theory
+448,42B10,42,42B,Fourier and Fourier-Stieltjes transforms and other transforms of Fourier type
+449,43A25,43,43A,Fourier and Fourier-Stieltjes transforms on locally compact and other abelian groups
+450,44A40,44,44A,Calculus of Mikusi?ski and other operational calculi
+451,45H05,45,45H,Integral equations with miscellaneous special kernels
+452,46J05,46,46J,General theory of commutative topological algebras
+453,47H04,47,47H,Set-valued operators
+454,49S05,49,49S,Variational principles of physics
+455,51H05,51,51H,General theory of topological geometry
+456,52B11,52,52B,\(n\)-dimensional polytopes
+457,53B10,53,53B,Projective connections
+458,54H05,54,54H,"Descriptive set theory (topological aspects of Borel, analytic, projective, etc. sets)"
+459,55U05,55,55U,Abstract complexes in algebraic topology
+460,57T05,57,57T,Hopf algebras (aspects of homology and homotopy of topological groups)
+461,58K05,58,58K,Critical points of functions and mappings on manifolds
+462,60H05,60,60H,Stochastic integrals
+463,62H05,62,62H,Characterization and structure theory for multivariate probability distributions; copulas
+464,65H04,65,65H,Numerical computation of roots of polynomial equations
+465,68V05,68,68V,Computer assisted proofs of proofs-by-exhaustion type
+466,70J10,70,70J,Modal analysis in linear vibration theory
+467,74H05,74,74H,Explicit solutions of dynamical problems in solid mechanics
+468,76J20,76,76J,Supersonic flows
+469,78M15,78,78M,Boundary element methods applied to problems in optics and electromagnetic theory
+470,80M20,80,80M,Finite difference methods applied to problems in thermodynamics and heat transfer
+471,81P10,81,81P,Logical foundations of quantum mechanics; quantum logic (quantum-theoretic aspects)
+472,82M12,82,82M,Finite volume methods applied to problems in statistical mechanics
+473,83B99,83,83B,Observational and experimental questions in relativity and gravitational theory
+474,85A40,85,85A,Astrophysical cosmology
+475,86A25,86,86A,Geo-electricity and geomagnetism
+476,90C09,90,90C,Boolean programming
+477,91A06,91,91A,"\(n\)-person games, \(n>2\)"
+478,92E20,92,92E,"Classical flows, reactions, etc. in chemistry"
+479,93C10,93,93C,Nonlinear systems in control theory
+480,94D10,94,94D,Boolean functions
+481,03A10,03,03A,Logic in the philosophy of science
+482,05D10,05,05D,Ramsey theory
+483,06C10,06,06C,"Semimodular lattices, geometric lattices"
+484,08C15,08,08C,Quasivarieties
+485,11J04,11,11J,Homogeneous approximation to one number
+486,12D10,12,12D,Polynomials in real and complex fields: location of zeros (algebraic theorems)
+487,13J05,13,13J,Power series rings
+488,14J10,14,14J,"Families, moduli, classification: algebraic theory"
+489,15A10,15,15A,Applications of generalized inverses
+490,16P10,16,16P,Finite rings and finite-dimensional associative algebras
+491,17A15,17,17A,Noncommutative Jordan algebras
+492,18N10,18,18N,"2-categories, bicategories, double categories"
+493,19K14,19,19K,"\(K_0\) as an ordered group, traces"
+494,20J05,20,20J,Homological methods in group theory
+495,22C99,22,22C,Compact groups
+496,26D07,26,26D,Inequalities involving other types of functions
+497,28D10,28,28D,One-parameter continuous families of measure-preserving transformations
+498,30J05,30,30J,Inner functions of one complex variable
+499,31D99,31,31D,Axiomatic potential theory
+500,32J05,32,32J,Compactification of analytic spaces
+501,33E10,33,33E,"Lamé, Mathieu, and spheroidal wave functions"
+502,34K04,34,34K,"Symmetries, invariants of functional-differential equations"
+503,35J05,35,35J,"Laplace operator, Helmholtz equation (reduced wave equation), Poisson equation"
+504,37J06,37,37J,"General theory of finite-dimensional Hamiltonian and Lagrangian systems, Hamiltonian and Lagrangian structures, symmetries, invariants"
+505,39A13,39,39A,"Difference equations, scaling (\(q\)-differences)"
+506,40J05,40,40J,Summability in abstract structures
+507,41A28,41,41A,Simultaneous approximation
+508,42C15,42,42C,"General harmonic expansions, frames"
+509,43A30,43,43A,"Fourier and Fourier-Stieltjes transforms on nonabelian groups and on semigroups, etc."
+510,44A45,44,44A,Classical operational calculus
+511,45J05,45,45J,Integro-ordinary differential equations
+512,46K05,46,46K,General theory of topological algebras with involution
+513,47J05,47,47J,Equations involving nonlinear operators (general)
+514,49J10,49,49J,Existence theories for free problems in two or more independent variables
+515,51J05,51,51J,General theory of incidence groups
+516,52C10,52,52C,Erd?s problems and related topics of discrete geometry
+517,53C07,53,53C,"Special connections and metrics on vector bundles (Hermite-Einstein, Yang-Mills)"
+518,54J05,54,54J,Nonstandard topology
+519,55M10,55,55M,Dimension theory in algebraic topology
+520,57Z05,57,57Z,Relations of manifolds and cell complexes with physics
+521,58Z05,58,58Z,Applications of global analysis to the sciences
+522,60J05,60,60J,Discrete-time Markov processes on general state spaces
+523,62J02,62,62J,General nonlinear regression
+524,65J05,65,65J,General theory of numerical analysis in abstract spaces
+525,68W01,68,68W,General topics in the theory of algorithms
+526,70K05,70,70K,"Phase plane analysis, limit cycles for nonlinear problems in mechanics"
+527,74J05,74,74J,Linear waves in solid mechanics
+528,76K05,76,76K,Hypersonic flows
+529,78A20,78,78A,Space charge waves
+530,80A21,80,80A,Radiative heat transfer
+531,81Q10,81,81Q,"Selfadjoint operator theory in quantum theory, including spectral analysis"
+532,82B10,82,82B,Quantum equilibrium statistical mechanics (general)
+533,83C10,83,83C,Equations of motion in general relativity and gravitational theory
+534,85A99,85,85A,Astronomy and astrophysics
+535,86A30,86,86A,"Geodesy, mapping problems"
+536,90B18,90,90B,Communication networks in operations research
+537,91B03,91,91B,Mechanism design theory
+538,92B15,92,92B,General biostatistics
+539,93D09,93,93D,Robust stability
+540,94A11,94,94A,Application of orthogonal and other special functions
+541,03B10,03,03B,Classical first-order logic
+542,05E10,05,05E,Combinatorial aspects of representation theory
+543,06D10,06,06D,Complete distributivity
+544,08A35,08,08A,Automorphisms and endomorphisms of algebraic structures
+545,11K06,11,11K,General theory of distribution modulo \(1\)
+546,12E10,12,12E,Special polynomials in general fields
+547,13L05,13,13L,Applications of logic to commutative algebra
+548,14K02,14,14K,Isogeny
+549,15B33,15,15B,"Matrices over special rings (quaternions, finite fields, etc.)"
+550,16R10,16,16R,"\(T\)-ideals, identities, varieties of associative rings and algebras"
+551,17B08,17,17B,Coadjoint orbits; nilpotent varieties
+552,18A10,18,18A,"Graphs, diagram schemes, precategories"
+553,19L10,19,19L,"Riemann-Roch theorems, Chern characters"
+554,20K01,20,20K,Finite abelian groups
+555,22D10,22,22D,Unitary representations of locally compact groups
+556,26E10,26,26E,"\(C^\infty\)-functions, quasi-analytic functions"
+557,28E10,28,28E,Fuzzy measure theory
+558,30K05,30,30K,Universal Taylor series in one complex variable
+559,31E99,31,31E,Potential theory on fractals and metric spaces
+560,32K05,32,32K,Banach analytic manifolds and spaces
+561,33F10,33,33F,"Symbolic computation of special functions (Gosper and Zeilberger algorithms, etc.)"
+562,34L05,34,34L,General spectral theory of ordinary differential operators
+563,35K05,35,35K,Heat equation
+564,37K06,37,37K,"General theory of infinite-dimensional Hamiltonian and Lagrangian systems, Hamiltonian and Lagrangian structures, symmetries, conservation laws"
+565,39B42,39,39B,Matrix and operator functional equations
+566,40A10,40,40A,Convergence and divergence of integrals
+567,41A29,41,41A,Approximation with constraints
+568,42A16,42,42A,"Fourier coefficients, Fourier series of functions with special properties, special Fourier series"
+569,43A35,43,43A,"Positive definite functions on groups, semigroups, etc."
+570,44A55,44,44A,Discrete operational calculus
+571,45K05,45,45K,Integro-partial differential equations
+572,46L05,46,46L,General theory of \(C^*\)-algebras
+573,47L05,47,47L,Linear spaces of operators
+574,49K10,49,49K,Optimality conditions for free problems in two or more independent variables
+575,51K05,51,51K,General theory of distance geometry
+576,52A10,52,52A,Convex sets in \(2\) dimensions (including convex curves)
+577,53D10,53,53D,Contact manifolds (general theory)
+578,54A10,54,54A,"Several topologies on one set (change of topology, comparison of topologies, lattices of topologies)"
+579,55N07,55,55N,Steenrod-Sitnikov homologies
+580,57K12,57,57K,"Generalized knots (virtual knots, welded knots, quandles, etc.)"
+581,58A05,58,58A,"Differentiable manifolds, foundations"
+582,60K05,60,60K,Renewal theory
+583,62K05,62,62K,Optimal statistical designs
+584,65K05,65,65K,Numerical mathematical programming methods
+585,68M07,68,68M,Mathematical problems of computer architecture
+586,70L05,70,70L,Random vibrations in mechanics of particles and systems
+587,74K05,74,74K,Strings
+588,76L05,76,76L,Shock waves and blast waves in fluid mechanics
+589,78M16,78,78M,Multipole methods applied to problems in optics and electromagnetic theory
+590,80M22,80,80M,"Spectral, collocation and related (meshless) methods applied to problems in thermodynamics and heat transfer"
+591,81R10,81,81R,"Infinite-dimensional groups and algebras motivated by physics, including Virasoro, Kac-Moody, \(W\)-algebras and other current algebras and their representations"
+592,82C10,82,82C,Quantum dynamics and nonequilibrium statistical mechanics (general)
+593,83D99,83,83D,"Relativistic gravitational theories other than Einstein's, including asymmetric field theories"
+594,86A32,86,86A,Geostatistics
+595,90C10,90,90C,Integer programming
+596,91C15,91,91C,One- and multidimensional scaling in the social and behavioral sciences
+597,92C15,92,92C,"Developmental biology, pattern formation"
+598,93E10,93,93E,Estimation and detection in stochastic control theory
+599,94B12,94,94B,Combined modulation schemes (including trellis codes) in coding theory
+600,03C07,03,03C,Basic properties of first-order languages and structures
+601,05A15,05,05A,"Exact enumeration problems, generating functions"
+602,06E10,06,06E,"Chain conditions, complete algebras"
+603,08B20,08,08B,Free algebras
+604,11L03,11,11L,Trigonometric and exponential sums (general theory)
+605,12F10,12,12F,"Separable extensions, Galois theory"
+606,13M05,13,13M,Structure of finite commutative rings
+607,14L05,14,14L,"Formal groups, \(p\)-divisible groups"
+608,15A12,15,15A,Conditioning of matrices
+609,16S10,16,16S,"Associative rings determined by universal properties (free algebras, coproducts, adjunction of inverses, etc.)"
+610,17C17,17,17C,Radicals in Jordan algebras
+611,18B10,18,18B,"Categories of spans/cospans, relations, or partial maps"
+612,19A15,19,19A,Efficient generation of modules
+613,20L05,20,20L,Groupoids (i.e. small categories in which all morphisms are isomorphisms)
+614,22E10,22,22E,General properties and structure of complex Lie groups
+615,26A09,26,26A,Elementary functions
+616,28A12,28,28A,"Contents, measures, outer measures, capacities"
+617,30L05,30,30L,Geometric embeddings of metric spaces
+618,31A15,31,31A,"Potentials and capacity, harmonic measure, extremal length and related notions in two dimensions"
+619,32L05,32,32L,Holomorphic bundles and generalizations
+620,33B20,33,33B,"Incomplete beta and gamma functions (error functions, probability integral, Fresnel integrals)"
+621,34M03,34,34M,Linear ordinary differential equations and systems in the complex domain
+622,35L02,35,35L,First-order hyperbolic equations
+623,37L05,37,37L,"General theory of infinite-dimensional dissipative dynamical systems, nonlinear semigroups, evolution equations"
+624,39A14,39,39A,Partial difference equations
+625,40B99,40,40B,Multiple sequences and series
+626,41A30,41,41A,Approximation by other special function classes
+627,42B15,42,42B,Multipliers for harmonic analysis in several variables
+628,43A40,43,43A,Character groups and dual objects
+629,44A60,44,44A,Moment problems
+630,45L05,45,45L,Theoretical approximation of solutions to integral equations
+631,46M05,46,46M,Tensor products in functional analysis
+632,47N10,47,47N,"Applications of operator theory in optimization, convex analysis, mathematical programming, economics"
+633,49L20,49,49L,Dynamic programming in optimal control and differential games
+634,51L05,51,51L,Geometry of orders of nondifferentiable curves
+635,52B12,52,52B,"Special polytopes (linear programming, centrally symmetric, etc.)"
+636,53E20,53,53E,Ricci flows
+637,54B10,54,54B,Product spaces in general topology
+638,55P10,55,55P,Homotopy equivalences in algebraic topology
+639,57M07,57,57M,Topological methods in group theory
+640,58B10,58,58B,Differentiability questions for infinite-dimensional manifolds
+641,60L10,60,60L,Signatures and data streams
+642,62L05,62,62L,Sequential statistical design
+643,65L03,65,65L,Numerical methods for functional-differential equations
+644,68N15,68,68N,Theory of programming languages
+645,70M20,70,70M,Orbital mechanics
+646,74L05,74,74L,Geophysical solid mechanics
+647,76M10,76,76M,Finite element methods applied to problems in fluid mechanics
+648,78A25,78,78A,Electromagnetic theory (general)
+649,80A22,80,80A,"Stefan problems, phase changes, etc."
+650,81S07,81,81S,"Uncertainty relations, also entropic"
+651,82D10,82,82D,Statistical mechanics of plasmas
+652,83E15,83,83E,Kaluza-Klein and other higher-dimensional theories
+653,86A40,86,86A,Glaciology
+654,90B20,90,90B,Traffic problems in operations research
+655,91D15,91,91D,Social learning
+656,92D20,92,92D,"Protein sequences, DNA sequences"
+657,93A13,93,93A,Hierarchical systems
+658,94C12,94,94C,Fault detection; testing in circuits and networks
+659,03D05,03,03D,Automata and formal grammars in connection with logical questions
+660,05B10,05,05B,"Combinatorial aspects of difference sets (number-theoretic, group-theoretic, etc.)"
+661,06F07,06,06F,Quantales
+662,08C20,08,08C,Natural dualities for classes of algebras
+663,11M06,11,11M,"\(\zeta (s)\) and \(L(s, \chi)\)"
+664,12G10,12,12G,Cohomological dimension of fields
+665,13N05,13,13N,Modules of differentials
+666,14M05,14,14M,"Varieties defined by ring conditions (factorial, Cohen-Macaulay, seminormal)"
+667,15B34,15,15B,Boolean and Hadamard matrices
+668,16T05,16,16T,Hopf algebras and their applications
+669,17D15,17,17D,Right alternative rings
+670,18C10,18,18C,"Theories (e.g., algebraic theories), structure, and semantics"
+671,19B14,19,19B,Stability for linear groups
+672,20M05,20,20M,"Free semigroups, generators and relations, word problems"
+673,22F10,22,22F,Measurable group actions
+674,26B12,26,26B,Calculus of vector functions
+675,28B15,28,28B,"Set functions, measures and integrals with values in ordered spaces"
+676,30A10,30,30A,Inequalities in the complex plane
+677,31B15,31,31B,"Potentials and capacities, extremal length and related notions in higher dimensions"
+678,32M05,32,32M,"Complex Lie groups, group actions on complex spaces"
+679,33C15,33,33C,"Confluent hypergeometric functions, Whittaker functions, \({}_1F_1\)"
+680,34N05,34,34N,Dynamic equations on time scales or measure chains
+681,35M10,35,35M,PDEs of mixed type
+682,37M05,37,37M,Simulation of dynamical systems
+683,39B52,39,39B,Functional equations for functions with more general domains and/or ranges
+684,40C10,40,40C,Integral methods for summability
+685,41A35,41,41A,"Approximation by operators (in particular, by integral operators)"
+686,42C25,42,42C,Uniqueness and localization for orthogonal series
+687,43A45,43,43A,"Spectral synthesis on groups, semigroups, etc."
+688,44A99,44,44A,"Integral transforms, operational calculus"
+689,45M05,45,45M,Asymptotics of solutions to integral equations
+690,46N10,46,46N,"Applications of functional analysis in optimization, convex analysis, mathematical programming, economics"
+691,47S05,47,47S,Quaternionic operator theory
+692,49M15,49,49M,Newton-type methods
+693,51M04,51,51M,Elementary problems in Euclidean geometries
+694,52C15,52,52C,Packing and covering in \(2\) dimensions (aspects of discrete geometry)
+695,53Z10,53,53Z,Applications of differential geometry to biology
+696,54C08,54,54C,Weak and generalized continuity
+697,55Q07,55,55Q,Shape groups
+698,57N17,57,57N,Topology of topological vector spaces
+699,58C06,58,58C,Set-valued and function-space-valued mappings on manifolds
+700,60A10,60,60A,Probabilistic measure theory
+701,62M02,62,62M,Markov processes: hypothesis testing
+702,65M06,65,65M,Finite difference methods for initial value and initial-boundary value problems involving PDEs
+703,68P05,68,68P,Data structures
+704,70P05,70,70P,"Variable mass, rockets"
+705,74M05,74,74M,"Control, switches and devices (``smart materials'') in solid mechanics"
+706,76N06,76,76N,Compressible Navier-Stokes equations
+707,78M20,78,78M,Finite difference methods applied to problems in optics and electromagnetic theory
+708,80M30,80,80M,Variational methods applied to problems in thermodynamics and heat transfer
+709,81T08,81,81T,Constructive quantum field theory
+710,82M15,82,82M,Boundary element methods applied to problems in statistical mechanics
+711,83F99,83,83F,Relativistic cosmology
+712,86A60,86,86A,Geological problems
+713,90C11,90,90C,Mixed integer programming
+714,91E30,91,91E,Psychophysics and psychophysiology; perception
+715,92E99,92,92E,Chemistry
+716,93B07,93,93B,Observability
+717,94A12,94,94A,"Signal theory (characterization, reconstruction, filtering, etc.)"
+718,03E04,03,03E,Ordered sets and their cofinalities; pcf theory
+719,05C09,05,05C,"Graphical indices (Wiener index, Zagreb index, Randi? index, etc.)"
+720,06A07,06,06A,Combinatorics of partially ordered sets
+721,08A40,08,08A,"Operations and polynomials in algebraic structures, primal algebras"
+722,11N05,11,11N,Distribution of primes
+723,12H10,12,12H,Difference algebra
+724,13P05,13,13P,"Polynomials, factorization in commutative rings"
+725,14N05,14,14N,Projective techniques in algebraic geometry
+726,15A15,15,15A,"Determinants, permanents, traces, other special matrix functions"
+727,16U10,16,16U,Integral domains (associative rings and algebras)
+728,17A20,17,17A,Flexible algebras
+729,18D20,18,18D,Enriched categories (over closed or monoidal categories)
+730,19C20,19,19C,"Symbols, presentations and stability of \(K_2\)"
+731,20N02,20,20N,Sets with a single binary operation (groupoids)
+732,22A15,22,22A,Structure of topological semigroups
+733,26C15,26,26C,Real rational functions
+734,28C15,28,28C,"Set functions and measures on topological spaces (regularity of measures, etc.)"
+735,30B20,30,30B,Random power series in one complex variable
+736,31C12,31,31C,Potential theory on Riemannian manifolds and other spaces
+737,32N05,32,32N,General theory of automorphic functions of several complex variables
+738,33D45,33,33D,"Basic orthogonal polynomials and functions (Askey-Wilson polynomials, etc.)"
+739,34A06,34,34A,"Generalized ordinary differential equations (measure-differential equations, set-valued differential equations, etc.)"
+740,35N05,35,35N,Overdetermined systems of PDEs with constant coefficients
+741,37N05,37,37N,Dynamical systems in classical and celestial mechanics
+742,39A20,39,39A,Multiplicative and other generalized difference equations
+743,40D09,40,40D,Structure of summability fields
+744,41A36,41,41A,Approximation by positive operators
+745,42A20,42,42A,Convergence and absolute convergence of Fourier and trigonometric series
+746,43A46,43,43A,"Special sets (thin sets, Kronecker sets, Helson sets, Ditkin sets, Sidon sets, etc.)"
+747,45N05,45,45N,"Abstract integral equations, integral equations in abstract spaces"
+748,46S05,46,46S,Quaternionic functional analysis
+749,47A06,47,47A,Linear relations (multivalued linear operators)
+750,49N10,49,49N,Linear-quadratic optimal control problems
+751,51N05,51,51N,Descriptive geometry
+752,52A15,52,52A,Convex sets in \(3\) dimensions (including convex surfaces)
+753,53A07,53,53A,Higher-dimensional and -codimensional surfaces in Euclidean and related \(n\)-spaces
+754,54D10,54,54D,"Lower separation axioms (\(T_0\)--\(T_3\), etc.)"
+755,55R10,55,55R,Fiber bundles in algebraic topology
+756,57P10,57,57P,Poincaré duality spaces
+757,58D07,58,58D,Groups and semigroups of nonlinear operators
+758,60B10,60,60B,Convergence of probability measures
+759,62N01,62,62N,Censored data models
+760,65N06,65,65N,Finite difference methods for boundary value problems involving PDEs
+761,68Q04,68,68Q,"Classical models of computation (Turing machines, etc.)"
+762,70Q05,70,70Q,Control of mechanical systems
+763,74N05,74,74N,Crystals in solids
+764,76P05,76,76P,"Rarefied gas flows, Boltzmann equation in fluid mechanics"
+765,78A30,78,78A,Electro- and magnetostatics
+766,80A23,80,80A,Inverse problems in thermodynamics and heat transfer
+767,81U10,81,81U,\(n\)-body potential quantum scattering theory
+768,82B20,82,82B,"Lattice systems (Ising, dimer, Potts, etc.) and systems on graphs arising in equilibrium statistical mechanics"
+769,83C15,83,83C,Exact solutions to problems in general relativity and gravitational theory
+770,86A70,86,86A,Vulcanology; magma and lava flow
+771,90B22,90,90B,Queues and service in operations research
+772,91F20,91,91F,Linguistics
+773,92B20,92,92B,"Neural networks for/in biological studies, artificial life and related topics"
+774,93C15,93,93C,Control/observation systems governed by ordinary differential equations
+775,94B15,94,94B,Cyclic codes
+776,03F05,03,03F,Cut-elimination and normal-form theorems
+777,05D15,05,05D,Transversal (matching) theory
+778,06B15,06,06B,Representation theory of lattices
+779,08B25,08,08B,"Products, amalgamated products, and other kinds of limits and colimits"
+780,11P05,11,11P,Waring's problem and variants
+781,12J10,12,12J,Valued fields
+782,13A05,13,13A,Divisibility and factorizations in commutative rings
+783,14P05,14,14P,Real algebraic sets
+784,15B35,15,15B,Sign pattern matrices
+785,16W10,16,16W,"Rings with involution; Lie, Jordan and other nonassociative structures"
+786,17B10,17,17B,"Representations of Lie algebras and Lie superalgebras, algebraic theory (weights)"
+787,18E08,18,18E,"Regular categories, Barr-exact categories"
+788,19D10,19,19D,Algebraic \(K\)-theory of spaces
+789,20P05,20,20P,Probabilistic methods in group theory
+790,22B99,22,22B,Locally compact abelian groups (LCA groups)
+791,26D10,26,26D,Inequalities involving derivatives and differential and integral operators
+792,28D15,28,28D,General groups of measure-preserving transformations
+793,30C15,30,30C,"Zeros of polynomials, rational functions, and other analytic functions of one complex variable (e.g., zeros of functions with bounded Dirichlet integral)"
+794,31A20,31,31A,"Boundary behavior (theorems of Fatou type, etc.) of harmonic functions in two dimensions"
+795,32P05,32,32P,Non-Archimedean analysis
+796,33E12,33,33E,Mittag-Leffler functions and generalizations
+797,34B07,34,34B,Linear boundary value problems for ordinary differential equations with nonlinear dependence on the spectral parameter
+798,35P05,35,35P,General topics in linear spectral theory for PDEs
+799,37P05,37,37P,Arithmetic and non-Archimedean dynamical systems involving polynomial and rational maps
+800,39B55,39,39B,Orthogonal additivity and other conditional functional equations
+801,40E10,40,40E,Growth estimates
+802,41A40,41,41A,Saturation in approximation theory
+803,42B20,42,42B,"Singular and oscillatory integrals (Calderón-Zygmund, etc.)"
+804,43A50,43,43A,Convergence of Fourier series and of inverse transforms
+805,45P05,45,45P,Integral operators
+806,46T05,46,46T,Infinite-dimensional manifolds
+807,47B02,47,47B,Operators on Hilbert spaces (general)
+808,49Q10,49,49Q,Optimization of shapes other than minimal surfaces
+809,51P05,51,51P,Classical or axiomatic geometry and physics
+810,52B15,52,52B,Symmetry properties of polytopes
+811,53B12,53,53B,Differential geometric aspects of statistical manifolds and information geometry
+812,54E15,54,54E,Uniform structures and generalizations
+813,55S10,55,55S,Steenrod algebra
+814,57Q10,57,57Q,"Simple homotopy type, Whitehead torsion, Reidemeister-Franz torsion, etc."
+815,58E07,58,58E,Variational problems in abstract bifurcation theory in infinite-dimensional spaces
+816,60C99,60,60C,Combinatorial probability
+817,62P05,62,62P,Applications of statistics to actuarial sciences and financial mathematics
+818,65P10,65,65P,Numerical methods for Hamiltonian systems including symplectic integrators
+819,68R05,68,68R,Combinatorics in computer science
+820,70S05,70,70S,Lagrangian formalism and Hamiltonian formalism in mechanics of particles and systems
+821,74P05,74,74P,Compliance or weight optimization in solid mechanics
+822,76Q05,76,76Q,Hydro- and aero-acoustics
+823,78M22,78,78M,"Spectral, collocation and related methods applied to problems in optics and electromagnetic theory"
+824,80M31,80,80M,Monte Carlo methods applied to problems in thermodynamics and heat transfer
+825,81V10,81,81V,Electromagnetic interaction; quantum electrodynamics
+826,82C20,82,82C,"Dynamic lattice systems (kinetic Ising, etc.) and systems on graphs in time-dependent statistical mechanics"
+827,83E30,83,83E,String and superstring theories in gravitational theory
+828,86A99,86,86A,Geophysics
+829,90C15,90,90C,Stochastic programming
+830,91G10,91,91G,Portfolio theory
+831,92C17,92,92C,"Cell movement (chemotaxis, etc.)"
+832,93D10,93,93D,Popov-type stability of feedback systems
+833,94C15,94,94C,Applications of graph theory to circuits and networks
+834,03G10,03,03G,Logical aspects of lattices and related structures
+835,05E14,05,05E,Combinatorial aspects of algebraic geometry
+836,06C15,06,06C,"Complemented lattices, orthocomplemented lattices and posets"
+837,08A45,08,08A,Equational compactness
+838,11R04,11,11R,Algebraic numbers; rings of algebraic integers
+839,12K10,12,12K,Semifields
+840,13B05,13,13B,Galois theory and commutative ring extensions
+841,14Q05,14,14Q,Computational aspects of algebraic curves
+842,15A16,15,15A,Matrix exponential and similar functions of matrices
+843,16Y20,16,16Y,Hyperrings
+844,17C20,17,17C,"Simple, semisimple Jordan algebras"
+845,18F10,18,18F,Grothendieck topologies and Grothendieck topoi
+846,19E15,19,19E,Algebraic cycles and motivic cohomology (\(K\)-theoretic aspects)
+847,20A10,20,20A,Metamathematical considerations in group theory
+848,22D15,22,22D,Group algebras of locally compact groups
+849,26E15,26,26E,Calculus of functions on infinite-dimensional spaces
+850,28A15,28,28A,"Abstract differentiation theory, differentiation of set functions"
+851,30D10,30,30D,Representations of entire functions of one complex variable by series and integrals
+852,31B20,31,31B,Boundary value and inverse problems for harmonic functions in higher dimensions
+853,32Q02,32,32Q,"Special domains (Reinhardt, Hartogs, circular, tube, etc.) in \(\mathbb{C}^n\) and complex manifolds"
+854,33F99,33,33F,Computational aspects of special functions
+855,34C07,34,34C,"Theory of limit cycles of polynomial and analytic vector fields (existence, uniqueness, bounds, Hilbert's 16th problem and ramifications) for ordinary differential equations"
+856,35Q05,35,35Q,Euler-Poisson-Darboux equations
+857,37A10,37,37A,Dynamical systems involving one-parameter continuous families of measure-preserving transformations
+858,39A21,39,39A,Oscillation theory for difference equations
+859,40F99,40,40F,Absolute and strong summability
+860,41A44,41,41A,Best constants in approximation theory
+861,42C30,42,42C,Completeness of sets of functions in nontrigonometric harmonic analysis
+862,43A55,43,43A,"Summability methods on groups, semigroups, etc."
+863,45Q05,45,45Q,Inverse problems for integral equations
+864,46A04,46,46A,Locally convex Fréchet spaces and (DF)-spaces
+865,47C10,47,47C,Linear operators in \({}^*\)-algebras
+866,49R99,49,49R,Variational methods for eigenvalues of operators
+867,51A10,51,51A,"Homomorphism, automorphism and dualities in linear incidence geometry"
+868,52C17,52,52C,Packing and covering in \(n\) dimensions (aspects of discrete geometry)
+869,53C08,53,53C,Differential geometric aspects of gerbes and differential characters
+870,54F15,54,54F,Continua and generalizations
+871,55T10,55,55T,Serre spectral sequences
+872,57R10,57,57R,Smoothing in differential topology
+873,58H10,58,58H,"Cohomology of classifying spaces for pseudogroup structures (Spencer, Gelfand-Fuks, etc.)"
+874,60D99,60,60D,Geometric probability and stochastic geometry
+875,62Q05,62,62Q,Statistical tables
+876,65Q10,65,65Q,Numerical methods for difference equations
+877,68T05,68,68T,Learning and adaptive systems in artificial intelligence
+878,70A99,70,70A,"Axiomatics, foundations"
+879,74Q05,74,74Q,Homogenization in equilibrium problems of solid mechanics
+880,76R05,76,76R,Forced convection
+881,78A35,78,78A,Motion of charged particles
+882,80A25,80,80A,Combustion
+883,81P13,81,81P,Contextuality in quantum theory
+884,82D15,82,82D,Statistical mechanics of liquids
+885,83C20,83,83C,"Classes of solutions; algebraically special solutions, metrics with symmetries for problems in general relativity and gravitational theory"
+886,90B25,90,90B,"Reliability, availability, maintenance, inspection in operations research"
+887,91A07,91,91A,Games with infinitely many players
+888,92D25,92,92D,Population dynamics (general)
+889,93E11,93,93E,Filtering in stochastic control theory
+890,94A13,94,94A,Detection theory in information and communication theory
+891,03H15,03,03H,Nonstandard models of arithmetic
+892,05A16,05,05A,Asymptotic enumeration
+893,06D15,06,06D,Pseudocomplemented lattices
+894,08B26,08,08B,Subdirect products and subdirect irreducibility
+895,11S05,11,11S,Polynomials
+896,12L10,12,12L,Ultraproducts and field theory
+897,13C10,13,13C,Projective and free modules and ideals in commutative rings
+898,14R05,14,14R,Classification of affine varieties
+899,15B36,15,15B,Matrices of integers
+900,16Z05,16,16Z,Computational aspects of associative rings (general theory)
+901,17D20,17,17D,"\((\gamma, \delta)\)-rings, including \((1,-1)\)-rings"
+902,18G10,18,18G,Resolutions; derived functors (category-theoretic aspects)
+903,19F15,19,19F,Symbols and arithmetic (\(K\)-theoretic aspects)
+904,20B07,20,20B,General theory for infinite permutation groups
+905,22E15,22,22E,General properties and structure of real Lie groups
+906,26A12,26,26A,"Rate of growth of functions, orders of infinity, slowly varying functions"
+907,28B20,28,28B,Set-valued set functions and measures; integration of set-valued functions; measurable selections
+908,30E10,30,30E,Approximation in the complex plane
+909,31C15,31,31C,Potentials and capacities on other spaces
+910,32S05,32,32S,Local complex singularities
+911,33B30,33,33B,Higher logarithm functions
+912,34D06,34,34D,Synchronization of solutions to ordinary differential equations
+913,35R01,35,35R,PDEs on manifolds
+914,37B05,37,37B,"Dynamical systems involving transformations and group actions with special properties (minimality, distality, proximality, expansivity, etc.)"
+915,39B62,39,39B,"Functional inequalities, including subadditivity, convexity, etc."
+916,40G10,40,40G,"Abel, Borel and power series methods"
+917,41A45,41,41A,Approximation by arbitrary linear expressions
+918,42A24,42,42A,Summability and absolute summability of Fourier and trigonometric series
+919,43A60,43,43A,"Almost periodic functions on groups and semigroups and their generalizations (recurrent functions, distal functions, etc.); almost automorphic functions"
+920,45R05,45,45R,Random integral equations
+921,46B04,46,46B,Isometric theory of Banach spaces
+922,47D06,47,47D,One-parameter semigroups and linear evolution equations
+923,49S99,49,49S,Variational principles of physics
+924,51B10,51,51B,Möbius geometries
+925,52A20,52,52A,Convex sets in \(n\) dimensions (including convex hypersurfaces)
+926,53D12,53,53D,Lagrangian submanifolds; Maslov index
+927,54G10,54,54G,\(P\)-spaces
+928,55U10,55,55U,Simplicial sets and complexes in algebraic topology
+929,57S10,57,57S,Compact groups of homeomorphisms
+930,58J10,58,58J,Differential complexes
+931,60E07,60,60E,Infinitely divisible distributions; stable distributions
+932,62R01,62,62R,Algebraic statistics
+933,65R10,65,65R,Numerical methods for integral transforms
+934,68U03,68,68U,Computational aspects of digital topology
+935,70B10,70,70B,Kinematics of a rigid body
+936,74R05,74,74R,Brittle damage
+937,76S05,76,76S,Flows in porous media; filtration; seepage
+938,78M30,78,78M,Variational methods applied to problems in optics and electromagnetic theory
+939,80M35,80,80M,Asymptotic analysis for problems in thermodynamics and heat transfer
+940,81Q12,81,81Q,Nonselfadjoint operator theory in quantum theory including creation and destruction operators
+941,82M20,82,82M,Finite difference methods applied to problems in statistical mechanics
+942,83E50,83,83E,Supergravity
+943,90C17,90,90C,Robustness in mathematical programming
+944,91B05,91,91B,Risk models (general)
+945,92B25,92,92B,Biological rhythms and synchronization
+946,93A14,93,93A,Decentralized systems
+947,94B20,94,94B,Burst-correcting codes
+948,03A99,03,03A,Philosophical aspects of logic and foundations
+949,05B15,05,05B,"Orthogonal arrays, Latin squares, Room squares"
+950,06E15,06,06E,Stone spaces (Boolean spaces) and related structures
+951,08A50,08,08A,Word problems (aspects of algebraic structures)
+952,11T06,11,11T,Polynomials over finite fields
+953,12D15,12,12D,"Fields related with sums of squares (formally real fields, Pythagorean fields, etc.)"
+954,13D03,13,13D,"(Co)homology of commutative rings and algebras (e.g., Hochschild, André-Quillen, cyclic, dihedral, etc.)"
+955,14T10,14,14T,Foundations of tropical geometry and relations with algebra
+956,15A18,15,15A,"Eigenvalues, singular values, and eigenvectors"
+957,16B70,16,16B,Applications of logic in associative algebras
+958,17A30,17,17A,Nonassociative algebras satisfying other identities
+959,18M10,18,18M,"Traced monoidal categories, compact closed categories, star-autonomous categories"
+960,19G12,19,19G,Witt groups of rings
+961,20C07,20,20C,Group rings of infinite groups and their modules (group-theoretic aspects)
+962,22F30,22,22F,Homogeneous spaces
+963,26B15,26,26B,"Integration of real functions of several variables: length, area, volume"
+964,28C20,28,28C,"Set functions and measures and integrals in infinite-dimensional spaces (Wiener measure, Gaussian measure, etc.)"
+965,30F15,30,30F,Harmonic functions on Riemann surfaces
+966,31A25,31,31A,Boundary value and inverse problems for harmonic functions in two dimensions
+967,32T05,32,32T,Domains of holomorphy
+968,33C20,33,33C,"Generalized hypergeometric series, \({}_pF_q\)"
+969,34E10,34,34E,"Perturbations, asymptotics of solutions to ordinary differential equations"
+970,35S05,35,35S,Pseudodifferential operators as generalizations of partial differential operators
+971,37C10,37,37C,Dynamics induced by flows and semiflows
+972,39A22,39,39A,"Growth, boundedness, comparison of solutions to difference equations"
+973,40H99,40,40H,Functional analytic methods in summability
+974,41A46,41,41A,Approximation by arbitrary nonlinear expressions; widths and entropy
+975,42B25,42,42B,"Maximal functions, Littlewood-Paley theory"
+976,43A62,43,43A,Harmonic analysis on hypergroups
+977,45A99,45,45A,Linear integral equations
+978,46C07,46,46C,"Hilbert subspaces (= operator ranges); complementation (Aronszajn, de Branges, etc.)"
+979,47E07,47,47E,Functional-differential and differential-difference operators
+980,49J15,49,49J,Existence theories for optimal control problems involving ordinary differential equations
+981,51C99,51,51C,"Ring geometry (Hjelmslev, Barbilian, etc.)"
+982,52B20,52,52B,Lattice polytopes in convex geometry (including relations with commutative algebra and algebraic geometry)
+983,53E30,53,53E,"Flows related to complex manifolds (e.g., Kähler-Ricci flows, Chern-Ricci flows)"
+984,54H10,54,54H,Topological representations of algebraic systems
+985,55M15,55,55M,Absolute neighborhood retracts
+986,57T10,57,57T,Homology and cohomology of Lie groups
+987,58K10,58,58K,Monodromy on manifolds
+988,60F10,60,60F,Large deviations
+989,62A09,62,62A,Graphical methods in statistics
+990,65S05,65,65S,Graphical methods in numerical analysis
+991,68V15,68,68V,"Theorem proving (automated and interactive theorem provers, deduction, resolution, etc.)"
+992,70C99,70,70C,Statics
+993,74S05,74,74S,Finite element methods applied to problems in solid mechanics
+994,76T06,76,76T,Liquid-liquid two component flows
+995,78A37,78,78A,Ion traps
+996,80A30,80,80A,Chemical kinetics in thermodynamics and heat transfer
+997,81R12,81,81R,Groups and algebras in quantum theory and relations with integrable systems
+998,82B21,82,82B,"Continuum models (systems of particles, etc.) arising in equilibrium statistical mechanics"
+999,83C22,83,83C,Einstein-Maxwell equations
+1000,90B30,90,90B,Production models

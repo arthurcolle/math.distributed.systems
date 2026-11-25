@@ -1,0 +1,1001 @@
+id,code,title,lemma_cards,review_state
+1,03A05,Philosophical and critical aspects of logic and foundations,0,unreviewed
+2,05A05,"Permutations, words, matrices",0,unreviewed
+3,06A05,Total orders,0,unreviewed
+4,08A02,"Relational systems, laws of composition",0,unreviewed
+5,11A05,Multiplicative structure; Euclidean algorithm; greatest common divisors,0,unreviewed
+6,12D05,Polynomials in real and complex fields: factorization,1,lemma card exists; literature audit pending
+7,13A02,Graded rings,0,unreviewed
+8,14A05,Relevant commutative algebra,0,unreviewed
+9,15A03,"Vector spaces, linear dependence, rank, lineability",0,unreviewed
+10,16B50,Category-theoretic methods and results in associative algebras (except as in 16D90),0,unreviewed
+11,17A01,General theory of nonassociative rings and algebras,0,unreviewed
+12,18A05,Definitions and generalizations in theory of categories,0,unreviewed
+13,19A13,Stability for projective modules,0,unreviewed
+14,20A05,Axiomatics and elementary properties of groups,0,unreviewed
+15,22A05,Structure of general topological groups,0,unreviewed
+16,26A03,"Foundations: limits and generalizations, elementary topology of the line",0,unreviewed
+17,28A05,"Classes of sets (Borel fields, \(\sigma\)-rings, etc.), measurable sets, Suslin sets, analytic sets",0,unreviewed
+18,30A05,Monogenic and polygenic functions of one complex variable,0,unreviewed
+19,31A05,"Harmonic, subharmonic, superharmonic functions in two dimensions",0,unreviewed
+20,32A05,"Power series, series of functions of several complex variables",0,unreviewed
+21,33B10,Exponential and trigonometric functions,0,unreviewed
+22,34A05,"Explicit solutions, first integrals of ordinary differential equations",0,unreviewed
+23,35A01,"Existence problems for PDEs: global existence, local existence, non-existence",1,lemma card exists; literature audit pending
+24,37A05,Dynamical aspects of measure-preserving transformations,0,unreviewed
+25,39A05,General theory of difference equations,0,unreviewed
+26,40A05,Convergence and divergence of series and sequences,0,unreviewed
+27,41A05,Interpolation in approximation theory,0,unreviewed
+28,42A05,"Trigonometric polynomials, inequalities, extremal problems",0,unreviewed
+29,43A05,"Measures on groups and semigroups, etc.",0,unreviewed
+30,44A05,General integral transforms,0,unreviewed
+31,45A05,Linear integral equations,0,unreviewed
+32,46A03,General theory of locally convex spaces,0,unreviewed
+33,47A05,"General (adjoints, conjugates, products, inverses, domains, ranges, etc.)",1,lemma card exists; literature audit pending
+34,49J05,Existence theories for free problems in one independent variable,0,unreviewed
+35,51A05,General theory of linear incidence geometry and projective geometries,0,unreviewed
+36,52A01,Axiomatic and generalized convexity,1,lemma card exists; literature audit pending
+37,53A04,Curves in Euclidean and related spaces,0,unreviewed
+38,54A05,"Topological spaces and generalizations (closure spaces, etc.)",0,unreviewed
+39,55M05,Duality in algebraic topology,0,unreviewed
+40,57K10,Knot theory,0,unreviewed
+41,58A03,Topos-theoretic approach to differentiable manifolds,0,unreviewed
+42,60A05,Axioms; other general questions in probability,0,unreviewed
+43,62A01,Foundations and philosophical topics in statistics,0,unreviewed
+44,65A05,Tables in numerical analysis,0,unreviewed
+45,68M01,General theory of computer systems,0,unreviewed
+46,70A05,"Axiomatics, foundations",0,unreviewed
+47,74A05,Kinematics of deformation,0,unreviewed
+48,76A02,Foundations of fluid mechanics,0,unreviewed
+49,78A02,Foundations in optics and electromagnetic theory,0,unreviewed
+50,80A05,Foundations of thermodynamics and heat transfer,0,unreviewed
+51,81P05,General and philosophical questions in quantum theory,0,unreviewed
+52,82B03,Foundations of equilibrium statistical mechanics,0,unreviewed
+53,83A05,Special relativity,0,unreviewed
+54,85A04,General questions in astronomy and astrophysics,0,unreviewed
+55,86A04,General questions in geophysics,0,unreviewed
+56,90B05,"Inventory, storage, reservoirs",0,unreviewed
+57,91A05,2-person games,0,unreviewed
+58,92B05,General biology and biomathematics,0,unreviewed
+59,93A05,Axiomatic systems theory,0,unreviewed
+60,94A05,Communication theory,0,unreviewed
+61,03B05,Classical propositional logic,0,unreviewed
+62,05B05,Combinatorial aspects of block designs,0,unreviewed
+63,06B05,Structure theory of lattices,0,unreviewed
+64,08B05,"Equational logic, Mal'tsev conditions",0,unreviewed
+65,11B05,"Density, gaps, topology",1,lemma card exists; literature audit pending
+66,12E05,"Polynomials in general fields (irreducibility, etc.)",0,unreviewed
+67,13B02,Extension theory of commutative rings,0,unreviewed
+68,14B05,Singularities in algebraic geometry,0,unreviewed
+69,15B05,"Toeplitz, Cauchy, and related matrices",0,unreviewed
+70,16D10,General module theory in associative algebras,0,unreviewed
+71,17B01,"Identities, free Lie (super)algebras",0,unreviewed
+72,18B05,"Categories of sets, characterizations",0,unreviewed
+73,19B10,Stable range conditions,0,unreviewed
+74,20B05,General theory for finite permutation groups,0,unreviewed
+75,22B05,General properties and structure of LCA groups,0,unreviewed
+76,26B05,Continuity and differentiation questions,0,unreviewed
+77,28B05,"Vector-valued set functions, measures and integrals",0,unreviewed
+78,30B10,Power series (including lacunary series) in one complex variable,0,unreviewed
+79,31B05,"Harmonic, subharmonic, superharmonic functions in higher dimensions",0,unreviewed
+80,32B05,"Analytic algebras and generalizations, preparation theorems",0,unreviewed
+81,33C05,"Classical hypergeometric functions, \({}_2F_1\)",0,unreviewed
+82,34B05,Linear boundary value problems for ordinary differential equations,0,unreviewed
+83,35B05,"Oscillation, zeros of solutions, mean value theorems, etc. in context of PDEs",0,unreviewed
+84,37B02,Dynamics in general topological spaces,0,unreviewed
+85,39B05,General theory of functional equations and inequalities,0,unreviewed
+86,40B05,Multiple sequences and series,0,unreviewed
+87,41A10,Approximation by polynomials,0,unreviewed
+88,42B05,Fourier series and coefficients in several variables,0,unreviewed
+89,43A07,"Means on groups, semigroups, etc.; amenable groups",0,unreviewed
+90,44A10,Laplace transform,0,unreviewed
+91,45B05,Fredholm integral equations,0,unreviewed
+92,46B03,Isomorphic theory (including renorming) of Banach spaces,0,unreviewed
+93,47B01,Operators on Banach spaces,0,unreviewed
+94,49K05,Optimality conditions for free problems in one independent variable,0,unreviewed
+95,51B05,General theory of nonlinear incidence geometry,0,unreviewed
+96,52B05,"Combinatorial properties of polytopes and polyhedra (number of faces, shortest paths, etc.)",1,lemma card exists; literature audit pending
+97,53B05,Linear and affine connections,0,unreviewed
+98,54B05,Subspaces in general topology,0,unreviewed
+99,55N05,?ech types,0,unreviewed
+100,57M05,"Fundamental group, presentations, free differential calculus",0,unreviewed
+101,58B05,Homotopy and topological questions for infinite-dimensional manifolds,0,unreviewed
+102,60B05,Probability measures on topological spaces,2,lemma card exists; literature audit pending
+103,62B05,Sufficient statistics and fields,0,unreviewed
+104,65B05,"Extrapolation to the limit, deferred corrections",0,unreviewed
+105,68N01,General topics in the theory of software,0,unreviewed
+106,70B05,Kinematics of a particle,0,unreviewed
+107,74B05,Classical linear elasticity,0,unreviewed
+108,76B03,"Existence, uniqueness, and regularity theory for incompressible inviscid fluids",0,unreviewed
+109,78M05,Method of moments applied to problems in optics and electromagnetic theory,0,unreviewed
+110,80M10,"Finite element, Galerkin and related methods applied to problems in thermodynamics and heat transfer",0,unreviewed
+111,81Q05,"Closed and approximate solutions to the Schrödinger, Dirac, Klein-Gordon and other equations of quantum mechanics",0,unreviewed
+112,82C03,Foundations of time-dependent statistical mechanics,0,unreviewed
+113,83B05,Observational and experimental questions in relativity and gravitational theory,0,unreviewed
+114,85A05,Galactic and stellar dynamics,0,unreviewed
+115,86A05,"Hydrology, hydrography, oceanography",0,unreviewed
+116,90C05,Linear programming,2,lemma card exists; literature audit pending
+117,91B02,"Fundamental topics (basic mathematics, methodology; applicable to economics in general)",0,unreviewed
+118,92C05,Biophysics,0,unreviewed
+119,93B03,"Attainable sets, reachability",0,unreviewed
+120,94B05,Linear codes (general theory),0,unreviewed
+121,03C05,"Equational classes, universal algebra in model theory",0,unreviewed
+122,05C05,Trees,0,unreviewed
+123,06C05,"Modular lattices, Desarguesian lattices",0,unreviewed
+124,08C05,Categories of algebras,0,unreviewed
+125,11C08,Polynomials in number theory,0,unreviewed
+126,12F05,Algebraic field extensions,0,unreviewed
+127,13C05,"Structure, classification theorems for modules and ideals in commutative rings",0,unreviewed
+128,14C05,Parametrization (Chow and Hilbert schemes),0,unreviewed
+129,15A04,"Linear transformations, semilinear transformations",0,unreviewed
+130,16E05,"Syzygies, resolutions, complexes in associative algebras",0,unreviewed
+131,17C05,Identities and free Jordan structures,0,unreviewed
+132,18C05,Equational categories,0,unreviewed
+133,19C09,Central extensions and Schur multipliers,0,unreviewed
+134,20C05,Group rings of finite groups and their modules (group-theoretic aspects),0,unreviewed
+135,22C05,Compact groups,0,unreviewed
+136,26C05,"Real polynomials: analytic properties, etc.",0,unreviewed
+137,28C05,"Integration theory via linear functionals (Radon measures, Daniell integrals, etc.), representing set functions and measures",0,unreviewed
+138,30C10,Polynomials and rational functions of one complex variable,0,unreviewed
+139,31C05,"Harmonic, subharmonic, superharmonic functions on other spaces",0,unreviewed
+140,32C05,"Real-analytic manifolds, real-analytic spaces",0,unreviewed
+141,33D05,"\(q\)-gamma functions, \(q\)-beta functions and integrals",0,unreviewed
+142,34C05,"Topological structure of integral curves, singular points, limit cycles of ordinary differential equations",0,unreviewed
+143,35C05,Solutions to PDEs in closed form,0,unreviewed
+144,37C05,Dynamical systems involving smooth mappings and diffeomorphisms,0,unreviewed
+145,39A06,Linear difference equations,0,unreviewed
+146,40C05,Matrix methods for summability,0,unreviewed
+147,41A15,Spline approximation,0,unreviewed
+148,42C05,"Orthogonal functions and polynomials, general theory of nontrigonometric harmonic analysis",0,unreviewed
+149,43A10,"Measure algebras on groups, semigroups, etc.",0,unreviewed
+150,44A12,Radon transform,0,unreviewed
+151,45C05,Eigenvalue problems for integral equations,0,unreviewed
+152,46C05,Hilbert and pre-Hilbert spaces: geometry and topology (including spaces with semidefinite inner product),0,unreviewed
+153,47C05,Linear operators in algebras,0,unreviewed
+154,49L12,Hamilton-Jacobi equations in optimal control and differential games,0,unreviewed
+155,51C05,"Ring geometry (Hjelmslev, Barbilian, etc.)",0,unreviewed
+156,52C05,Lattices and convex bodies in \(2\) dimensions (aspects of discrete geometry),0,unreviewed
+157,53C05,Connections (general theory),0,unreviewed
+158,54C05,Continuous maps,0,unreviewed
+159,55P05,"Homotopy extension properties, cofibrations in algebraic topology",0,unreviewed
+160,57N16,Geometric structures on manifolds of high or arbitrary dimension,0,unreviewed
+161,58C05,Real-valued functions on manifolds,0,unreviewed
+162,60C05,Combinatorial probability,0,unreviewed
+163,62C05,General considerations in statistical decision theory,0,unreviewed
+164,65C05,Monte Carlo methods,0,unreviewed
+165,68P01,General topics in the theory of data,0,unreviewed
+166,70C20,Statics,0,unreviewed
+167,74C05,"Small-strain, rate-independent theories of plasticity (including rigid-plastic and elasto-plastic materials)",0,unreviewed
+168,76D03,"Existence, uniqueness, and regularity theory for incompressible viscous fluids",0,unreviewed
+169,78A05,Geometric optics,0,unreviewed
+170,80A10,Classical and relativistic thermodynamics,0,unreviewed
+171,81R05,Finite-dimensional groups and algebras motivated by physics and their representations,0,unreviewed
+172,82D03,Statistical mechanics in condensed matter (general),0,unreviewed
+173,83C05,"Einstein's equations (general structure, canonical formalism, Cauchy problems)",0,unreviewed
+174,85A15,Galactic and stellar structure,0,unreviewed
+175,86A08,Climate science and climate modeling,0,unreviewed
+176,90B06,"Transportation, logistics and supply chain management",0,unreviewed
+177,91C05,Measurement theory in the social and behavioral sciences,0,unreviewed
+178,92D10,Genetics and epigenetics,0,unreviewed
+179,93C05,Linear systems in control theory,0,unreviewed
+180,94C05,Analytic circuit theory,0,unreviewed
+181,03D03,"Thue and Post systems, etc.",0,unreviewed
+182,05D05,Extremal set theory,0,unreviewed
+183,06D05,Structure and representation theory of distributive lattices,0,unreviewed
+184,08A05,Structure theory of algebraic structures,0,unreviewed
+185,11D04,Linear Diophantine equations,0,unreviewed
+186,12G05,Galois cohomology,0,unreviewed
+187,13D02,"Syzygies, resolutions, complexes and commutative rings",0,unreviewed
+188,14D05,"Structure of families (Picard-Lefschetz, monodromy, etc.)",0,unreviewed
+189,15B10,Orthogonal matrices,0,unreviewed
+190,16G10,Representations of associative Artinian rings,0,unreviewed
+191,17D05,Alternative rings,0,unreviewed
+192,18D15,"Closed categories (closed monoidal and Cartesian closed categories, etc.)",0,unreviewed
+193,19D06,\(Q\)- and plus-constructions,0,unreviewed
+194,20D05,Finite simple groups and their classification,0,unreviewed
+195,22D05,General properties and structure of locally compact groups,0,unreviewed
+196,26D05,Inequalities for trigonometric functions and polynomials,0,unreviewed
+197,28D05,Measure-preserving transformations,0,unreviewed
+198,30D05,"Functional equations in the complex plane, iteration and composition of analytic functions of one complex variable",0,unreviewed
+199,31D05,Axiomatic potential theory,0,unreviewed
+200,32D05,Domains of holomorphy,0,unreviewed
+201,33E05,Elliptic functions and integrals,0,unreviewed
+202,34D05,Asymptotic properties of solutions to ordinary differential equations,0,unreviewed
+203,35D30,Weak solutions to PDEs,0,unreviewed
+204,37D05,Dynamical systems with hyperbolic orbits and sets,0,unreviewed
+205,39B12,"Iteration theory, iterative and composite equations",0,unreviewed
+206,40D05,General theorems on summability,0,unreviewed
+207,41A17,"Inequalities in approximation (Bernstein, Jackson, Nikol'ski?-type inequalities)",0,unreviewed
+208,42A10,Trigonometric approximation,0,unreviewed
+209,43A15,"\(L^p\)-spaces and other function spaces on groups, semigroups, etc.",0,unreviewed
+210,44A15,"Special integral transforms (Legendre, Hilbert, etc.)",0,unreviewed
+211,45D05,Volterra integral equations,0,unreviewed
+212,46E05,"Lattices of continuous, differentiable or analytic functions",0,unreviewed
+213,47D03,Groups and semigroups of linear operators,0,unreviewed
+214,49M05,Numerical methods based on necessary conditions,0,unreviewed
+215,51D05,Abstract (Maeda) geometries,0,unreviewed
+216,52A05,Convex sets without dimension restrictions (aspects of convex geometry),0,unreviewed
+217,53D05,Symplectic manifolds (general theory),0,unreviewed
+218,54D05,Connected and locally connected spaces (general aspects),0,unreviewed
+219,55Q05,"Homotopy groups, general; sets of homotopy classes",0,unreviewed
+220,57P05,Local properties of generalized manifolds,0,unreviewed
+221,58D05,Groups of diffeomorphisms and homeomorphisms as manifolds,0,unreviewed
+222,60D05,Geometric probability and stochastic geometry,0,unreviewed
+223,62D05,"Sampling theory, sample surveys",0,unreviewed
+224,65D05,Numerical interpolation,0,unreviewed
+225,68Q01,General topics in the theory of computing,5,lemma card exists; literature audit pending
+226,70E05,Motion of the gyroscope,0,unreviewed
+227,74D05,Linear constitutive equations for materials with memory,0,unreviewed
+228,76E05,Parallel shear flows in hydrodynamic stability,0,unreviewed
+229,78M10,"Finite element, Galerkin and related methods applied to problems in optics and electromagnetic theory",0,unreviewed
+230,80M12,Finite volume methods applied to problems in thermodynamics and heat transfer,0,unreviewed
+231,81S05,Commutation relations and statistics as related to quantum mechanics (general),0,unreviewed
+232,82M10,"Finite element, Galerkin and related methods applied to problems in statistical mechanics",0,unreviewed
+233,83D05,"Relativistic gravitational theories other than Einstein's, including asymmetric field theories",0,unreviewed
+234,85A20,Planetary atmospheres,0,unreviewed
+235,86A10,Meteorology and atmospheric physics,0,unreviewed
+236,90C06,Large-scale problems in mathematical programming,0,unreviewed
+237,91D10,"Models of societies, social and urban evolution",0,unreviewed
+238,92E10,"Molecular structure (graph-theoretic methods, methods of differential topology, etc.)",0,unreviewed
+239,93D05,"Lyapunov and other classical stabilities (Lagrange, Poisson, \(L^p, l^p\), etc.) in control theory",0,unreviewed
+240,94D05,"Fuzzy sets and logic (in connection with information, communication, or circuits theory)",0,unreviewed
+241,03E02,Partition relations,0,unreviewed
+242,05E05,Symmetric functions and generalizations,0,unreviewed
+243,06E05,Structure theory of Boolean algebras,0,unreviewed
+244,08B10,"Congruence modularity, congruence distributivity",0,unreviewed
+245,11E04,Quadratic forms over general fields,0,unreviewed
+246,12H05,Differential algebra,0,unreviewed
+247,13E05,Commutative Noetherian rings and modules,0,unreviewed
+248,14E05,Rational and birational maps,0,unreviewed
+249,15A06,Linear equations (linear algebraic aspects),0,unreviewed
+250,16H05,"Separable algebras (e.g., quaternion algebras, Azumaya algebras, etc.)",0,unreviewed
+251,17A05,Power-associative rings,0,unreviewed
+252,18E05,"Preadditive, additive categories",0,unreviewed
+253,19E08,\(K\)-theory of schemes,0,unreviewed
+254,20E05,Free nonabelian groups,0,unreviewed
+255,22E05,Local Lie groups,0,unreviewed
+256,26E05,Real-analytic functions,0,unreviewed
+257,28E05,Nonstandard measure theory,0,unreviewed
+258,30E05,Moment problems and interpolation problems in the complex plane,0,unreviewed
+259,31E05,Potential theory on fractals and metric spaces,0,unreviewed
+260,32E05,"Holomorphically convex complex spaces, reduction theory",0,unreviewed
+261,33F05,Numerical approximation and evaluation of special functions,0,unreviewed
+262,34E05,Asymptotic expansions of solutions to ordinary differential equations,0,unreviewed
+263,35E05,Fundamental solutions to PDEs and systems of PDEs with constant coefficients,0,unreviewed
+264,37E05,Dynamical systems involving maps of the interval,1,lemma card exists; literature audit pending
+265,39A10,Additive difference equations,0,unreviewed
+266,40E05,Tauberian theorems,0,unreviewed
+267,41A20,Approximation by rational functions,0,unreviewed
+268,42B08,Summability in several variables,0,unreviewed
+269,43A17,"Analysis on ordered groups, \(H^p\)-theory",0,unreviewed
+270,44A20,Integral transforms of special functions,0,unreviewed
+271,45E05,Integral equations with kernels of Cauchy type,0,unreviewed
+272,46F05,"Topological linear spaces of test functions, distributions and ultradistributions",0,unreviewed
+273,47E05,General theory of ordinary differential operators,0,unreviewed
+274,49N05,Linear optimal control problems,0,unreviewed
+275,51E05,General block designs in finite geometry,0,unreviewed
+276,52B10,Three-dimensional polytopes,0,unreviewed
+277,53E10,Flows related to mean curvature,0,unreviewed
+278,54E05,Proximity structures and generalizations,0,unreviewed
+279,55R05,Fiber spaces in algebraic topology,0,unreviewed
+280,57Q05,General topology of complexes,0,unreviewed
+281,58E05,"Abstract critical point theory (Morse theory, Lyusternik-Shnirel'man theory, etc.) in infinite-dimensional spaces",0,unreviewed
+282,60E05,Probability distributions: general theory,0,unreviewed
+283,62E10,Characterization and structure theory of statistical distributions,0,unreviewed
+284,65E05,"General theory of numerical methods in complex analysis (potential theory, etc.)",0,unreviewed
+285,68R01,General topics of discrete mathematics in relation to computer science,1,lemma card exists; literature audit pending
+286,70F05,Two-body problems,0,unreviewed
+287,74E05,Inhomogeneity in solid mechanics,0,unreviewed
+288,76F02,Fundamentals of turbulence,0,unreviewed
+289,78A10,Physical optics,0,unreviewed
+290,80A17,Thermodynamics of continua,0,unreviewed
+291,81T05,Axiomatic quantum field theory; operator algebras,2,lemma card exists; literature audit pending
+292,82B05,Classical equilibrium statistical mechanics (general),0,unreviewed
+293,83E05,Geometrodynamics and the holographic principle,0,unreviewed
+294,85A25,Radiative transfer in astronomy and astrophysics,0,unreviewed
+295,86A15,"Seismology (including tsunami modeling), earthquakes",0,unreviewed
+296,90B10,Deterministic network models in operations research,0,unreviewed
+297,91E10,Cognitive psychology,0,unreviewed
+298,92B10,"Taxonomy, cladistics, statistics in mathematical biology",0,unreviewed
+299,93E03,Stochastic systems in control theory (general),0,unreviewed
+300,94A08,"Image processing (compression, reconstruction, etc.) in information and communication theory",0,unreviewed
+301,03F03,Proof theory in general (including proof-theoretic semantics),0,unreviewed
+302,05A10,"Factorials, binomial coefficients, combinatorial functions",0,unreviewed
+303,06F05,Ordered semigroups and monoids,0,unreviewed
+304,08C10,Axiomatic model classes,0,unreviewed
+305,11F03,Modular and automorphic functions,0,unreviewed
+306,12J05,Normed fields,0,unreviewed
+307,13F05,"Dedekind, Prüfer, Krull and Mori rings and their generalizations",0,unreviewed
+308,14F06,Sheaves in algebraic geometry,0,unreviewed
+309,15B15,Fuzzy matrices,0,unreviewed
+310,16K20,Finite-dimensional division rings,0,unreviewed
+311,17B05,Structure theory for Lie algebras and superalgebras,0,unreviewed
+312,18F05,Local categories and functors,0,unreviewed
+313,19F05,Generalized class field theory (\(K\)-theoretic aspects),0,unreviewed
+314,20F05,"Generators, relations, and presentations of groups",0,unreviewed
+315,22F05,General theory of group and pseudogroup actions,0,unreviewed
+316,26A06,One-variable calculus,0,unreviewed
+317,28A10,Real- or complex-valued set functions,0,unreviewed
+318,30F10,Compact Riemann surfaces and uniformization,0,unreviewed
+319,31A10,"Integral representations, integral operators, integral equations methods in two dimensions",0,unreviewed
+320,32F10,"\(q\)-convexity, \(q\)-concavity",0,unreviewed
+321,33B15,"Gamma, beta and polygamma functions",0,unreviewed
+322,34F05,Ordinary differential equations and systems with randomness,0,unreviewed
+323,35F05,Linear first-order PDEs,0,unreviewed
+324,37F05,Dynamical systems involving relations and correspondences in one complex variable,0,unreviewed
+325,39B22,Functional equations for real functions,0,unreviewed
+326,40F05,Absolute and strong summability,0,unreviewed
+327,41A21,Padé approximation,0,unreviewed
+328,42C10,"Fourier series in special orthogonal functions (Legendre polynomials, Walsh functions, etc.)",0,unreviewed
+329,43A20,"\(L^1\)-algebras on groups, semigroups, etc.",0,unreviewed
+330,44A30,Multiple integral transforms,0,unreviewed
+331,45F05,Systems of nonsingular linear integral equations,0,unreviewed
+332,46G05,Derivatives of functions in infinite-dimensional spaces,0,unreviewed
+333,47F05,General theory of partial differential operators,0,unreviewed
+334,49Q05,Minimal surfaces and optimization,0,unreviewed
+335,51F05,Absolute planes in metric geometry,0,unreviewed
+336,52C07,Lattices and convex bodies in \(n\) dimensions (aspects of discrete geometry),0,unreviewed
+337,53Z05,Applications of differential geometry to physics,0,unreviewed
+338,54F05,"Linearly ordered topological spaces, generalized ordered spaces, and partially ordered spaces",0,unreviewed
+339,55S05,Primary cohomology operations in algebraic topology,0,unreviewed
+340,57R05,Triangulating,0,unreviewed
+341,58H05,Pseudogroups and differentiable groupoids,0,unreviewed
+342,60F05,Central limit and other weak theorems,0,unreviewed
+343,62F03,Parametric hypothesis testing,0,unreviewed
+344,65F05,Direct numerical methods for linear systems and matrix inversion,0,unreviewed
+345,68T01,General topics in artificial intelligence,0,unreviewed
+346,70G10,"Generalized coordinates; event, impulse-energy, configuration, state, or phase space for problems in mechanics",0,unreviewed
+347,74F05,Thermal effects in solid mechanics,0,unreviewed
+348,76G25,General aerodynamics and subsonic flows,0,unreviewed
+349,78M12,"Finite volume methods, finite integration techniques applied to problems in optics and electromagnetic theory",0,unreviewed
+350,80M15,Boundary element methods applied to problems in thermodynamics and heat transfer,0,unreviewed
+351,81U05,\(2\)-body potential quantum scattering theory,0,unreviewed
+352,82C05,Classical dynamic and nonequilibrium statistical mechanics (general),0,unreviewed
+353,83F05,Relativistic cosmology,0,unreviewed
+354,85A30,Hydrodynamic and hydromagnetic problems in astronomy and astrophysics,0,unreviewed
+355,86A20,"Potentials, prospecting",0,unreviewed
+356,90C08,"Special problems of linear programming (transportation, multi-index, data envelopment analysis, etc.)",0,unreviewed
+357,91F10,"History, political science",0,unreviewed
+358,92C10,Biomechanics,0,unreviewed
+359,93A10,General systems,0,unreviewed
+360,94B10,Convolutional codes,0,unreviewed
+361,03G05,Logical aspects of Boolean algebras,0,unreviewed
+362,05B07,Triple systems,0,unreviewed
+363,06A06,"Partial orders, general",0,unreviewed
+364,08A30,"Subalgebras, congruence relations",0,unreviewed
+365,11G05,Elliptic curves over global fields,0,unreviewed
+366,12K05,Near-fields,0,unreviewed
+367,13G05,Integral domains,0,unreviewed
+368,14G05,Rational points,0,unreviewed
+369,15A09,Theory of matrix inversion and generalized inverses,0,unreviewed
+370,16L30,"Noncommutative local and semilocal rings, perfect rings",0,unreviewed
+371,17C10,Structure theory for Jordan algebras,0,unreviewed
+372,18G05,Projectives and injectives (category-theoretic aspects),0,unreviewed
+373,19G05,Stability for quadratic modules,0,unreviewed
+374,20G05,Representation theory for linear algebraic groups,0,unreviewed
+375,22A10,Analysis on general topological groups,0,unreviewed
+376,26B10,"Implicit function theorems, Jacobians, transformations with several variables",0,unreviewed
+377,28B10,"Group- or semigroup-valued set functions, measures and integrals",0,unreviewed
+378,30G06,Non-Archimedean function theory,0,unreviewed
+379,31B10,"Integral representations, integral operators, integral equations methods in higher dimensions",0,unreviewed
+380,32G05,Deformations of complex structures,0,unreviewed
+381,33C10,"Bessel and Airy functions, cylinder functions, \({}_0F_1\)",0,unreviewed
+382,34G10,Linear differential equations in abstract spaces,0,unreviewed
+383,35G05,Linear higher-order PDEs,0,unreviewed
+384,37G05,Normal forms for dynamical systems,0,unreviewed
+385,39A12,Discrete version of topics in analysis,0,unreviewed
+386,40G05,"Cesàro, Euler, Nörlund and Hausdorff methods",0,unreviewed
+387,41A25,"Rate of convergence, degree of approximation",0,unreviewed
+388,42A15,Trigonometric interpolation,0,unreviewed
+389,43A22,"Homomorphisms and multipliers of function spaces on groups, semigroups, etc.",0,unreviewed
+390,44A35,Convolution as an integral transform,0,unreviewed
+391,45G05,Singular nonlinear integral equations,0,unreviewed
+392,46H05,General theory of topological algebras,0,unreviewed
+393,47G10,Integral operators,0,unreviewed
+394,49R05,Variational methods for eigenvalues of operators,0,unreviewed
+395,51G05,"Ordered geometries (ordered incidence structures, etc.)",0,unreviewed
+396,52A07,Convex sets in topological vector spaces (aspects of convex geometry),0,unreviewed
+397,53A05,Surfaces in Euclidean and related spaces,0,unreviewed
+398,54G05,"Extremally disconnected spaces, \(F\)-spaces, etc.",0,unreviewed
+399,55T05,General theory of spectral sequences in algebraic topology,0,unreviewed
+400,57S05,Topological properties of groups of homeomorphisms or diffeomorphisms,0,unreviewed
+401,58J05,"Elliptic equations on manifolds, general theory",0,unreviewed
+402,60G05,Foundations of stochastic processes,0,unreviewed
+403,62G05,Nonparametric estimation,0,unreviewed
+404,65G20,Algorithms with automatic result verification,1,lemma card exists; literature audit pending
+405,68U01,General topics in computing methodologies,0,unreviewed
+406,70H03,Lagrange's equations,0,unreviewed
+407,74G05,Explicit solutions of equilibrium problems in solid mechanics,0,unreviewed
+408,76H05,Transonic flows,0,unreviewed
+409,78A15,Electron optics,0,unreviewed
+410,80A19,"Diffusive and convective heat and mass transfer, heat flow",0,unreviewed
+411,81V05,"Strong interaction, including quantum chromodynamics",0,unreviewed
+412,82D05,Statistical mechanics of gases,0,unreviewed
+413,83A99,Special relativity,0,unreviewed
+414,85A35,Statistical astronomy,0,unreviewed
+415,86A22,Inverse problems in geophysics,0,unreviewed
+416,90B15,Stochastic network models in operations research,0,unreviewed
+417,91G05,Actuarial mathematics,0,unreviewed
+418,92D15,Problems related to evolution,0,unreviewed
+419,93B05,Controllability,0,unreviewed
+420,94C11,"Switching theory, applications of Boolean algebras to circuits and networks",0,unreviewed
+421,03H05,Nonstandard models in mathematics,0,unreviewed
+422,05C07,Vertex degrees,0,unreviewed
+423,06B10,"Lattice ideals, congruence relations",0,unreviewed
+424,08B15,Lattices of varieties,0,unreviewed
+425,11H06,Lattices and convex bodies (number-theoretic aspects),0,unreviewed
+426,12L05,Decidability and field theory,0,unreviewed
+427,13H05,Regular local rings,0,unreviewed
+428,14H05,Algebraic functions and function fields in algebraic geometry,0,unreviewed
+429,15B30,Matrix Lie algebras,0,unreviewed
+430,16N20,"Jacobson radical, quasimultiplication",0,unreviewed
+431,17D10,Mal'tsev rings and algebras,0,unreviewed
+432,18M05,"Monoidal categories, symmetric monoidal categories",0,unreviewed
+433,19J05,Finiteness and other obstructions in \(K_0\),0,unreviewed
+434,20H05,"Unimodular groups, congruence subgroups (group-theoretic aspects)",0,unreviewed
+435,22B10,Structure of group algebras of LCA groups,0,unreviewed
+436,26C10,Real polynomials: location of zeros,0,unreviewed
+437,28C10,"Set functions and measures on topological groups or semigroups, Haar measures, invariant measures",0,unreviewed
+438,30H05,Spaces of bounded analytic functions of one complex variable,0,unreviewed
+439,31C10,Pluriharmonic and plurisubharmonic functions,0,unreviewed
+440,32H02,"Holomorphic mappings, (holomorphic) embeddings and related questions in several complex variables",0,unreviewed
+441,33D15,"Basic hypergeometric functions in one variable, \({}_r\phi_s\)",0,unreviewed
+442,34H05,Control problems involving ordinary differential equations,0,unreviewed
+443,35H10,Hypoelliptic equations,0,unreviewed
+444,37H05,General theory of random and stochastic dynamical systems,0,unreviewed
+445,39B32,Functional equations for complex functions,0,unreviewed
+446,40H05,Functional analytic methods in summability,0,unreviewed
+447,41A27,Inverse theorems in approximation theory,0,unreviewed
+448,42B10,Fourier and Fourier-Stieltjes transforms and other transforms of Fourier type,0,unreviewed
+449,43A25,Fourier and Fourier-Stieltjes transforms on locally compact and other abelian groups,0,unreviewed
+450,44A40,Calculus of Mikusi?ski and other operational calculi,0,unreviewed
+451,45H05,Integral equations with miscellaneous special kernels,0,unreviewed
+452,46J05,General theory of commutative topological algebras,0,unreviewed
+453,47H04,Set-valued operators,0,unreviewed
+454,49S05,Variational principles of physics,0,unreviewed
+455,51H05,General theory of topological geometry,0,unreviewed
+456,52B11,\(n\)-dimensional polytopes,0,unreviewed
+457,53B10,Projective connections,0,unreviewed
+458,54H05,"Descriptive set theory (topological aspects of Borel, analytic, projective, etc. sets)",1,lemma card exists; literature audit pending
+459,55U05,Abstract complexes in algebraic topology,1,lemma card exists; literature audit pending
+460,57T05,Hopf algebras (aspects of homology and homotopy of topological groups),0,unreviewed
+461,58K05,Critical points of functions and mappings on manifolds,0,unreviewed
+462,60H05,Stochastic integrals,0,unreviewed
+463,62H05,Characterization and structure theory for multivariate probability distributions; copulas,0,unreviewed
+464,65H04,Numerical computation of roots of polynomial equations,0,unreviewed
+465,68V05,Computer assisted proofs of proofs-by-exhaustion type,0,unreviewed
+466,70J10,Modal analysis in linear vibration theory,0,unreviewed
+467,74H05,Explicit solutions of dynamical problems in solid mechanics,0,unreviewed
+468,76J20,Supersonic flows,0,unreviewed
+469,78M15,Boundary element methods applied to problems in optics and electromagnetic theory,0,unreviewed
+470,80M20,Finite difference methods applied to problems in thermodynamics and heat transfer,0,unreviewed
+471,81P10,Logical foundations of quantum mechanics; quantum logic (quantum-theoretic aspects),0,unreviewed
+472,82M12,Finite volume methods applied to problems in statistical mechanics,0,unreviewed
+473,83B99,Observational and experimental questions in relativity and gravitational theory,0,unreviewed
+474,85A40,Astrophysical cosmology,0,unreviewed
+475,86A25,Geo-electricity and geomagnetism,0,unreviewed
+476,90C09,Boolean programming,0,unreviewed
+477,91A06,"\(n\)-person games, \(n>2\)",0,unreviewed
+478,92E20,"Classical flows, reactions, etc. in chemistry",0,unreviewed
+479,93C10,Nonlinear systems in control theory,0,unreviewed
+480,94D10,Boolean functions,0,unreviewed
+481,03A10,Logic in the philosophy of science,0,unreviewed
+482,05D10,Ramsey theory,0,unreviewed
+483,06C10,"Semimodular lattices, geometric lattices",0,unreviewed
+484,08C15,Quasivarieties,0,unreviewed
+485,11J04,Homogeneous approximation to one number,0,unreviewed
+486,12D10,Polynomials in real and complex fields: location of zeros (algebraic theorems),0,unreviewed
+487,13J05,Power series rings,0,unreviewed
+488,14J10,"Families, moduli, classification: algebraic theory",0,unreviewed
+489,15A10,Applications of generalized inverses,0,unreviewed
+490,16P10,Finite rings and finite-dimensional associative algebras,0,unreviewed
+491,17A15,Noncommutative Jordan algebras,0,unreviewed
+492,18N10,"2-categories, bicategories, double categories",0,unreviewed
+493,19K14,"\(K_0\) as an ordered group, traces",0,unreviewed
+494,20J05,Homological methods in group theory,0,unreviewed
+495,22C99,Compact groups,0,unreviewed
+496,26D07,Inequalities involving other types of functions,0,unreviewed
+497,28D10,One-parameter continuous families of measure-preserving transformations,0,unreviewed
+498,30J05,Inner functions of one complex variable,0,unreviewed
+499,31D99,Axiomatic potential theory,0,unreviewed
+500,32J05,Compactification of analytic spaces,0,unreviewed
+501,33E10,"Lamé, Mathieu, and spheroidal wave functions",0,unreviewed
+502,34K04,"Symmetries, invariants of functional-differential equations",0,unreviewed
+503,35J05,"Laplace operator, Helmholtz equation (reduced wave equation), Poisson equation",0,unreviewed
+504,37J06,"General theory of finite-dimensional Hamiltonian and Lagrangian systems, Hamiltonian and Lagrangian structures, symmetries, invariants",0,unreviewed
+505,39A13,"Difference equations, scaling (\(q\)-differences)",0,unreviewed
+506,40J05,Summability in abstract structures,0,unreviewed
+507,41A28,Simultaneous approximation,0,unreviewed
+508,42C15,"General harmonic expansions, frames",0,unreviewed
+509,43A30,"Fourier and Fourier-Stieltjes transforms on nonabelian groups and on semigroups, etc.",0,unreviewed
+510,44A45,Classical operational calculus,0,unreviewed
+511,45J05,Integro-ordinary differential equations,0,unreviewed
+512,46K05,General theory of topological algebras with involution,0,unreviewed
+513,47J05,Equations involving nonlinear operators (general),0,unreviewed
+514,49J10,Existence theories for free problems in two or more independent variables,0,unreviewed
+515,51J05,General theory of incidence groups,0,unreviewed
+516,52C10,Erd?s problems and related topics of discrete geometry,0,unreviewed
+517,53C07,"Special connections and metrics on vector bundles (Hermite-Einstein, Yang-Mills)",0,unreviewed
+518,54J05,Nonstandard topology,0,unreviewed
+519,55M10,Dimension theory in algebraic topology,0,unreviewed
+520,57Z05,Relations of manifolds and cell complexes with physics,0,unreviewed
+521,58Z05,Applications of global analysis to the sciences,0,unreviewed
+522,60J05,Discrete-time Markov processes on general state spaces,0,unreviewed
+523,62J02,General nonlinear regression,0,unreviewed
+524,65J05,General theory of numerical analysis in abstract spaces,1,lemma card exists; literature audit pending
+525,68W01,General topics in the theory of algorithms,0,unreviewed
+526,70K05,"Phase plane analysis, limit cycles for nonlinear problems in mechanics",0,unreviewed
+527,74J05,Linear waves in solid mechanics,0,unreviewed
+528,76K05,Hypersonic flows,0,unreviewed
+529,78A20,Space charge waves,0,unreviewed
+530,80A21,Radiative heat transfer,0,unreviewed
+531,81Q10,"Selfadjoint operator theory in quantum theory, including spectral analysis",0,unreviewed
+532,82B10,Quantum equilibrium statistical mechanics (general),0,unreviewed
+533,83C10,Equations of motion in general relativity and gravitational theory,0,unreviewed
+534,85A99,Astronomy and astrophysics,0,unreviewed
+535,86A30,"Geodesy, mapping problems",0,unreviewed
+536,90B18,Communication networks in operations research,0,unreviewed
+537,91B03,Mechanism design theory,0,unreviewed
+538,92B15,General biostatistics,0,unreviewed
+539,93D09,Robust stability,0,unreviewed
+540,94A11,Application of orthogonal and other special functions,0,unreviewed
+541,03B10,Classical first-order logic,0,unreviewed
+542,05E10,Combinatorial aspects of representation theory,0,unreviewed
+543,06D10,Complete distributivity,0,unreviewed
+544,08A35,Automorphisms and endomorphisms of algebraic structures,0,unreviewed
+545,11K06,General theory of distribution modulo \(1\),0,unreviewed
+546,12E10,Special polynomials in general fields,0,unreviewed
+547,13L05,Applications of logic to commutative algebra,0,unreviewed
+548,14K02,Isogeny,0,unreviewed
+549,15B33,"Matrices over special rings (quaternions, finite fields, etc.)",0,unreviewed
+550,16R10,"\(T\)-ideals, identities, varieties of associative rings and algebras",0,unreviewed
+551,17B08,Coadjoint orbits; nilpotent varieties,0,unreviewed
+552,18A10,"Graphs, diagram schemes, precategories",1,lemma card exists; literature audit pending
+553,19L10,"Riemann-Roch theorems, Chern characters",0,unreviewed
+554,20K01,Finite abelian groups,0,unreviewed
+555,22D10,Unitary representations of locally compact groups,0,unreviewed
+556,26E10,"\(C^\infty\)-functions, quasi-analytic functions",0,unreviewed
+557,28E10,Fuzzy measure theory,0,unreviewed
+558,30K05,Universal Taylor series in one complex variable,0,unreviewed
+559,31E99,Potential theory on fractals and metric spaces,0,unreviewed
+560,32K05,Banach analytic manifolds and spaces,0,unreviewed
+561,33F10,"Symbolic computation of special functions (Gosper and Zeilberger algorithms, etc.)",0,unreviewed
+562,34L05,General spectral theory of ordinary differential operators,0,unreviewed
+563,35K05,Heat equation,0,unreviewed
+564,37K06,"General theory of infinite-dimensional Hamiltonian and Lagrangian systems, Hamiltonian and Lagrangian structures, symmetries, conservation laws",0,unreviewed
+565,39B42,Matrix and operator functional equations,0,unreviewed
+566,40A10,Convergence and divergence of integrals,0,unreviewed
+567,41A29,Approximation with constraints,0,unreviewed
+568,42A16,"Fourier coefficients, Fourier series of functions with special properties, special Fourier series",0,unreviewed
+569,43A35,"Positive definite functions on groups, semigroups, etc.",2,lemma card exists; literature audit pending
+570,44A55,Discrete operational calculus,0,unreviewed
+571,45K05,Integro-partial differential equations,0,unreviewed
+572,46L05,General theory of \(C^*\)-algebras,0,unreviewed
+573,47L05,Linear spaces of operators,0,unreviewed
+574,49K10,Optimality conditions for free problems in two or more independent variables,0,unreviewed
+575,51K05,General theory of distance geometry,1,lemma card exists; literature audit pending
+576,52A10,Convex sets in \(2\) dimensions (including convex curves),0,unreviewed
+577,53D10,Contact manifolds (general theory),0,unreviewed
+578,54A10,"Several topologies on one set (change of topology, comparison of topologies, lattices of topologies)",0,unreviewed
+579,55N07,Steenrod-Sitnikov homologies,0,unreviewed
+580,57K12,"Generalized knots (virtual knots, welded knots, quandles, etc.)",0,unreviewed
+581,58A05,"Differentiable manifolds, foundations",0,unreviewed
+582,60K05,Renewal theory,0,unreviewed
+583,62K05,Optimal statistical designs,0,unreviewed
+584,65K05,Numerical mathematical programming methods,1,lemma card exists; literature audit pending
+585,68M07,Mathematical problems of computer architecture,0,unreviewed
+586,70L05,Random vibrations in mechanics of particles and systems,0,unreviewed
+587,74K05,Strings,0,unreviewed
+588,76L05,Shock waves and blast waves in fluid mechanics,0,unreviewed
+589,78M16,Multipole methods applied to problems in optics and electromagnetic theory,0,unreviewed
+590,80M22,"Spectral, collocation and related (meshless) methods applied to problems in thermodynamics and heat transfer",0,unreviewed
+591,81R10,"Infinite-dimensional groups and algebras motivated by physics, including Virasoro, Kac-Moody, \(W\)-algebras and other current algebras and their representations",0,unreviewed
+592,82C10,Quantum dynamics and nonequilibrium statistical mechanics (general),0,unreviewed
+593,83D99,"Relativistic gravitational theories other than Einstein's, including asymmetric field theories",0,unreviewed
+594,86A32,Geostatistics,0,unreviewed
+595,90C10,Integer programming,0,unreviewed
+596,91C15,One- and multidimensional scaling in the social and behavioral sciences,0,unreviewed
+597,92C15,"Developmental biology, pattern formation",0,unreviewed
+598,93E10,Estimation and detection in stochastic control theory,0,unreviewed
+599,94B12,Combined modulation schemes (including trellis codes) in coding theory,0,unreviewed
+600,03C07,Basic properties of first-order languages and structures,0,unreviewed
+601,05A15,"Exact enumeration problems, generating functions",0,unreviewed
+602,06E10,"Chain conditions, complete algebras",0,unreviewed
+603,08B20,Free algebras,0,unreviewed
+604,11L03,Trigonometric and exponential sums (general theory),0,unreviewed
+605,12F10,"Separable extensions, Galois theory",0,unreviewed
+606,13M05,Structure of finite commutative rings,0,unreviewed
+607,14L05,"Formal groups, \(p\)-divisible groups",0,unreviewed
+608,15A12,Conditioning of matrices,0,unreviewed
+609,16S10,"Associative rings determined by universal properties (free algebras, coproducts, adjunction of inverses, etc.)",0,unreviewed
+610,17C17,Radicals in Jordan algebras,0,unreviewed
+611,18B10,"Categories of spans/cospans, relations, or partial maps",0,unreviewed
+612,19A15,Efficient generation of modules,0,unreviewed
+613,20L05,Groupoids (i.e. small categories in which all morphisms are isomorphisms),0,unreviewed
+614,22E10,General properties and structure of complex Lie groups,0,unreviewed
+615,26A09,Elementary functions,0,unreviewed
+616,28A12,"Contents, measures, outer measures, capacities",0,unreviewed
+617,30L05,Geometric embeddings of metric spaces,0,unreviewed
+618,31A15,"Potentials and capacity, harmonic measure, extremal length and related notions in two dimensions",0,unreviewed
+619,32L05,Holomorphic bundles and generalizations,0,unreviewed
+620,33B20,"Incomplete beta and gamma functions (error functions, probability integral, Fresnel integrals)",0,unreviewed
+621,34M03,Linear ordinary differential equations and systems in the complex domain,0,unreviewed
+622,35L02,First-order hyperbolic equations,0,unreviewed
+623,37L05,"General theory of infinite-dimensional dissipative dynamical systems, nonlinear semigroups, evolution equations",0,unreviewed
+624,39A14,Partial difference equations,0,unreviewed
+625,40B99,Multiple sequences and series,0,unreviewed
+626,41A30,Approximation by other special function classes,0,unreviewed
+627,42B15,Multipliers for harmonic analysis in several variables,0,unreviewed
+628,43A40,Character groups and dual objects,0,unreviewed
+629,44A60,Moment problems,0,unreviewed
+630,45L05,Theoretical approximation of solutions to integral equations,0,unreviewed
+631,46M05,Tensor products in functional analysis,0,unreviewed
+632,47N10,"Applications of operator theory in optimization, convex analysis, mathematical programming, economics",0,unreviewed
+633,49L20,Dynamic programming in optimal control and differential games,0,unreviewed
+634,51L05,Geometry of orders of nondifferentiable curves,0,unreviewed
+635,52B12,"Special polytopes (linear programming, centrally symmetric, etc.)",0,unreviewed
+636,53E20,Ricci flows,0,unreviewed
+637,54B10,Product spaces in general topology,0,unreviewed
+638,55P10,Homotopy equivalences in algebraic topology,0,unreviewed
+639,57M07,Topological methods in group theory,0,unreviewed
+640,58B10,Differentiability questions for infinite-dimensional manifolds,0,unreviewed
+641,60L10,Signatures and data streams,0,unreviewed
+642,62L05,Sequential statistical design,0,unreviewed
+643,65L03,Numerical methods for functional-differential equations,0,unreviewed
+644,68N15,Theory of programming languages,0,unreviewed
+645,70M20,Orbital mechanics,0,unreviewed
+646,74L05,Geophysical solid mechanics,0,unreviewed
+647,76M10,Finite element methods applied to problems in fluid mechanics,0,unreviewed
+648,78A25,Electromagnetic theory (general),0,unreviewed
+649,80A22,"Stefan problems, phase changes, etc.",0,unreviewed
+650,81S07,"Uncertainty relations, also entropic",0,unreviewed
+651,82D10,Statistical mechanics of plasmas,0,unreviewed
+652,83E15,Kaluza-Klein and other higher-dimensional theories,0,unreviewed
+653,86A40,Glaciology,0,unreviewed
+654,90B20,Traffic problems in operations research,0,unreviewed
+655,91D15,Social learning,0,unreviewed
+656,92D20,"Protein sequences, DNA sequences",0,unreviewed
+657,93A13,Hierarchical systems,0,unreviewed
+658,94C12,Fault detection; testing in circuits and networks,0,unreviewed
+659,03D05,Automata and formal grammars in connection with logical questions,0,unreviewed
+660,05B10,"Combinatorial aspects of difference sets (number-theoretic, group-theoretic, etc.)",0,unreviewed
+661,06F07,Quantales,0,unreviewed
+662,08C20,Natural dualities for classes of algebras,0,unreviewed
+663,11M06,"\(\zeta (s)\) and \(L(s, \chi)\)",1,lemma card exists; literature audit pending
+664,12G10,Cohomological dimension of fields,0,unreviewed
+665,13N05,Modules of differentials,0,unreviewed
+666,14M05,"Varieties defined by ring conditions (factorial, Cohen-Macaulay, seminormal)",0,unreviewed
+667,15B34,Boolean and Hadamard matrices,0,unreviewed
+668,16T05,Hopf algebras and their applications,0,unreviewed
+669,17D15,Right alternative rings,0,unreviewed
+670,18C10,"Theories (e.g., algebraic theories), structure, and semantics",0,unreviewed
+671,19B14,Stability for linear groups,0,unreviewed
+672,20M05,"Free semigroups, generators and relations, word problems",0,unreviewed
+673,22F10,Measurable group actions,0,unreviewed
+674,26B12,Calculus of vector functions,0,unreviewed
+675,28B15,"Set functions, measures and integrals with values in ordered spaces",0,unreviewed
+676,30A10,Inequalities in the complex plane,0,unreviewed
+677,31B15,"Potentials and capacities, extremal length and related notions in higher dimensions",0,unreviewed
+678,32M05,"Complex Lie groups, group actions on complex spaces",0,unreviewed
+679,33C15,"Confluent hypergeometric functions, Whittaker functions, \({}_1F_1\)",0,unreviewed
+680,34N05,Dynamic equations on time scales or measure chains,0,unreviewed
+681,35M10,PDEs of mixed type,0,unreviewed
+682,37M05,Simulation of dynamical systems,0,unreviewed
+683,39B52,Functional equations for functions with more general domains and/or ranges,0,unreviewed
+684,40C10,Integral methods for summability,0,unreviewed
+685,41A35,"Approximation by operators (in particular, by integral operators)",0,unreviewed
+686,42C25,Uniqueness and localization for orthogonal series,0,unreviewed
+687,43A45,"Spectral synthesis on groups, semigroups, etc.",0,unreviewed
+688,44A99,"Integral transforms, operational calculus",0,unreviewed
+689,45M05,Asymptotics of solutions to integral equations,0,unreviewed
+690,46N10,"Applications of functional analysis in optimization, convex analysis, mathematical programming, economics",0,unreviewed
+691,47S05,Quaternionic operator theory,0,unreviewed
+692,49M15,Newton-type methods,0,unreviewed
+693,51M04,Elementary problems in Euclidean geometries,0,unreviewed
+694,52C15,Packing and covering in \(2\) dimensions (aspects of discrete geometry),0,unreviewed
+695,53Z10,Applications of differential geometry to biology,0,unreviewed
+696,54C08,Weak and generalized continuity,0,unreviewed
+697,55Q07,Shape groups,0,unreviewed
+698,57N17,Topology of topological vector spaces,0,unreviewed
+699,58C06,Set-valued and function-space-valued mappings on manifolds,0,unreviewed
+700,60A10,Probabilistic measure theory,0,unreviewed
+701,62M02,Markov processes: hypothesis testing,0,unreviewed
+702,65M06,Finite difference methods for initial value and initial-boundary value problems involving PDEs,0,unreviewed
+703,68P05,Data structures,0,unreviewed
+704,70P05,"Variable mass, rockets",0,unreviewed
+705,74M05,"Control, switches and devices (``smart materials'') in solid mechanics",0,unreviewed
+706,76N06,Compressible Navier-Stokes equations,0,unreviewed
+707,78M20,Finite difference methods applied to problems in optics and electromagnetic theory,0,unreviewed
+708,80M30,Variational methods applied to problems in thermodynamics and heat transfer,0,unreviewed
+709,81T08,Constructive quantum field theory,2,lemma card exists; literature audit pending
+710,82M15,Boundary element methods applied to problems in statistical mechanics,0,unreviewed
+711,83F99,Relativistic cosmology,0,unreviewed
+712,86A60,Geological problems,0,unreviewed
+713,90C11,Mixed integer programming,0,unreviewed
+714,91E30,Psychophysics and psychophysiology; perception,0,unreviewed
+715,92E99,Chemistry,0,unreviewed
+716,93B07,Observability,0,unreviewed
+717,94A12,"Signal theory (characterization, reconstruction, filtering, etc.)",0,unreviewed
+718,03E04,Ordered sets and their cofinalities; pcf theory,0,unreviewed
+719,05C09,"Graphical indices (Wiener index, Zagreb index, Randi? index, etc.)",0,unreviewed
+720,06A07,Combinatorics of partially ordered sets,0,unreviewed
+721,08A40,"Operations and polynomials in algebraic structures, primal algebras",0,unreviewed
+722,11N05,Distribution of primes,0,unreviewed
+723,12H10,Difference algebra,0,unreviewed
+724,13P05,"Polynomials, factorization in commutative rings",0,unreviewed
+725,14N05,Projective techniques in algebraic geometry,0,unreviewed
+726,15A15,"Determinants, permanents, traces, other special matrix functions",0,unreviewed
+727,16U10,Integral domains (associative rings and algebras),0,unreviewed
+728,17A20,Flexible algebras,0,unreviewed
+729,18D20,Enriched categories (over closed or monoidal categories),0,unreviewed
+730,19C20,"Symbols, presentations and stability of \(K_2\)",0,unreviewed
+731,20N02,Sets with a single binary operation (groupoids),0,unreviewed
+732,22A15,Structure of topological semigroups,0,unreviewed
+733,26C15,Real rational functions,0,unreviewed
+734,28C15,"Set functions and measures on topological spaces (regularity of measures, etc.)",0,unreviewed
+735,30B20,Random power series in one complex variable,0,unreviewed
+736,31C12,Potential theory on Riemannian manifolds and other spaces,0,unreviewed
+737,32N05,General theory of automorphic functions of several complex variables,0,unreviewed
+738,33D45,"Basic orthogonal polynomials and functions (Askey-Wilson polynomials, etc.)",0,unreviewed
+739,34A06,"Generalized ordinary differential equations (measure-differential equations, set-valued differential equations, etc.)",0,unreviewed
+740,35N05,Overdetermined systems of PDEs with constant coefficients,0,unreviewed
+741,37N05,Dynamical systems in classical and celestial mechanics,0,unreviewed
+742,39A20,Multiplicative and other generalized difference equations,0,unreviewed
+743,40D09,Structure of summability fields,0,unreviewed
+744,41A36,Approximation by positive operators,0,unreviewed
+745,42A20,Convergence and absolute convergence of Fourier and trigonometric series,0,unreviewed
+746,43A46,"Special sets (thin sets, Kronecker sets, Helson sets, Ditkin sets, Sidon sets, etc.)",0,unreviewed
+747,45N05,"Abstract integral equations, integral equations in abstract spaces",0,unreviewed
+748,46S05,Quaternionic functional analysis,0,unreviewed
+749,47A06,Linear relations (multivalued linear operators),0,unreviewed
+750,49N10,Linear-quadratic optimal control problems,0,unreviewed
+751,51N05,Descriptive geometry,0,unreviewed
+752,52A15,Convex sets in \(3\) dimensions (including convex surfaces),0,unreviewed
+753,53A07,Higher-dimensional and -codimensional surfaces in Euclidean and related \(n\)-spaces,0,unreviewed
+754,54D10,"Lower separation axioms (\(T_0\)--\(T_3\), etc.)",0,unreviewed
+755,55R10,Fiber bundles in algebraic topology,0,unreviewed
+756,57P10,Poincaré duality spaces,0,unreviewed
+757,58D07,Groups and semigroups of nonlinear operators,0,unreviewed
+758,60B10,Convergence of probability measures,0,unreviewed
+759,62N01,Censored data models,0,unreviewed
+760,65N06,Finite difference methods for boundary value problems involving PDEs,0,unreviewed
+761,68Q04,"Classical models of computation (Turing machines, etc.)",0,unreviewed
+762,70Q05,Control of mechanical systems,0,unreviewed
+763,74N05,Crystals in solids,0,unreviewed
+764,76P05,"Rarefied gas flows, Boltzmann equation in fluid mechanics",0,unreviewed
+765,78A30,Electro- and magnetostatics,0,unreviewed
+766,80A23,Inverse problems in thermodynamics and heat transfer,0,unreviewed
+767,81U10,\(n\)-body potential quantum scattering theory,0,unreviewed
+768,82B20,"Lattice systems (Ising, dimer, Potts, etc.) and systems on graphs arising in equilibrium statistical mechanics",0,unreviewed
+769,83C15,Exact solutions to problems in general relativity and gravitational theory,0,unreviewed
+770,86A70,Vulcanology; magma and lava flow,0,unreviewed
+771,90B22,Queues and service in operations research,0,unreviewed
+772,91F20,Linguistics,0,unreviewed
+773,92B20,"Neural networks for/in biological studies, artificial life and related topics",0,unreviewed
+774,93C15,Control/observation systems governed by ordinary differential equations,0,unreviewed
+775,94B15,Cyclic codes,0,unreviewed
+776,03F05,Cut-elimination and normal-form theorems,0,unreviewed
+777,05D15,Transversal (matching) theory,0,unreviewed
+778,06B15,Representation theory of lattices,0,unreviewed
+779,08B25,"Products, amalgamated products, and other kinds of limits and colimits",0,unreviewed
+780,11P05,Waring's problem and variants,0,unreviewed
+781,12J10,Valued fields,0,unreviewed
+782,13A05,Divisibility and factorizations in commutative rings,0,unreviewed
+783,14P05,Real algebraic sets,0,unreviewed
+784,15B35,Sign pattern matrices,0,unreviewed
+785,16W10,"Rings with involution; Lie, Jordan and other nonassociative structures",0,unreviewed
+786,17B10,"Representations of Lie algebras and Lie superalgebras, algebraic theory (weights)",0,unreviewed
+787,18E08,"Regular categories, Barr-exact categories",0,unreviewed
+788,19D10,Algebraic \(K\)-theory of spaces,0,unreviewed
+789,20P05,Probabilistic methods in group theory,0,unreviewed
+790,22B99,Locally compact abelian groups (LCA groups),0,unreviewed
+791,26D10,Inequalities involving derivatives and differential and integral operators,0,unreviewed
+792,28D15,General groups of measure-preserving transformations,0,unreviewed
+793,30C15,"Zeros of polynomials, rational functions, and other analytic functions of one complex variable (e.g., zeros of functions with bounded Dirichlet integral)",1,lemma card exists; literature audit pending
+794,31A20,"Boundary behavior (theorems of Fatou type, etc.) of harmonic functions in two dimensions",0,unreviewed
+795,32P05,Non-Archimedean analysis,0,unreviewed
+796,33E12,Mittag-Leffler functions and generalizations,0,unreviewed
+797,34B07,Linear boundary value problems for ordinary differential equations with nonlinear dependence on the spectral parameter,0,unreviewed
+798,35P05,General topics in linear spectral theory for PDEs,0,unreviewed
+799,37P05,Arithmetic and non-Archimedean dynamical systems involving polynomial and rational maps,0,unreviewed
+800,39B55,Orthogonal additivity and other conditional functional equations,0,unreviewed
+801,40E10,Growth estimates,0,unreviewed
+802,41A40,Saturation in approximation theory,0,unreviewed
+803,42B20,"Singular and oscillatory integrals (Calderón-Zygmund, etc.)",0,unreviewed
+804,43A50,Convergence of Fourier series and of inverse transforms,0,unreviewed
+805,45P05,Integral operators,0,unreviewed
+806,46T05,Infinite-dimensional manifolds,0,unreviewed
+807,47B02,Operators on Hilbert spaces (general),1,lemma card exists; literature audit pending
+808,49Q10,Optimization of shapes other than minimal surfaces,0,unreviewed
+809,51P05,Classical or axiomatic geometry and physics,0,unreviewed
+810,52B15,Symmetry properties of polytopes,0,unreviewed
+811,53B12,Differential geometric aspects of statistical manifolds and information geometry,0,unreviewed
+812,54E15,Uniform structures and generalizations,0,unreviewed
+813,55S10,Steenrod algebra,0,unreviewed
+814,57Q10,"Simple homotopy type, Whitehead torsion, Reidemeister-Franz torsion, etc.",0,unreviewed
+815,58E07,Variational problems in abstract bifurcation theory in infinite-dimensional spaces,0,unreviewed
+816,60C99,Combinatorial probability,0,unreviewed
+817,62P05,Applications of statistics to actuarial sciences and financial mathematics,0,unreviewed
+818,65P10,Numerical methods for Hamiltonian systems including symplectic integrators,0,unreviewed
+819,68R05,Combinatorics in computer science,0,unreviewed
+820,70S05,Lagrangian formalism and Hamiltonian formalism in mechanics of particles and systems,0,unreviewed
+821,74P05,Compliance or weight optimization in solid mechanics,0,unreviewed
+822,76Q05,Hydro- and aero-acoustics,0,unreviewed
+823,78M22,"Spectral, collocation and related methods applied to problems in optics and electromagnetic theory",0,unreviewed
+824,80M31,Monte Carlo methods applied to problems in thermodynamics and heat transfer,0,unreviewed
+825,81V10,Electromagnetic interaction; quantum electrodynamics,0,unreviewed
+826,82C20,"Dynamic lattice systems (kinetic Ising, etc.) and systems on graphs in time-dependent statistical mechanics",0,unreviewed
+827,83E30,String and superstring theories in gravitational theory,0,unreviewed
+828,86A99,Geophysics,0,unreviewed
+829,90C15,Stochastic programming,1,lemma card exists; literature audit pending
+830,91G10,Portfolio theory,0,unreviewed
+831,92C17,"Cell movement (chemotaxis, etc.)",0,unreviewed
+832,93D10,Popov-type stability of feedback systems,0,unreviewed
+833,94C15,Applications of graph theory to circuits and networks,1,lemma card exists; literature audit pending
+834,03G10,Logical aspects of lattices and related structures,0,unreviewed
+835,05E14,Combinatorial aspects of algebraic geometry,0,unreviewed
+836,06C15,"Complemented lattices, orthocomplemented lattices and posets",0,unreviewed
+837,08A45,Equational compactness,0,unreviewed
+838,11R04,Algebraic numbers; rings of algebraic integers,0,unreviewed
+839,12K10,Semifields,0,unreviewed
+840,13B05,Galois theory and commutative ring extensions,0,unreviewed
+841,14Q05,Computational aspects of algebraic curves,0,unreviewed
+842,15A16,Matrix exponential and similar functions of matrices,0,unreviewed
+843,16Y20,Hyperrings,0,unreviewed
+844,17C20,"Simple, semisimple Jordan algebras",0,unreviewed
+845,18F10,Grothendieck topologies and Grothendieck topoi,0,unreviewed
+846,19E15,Algebraic cycles and motivic cohomology (\(K\)-theoretic aspects),0,unreviewed
+847,20A10,Metamathematical considerations in group theory,0,unreviewed
+848,22D15,Group algebras of locally compact groups,0,unreviewed
+849,26E15,Calculus of functions on infinite-dimensional spaces,0,unreviewed
+850,28A15,"Abstract differentiation theory, differentiation of set functions",0,unreviewed
+851,30D10,Representations of entire functions of one complex variable by series and integrals,0,unreviewed
+852,31B20,Boundary value and inverse problems for harmonic functions in higher dimensions,0,unreviewed
+853,32Q02,"Special domains (Reinhardt, Hartogs, circular, tube, etc.) in \(\mathbb{C}^n\) and complex manifolds",0,unreviewed
+854,33F99,Computational aspects of special functions,0,unreviewed
+855,34C07,"Theory of limit cycles of polynomial and analytic vector fields (existence, uniqueness, bounds, Hilbert's 16th problem and ramifications) for ordinary differential equations",0,unreviewed
+856,35Q05,Euler-Poisson-Darboux equations,0,unreviewed
+857,37A10,Dynamical systems involving one-parameter continuous families of measure-preserving transformations,0,unreviewed
+858,39A21,Oscillation theory for difference equations,0,unreviewed
+859,40F99,Absolute and strong summability,0,unreviewed
+860,41A44,Best constants in approximation theory,0,unreviewed
+861,42C30,Completeness of sets of functions in nontrigonometric harmonic analysis,0,unreviewed
+862,43A55,"Summability methods on groups, semigroups, etc.",0,unreviewed
+863,45Q05,Inverse problems for integral equations,0,unreviewed
+864,46A04,Locally convex Fréchet spaces and (DF)-spaces,0,unreviewed
+865,47C10,Linear operators in \({}^*\)-algebras,0,unreviewed
+866,49R99,Variational methods for eigenvalues of operators,0,unreviewed
+867,51A10,"Homomorphism, automorphism and dualities in linear incidence geometry",0,unreviewed
+868,52C17,Packing and covering in \(n\) dimensions (aspects of discrete geometry),0,unreviewed
+869,53C08,Differential geometric aspects of gerbes and differential characters,0,unreviewed
+870,54F15,Continua and generalizations,0,unreviewed
+871,55T10,Serre spectral sequences,0,unreviewed
+872,57R10,Smoothing in differential topology,0,unreviewed
+873,58H10,"Cohomology of classifying spaces for pseudogroup structures (Spencer, Gelfand-Fuks, etc.)",0,unreviewed
+874,60D99,Geometric probability and stochastic geometry,0,unreviewed
+875,62Q05,Statistical tables,0,unreviewed
+876,65Q10,Numerical methods for difference equations,0,unreviewed
+877,68T05,Learning and adaptive systems in artificial intelligence,0,unreviewed
+878,70A99,"Axiomatics, foundations",0,unreviewed
+879,74Q05,Homogenization in equilibrium problems of solid mechanics,0,unreviewed
+880,76R05,Forced convection,0,unreviewed
+881,78A35,Motion of charged particles,0,unreviewed
+882,80A25,Combustion,0,unreviewed
+883,81P13,Contextuality in quantum theory,0,unreviewed
+884,82D15,Statistical mechanics of liquids,0,unreviewed
+885,83C20,"Classes of solutions; algebraically special solutions, metrics with symmetries for problems in general relativity and gravitational theory",0,unreviewed
+886,90B25,"Reliability, availability, maintenance, inspection in operations research",0,unreviewed
+887,91A07,Games with infinitely many players,0,unreviewed
+888,92D25,Population dynamics (general),0,unreviewed
+889,93E11,Filtering in stochastic control theory,0,unreviewed
+890,94A13,Detection theory in information and communication theory,0,unreviewed
+891,03H15,Nonstandard models of arithmetic,0,unreviewed
+892,05A16,Asymptotic enumeration,0,unreviewed
+893,06D15,Pseudocomplemented lattices,0,unreviewed
+894,08B26,Subdirect products and subdirect irreducibility,0,unreviewed
+895,11S05,Polynomials,0,unreviewed
+896,12L10,Ultraproducts and field theory,0,unreviewed
+897,13C10,Projective and free modules and ideals in commutative rings,0,unreviewed
+898,14R05,Classification of affine varieties,0,unreviewed
+899,15B36,Matrices of integers,0,unreviewed
+900,16Z05,Computational aspects of associative rings (general theory),0,unreviewed
+901,17D20,"\((\gamma, \delta)\)-rings, including \((1,-1)\)-rings",0,unreviewed
+902,18G10,Resolutions; derived functors (category-theoretic aspects),0,unreviewed
+903,19F15,Symbols and arithmetic (\(K\)-theoretic aspects),0,unreviewed
+904,20B07,General theory for infinite permutation groups,0,unreviewed
+905,22E15,General properties and structure of real Lie groups,0,unreviewed
+906,26A12,"Rate of growth of functions, orders of infinity, slowly varying functions",0,unreviewed
+907,28B20,Set-valued set functions and measures; integration of set-valued functions; measurable selections,0,unreviewed
+908,30E10,Approximation in the complex plane,0,unreviewed
+909,31C15,Potentials and capacities on other spaces,0,unreviewed
+910,32S05,Local complex singularities,0,unreviewed
+911,33B30,Higher logarithm functions,0,unreviewed
+912,34D06,Synchronization of solutions to ordinary differential equations,0,unreviewed
+913,35R01,PDEs on manifolds,0,unreviewed
+914,37B05,"Dynamical systems involving transformations and group actions with special properties (minimality, distality, proximality, expansivity, etc.)",0,unreviewed
+915,39B62,"Functional inequalities, including subadditivity, convexity, etc.",0,unreviewed
+916,40G10,"Abel, Borel and power series methods",0,unreviewed
+917,41A45,Approximation by arbitrary linear expressions,0,unreviewed
+918,42A24,Summability and absolute summability of Fourier and trigonometric series,0,unreviewed
+919,43A60,"Almost periodic functions on groups and semigroups and their generalizations (recurrent functions, distal functions, etc.); almost automorphic functions",0,unreviewed
+920,45R05,Random integral equations,0,unreviewed
+921,46B04,Isometric theory of Banach spaces,0,unreviewed
+922,47D06,One-parameter semigroups and linear evolution equations,0,unreviewed
+923,49S99,Variational principles of physics,0,unreviewed
+924,51B10,Möbius geometries,0,unreviewed
+925,52A20,Convex sets in \(n\) dimensions (including convex hypersurfaces),0,unreviewed
+926,53D12,Lagrangian submanifolds; Maslov index,0,unreviewed
+927,54G10,\(P\)-spaces,0,unreviewed
+928,55U10,Simplicial sets and complexes in algebraic topology,0,unreviewed
+929,57S10,Compact groups of homeomorphisms,0,unreviewed
+930,58J10,Differential complexes,0,unreviewed
+931,60E07,Infinitely divisible distributions; stable distributions,0,unreviewed
+932,62R01,Algebraic statistics,0,unreviewed
+933,65R10,Numerical methods for integral transforms,0,unreviewed
+934,68U03,Computational aspects of digital topology,0,unreviewed
+935,70B10,Kinematics of a rigid body,0,unreviewed
+936,74R05,Brittle damage,0,unreviewed
+937,76S05,Flows in porous media; filtration; seepage,0,unreviewed
+938,78M30,Variational methods applied to problems in optics and electromagnetic theory,0,unreviewed
+939,80M35,Asymptotic analysis for problems in thermodynamics and heat transfer,0,unreviewed
+940,81Q12,Nonselfadjoint operator theory in quantum theory including creation and destruction operators,0,unreviewed
+941,82M20,Finite difference methods applied to problems in statistical mechanics,0,unreviewed
+942,83E50,Supergravity,0,unreviewed
+943,90C17,Robustness in mathematical programming,0,unreviewed
+944,91B05,Risk models (general),0,unreviewed
+945,92B25,Biological rhythms and synchronization,0,unreviewed
+946,93A14,Decentralized systems,0,unreviewed
+947,94B20,Burst-correcting codes,0,unreviewed
+948,03A99,Philosophical aspects of logic and foundations,0,unreviewed
+949,05B15,"Orthogonal arrays, Latin squares, Room squares",0,unreviewed
+950,06E15,Stone spaces (Boolean spaces) and related structures,0,unreviewed
+951,08A50,Word problems (aspects of algebraic structures),0,unreviewed
+952,11T06,Polynomials over finite fields,0,unreviewed
+953,12D15,"Fields related with sums of squares (formally real fields, Pythagorean fields, etc.)",0,unreviewed
+954,13D03,"(Co)homology of commutative rings and algebras (e.g., Hochschild, André-Quillen, cyclic, dihedral, etc.)",0,unreviewed
+955,14T10,Foundations of tropical geometry and relations with algebra,1,lemma card exists; literature audit pending
+956,15A18,"Eigenvalues, singular values, and eigenvectors",0,unreviewed
+957,16B70,Applications of logic in associative algebras,0,unreviewed
+958,17A30,Nonassociative algebras satisfying other identities,0,unreviewed
+959,18M10,"Traced monoidal categories, compact closed categories, star-autonomous categories",0,unreviewed
+960,19G12,Witt groups of rings,0,unreviewed
+961,20C07,Group rings of infinite groups and their modules (group-theoretic aspects),0,unreviewed
+962,22F30,Homogeneous spaces,0,unreviewed
+963,26B15,"Integration of real functions of several variables: length, area, volume",0,unreviewed
+964,28C20,"Set functions and measures and integrals in infinite-dimensional spaces (Wiener measure, Gaussian measure, etc.)",0,unreviewed
+965,30F15,Harmonic functions on Riemann surfaces,0,unreviewed
+966,31A25,Boundary value and inverse problems for harmonic functions in two dimensions,0,unreviewed
+967,32T05,Domains of holomorphy,0,unreviewed
+968,33C20,"Generalized hypergeometric series, \({}_pF_q\)",0,unreviewed
+969,34E10,"Perturbations, asymptotics of solutions to ordinary differential equations",0,unreviewed
+970,35S05,Pseudodifferential operators as generalizations of partial differential operators,0,unreviewed
+971,37C10,Dynamics induced by flows and semiflows,0,unreviewed
+972,39A22,"Growth, boundedness, comparison of solutions to difference equations",0,unreviewed
+973,40H99,Functional analytic methods in summability,0,unreviewed
+974,41A46,Approximation by arbitrary nonlinear expressions; widths and entropy,0,unreviewed
+975,42B25,"Maximal functions, Littlewood-Paley theory",0,unreviewed
+976,43A62,Harmonic analysis on hypergroups,0,unreviewed
+977,45A99,Linear integral equations,0,unreviewed
+978,46C07,"Hilbert subspaces (= operator ranges); complementation (Aronszajn, de Branges, etc.)",0,unreviewed
+979,47E07,Functional-differential and differential-difference operators,0,unreviewed
+980,49J15,Existence theories for optimal control problems involving ordinary differential equations,0,unreviewed
+981,51C99,"Ring geometry (Hjelmslev, Barbilian, etc.)",0,unreviewed
+982,52B20,Lattice polytopes in convex geometry (including relations with commutative algebra and algebraic geometry),0,unreviewed
+983,53E30,"Flows related to complex manifolds (e.g., Kähler-Ricci flows, Chern-Ricci flows)",0,unreviewed
+984,54H10,Topological representations of algebraic systems,0,unreviewed
+985,55M15,Absolute neighborhood retracts,0,unreviewed
+986,57T10,Homology and cohomology of Lie groups,0,unreviewed
+987,58K10,Monodromy on manifolds,0,unreviewed
+988,60F10,Large deviations,1,lemma card exists; literature audit pending
+989,62A09,Graphical methods in statistics,0,unreviewed
+990,65S05,Graphical methods in numerical analysis,0,unreviewed
+991,68V15,"Theorem proving (automated and interactive theorem provers, deduction, resolution, etc.)",0,unreviewed
+992,70C99,Statics,0,unreviewed
+993,74S05,Finite element methods applied to problems in solid mechanics,0,unreviewed
+994,76T06,Liquid-liquid two component flows,0,unreviewed
+995,78A37,Ion traps,0,unreviewed
+996,80A30,Chemical kinetics in thermodynamics and heat transfer,0,unreviewed
+997,81R12,Groups and algebras in quantum theory and relations with integrable systems,0,unreviewed
+998,82B21,"Continuum models (systems of particles, etc.) arising in equilibrium statistical mechanics",0,unreviewed
+999,83C22,Einstein-Maxwell equations,0,unreviewed
+1000,90B30,Production models,0,unreviewed

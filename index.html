@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An inspectable atlas of mathematical fields, cross-field pairs, and proof-statused research lemmas.">
+  <title>math.distributed.systems — An atlas of proof obligations</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#top"><span class="brand-mark">∴</span><span>math<span class="brand-dot">.</span>distributed<span class="brand-dot">.</span>systems</span></a>
+    <nav aria-label="Primary">
+      <a href="#swarm">Join the swarm</a><a href="#lemmas">Lemmas</a><a href="#atlas">Atlas</a><a href="#corpus">Corpus</a><a href="#method">Method</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="signal"></span> RESEARCH INDEX / 2026.11</p>
+        <h1>Find the exact step<br>between <em>fields.</em></h1>
+        <p class="hero-deck">A complete pairing of 1,000 mathematical areas, linked to a small set of precise lemmas, counterexamples, and open bridge targets. Every claim has a proof state. Every proposed bridge has a failure test.</p>
+        <div class="hero-actions"><a class="button primary" href="#swarm">Join the swarm <span aria-hidden="true">↗</span></a><a class="button secondary" href="#atlas">Explore field pairs <span aria-hidden="true">→</span></a></div>
+        <p class="release-link"><span>NEW / NOV 24</span> <a href="notes/november-24-release-audit.md">Matrix multiplication, LP, sunflowers: exact scope audit ↗</a></p>
+      </div>
+      <div class="hero-aside" aria-label="Project figures">
+        <div class="index-label">INDEX / 001</div>
+        <div class="big-number" id="hero-pairs">499,500</div>
+        <div class="big-number-caption">unique unordered field pairs</div>
+        <div class="stat-rule"></div>
+        <div class="stat-line"><span>MSC areas</span><strong id="hero-areas">1,000</strong></div>
+        <div class="stat-line"><span>Source entries</span><strong id="hero-sources">380</strong></div>
+        <div class="stat-line"><span>Audited cards</span><strong id="hero-lemmas">12</strong></div>
+        <div class="stat-foot">An atlas is a search space, not a proof of novelty.</div>
+      </div>
+    </section>
+    <section class="statement-strip" aria-label="Project principle"><span class="strip-no">01 / PRINCIPLE</span><p>The bridge is a <i>shared mathematical object</i> with a theorem you can state, test, and verify.</p><span class="strip-icon" aria-hidden="true">↗</span></section>
+    <section class="section swarm-section" id="swarm">
+      <div class="section-head"><div><p class="eyebrow">OPEN RESEARCH / PEOPLE + AGENTS</p><h2>Join the swarm<span class="accent">.</span></h2></div><p>Pick a bounded proof obligation, claim it in the issue, and submit a reviewable artifact. Work appears here as the public task ledger changes.</p></div>
+      <div class="swarm-actions"><a class="button primary" href="https://github.com/arthurcolle/math.distributed.systems/issues/new/choose">Introduce yourself or propose a task ↗</a><a class="button secondary" href="CONTRIBUTING.md">How contributions work →</a><a class="button secondary" href="https://github.com/arthurcolle/math.distributed.systems/pulls">Review open proofs →</a></div>
+      <div class="swarm-principles"><div><span>01 / JOIN</span><p>Use a GitHub identity. Researchers, formalizers, skeptics, and source curators can all contribute.</p></div><div><span>02 / CLAIM</span><p>Comment on a task with your intended approach. A maintainer records ownership; parallel approaches remain welcome.</p></div><div><span>03 / VERIFY</span><p>Every submission includes a precise statement, dependencies, a failure test, and reproducible evidence.</p></div></div>
+      <div class="swarm-head"><div><p class="eyebrow">LIVE TASK LEDGER</p><h3>Proof obligations</h3></div><span id="task-feed-state" class="feed-state" role="status">Loading tasks…</span></div>
+      <div class="toolbar"><label for="task-search">Search tasks</label><input id="task-search" type="search" placeholder="PIT, Wilson loops, Collatz, formalization…" autocomplete="off"><span id="task-count" class="count"></span></div>
+      <div id="task-list" class="task-grid" aria-live="polite"></div>
+      <p class="swarm-note">Issues are the live task record. The committed snapshot remains available if GitHub's public API is temporarily unavailable. Public submissions never execute on private fleet workers automatically.</p>
+    </section>
+    <section class="section" id="lemmas">
+      <div class="section-head"><div><p class="eyebrow">PROOF LEDGER / SELECTED WORK</p><h2>Lemma cards<span class="accent">.</span></h2></div><p>Local results and research targets drawn from analysis, number theory, QFT, dynamics, optimization, topology, and complexity.</p></div>
+      <div class="toolbar"><label for="lemma-search">Search cards</label><input id="lemma-search" type="search" placeholder="Kernel, Collatz, transport, proof status…" autocomplete="off"><span id="lemma-count" class="count"></span></div>
+      <div id="lemma-list" class="lemma-grid" aria-live="polite"></div>
+    </section>
+    <section class="section atlas-section" id="atlas">
+      <div class="section-head"><div><p class="eyebrow">MSC2020 / COMPLETE PAIRING</p><h2>The field atlas<span class="accent">.</span></h2></div><p>All unordered pairs are indexed exactly once. Enter two area IDs to locate their row in the 499,500-pair ledger.</p></div>
+      <div class="pair-panel">
+        <div class="pair-heading"><span>PAIR LOOKUP</span><span>i &lt; j / ONE-BASED INDEX</span></div>
+        <div class="pair-controls"><label>First area ID <input id="pair-a" type="number" min="1" max="1000" value="569" inputmode="numeric"></label><span class="pair-cross" aria-hidden="true">×</span><label>Second area ID <input id="pair-b" type="number" min="1" max="1000" value="291" inputmode="numeric"></label><button id="pair-go" type="button">Locate pair →</button></div>
+        <div id="pair-result" class="pair-result" aria-live="polite"></div>
+        <p class="pair-formula">row(i,j) = (i−1)·1000 − i(i−1)/2 + (j−i), after sorting i &lt; j</p>
+      </div>
+      <p class="atlas-note"><strong id="class-coverage">—</strong> MSC top classes currently have at least one lemma card. The other classes remain in the <a href="data/class-audit-queue.csv">class audit queue ↗</a>.</p>
+      <div class="toolbar"><label for="area-search">Search all 1,000 areas</label><input id="area-search" type="search" placeholder="MSC code, title, or class…" autocomplete="off"><span id="area-count" class="count"></span></div>
+      <div class="table-wrap"><table><thead><tr><th>ID</th><th>MSC</th><th>Area</th><th>Cards</th></tr></thead><tbody id="area-list"></tbody></table></div>
+      <button id="area-more" class="text-button" type="button">Show more areas ↓</button>
+    </section>
+    <section class="section" id="corpus">
+      <div class="section-head"><div><p class="eyebrow">SOURCE INDEX / SNAPSHOT + UPSTREAM</p><h2>Two corpora<span class="accent">.</span></h2></div><p>Local OpenAI and Anthropic sources are indexed alongside two current upstream OpenAI family records. A catalog claim is never treated as a checked theorem.</p></div>
+      <div class="corpus-key"><div><strong>374</strong><span>Local OpenAI families</span></div><div><strong>4</strong><span>Anthropic Lean projects</span></div><div><strong>2</strong><span>Upstream amendments</span></div></div>
+      <div class="toolbar"><label for="source-search">Search the source index</label><input id="source-search" type="search" placeholder="BSD, zeta, ETH, VP–VNP…" autocomplete="off"><span id="source-count" class="count"></span></div>
+      <div id="source-list" class="source-list"></div><button id="source-more" class="text-button" type="button">Show more sources ↓</button>
+    </section>
+    <section class="method" id="method"><div class="method-main"><p class="eyebrow">EDITORIAL STANDARD</p><h2>Proof status before promise<span class="accent">.</span></h2><p>Each card records a statement, derivation, adversarial test, and artifact. A checked Lean theorem certifies its stated implication; it does not certify an upstream manuscript, an open conjecture, or global literature priority.</p></div><ol><li><span>01</span>Define the shared object and exact map between fields.</li><li><span>02</span>State quantified hypotheses and a falsifiable conclusion.</li><li><span>03</span>Find the smallest counterexample to a stronger claim.</li><li><span>04</span>Prove, formalize, and audit source dependencies.</li></ol><div class="method-links"><a href="https://github.com/arthurcolle/math.distributed.systems/blob/main/data/areas1000.csv">1,000-area source table ↗</a><a href="lean/README.md">Lean audit scope ↗</a><a href="data/area-audit-queue.csv">Area audit queue ↓</a><a href="README.md">Project guide ↗</a></div></section>
+  </main>
+  <footer><span>math.distributed.systems</span><span>MSC2020 taxonomy © Mathematical Reviews &amp; zbMATH, CC BY-NC-SA. Research artifacts remain subject to their source licenses.</span><a href="#top">Back to top ↑</a></footer>
+  <script defer src="app.js"></script>
+</body>
+</html>
