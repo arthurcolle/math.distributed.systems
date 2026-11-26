@@ -1,0 +1,27 @@
+name = "CollatzCoalescence"
+version = "0.1.0"
+defaultTargets = ["CollatzCoalescence"]
+
+[leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+pp.unicode.fun = true
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "51e6992efd06126df61a496bebf8f49482a4e129"
+
+[[lean_lib]]
+name = "CollatzCoalescence"
+globs = ["CollatzCoalescence", "CollatzCoalescence.+"]
+
+# Palomar/Comparator layout: trusted definitions and statements, and their proofs from the library.
+[[lean_lib]]
+name = "Statement"
+
+[[lean_lib]]
+name = "Challenge"
+
+[[lean_lib]]
+name = "Solution"

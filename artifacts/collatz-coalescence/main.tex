@@ -1,0 +1,487 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1.1in]{geometry}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\PP}{\mathbb{P}}
+\title{Almost all consecutive integers have coalescing $3x+1$ trajectories}
+\author{Arthur M. Coll\'e \and Claude\thanks{Proofs, computations and the Lean development were produced by Claude (Anthropic) working with A.~M.~Coll\'e, who directed the work. The Lean statements have not yet had an independent human review.}}
+\date{2026-11-26}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Run the orbits of $n$ and $n+1$ under the shortcut Collatz map side by side for $k$ steps. We prove
+that the proportion of $n$ whose two orbits have not yet merged is of exact order $1/\sqrt k$: it
+lies between $c_1/\sqrt k$ and $c_2/\sqrt k$ for every $k\ge1$, and the same holds for $n$ and
+$n+m$. In particular almost all consecutive integers have coalescing trajectories; this is Gao's
+1993 conjecture, first proved by O.~J.~Said Duran in 2026, and the rate answers a question left
+open there: below $N$, the exceptions to Gao's conjecture number between $c_1N/\sqrt{\log_2N}$
+and $c_2N/\sqrt{\log_2N}$. For $x\mapsto x/2,\ (ax+1)/2$ with odd $a\ge5$ a fixed positive
+proportion of residue classes stays unmerged at every time, so merging with density one
+characterizes the multiplier $3$. The main
+statements are checked in Lean~4. Nothing here bears on the Collatz conjecture itself.
+\end{abstract}
+
+\section{Statement}
+Let $T(x)=x/2$ for even $x$ and $T(x)=(3x+1)/2$ for odd $x$, and let $C(x)=x/2$, resp.\ $3x+1$.
+For $k\ge0$ let
+\[
+C_k=\#\{\,0\le r<2^k:\ T^k(r+2^kq)=T^k(r+1+2^kq)\ \text{for all } q\ge0\,\}.
+\]
+The ratio $C_k/2^k$ is nondecreasing, and it is the natural density of
+$\{n: T^k(n)=T^k(n+1)\}$.
+
+\begin{theorem}\label{main}
+$C_k/2^k\to1$ as $k\to\infty$. More generally, for every $m\ge1$ the proportion of residues $r$
+modulo $2^k$ with $T^k(r+2^kq)=T^k(r+m+2^kq)$ for all $q\ge 0$ tends to $1$.
+\end{theorem}
+
+\begin{corollary}[Gao's conjecture]\label{gao}
+The set $\{n:\ C^{j}(n)=C^{j}(n+1)\text{ for some } j\le\log_2 n\}$ has natural density one.
+For every $L$, the set of $n$ for which $n,n+1,\dots,n+L$ have a common iterate at a common time
+has natural density one; for such $n$ these integers have equal total stopping times and equal
+heights whenever one of them reaches $1$.
+\end{corollary}
+
+G.-G.~Gao (\emph{Discrete Math.}\ 112 (1993), 261--267) conjectured the first statement and proved
+that the density is at least $0.389$, as recorded in Lagarias's annotated bibliography
+(arXiv:math/0309224, entry~68); OEIS A398792 records $C_{32}/2^{32}\approx0.4357$. The conjecture
+was first settled in the preprint of Said Duran cited above. We did not read Gao's paper. As far as
+that preprint's abstract shows, it treats the offset $m=1$; its Remark~3.7 and Section~7 say that its proof
+yields no useful rate. Whether general offsets or the values in Section~\ref{sec:checks} appear
+in its body we have not checked.
+
+\begin{theorem}[Rate]\label{rate}
+There are constants $0<c_1\le c_2$ such that for all $k\ge1$
+\[
+\frac{c_1}{\sqrt k}\ \le\ 1-\frac{C_k}{2^k}\ \le\ \frac{c_2}{\sqrt k},
+\]
+and one may take $c_1=\tfrac18$ (more precisely $1-C_k/2^k\ge 1/(4\sqrt{2k+2})$). The same two-sided
+bound holds, with constants depending on $m$, for the pair $n,n+m$ with any $m\ne0$.
+\end{theorem}
+The preprint of Said Duran cited above states that the true order of this quantity is not known
+and lists a rate as its first open question; its author's public research notes
+(\texttt{gaopendientes.md} in \texttt{github.com/theswordofthemorning/conjeturadecollazpython})
+record the order $1/\sqrt t$ as a heuristic from random-walk return times, ``not measured''.
+Theorem~\ref{rate} proves that order. We found no earlier proof (checked: that preprint, version~1;
+its two companion preprints; the author's two public repositories as of 23 November 2026; web
+searches), but have not seen the version under review at Qeios. The constant
+$c_2$ produced by the proof is not explicit in any useful sense; numerically
+$\sqrt k\,(1-C_k/2^k)\approx 11$ for $10^4\le k\le10^8$.
+
+\begin{theorem}[Exceptions to Gao's conjecture]\label{exc}
+There are constants $0<c_1\le c_2$ such that for every $N\ge4$
+\[
+\frac{c_1N}{\sqrt{\log_2N}}\ \le\ \#\{\,n<N:\ C^{j}(n)\ne C^{j}(n+1)\ \text{for all } j\le\log_2n\,\}\ \le\ \frac{c_2N}{\sqrt{\log_2N}} ,
+\]
+and the same holds with the shortcut map $T$ in place of $C$.
+\end{theorem}
+In Gao's notation this says $1-d(N)\asymp1/\sqrt{\log N}$.
+
+\begin{theorem}[Other multipliers]\label{five}
+Let $a\ge5$ be odd and $T_a(x)=x/2$ ($x$ even), $(ax+1)/2$ ($x$ odd). There is $\varepsilon>0$,
+depending on $a$, such that for every $k$ at most $(1-\varepsilon)2^k$ residues $r$ modulo $2^k$
+satisfy $T_a^k(r+2^kt)=T_a^k(r+1+2^kt)$ for all $t$. Consequently, for odd $a\ge3$, the proportion
+of merged classes tends to $1$ if and only if $a=3$.
+\end{theorem}
+So the density-one phenomenon of Theorem~\ref{main} characterizes the multiplier $3$: for $5x+1$,
+$7x+1$, \dots\ a fixed positive proportion of residue classes is still unmerged at every time $k$.
+(This is a statement about classes at each $k$. It does not exclude that an individual integer in
+an unmerged class meets its successor at some later time by coincidence.) Numerically the merged proportion
+levels off near $0.8\%$ for $a=5$, $10.7\%$ for $a=7$ and $0.2\%$ for $a=9$. No statement for all
+$n$ can hold even for $a=3$: the orbits of $3$ and $4$ never meet.
+
+\paragraph{Prior work and status.} Density one is not new. O.~J.~Said Duran, \emph{Consecutive integers
+coalesce with density one under the Collatz map: a formally verified proof of a conjecture of Gao}
+(Zenodo, 27 September 2026, doi:10.5281/zenodo.23003524; Lean sources at
+\texttt{github.com/theswordofthemorning/gao-palomar}) proves Corollary~\ref{gao} for $n,n+1$, by
+what its abstract describes as a Markov chain on pairs $\{v,3^kv+c\}$ driven by fair coins with a
+contraction of $\sqrt{|c|/3^k}$. The present note was written without knowledge of that preprint
+and found it only afterwards; it is an independent proof by the same basic device, and we have
+read only that preprint's abstract and repository page, not its proof. Checked by the Lean kernel
+(Section~\ref{sec:checks}): Theorem~\ref{main}, the first sentence of Corollary~\ref{gao} (for
+every offset $m$), Theorems~\ref{rate}, \ref{exc} and~\ref{five}. Paper proofs only: the remaining
+statements of Corollary~\ref{gao} (runs, stopping times, heights) and the remark that $C_k/2^k$
+is nondecreasing and equals a natural density. Theorems~\ref{rate}, \ref{exc} and~\ref{five} appear to be
+new: the first two answer a question that preprint leaves open (we have seen its version~1 only). Nothing here bears on the Collatz conjecture itself.
+
+\paragraph{Related work.} M.~V.~P.~Garcia and F.~A.~Tal (\emph{Acta Arith.}\ 90 (1999), 245--250)
+study generalized maps $x\mapsto x/d$ or $(mx-\pi(mx))/d$ and call two integers equivalent when
+their orbits agree at a common time, as here. Under the hypothesis $m<d^{d/(d-1)}$, which for
+$d=2$ singles out $m=3$, they prove that every set of representatives of the equivalence classes
+has Banach density zero (we know this result from Lagarias's bibliography, entry~69). The threshold
+is the same contraction condition as ours. Their theorem does not say which integers are
+equivalent to which, and gives no rate; Theorem~\ref{five} shows that beyond the threshold the
+conclusion for neighbours fails.
+
+\section{The pair chain}
+Extend $T$ to the $2$-adic integers $\Z_2$ with Haar measure. For $x\in\Z_2$ put
+$y_k=T^k(x)$, $z_k=T^k(x+m)$, and let $a_k,a'_k$ count the odd terms among $y_0,\dots,y_{k-1}$ and
+$z_0,\dots,z_{k-1}$. On the cylinder $x\equiv r \pmod{2^k}$ both are affine in $x$ with slopes
+$3^{a_k}/2^k$ and $3^{a'_k}/2^k$.
+
+Order the pair as $(p_k,q_k)$ so that $q_k$ has at least as many odd steps, let $d_k=|a'_k-a_k|$
+and $\mu_k=q_k-3^{d_k}p_k$; when $d_k=0$ choose the order with $\mu_k\ge0$. Then $\mu_k\in\Z$
+depends only on $r$, and the \emph{state} $X_k=(d_k,\mu_k)$ starts at $X_0=(0,m)$.
+
+\begin{lemma}[One step]\label{step}
+Let $c=p_k \bmod 2$. Then $X_{k+1}$ is obtained from $X_k=(d,\mu)$ by
+\[
+\begin{array}{lll}
+\mu\ \text{even:} & c=0:\ (d,\ \mu/2), & c=1:\ (d,\ (3\mu+1-3^d)/2),\\
+\mu\ \text{odd},\ d\ge1: & c=0:\ (d+1,\ (3\mu+1)/2), & c=1:\ (d-1,\ (\mu-3^{d-1})/2),\\
+\mu\ \text{odd},\ d=0: & c=0:\ (1,\ (3\mu+1)/2), & c=1:\ (1,\ (1-3\mu)/2),
+\end{array}
+\]
+followed by replacing $(0,\nu)$ with $(0,|\nu|)$. The coin $c$ is uniform and independent of
+$x \bmod 2^k$. The state $(0,0)$ is absorbing. On a cylinder, $y_k=z_k$ identically if and only if
+$X_k=(0,0)$; otherwise $y_k=z_k$ for at most one point of the cylinder.
+\end{lemma}
+\begin{proof}
+If $\mu$ is even, $p$ and $q=3^dp+\mu$ have equal parity and the same branch of $T$ applies:
+$q/2=3^d(p/2)+\mu/2$ and $(3q+1)/2=3^d\,(3p+1)/2+(3\mu+1-3^d)/2$. If $\mu$ is odd the parities
+differ. For $p$ even, $(3q+1)/2=3^{d+1}(p/2)+(3\mu+1)/2$. For $p$ odd and $d\ge1$,
+$q/2=3^{d-1}(3p+1)/2+(\mu-3^{d-1})/2$. For $p$ odd and $d=0$ the roles swap:
+$(3p+1)/2=3\,(q/2)+(1-3\mu)/2$. The parity of $p_k$ is uniform given $x\bmod 2^k$ because $p_k$ is
+affine in $t$, where $x=r+2^kt$, with odd slope. Finally $q_k-p_k=(3^d-1)p_k+\mu$ vanishes
+identically iff $d=0$ and $\mu=0$, and otherwise for at most one value of $p_k$.
+\end{proof}
+
+Hence $C_k$ is the number of coin words of length $k$ leading from $(0,1)$ to $(0,0)$, the two
+orbits have equally many odd steps on merged classes, and Theorem~\ref{main} is the statement that
+the chain is absorbed with probability one from $(0,m)$.
+
+\section{Every offset can merge}
+\begin{lemma}\label{offsets}
+From every state $(0,m)$, $m\ge1$, some coin word leads to $(0,0)$.
+\end{lemma}
+\begin{proof}
+Strong induction on $m$. If $m$ is even, coin $0$ leads to $(0,m/2)$. If $m$ is odd write
+$3m+1=2^js$ with $s$ odd. The word $0^j1$ gives
+$(0,m)\to(1,2^{j-1}s)\to\dots\to(1,s)\to(0,(s-1)/2)$, and $(s-1)/2\le(3m-1)/4<m$. If $s=1$ this is
+$(0,0)$.
+\end{proof}
+In terms of integers: for every $m\ge1$ there are $k,r$ with $T^k(r+2^kq)=T^k(r+m+2^kq)$ for all
+$q\ge0$.
+
+\section{A potential}
+Write $w(d,\mu)=|\mu|/3^d$, $a_0=\tfrac12$, $a_1=\tfrac32$, and $X\cdot c$ for the state after coin
+$c$.
+\begin{lemma}[Domination]\label{dom}
+$w(X\cdot c)\le a_c\,w(X)+\tfrac12$. If $X=(0,m)$ with $m$ odd then $w(X\cdot c)\le m/2+\tfrac16$
+for both coins.
+\end{lemma}
+\begin{proof} Divide the formulas of Lemma~\ref{step} by the new power of $3$. \end{proof}
+
+For $d\ge1$ let $e_d=v_2(3^d-1)$, so $1\le e_d<2d$, and
+\[
+\ell(d,\mu)=\#\{1\le j\le e_d:\ 2^j\mid\mu\}+[\,2^{e_d}\mid\mu\,],\qquad \ell(0,\mu)=0.
+\]
+\begin{lemma}\label{ell}
+For $d\ge1$: $0\le\ell(d,\mu)\le e_d+1\le2d$, $\ell(d,\mu)=0$ iff $\mu$ is odd, and for $\mu$ even
+\[
+\ell(d,\mu/2)+\ell\bigl(d,(3\mu+1-3^d)/2\bigr)\le 2\ell(d,\mu)-2 .
+\]
+\end{lemma}
+\begin{proof}
+Put $\nu=(3\mu+1-3^d)/2$. For $j<e_d$: $2^j\mid\mu/2$ and $2^j\mid\nu$ are both equivalent to
+$2^{j+1}\mid\mu$, since $2^{j+1}\mid 3^d-1$. The claim reduces to
+$[2^{e_d+1}\mid\mu]+[2^{e_d}\mid\nu]\le[2^{e_d}\mid\mu]$. If $2^{e_d}\nmid\mu$ then
+$2^{e_d}\nmid 3\mu-(3^d-1)$, so both terms on the left vanish. If $2^{e_d}\mid\mu$ the two terms
+cannot both be $1$, as that would give $2^{e_d+1}\mid 3^d-1$.
+\end{proof}
+
+Fix $\theta=\tfrac{19}{20}$, $\lambda=\tfrac{39}{40}$, $A=250000$, $M=4\cdot10^8$ and
+\[
+V(d,\mu)=\sqrt d+A(1-\lambda^d)+\frac{\theta^d}{\sqrt2}\,\ell(d,\mu)+\theta^d\sqrt{w(d,\mu)},\qquad
+F=\{(0,m):|m|\le M\}.
+\]
+\begin{proposition}\label{super}
+For every state $X\notin F$: $\ \tfrac12\bigl(V(X\cdot0)+V(X\cdot1)\bigr)\le V(X)$.
+\end{proposition}
+\begin{proof}
+Let $\rho=\tfrac12(\sqrt{1/2}+\sqrt{3/2})<1$. By Lemma~\ref{dom},
+$\sqrt{w(X\cdot c)}\le\sqrt{a_c}\sqrt{w(X)}+1/\sqrt2$.
+
+\emph{(i) $d\ge1$, $\mu$ even.} The level is unchanged. The last term of $V$ averages to at most
+$\rho\,\theta^d\sqrt w+\theta^d/\sqrt2$, and by Lemma~\ref{ell} the third term drops by at least
+$\theta^d/\sqrt2$.
+
+\emph{(ii) $d\ge1$, $\mu$ odd.} The children are at levels $d\pm1$ and $\ell(X)=0$. By concavity
+$\tfrac12(\sqrt{d+1}+\sqrt{d-1})\le\sqrt d$. The second term drops by exactly
+$A\lambda^{d-1}(1-\lambda)^2/2=A\lambda^{d-1}/3200$. The last term averages to at most
+\[
+\theta^d\sqrt w\cdot\tfrac12\bigl(\theta/\sqrt2+\sqrt{3/2}/\theta\bigr)+\frac{\theta^{d+1}+\theta^{d-1}}{2\sqrt2}
+\le\theta^d\sqrt w+\frac{\theta^{d-1}}{\sqrt2},
+\]
+because $\tfrac12(\theta/\sqrt2+\sqrt{3/2}/\theta)<0.981$. The third term averages to at most
+$\frac{1}{2\sqrt2}\bigl(2(d+1)\theta^{d+1}+2(d-1)\theta^{d-1}\bigr)\le 2d\,\theta^{d-1}/\sqrt2$.
+So it suffices that $(1+2d)\theta^{d-1}/\sqrt2\le A\lambda^{d-1}/3200$. By Bernoulli,
+$(\lambda/\theta)^{d-1}=(39/38)^{d-1}\ge1+(d-1)/38$, whence $(1+2d)\theta^{d-1}\le76\lambda^{d-1}$,
+and $76/\sqrt2<78.125=A/3200$.
+
+\emph{(iii) $d=0$, $\mu$ even, $m=|\mu|>M$.} The children are $(0,m/2)$ and $(0,3m/2)$, and
+$V$ averages to $\rho\sqrt m\le\sqrt m$.
+
+\emph{(iv) $d=0$, $\mu$ odd, $m=|\mu|>M$.} Both children are at level $1$ with $w\le m/2+\tfrac16$ and
+$\ell\le2$, so each has
+$V\le1+A/40+\sqrt2\,\theta+\theta(\sqrt{m/2}+1/\sqrt6)$. This is at most $\sqrt m$ because
+$\sqrt m\,(1-\theta/\sqrt2)\ge20000\cdot0.328>6253>1+A/40+\sqrt2\,\theta+\theta/\sqrt6$.
+\end{proof}
+
+\section{Proof of Theorem~\ref{main}}
+Let $\PP_X$ refer to the chain started at $X$.
+
+\begin{lemma}\label{hitF}
+For every $X$: $\PP_X(\text{the chain visits }F)\ge\tfrac12$.
+\end{lemma}
+\begin{proof}
+Let $X\notin F$, $\Lambda=4V(X)+1$ and $G=\{Y\notin F:\ V(Y)<\Lambda\}$. By
+Proposition~\ref{super}, $V$ stopped on leaving $G$ is a nonnegative supermartingale, so the
+probability of reaching $\{V\ge\Lambda\}$ before $F$ is at most $V(X)/\Lambda<\tfrac14$. It remains
+to see that the chain cannot stay in $G$ forever. There is $L=L(\Lambda)$ such that from every
+$Y\in G$ some word of length at most $L$ leaves $G$: at level $0$ use coin $0$ while $\mu$ is even
+(at most $2\log_2\Lambda$ times, since $\sqrt\mu<\Lambda$) and then any coin; at level $d\ge1$
+with $\mu$ even use the coin that lowers $\ell$ (Lemma~\ref{ell}; at most $2d$ times) and then,
+$\mu$ being odd, coin $0$, which raises the level. Once $d\ge\Lambda^2$ we have
+$V\ge\sqrt d\ge\Lambda$. Hence the probability of remaining in $G$ for $nL$ steps is at most
+$(1-2^{-L})^n\to0$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{main}]
+Let $u(X)$ be the probability that the chain from $X$ is never absorbed. By Lemma~\ref{offsets}
+each of the finitely many states of $F$ is absorbed with positive probability; let $c_0>0$ be the
+minimum. By Lemma~\ref{hitF} and the strong Markov property, $u(X)\le1-c_0/2$ for \emph{every}
+state $X$. Let $U=\sup_Xu(X)\le1-c_0/2<1$. The Markov property at time $j$ gives
+$u(X)=\mathbb E_X[u(X_j)]\le U\,\PP_X(X_j\ne(0,0))$, and letting $j\to\infty$,
+$u(X)\le U\,u(X)$. Therefore $u\equiv0$.
+\end{proof}
+
+\begin{proof}[Proof of Corollary~\ref{gao}]
+Given $\varepsilon$ choose $K$ with $C_K\ge(1-\varepsilon)2^K$. If $n$ lies in a merged class
+modulo $2^K$, then $T^K(n)=T^K(n+1)$ with the same number $a\le K$ of odd steps, so
+$C^{K+a}(n)=C^{K+a}(n+1)$ and $K+a\le2K\le\log_2n$ once $n\ge4^K$. The lower density is therefore
+at least $1-\varepsilon$. For runs apply Theorem~\ref{main} to $m=1,\dots,L$ and intersect.
+\end{proof}
+
+\section{The rate}
+\begin{proof}[Proof of Theorem~\ref{rate}, lower bound]
+Absorption happens only by coin $1$ at the state $(1,1)$. The words beginning $1,0$ lead
+$(0,1)\to(1,-1)\to(2,-1)$. From then on the level moves by $\pm1$ with fair independent coins at
+the steps where $\mu$ is odd, and is constant otherwise. If the first $k$ of these moves keep the
+level at least $2$, the chain is not absorbed by time $k$. A simple random walk stays nonnegative
+for $k$ steps with probability $\binom{k}{\lfloor k/2\rfloor}2^{-k}\ge1/\sqrt{2k+2}$, and the first two coins cost a factor $\tfrac14$.
+\end{proof}
+
+For the upper bound let $\Gamma_2=V-\sqrt d$ and $\Gamma=d+\Gamma_2$, with $V$, $F$ as in
+Section~4, and let $\tau_F$ be the first time the chain is in $F$.
+
+\begin{lemma}\label{gam}
+$\Gamma_2\ge0$. Off level $0$, $\Gamma_2$ is superharmonic; at level $0$ outside $F$ its average
+over the two children is at most $\Gamma_2-1$, and at most $\Gamma_2-24$ when $\mu$ is odd. Hence
+$\Gamma$ is superharmonic outside $F$.
+\end{lemma}
+\begin{proof}
+These are the computations of Proposition~\ref{super} without the concavity step; the slack in
+cases (iii) and (iv) there is at least $680$ and $300$ respectively.
+\end{proof}
+
+\begin{lemma}[Time below level $L$]\label{ql}
+Put $\hat e_0=0$, $\hat e_j=e_j$ for $j\ge1$, $E_2(n)=\sum_{j<n}(n-j)\hat e_j$, and for $L\ge1$
+\[
+q_L(d)=(8L+14)d+6-2d^2-E_2(d+1)-E_2(d-1),\qquad Q_L=q_L(d)+\ell+L\,\Gamma_2 .
+\]
+Then $Q_L\ge0$ on levels $d\le L$, $Q_L\le(8L+16)d+6+L\Gamma_2$, and for every state outside $F$
+of level $d<L$ the average of $Q_L$ over the two children is at most $Q_L-1$. Consequently the
+expected time before the chain either visits $F$ or reaches level $L$ is at most $Q_L$.
+\end{lemma}
+\begin{proof}
+$E_2$ has second difference $\hat e$, so $q_L(d+1)+q_L(d-1)-2q_L(d)=-4-\hat e_{d+1}-\hat e_{d-1}$.
+Since $e_j=1$ for odd $j$ and $e_j=2+v_2(j)$ for even $j$, $\sum_{j\le d}\hat e_j\le3d$, whence
+$E_2(d+1)\le3d(d+1)$ and $q_L(d)\ge6$ for $d\le L$. At a step with $\mu$ even above level $0$,
+$\ell$ drops by one on average (Lemma~\ref{ell}) and nothing else rises. At a step with $\mu$ odd
+above level $0$, $\ell$ rises from $0$ to at most $\tfrac12(\hat e_{d+1}+\hat e_{d-1})+1$ on
+average, which the second difference of $q_L$ pays for with $1$ to spare. At level $0$ the term
+$L\Gamma_2$ pays, by Lemma~\ref{gam}: $L\ge1$ when $\mu$ is even, and $24L\ge q_L(1)-q_L(0)+3$
+when $\mu$ is odd.
+\end{proof}
+
+\begin{lemma}[Hitting time of $F$]\label{tail}
+For every state $X$ and $t\ge1$:
+$\ \PP_X(\tau_F>t)\le\bigl(33d+6+3\Gamma_2(X)\bigr)/\sqrt t$.
+\end{lemma}
+\begin{proof}
+Let $L=\lceil\sqrt t\rceil$. By the maximal inequality for $\Gamma\ge d$ (Lemma~\ref{gam}) the
+chain reaches level $L$ before $F$ with probability at most $\Gamma(X)/L$. Otherwise it stays below
+level $L$ and outside $F$ for $t$ steps, which by Lemma~\ref{ql} and Markov's inequality has
+probability at most $Q_L(X)/t$. Use $\sqrt t\le L\le2\sqrt t$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{rate}, upper bound]
+There are $K_0$ and $c_0>0$ such that from every state of $F$ the chain is absorbed within $K_0$
+steps with probability at least $c_0$ (Lemma~\ref{offsets}; $F$ is finite). Let $R$ be the finite
+set of states reachable from $F$ in exactly $K_0$ steps, $G_0$ the maximum over $R$ of the
+numerator in Lemma~\ref{tail}, and $H(t)$ the maximum over $R$ of the probability of not being
+absorbed by time $t$. Splitting at $\tau_F$ and using the Markov property $K_0$ steps later,
+\[
+H(s+K_0+r)\ \le\ \frac{G_0}{\sqrt s}+(1-c_0)\,H(r).
+\]
+With $s=\lceil c_0t/2\rceil$ and $r=t-s-K_0\ge(1-c_0)t$ for large $t$, induction on $t$ gives
+$H(t)\le B/\sqrt t$ as soon as $B(1-\sqrt{1-c_0})\ge G_0\sqrt{2/c_0}$. The start $(0,1)$ lies in
+$F$, so one more application of the Markov property finishes.
+\end{proof}
+
+\begin{remark}
+The argument uses the contraction $\tfrac12(\log\tfrac12+\log\tfrac32)<0$ through $\rho<1$ and the
+existence of $\theta<1$, and the arithmetic of the $+1$ only through Lemmas~\ref{offsets}
+and~\ref{ell}. It gives the same conclusion for $(3x-1)/2$, which is conjugate by $x\mapsto-x$. For
+$(5x+1)/2$ the corresponding recursion expands on average, and the conclusion fails
+(Theorem~\ref{five}).
+\end{remark}
+
+\section{Exceptions to Gao's conjecture}
+\begin{lemma}[No accidental meeting]\label{noacc}
+If $2^k\le n$ and $T^k(n)=T^k(n+1)$, then the two orbits have the same number of odd terms among
+their first $k$, and the whole class of $n$ modulo $2^k$ has merged at time $k$.
+\end{lemma}
+\begin{proof}
+Write $2^kT^k(x)=3^{a}x+\beta$ with $a$ the number of odd steps; by induction
+$0\le\beta\le(3^a-2^a)2^{k-a}$. If $n+1$ had more odd steps than $n$, then
+$3^{a+1}(n+1)\le3^an+3^a2^{k-a}$, so $n<2^k$. If it had fewer, $3^{a}n\le3^{a-1}(n+1)+3^{a-1}2^{k}$,
+so $2n\le1+2^k$. Both contradict $2^k\le n$ (for $k=0$ the hypothesis is void). With equal counts
+the two affine maps on the class have the same slope $3^a/2^k$ and agree at $n$, so they agree.
+\end{proof}
+The same computation for $C$, where $2^{h}C^j(x)=3^ax+\beta$ with $h=j-a$ halvings and
+$2\beta\le(3^a-1)2^h$, shows that a meeting $C^j(n)=C^j(n+1)$ with $2^j\le n$ has equal odd counts.
+A $C$-time $j$ either sits at a shortcut time $k$ or is one halving short of one; with equal odd
+counts the two orbits are in step, so they meet at a common shortcut time $k\le j$.
+
+\begin{proof}[Proof of Theorem~\ref{exc}]
+\emph{Lower bound.} Let $J=\lfloor\log_2N\rfloor$. If $n<2^J$ lies in a class modulo $2^J$ that has
+not merged at time $J$, then $n$ is an exception: a meeting at some $k$ with $2^k\le n<2^J$ would,
+by Lemma~\ref{noacc}, merge the class modulo $2^k$, hence modulo $2^J$. By Theorem~\ref{rate} there
+are at least $c_12^J/\sqrt J\ge c_1N/(2\sqrt J)$ such $n$.
+\emph{Upper bound.} Let $K=\lfloor J/8\rfloor$. If $n\ge4^K$ lies in a class that has merged at
+time $K$, with $a\le K$ odd steps, then $C^{K+a}(n)=C^{K+a}(n+1)$ and $2^{K+a}\le4^K\le n$. So an
+exception is below $4^K\le N^{1/4}$ or lies in one of at most $c_22^K/\sqrt K$ unmerged classes
+modulo $2^K$, each of which has at most $N/2^K+1$ members below $N$.
+\end{proof}
+
+\section{Other multipliers}\label{sec:five}
+Let $a\ge5$ be odd and $T_a(x)=x/2$, $(ax+1)/2$. Lemma~\ref{step} holds with $3$ replaced by $a$:
+the state $(d,\mu)$ now means $q=a^dp+\mu$. Put $w=|\mu|/a^d$, $c_d=1+(2/3)^d$ and
+\[
+\varphi(d,\mu)=\min\Bigl(1,\ c_d\,(8/w)^{1/4}\Bigr),\qquad \varphi=1\ \text{when}\ \mu=0 .
+\]
+\begin{lemma}\label{phi}
+For every odd $a\ge5$, $\varphi$ is superharmonic at \emph{every} state:
+$\tfrac12(\varphi(X\cdot0)+\varphi(X\cdot1))\le\varphi(X)$.
+\end{lemma}
+\begin{proof}
+If $\varphi(X)=1$ there is nothing to prove. Otherwise $w>8c_d^4\ge8$, and dividing the formulas of
+Lemma~\ref{step} by the new power of $a$ gives, with $\sigma=\tfrac{39}{40}$: a child reached by coin
+$0$ has $w'\ge w/2-1/(2a)\ge\sigma w/2$, a child reached by coin $1$ has
+$w'\ge(aw-1)/2\ge\sigma\,5w/2$, except that at level $0$ with $\mu$ odd both children are at level
+$1$ with $w'\ge\sigma w/2$. Since $\varphi\le c_{d'}(8/w')^{1/4}$ at each child, it suffices that,
+with $\alpha=2^{1/4}$, $\beta=(2/5)^{1/4}$, $\kappa=\sigma^{-1/4}$ and $r=\tfrac23$,
+\[
+\kappa(\alpha+\beta)\le2,\qquad \kappa(\alpha r^2+\beta)\le2r,\qquad \kappa\,\alpha\,c_1\le c_0 .
+\]
+The first handles steps with $\mu$ even, the first two together steps with $\mu$ odd above level
+$0$ (the levels are $d\pm1$), the third the step from level $0$. They hold because
+$\alpha\le1.1893$, $\beta\le0.7953$, $\kappa\le1.0064$.
+\end{proof}
+The point of the weights $c_d$ is that a constant solves the level recursion with room to spare,
+so $c_d\ge1$ and the set where $\varphi<1$ lies inside $\{w>8\}$ at every level; there the additive
+terms of the chain are negligible.
+
+\begin{proof}[Proof of Theorem~\ref{five}]
+A superharmonic $\varphi\ge0$ with $\varphi(0,0)=1$ bounds the absorption probability from every
+state, so it suffices to reach, with positive probability, a state where $\varphi<1$. Follow the
+word $1,1,1,\dots$ from $(0,1)$. It stays among the states $(0,m)$, $m\ge1$, and $(1,\mu)$,
+$\mu\le-1$, and within two steps the size $|\mu|$ grows by at least one: $(0,m)$ goes to
+$(0,am/2)$ or to $(1,-(am-1)/2)$; $(1,\mu)$ with $\mu$ even goes to $(1,-(a|\mu|+a-1)/2)$; and
+$(1,\mu)$ with $\mu$ odd goes to $(0,(|\mu|+1)/2)$ and then to a state of size at least
+$(a(|\mu|+1)-2)/4\ge|\mu|+1$. So some state at level at most $1$ with $w\ge648$ is reached, where
+$\varphi\le2\,(8/648)^{1/4}=\tfrac23$. For $a=3$ the proportion tends to $1$ by Theorem~\ref{main}.
+\end{proof}
+
+\section{Exact values and checks}\label{sec:checks}
+The chain turns $C_k$ into a transfer computation with about $1.59^k$ states instead of $2^k$
+residues. A forward pass to depth $42$ joined with a backward pass of depth $24$ gives every $C_k$
+for $k\le66$ (\texttt{compute/pairchain.cpp}, about one minute and $20$\,GB).
+\[
+\begin{array}{rrl}
+k & C_k & C_k/2^k\\\hline
+25 & 14030369 & 0.418138\\
+32 & 1871137623 & 0.435658\\
+40 & 496587379326 & 0.451644\\
+50 & 526795653639168 & 0.467889\\
+60 & 555030220058374659 & 0.481412\\
+66 & 36051385938701759737 & 0.488587
+\end{array}
+\]
+The values agree with the project's earlier exhaustive ledger for $k\le25$, with the $2^{32}$
+figure on OEIS, with a Python implementation of the backward pass for $k\le30$, and across three
+machines and two architectures using different split depths ($42$ and $39$) for $k\le61$. Monte
+Carlo runs of the chain with exact arithmetic (\texttt{mc\_pairchain.py}) left $1.107\%\pm0.014\%$
+of $6\cdot10^5$ paths unabsorbed at $k=10^6$ and $0.13\%\pm0.02\%$ of $4\cdot10^4$ paths at $k=10^8$;
+the unabsorbed fraction is close to $11/\sqrt k$ from $k=10^4$ on, the order of
+Theorem~\ref{rate}.
+
+\medskip\noindent\textbf{Lean.} \texttt{CollatzCoalescence/} (Lean 4.33.0-rc2, Mathlib
+\texttt{51e6992}; about 7000 lines; no \texttt{sorry}, no added axioms, no \texttt{native\_decide}).
+\texttt{lake build} succeeds, and the concatenated sources were replayed on a second machine
+against a separately built Mathlib. \texttt{\#print axioms} reports only \texttt{propext},
+\texttt{Classical.choice}, \texttt{Quot.sound} for:
+\begin{itemize}\itemsep0pt
+\item \texttt{gao\_conjecture}: for every $\varepsilon>0$ and all large $N$, at least
+$(1-\varepsilon)N$ of the $n<N$ have $C^{j}(n)=C^{j}(n+1)$ for some $j$ with $2^j\le n$
+(\texttt{Gao.lean}; \texttt{coalescence\_density\_one\_log} is the same for $n,n+m$);
+\item \texttt{coalescence\_density\_one}, \texttt{offset\_classes},
+\texttt{merged\_proportion\_tendsto}: Theorem~\ref{main} (\texttt{Main.lean});
+\item \texttt{every\_offset\_merges}, \texttt{offset\_absorbable}: Lemma~\ref{offsets};
+\texttt{step\_rel}, \texttt{card\_merged\_succ}: Lemma~\ref{step} and the count;
+\texttt{V\_superharmonic}: Proposition~\ref{super}; \texttt{escape} and
+\texttt{G2\_lyapunov\_hitting}: Lemma~\ref{hitF}.
+\end{itemize}
+\texttt{neighbour\_merge\_rate} (\texttt{RateMain.lean}) is Theorem~\ref{rate}: constants
+$0<c_1,c_2$ with $c_1 2^k/\sqrt k\le 2^k-C_k\le c_2 2^k/\sqrt k$ for all $k\ge1$; its inputs are
+\texttt{survival\_lower}, \texttt{Gam\_super}, \texttt{QL\_step}, \texttt{one\_sub\_hit\_le} and
+\texttt{survival\_rate\_of\_renewal}. \texttt{unmerged\_density\_rate} (\texttt{RateDensity.lean})
+restates it for integers: for each $k\ge1$ the set of $n$ with $T^k(n)\ne T^k(n+1)$ has lower and
+upper natural density between $c_1/\sqrt k$ and $c_2/\sqrt k$. \texttt{offset\_merge\_rate} (\texttt{RateOffsets.lean}) is the
+same two-sided bound for $n,n+m$, $m\ne0$; its upper bound holds from every state of the chain.
+\texttt{gao\_exceptions\_rate} and \texttt{gao\_exceptions\_rate\_T} (\texttt{GaoRateC.lean},
+\texttt{GaoRateT.lean}) are Theorem~\ref{exc}; \texttt{class\_merged\_of\_meet} and
+\texttt{Tn\_meet\_of\_Cn\_meet} are Lemma~\ref{noacc} and its $C$ form.
+\texttt{odd\_merged\_bounded} and \texttt{merged\_fraction\_tendsto\_one\_iff}
+(\texttt{MultGeneral.lean}, \texttt{MultIff.lean}) are Theorem~\ref{five}; the chain, its link to
+residue classes and Lemma~\ref{phi} are \texttt{MultChain.lean}, \texttt{MultLink.lean},
+\texttt{MultPotential.lean}, \texttt{MultGeneral.lean}. \texttt{three\_four\_never} (\texttt{Examples.lean}): the orbits of $3$
+and $4$ never meet.
+
+An adversarial audit of the statements by a separate agent, which did not write them, found that
+each Lean statement matches its claim (it re-derived $C_1,\dots,C_{10}$ in the kernel from the
+statement of the rate theorem, checked equivalence of the integer and natural-number forms, and
+tested deliberately wrong variants); it also found the overclaim about Corollary~\ref{gao} that is
+corrected above. A second audit of the same kind covered the statements of Theorems~\ref{exc} and~\ref{five} and
+the every-offset rate, again with no defect; it recomputed merged counts for $a=3,5,7$ and
+exception counts up to $N=4096$ from the statements. Both audits note that the normalized counts
+are still rising at every size they could reach, so the square-root rates rest on the proofs and
+not on numerical evidence at small sizes. No human other than the authors has read the statements.
+
+The claims of \texttt{Challenge.lean} were also put through the Palomar registry's acceptance check
+in a clean Linux VM (\texttt{leanprover/comparator} with \texttt{lean4export}, the independent
+\texttt{nanoda} kernel and the \texttt{landrun} sandbox): each \texttt{Solution} theorem has exactly
+the statement of its \texttt{Challenge} namesake, uses only the three standard axioms, and replays
+in both kernels (``Your solution is okay!''; log in \texttt{comparator-check.log}). Before formalization,
+Proposition~\ref{super} was also checked numerically on $2.4\cdot10^5$ states.
+\end{document}

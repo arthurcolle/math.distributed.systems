@@ -1,0 +1,185 @@
+\documentclass[10pt]{article}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{fontspec}
+\usepackage{fvextra}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\setmonofont{Menlo}[Scale=0.72]
+\usepackage{newunicodechar}
+\newfontfamily\symfallback{STIX Two Math}[Scale=0.72]
+\newunicodechar{∣}{{\symfallback ∣}}
+\newunicodechar{∤}{{\symfallback ∤}}
+\newunicodechar{⊢}{{\symfallback ⊢}}
+\newunicodechar{⋃}{{\symfallback ⋃}}
+\newunicodechar{ℓ}{{\symfallback ℓ}}
+\newunicodechar{𝓝}{{\symfallback 𝓝}}
+\newunicodechar{ℹ}{i}
+\fvset{breaklines=true,breakanywhere=true,fontsize=\small}
+\title{Collatz neighbour mergers: Lean verification record}
+\author{Arthur M. Coll\'e \and Claude}
+\date{2026-11-26}
+\begin{document}
+\maketitle
+\noindent This record accompanies \texttt{main.pdf}. It contains the trusted statements, the output of the
+reproduction script, and the complete Lean sources. Toolchain: \texttt{leanprover/lean4:v4.33.0-rc2}, Mathlib
+\texttt{51e6992efd06126df61a496bebf8f49482a4e129}. SHA-256 of the output of
+\texttt{shasum -a 256 CollatzCoalescence/*.lean CollatzCoalescence.lean Statement.lean Challenge.lean Solution.lean}:
+\begin{Verbatim}
+54a6df2490749d28ec2545caa2aa3e8a4cdd3b647504249a83f73174a54916b6
+\end{Verbatim}
+The library contains no \texttt{sorry}, no added axioms, no \texttt{native\_decide} and no \texttt{set\_option};
+\texttt{Challenge.lean} states the claims with \texttt{sorry} by design. Density one for $n,n+1$ was first proved by
+O.~J.~Said Duran (doi:10.5281/zenodo.23003524); the rate theorems and the theorem on other multipliers are, to our knowledge, new.
+
+\section{Trusted statements}
+\texttt{Statement.lean} (definitions, Mathlib only) and \texttt{Challenge.lean} (the claims). \texttt{Solution.lean}
+proves each claim, with the identical statement, from the library.
+\VerbatimInput[numbers=left,numbersep=4pt]{Statement.lean}
+\VerbatimInput[numbers=left,numbersep=4pt]{Challenge.lean}
+\VerbatimInput[numbers=left,numbersep=4pt]{Solution.lean}
+
+\section{Files}
+\begin{center}\begin{tabular}{llr}\toprule
+File & Content & Lines\\\midrule
+\texttt{Defs.lean} & shortcut map, pair states, one-step function & 73\\
+\texttt{Chain.lean} & one step of the pair chain; domination inequality & 262\\
+\texttt{Offsets.lean} & every offset merges on a full residue class (naturals) & 157\\
+\texttt{Bridge.lean} & integers versus naturals & 27\\
+\texttt{PotentialDefs.lean} & the potential $V$ and the finite set $F$ & 48\\
+\texttt{Ell.lean} & the even-phase potential $\ell$ & 210\\
+\texttt{Potential.lean} & $V$ is superharmonic off $F$ & 395\\
+\texttt{Escape.lean} & escape from sublevel sets of $V$ & 161\\
+\texttt{Generic.lean} & potential theory by induction for coin-driven systems & 573\\
+\texttt{Assembly.lean} & absorption with probability tending to one & 53\\
+\texttt{OffsetsChain.lean} & every state $(0,\mu)$ can be absorbed & 114\\
+\texttt{Link.lean} & merged residue classes are counted by the chain & 362\\
+\texttt{Density.lean} & residue classes to natural density & 95\\
+\texttt{Main.lean} & density one for $n,n+m$ (shortcut map) & 112\\
+\texttt{Gao.lean} & Gao's form: the $3n+1$ map with at most $\log_2 n$ steps & 213\\
+\texttt{RatePotentials.lean} & the potentials $\Gamma_2$ and $\Gamma$ & 275\\
+\texttt{RateTime.lean} & expected time below level $L$ & 409\\
+\texttt{RateGeneric.lean} & hitting-time tail and renewal lemma & 272\\
+\texttt{RateLower.lean} & lower bound $1/(4\sqrt{2k+2})$ & 290\\
+\texttt{RateMain.lean} & the rate theorem & 178\\
+\texttt{RateDensity.lean} & the rate as a natural density of integers & 219\\
+\texttt{RateOffsets.lean} & the rate for every offset $m\ne0$ & 194\\
+\texttt{GaoRateT.lean} & exceptions to Gao's conjecture, shortcut map & 363\\
+\texttt{GaoRateC.lean} & exceptions to Gao's conjecture, $3n+1$ map & 380\\
+\texttt{MultDefs.lean} & the pair chain for a general odd multiplier & 73\\
+\texttt{MultChain.lean} & one step and size bounds, general multiplier & 366\\
+\texttt{MultLink.lean} & merged classes counted by the chain, general multiplier & 319\\
+\texttt{MultPotential.lean} & the potential $\varphi$ for $5x+1$ & 278\\
+\texttt{MultMain.lean} & the $5x+1$ theorem & 48\\
+\texttt{MultGeneral.lean} & every odd multiplier $a\ge5$ & 367\\
+\texttt{MultIff.lean} & merging tends to $1$ iff $a=3$ & 38\\
+\texttt{Examples.lean} & the orbits of 3 and 4 never meet & 46\\
+\midrule total & & 6970\\
+\bottomrule\end{tabular}\end{center}
+
+\section{Output of \texttt{check.sh}}
+The script scans for forbidden constructs, runs \texttt{lake build}, and prints the definitions, the headline
+statements and their axioms.
+\VerbatimInput{check_out.txt}
+
+\section{Output of the Comparator acceptance check}
+Run in a clean Linux VM; both the \texttt{nanoda} kernel and the Lean kernel accept the nine claims.
+\VerbatimInput{comparator-check.log}
+
+\section{Library sources}
+\subsection{\texttt{Defs.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Defs.lean}
+
+\subsection{\texttt{Chain.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Chain.lean}
+
+\subsection{\texttt{Offsets.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Offsets.lean}
+
+\subsection{\texttt{Bridge.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Bridge.lean}
+
+\subsection{\texttt{PotentialDefs.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/PotentialDefs.lean}
+
+\subsection{\texttt{Ell.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Ell.lean}
+
+\subsection{\texttt{Potential.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Potential.lean}
+
+\subsection{\texttt{Escape.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Escape.lean}
+
+\subsection{\texttt{Generic.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Generic.lean}
+
+\subsection{\texttt{Assembly.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Assembly.lean}
+
+\subsection{\texttt{OffsetsChain.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/OffsetsChain.lean}
+
+\subsection{\texttt{Link.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Link.lean}
+
+\subsection{\texttt{Density.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Density.lean}
+
+\subsection{\texttt{Main.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Main.lean}
+
+\subsection{\texttt{Gao.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Gao.lean}
+
+\subsection{\texttt{RatePotentials.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/RatePotentials.lean}
+
+\subsection{\texttt{RateTime.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/RateTime.lean}
+
+\subsection{\texttt{RateGeneric.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/RateGeneric.lean}
+
+\subsection{\texttt{RateLower.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/RateLower.lean}
+
+\subsection{\texttt{RateMain.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/RateMain.lean}
+
+\subsection{\texttt{RateDensity.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/RateDensity.lean}
+
+\subsection{\texttt{RateOffsets.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/RateOffsets.lean}
+
+\subsection{\texttt{GaoRateT.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/GaoRateT.lean}
+
+\subsection{\texttt{GaoRateC.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/GaoRateC.lean}
+
+\subsection{\texttt{MultDefs.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/MultDefs.lean}
+
+\subsection{\texttt{MultChain.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/MultChain.lean}
+
+\subsection{\texttt{MultLink.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/MultLink.lean}
+
+\subsection{\texttt{MultPotential.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/MultPotential.lean}
+
+\subsection{\texttt{MultMain.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/MultMain.lean}
+
+\subsection{\texttt{MultGeneral.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/MultGeneral.lean}
+
+\subsection{\texttt{MultIff.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/MultIff.lean}
+
+\subsection{\texttt{Examples.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Examples.lean}
+
+\end{document}

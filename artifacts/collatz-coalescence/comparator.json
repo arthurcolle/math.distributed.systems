@@ -1,0 +1,22 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "Solution.neighbour_merge_rate",
+    "Solution.offset_merge_rate",
+    "Solution.unmerged_density_rate",
+    "Solution.coalescence_density_one_log",
+    "Solution.every_offset_merges",
+    "Solution.gao_exceptions_rate",
+    "Solution.gao_exceptions_rate_T",
+    "Solution.odd_merged_bounded",
+    "Solution.merged_fraction_tendsto_one_iff"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": true
+}
