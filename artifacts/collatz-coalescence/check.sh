@@ -25,8 +25,10 @@ open Coalescence
 #print axioms survival_lower
 #check @unmerged_density_rate
 #print axioms unmerged_density_rate
+#check @offset_merge_rate
+#print axioms offset_merge_rate
 LEAN
 lake env lean "$tmp/Audit.lean" | tee "$tmp/out.txt"
 if grep -q -E 'sorryAx|ofReduceBool' "$tmp/out.txt"; then echo "NON-STANDARD AXIOM"; exit 1; fi
 n=$(grep -c 'depends on axioms: \[propext, Classical.choice, Quot.sound\]' "$tmp/out.txt")
-[ "$n" = 8 ] && echo "OK: 8 headline theorems, standard axioms only" || { echo "UNEXPECTED AXIOM OUTPUT"; exit 1; }
+[ "$n" = 9 ] && echo "OK: 9 headline theorems, standard axioms only" || { echo "UNEXPECTED AXIOM OUTPUT"; exit 1; }

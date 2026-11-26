@@ -16,17 +16,15 @@
 \begin{document}
 \maketitle
 
-\noindent\textbf{Status.} Not a first proof. O.~J.~Said Duran, \emph{Consecutive integers
-coalesce with density one under the Collatz map: a formally verified proof of a conjecture of Gao}
-(Zenodo, 27 September 2026, doi:10.5281/zenodo.23003524; Lean sources at
-\texttt{github.com/theswordofthemorning/gao-palomar}) proves Corollary~\ref{gao} for $n,n+1$, by
-what its abstract describes as a Markov chain on pairs $\{v,3^kv+c\}$ driven by fair coins with a
-contraction of $\sqrt{|c|/3^k}$. The present note was written without knowledge of that preprint
-and found it only afterwards; it is an independent proof by the same basic device, and we have
-read only that preprint's abstract and repository page, not its proof. Theorem~\ref{main},
-Corollary~\ref{gao} and Theorem~\ref{rate} below are checked by the Lean kernel
-(Section~\ref{sec:checks}). Theorem~\ref{rate} appears to be new: it answers a question that
-preprint leaves open (we have seen its version~1 only). Nothing here bears on the Collatz conjecture itself.
+\begin{abstract}
+Run the orbits of $n$ and $n+1$ under the shortcut Collatz map side by side for $k$ steps. We prove
+that the proportion of $n$ whose two orbits have not yet merged is of exact order $1/\sqrt k$: it
+lies between $c_1/\sqrt k$ and $c_2/\sqrt k$ for every $k\ge1$, and the same holds for $n$ and
+$n+m$. In particular almost all consecutive integers have coalescing trajectories; this is Gao's
+1993 conjecture, first proved by O.~J.~Said Duran in 2026, and the rate answers a question left
+open there. Every statement is checked in Lean~4. Nothing here bears on the Collatz conjecture
+itself.
+\end{abstract}
 
 \section{Statement}
 Let $T(x)=x/2$ for even $x$ and $T(x)=(3x+1)/2$ for odd $x$, and let $C(x)=x/2$, resp.\ $3x+1$.
@@ -62,7 +60,8 @@ There are constants $0<c_1\le c_2$ such that for all $k\ge1$
 \[
 \frac{c_1}{\sqrt k}\ \le\ 1-\frac{C_k}{2^k}\ \le\ \frac{c_2}{\sqrt k},
 \]
-and one may take $c_1=\tfrac18$ (more precisely $1-C_k/2^k\ge 1/(4\sqrt{2k+2})$).
+and one may take $c_1=\tfrac18$ (more precisely $1-C_k/2^k\ge 1/(4\sqrt{2k+2})$). The same two-sided
+bound holds, with constants depending on $m$, for the pair $n,n+m$ with any $m\ne0$.
 \end{theorem}
 The preprint of Said Duran cited above states that the true order of this quantity is not known
 and lists a rate as its first open question; its author's public research notes
@@ -73,6 +72,18 @@ its two companion preprints; the author's two public repositories as of 23 Novem
 searches), but have not seen the version under review at Qeios. The constant
 $c_2$ produced by the proof is not explicit in any useful sense; numerically
 $\sqrt k\,(1-C_k/2^k)\approx 11$ for $10^4\le k\le10^8$.
+
+\paragraph{Prior work and status.} Density one is not new. O.~J.~Said Duran, \emph{Consecutive integers
+coalesce with density one under the Collatz map: a formally verified proof of a conjecture of Gao}
+(Zenodo, 27 September 2026, doi:10.5281/zenodo.23003524; Lean sources at
+\texttt{github.com/theswordofthemorning/gao-palomar}) proves Corollary~\ref{gao} for $n,n+1$, by
+what its abstract describes as a Markov chain on pairs $\{v,3^kv+c\}$ driven by fair coins with a
+contraction of $\sqrt{|c|/3^k}$. The present note was written without knowledge of that preprint
+and found it only afterwards; it is an independent proof by the same basic device, and we have
+read only that preprint's abstract and repository page, not its proof. Theorem~\ref{main},
+Corollary~\ref{gao} and Theorem~\ref{rate} below are checked by the Lean kernel
+(Section~\ref{sec:checks}). Theorem~\ref{rate} appears to be new: it answers a question that
+preprint leaves open (we have seen its version~1 only). Nothing here bears on the Collatz conjecture itself.
 
 \section{The pair chain}
 Extend $T$ to the $2$-adic integers $\Z_2$ with Haar measure. For $x\in\Z_2$ put
@@ -322,7 +333,7 @@ the unabsorbed fraction is close to $11/\sqrt k$ from $k=10^4$ on, the order of
 Theorem~\ref{rate}.
 
 \medskip\noindent\textbf{Lean.} \texttt{CollatzCoalescence/} (Lean 4.33.0-rc2, Mathlib
-\texttt{51e6992}; about 4500 lines; no \texttt{sorry}, no added axioms, no \texttt{native\_decide}).
+\texttt{51e6992}; about 4700 lines; no \texttt{sorry}, no added axioms, no \texttt{native\_decide}).
 \texttt{lake build} succeeds, and the concatenated sources were replayed on a second machine
 against a separately built Mathlib. \texttt{\#print axioms} reports only \texttt{propext},
 \texttt{Classical.choice}, \texttt{Quot.sound} for:
@@ -342,7 +353,8 @@ $0<c_1,c_2$ with $c_1 2^k/\sqrt k\le 2^k-C_k\le c_2 2^k/\sqrt k$ for all $k\ge1$
 \texttt{survival\_lower}, \texttt{Gam\_super}, \texttt{QL\_step}, \texttt{one\_sub\_hit\_le} and
 \texttt{survival\_rate\_of\_renewal}. \texttt{unmerged\_density\_rate} (\texttt{RateDensity.lean})
 restates it for integers: for each $k\ge1$ the set of $n$ with $T^k(n)\ne T^k(n+1)$ has lower and
-upper natural density between $c_1/\sqrt k$ and $c_2/\sqrt k$.
+upper natural density between $c_1/\sqrt k$ and $c_2/\sqrt k$. \texttt{offset\_merge\_rate} (\texttt{RateOffsets.lean}) is the
+same two-sided bound for $n,n+m$, $m\ne0$; its upper bound holds from every state of the chain.
 The statements were read by their author only; no independent statement review and no second
 proof checker has been run. Before formalization,
 Proposition~\ref{super} was also checked numerically on $2.4\cdot10^5$ states.

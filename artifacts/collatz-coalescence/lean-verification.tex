@@ -23,9 +23,9 @@
 \noindent This record accompanies \texttt{main.pdf}. It contains the checked statements, the output of the
 reproduction script, and the complete Lean sources. Toolchain: \texttt{leanprover/lean4:v4.33.0-rc2}, Mathlib
 \texttt{51e6992efd06126df61a496bebf8f49482a4e129}. SHA-256 of the list of source hashes
-(\texttt{shasum -a 256 CollatzCoalescence/*.lean CollatzCoalescence.lean | shasum -a 256}):
+(\texttt{shasum -a 256} of the Lean files listed below, in \texttt{ls} order, hashed again):
 \begin{Verbatim}
-5429f69bf125f81c00be770c924dec41a94f1438619addadc89db15ac1560b39
+6f6a548bff384d44f8d2545ca4fde5d184cf67e08e9e7cd884c5b6d7ee038bae
 \end{Verbatim}
 The sources contain no \texttt{sorry}, no added axioms, no \texttt{native\_decide} and no \texttt{set\_option}.
 The statements have been read by their authors only; no independent review and no second proof checker has
@@ -56,7 +56,8 @@ File & Content & Lines\\\midrule
 \texttt{RateLower.lean} & lower bound $1/(4\sqrt{2k+2})$ & 290\\
 \texttt{RateMain.lean} & the rate theorem & 178\\
 \texttt{RateDensity.lean} & the rate as a natural density of integers & 219\\
-\midrule total & & 4498\\
+\texttt{RateOffsets.lean} & the rate for every offset $m\ne0$ & 194\\
+\midrule total & & 4692\\
 \bottomrule\end{tabular}\end{center}
 
 \section{Output of \texttt{check.sh}}
@@ -127,5 +128,8 @@ statements and their axioms.
 
 \subsection{\texttt{RateDensity.lean}}
 \VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/RateDensity.lean}
+
+\subsection{\texttt{RateOffsets.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/RateOffsets.lean}
 
 \end{document}
