@@ -1,0 +1,131 @@
+\documentclass[10pt]{article}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{fontspec}
+\usepackage{fvextra}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\setmonofont{Menlo}[Scale=0.72]
+\usepackage{newunicodechar}
+\newfontfamily\symfallback{STIX Two Math}[Scale=0.72]
+\newunicodechar{∣}{{\symfallback ∣}}
+\newunicodechar{∤}{{\symfallback ∤}}
+\newunicodechar{⊢}{{\symfallback ⊢}}
+\newunicodechar{⋃}{{\symfallback ⋃}}
+\newunicodechar{ℓ}{{\symfallback ℓ}}
+\newunicodechar{𝓝}{{\symfallback 𝓝}}
+\newunicodechar{ℹ}{i}
+\fvset{breaklines=true,breakanywhere=true,fontsize=\small}
+\title{Collatz neighbour mergers: Lean verification record}
+\author{Arthur M. Coll\'e \and Claude}
+\date{2026-11-26}
+\begin{document}
+\maketitle
+\noindent This record accompanies \texttt{main.pdf}. It contains the checked statements, the output of the
+reproduction script, and the complete Lean sources. Toolchain: \texttt{leanprover/lean4:v4.33.0-rc2}, Mathlib
+\texttt{51e6992efd06126df61a496bebf8f49482a4e129}. SHA-256 of the list of source hashes
+(\texttt{shasum -a 256 CollatzCoalescence/*.lean CollatzCoalescence.lean | shasum -a 256}):
+\begin{Verbatim}
+5429f69bf125f81c00be770c924dec41a94f1438619addadc89db15ac1560b39
+\end{Verbatim}
+The sources contain no \texttt{sorry}, no added axioms, no \texttt{native\_decide} and no \texttt{set\_option}.
+The statements have been read by their authors only; no independent review and no second proof checker has
+been run. Density one for $n,n+1$ was first proved by O.~J.~Said Duran (doi:10.5281/zenodo.23003524); the rate
+theorem is, to our knowledge, new.
+
+\section{Files}
+\begin{center}\begin{tabular}{llr}\toprule
+File & Content & Lines\\\midrule
+\texttt{Defs.lean} & shortcut map, pair states, one-step function & 73\\
+\texttt{Chain.lean} & one step of the pair chain; domination inequality & 262\\
+\texttt{Offsets.lean} & every offset merges on a full residue class (naturals) & 157\\
+\texttt{Bridge.lean} & integers versus naturals & 27\\
+\texttt{PotentialDefs.lean} & the potential $V$ and the finite set $F$ & 48\\
+\texttt{Ell.lean} & the even-phase potential $\ell$ & 210\\
+\texttt{Potential.lean} & $V$ is superharmonic off $F$ & 395\\
+\texttt{Escape.lean} & escape from sublevel sets of $V$ & 161\\
+\texttt{Generic.lean} & potential theory by induction for coin-driven systems & 573\\
+\texttt{Assembly.lean} & absorption with probability tending to one & 53\\
+\texttt{OffsetsChain.lean} & every state $(0,\mu)$ can be absorbed & 114\\
+\texttt{Link.lean} & merged residue classes are counted by the chain & 362\\
+\texttt{Density.lean} & residue classes to natural density & 95\\
+\texttt{Main.lean} & density one for $n,n+m$ (shortcut map) & 112\\
+\texttt{Gao.lean} & Gao's form: the $3n+1$ map with at most $\log_2 n$ steps & 213\\
+\texttt{RatePotentials.lean} & the potentials $\Gamma_2$ and $\Gamma$ & 275\\
+\texttt{RateTime.lean} & expected time below level $L$ & 409\\
+\texttt{RateGeneric.lean} & hitting-time tail and renewal lemma & 272\\
+\texttt{RateLower.lean} & lower bound $1/(4\sqrt{2k+2})$ & 290\\
+\texttt{RateMain.lean} & the rate theorem & 178\\
+\texttt{RateDensity.lean} & the rate as a natural density of integers & 219\\
+\midrule total & & 4498\\
+\bottomrule\end{tabular}\end{center}
+
+\section{Output of \texttt{check.sh}}
+The script scans for forbidden constructs, runs \texttt{lake build}, and prints the definitions, the headline
+statements and their axioms.
+\VerbatimInput{check_out.txt}
+
+\section{Sources}
+\subsection{\texttt{Defs.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Defs.lean}
+
+\subsection{\texttt{Chain.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Chain.lean}
+
+\subsection{\texttt{Offsets.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Offsets.lean}
+
+\subsection{\texttt{Bridge.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Bridge.lean}
+
+\subsection{\texttt{PotentialDefs.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/PotentialDefs.lean}
+
+\subsection{\texttt{Ell.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Ell.lean}
+
+\subsection{\texttt{Potential.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Potential.lean}
+
+\subsection{\texttt{Escape.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Escape.lean}
+
+\subsection{\texttt{Generic.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Generic.lean}
+
+\subsection{\texttt{Assembly.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Assembly.lean}
+
+\subsection{\texttt{OffsetsChain.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/OffsetsChain.lean}
+
+\subsection{\texttt{Link.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Link.lean}
+
+\subsection{\texttt{Density.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Density.lean}
+
+\subsection{\texttt{Main.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Main.lean}
+
+\subsection{\texttt{Gao.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Gao.lean}
+
+\subsection{\texttt{RatePotentials.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/RatePotentials.lean}
+
+\subsection{\texttt{RateTime.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/RateTime.lean}
+
+\subsection{\texttt{RateGeneric.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/RateGeneric.lean}
+
+\subsection{\texttt{RateLower.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/RateLower.lean}
+
+\subsection{\texttt{RateMain.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/RateMain.lean}
+
+\subsection{\texttt{RateDensity.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/RateDensity.lean}
+
+\end{document}
