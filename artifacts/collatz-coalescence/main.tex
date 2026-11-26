@@ -22,8 +22,11 @@ that the proportion of $n$ whose two orbits have not yet merged is of exact orde
 lies between $c_1/\sqrt k$ and $c_2/\sqrt k$ for every $k\ge1$, and the same holds for $n$ and
 $n+m$. In particular almost all consecutive integers have coalescing trajectories; this is Gao's
 1993 conjecture, first proved by O.~J.~Said Duran in 2026, and the rate answers a question left
-open there. Every statement is checked in Lean~4. Nothing here bears on the Collatz conjecture
-itself.
+open there: below $N$, the exceptions to Gao's conjecture number between $c_1N/\sqrt{\log_2N}$
+and $c_2N/\sqrt{\log_2N}$. For $x\mapsto x/2,\ (ax+1)/2$ with odd $a\ge5$ a fixed positive
+proportion of residue classes stays unmerged at every time, so merging with density one
+characterizes the multiplier $3$. The main
+statements are checked in Lean~4. Nothing here bears on the Collatz conjecture itself.
 \end{abstract}
 
 \section{Statement}
@@ -73,16 +76,27 @@ searches), but have not seen the version under review at Qeios. The constant
 $c_2$ produced by the proof is not explicit in any useful sense; numerically
 $\sqrt k\,(1-C_k/2^k)\approx 11$ for $10^4\le k\le10^8$.
 
-\begin{theorem}[$5x+1$]\label{five}
-For the map $T_5(x)=x/2$ ($x$ even), $(5x+1)/2$ ($x$ odd) there is $\varepsilon>0$ such that for
-every $k$ at most $(1-\varepsilon)2^k$ residues $r$ modulo $2^k$ satisfy
-$T_5^k(r+2^kt)=T_5^k(r+1+2^kt)$ for all $t$.
+\begin{theorem}[Exceptions to Gao's conjecture]\label{exc}
+There are constants $0<c_1\le c_2$ such that for every $N\ge4$
+\[
+\frac{c_1N}{\sqrt{\log_2N}}\ \le\ \#\{\,n<N:\ C^{j}(n)\ne C^{j}(n+1)\ \text{for all } j\le\log_2n\,\}\ \le\ \frac{c_2N}{\sqrt{\log_2N}} ,
+\]
+and the same holds with the shortcut map $T$ in place of $C$.
 \end{theorem}
-So the density-one phenomenon of Theorem~\ref{main} is special to the multiplier $3$: for $5x+1$ a
-positive proportion of neighbours never merge. The proof in Section~\ref{sec:five} works for every
-odd multiplier $a\ge5$ (only $a=5$ is formalized). Numerically the merged proportion levels off
-near $0.8\%$ for $a=5$, $10.7\%$ for $a=7$ and $0.2\%$ for $a=9$. No statement for all $n$ can hold
-even for $a=3$: the orbits of $3$ and $4$ never meet.
+In Gao's notation this says $1-d(N)\asymp1/\sqrt{\log N}$.
+
+\begin{theorem}[Other multipliers]\label{five}
+Let $a\ge5$ be odd and $T_a(x)=x/2$ ($x$ even), $(ax+1)/2$ ($x$ odd). There is $\varepsilon>0$,
+depending on $a$, such that for every $k$ at most $(1-\varepsilon)2^k$ residues $r$ modulo $2^k$
+satisfy $T_a^k(r+2^kt)=T_a^k(r+1+2^kt)$ for all $t$. Consequently, for odd $a\ge3$, the proportion
+of merged classes tends to $1$ if and only if $a=3$.
+\end{theorem}
+So the density-one phenomenon of Theorem~\ref{main} characterizes the multiplier $3$: for $5x+1$,
+$7x+1$, \dots\ a fixed positive proportion of residue classes is still unmerged at every time $k$.
+(This is a statement about classes at each $k$. It does not exclude that an individual integer in
+an unmerged class meets its successor at some later time by coincidence.) Numerically the merged proportion
+levels off near $0.8\%$ for $a=5$, $10.7\%$ for $a=7$ and $0.2\%$ for $a=9$. No statement for all
+$n$ can hold even for $a=3$: the orbits of $3$ and $4$ never meet.
 
 \paragraph{Prior work and status.} Density one is not new. O.~J.~Said Duran, \emph{Consecutive integers
 coalesce with density one under the Collatz map: a formally verified proof of a conjecture of Gao}
@@ -93,10 +107,19 @@ contraction of $\sqrt{|c|/3^k}$. The present note was written without knowledge 
 and found it only afterwards; it is an independent proof by the same basic device, and we have
 read only that preprint's abstract and repository page, not its proof. Checked by the Lean kernel
 (Section~\ref{sec:checks}): Theorem~\ref{main}, the first sentence of Corollary~\ref{gao} (for
-every offset $m$), Theorem~\ref{rate} and Theorem~\ref{five}. Paper proofs only: the remaining
+every offset $m$), Theorems~\ref{rate}, \ref{exc} and~\ref{five}. Paper proofs only: the remaining
 statements of Corollary~\ref{gao} (runs, stopping times, heights) and the remark that $C_k/2^k$
-is nondecreasing and equals a natural density. Theorems~\ref{rate} and~\ref{five} appear to be
-new: the first answers a question that preprint leaves open (we have seen its version~1 only). Nothing here bears on the Collatz conjecture itself.
+is nondecreasing and equals a natural density. Theorems~\ref{rate}, \ref{exc} and~\ref{five} appear to be
+new: the first two answer a question that preprint leaves open (we have seen its version~1 only). Nothing here bears on the Collatz conjecture itself.
+
+\paragraph{Related work.} M.~V.~P.~Garcia and F.~A.~Tal (\emph{Acta Arith.}\ 90 (1999), 245--250)
+study generalized maps $x\mapsto x/d$ or $(mx-\pi(mx))/d$ and call two integers equivalent when
+their orbits agree at a common time, as here. Under the hypothesis $m<d^{d/(d-1)}$, which for
+$d=2$ singles out $m=3$, they prove that every set of representatives of the equivalence classes
+has Banach density zero (we know this result from Lagarias's bibliography, entry~69). The threshold
+is the same contraction condition as ours. Their theorem does not say which integers are
+equivalent to which, and gives no rate; Theorem~\ref{five} shows that beyond the threshold the
+conclusion for neighbours fails.
 
 \section{The pair chain}
 Extend $T$ to the $2$-adic integers $\Z_2$ with Haar measure. For $x\in\Z_2$ put
@@ -323,6 +346,34 @@ $(5x+1)/2$ the corresponding recursion expands on average, and the conclusion fa
 (Theorem~\ref{five}).
 \end{remark}
 
+\section{Exceptions to Gao's conjecture}
+\begin{lemma}[No accidental meeting]\label{noacc}
+If $2^k\le n$ and $T^k(n)=T^k(n+1)$, then the two orbits have the same number of odd terms among
+their first $k$, and the whole class of $n$ modulo $2^k$ has merged at time $k$.
+\end{lemma}
+\begin{proof}
+Write $2^kT^k(x)=3^{a}x+\beta$ with $a$ the number of odd steps; by induction
+$0\le\beta\le(3^a-2^a)2^{k-a}$. If $n+1$ had more odd steps than $n$, then
+$3^{a+1}(n+1)\le3^an+3^a2^{k-a}$, so $n<2^k$. If it had fewer, $3^{a}n\le3^{a-1}(n+1)+3^{a-1}2^{k}$,
+so $2n\le1+2^k$. Both contradict $2^k\le n$ (for $k=0$ the hypothesis is void). With equal counts
+the two affine maps on the class have the same slope $3^a/2^k$ and agree at $n$, so they agree.
+\end{proof}
+The same computation for $C$, where $2^{h}C^j(x)=3^ax+\beta$ with $h=j-a$ halvings and
+$2\beta\le(3^a-1)2^h$, shows that a meeting $C^j(n)=C^j(n+1)$ with $2^j\le n$ has equal odd counts.
+A $C$-time $j$ either sits at a shortcut time $k$ or is one halving short of one; with equal odd
+counts the two orbits are in step, so they meet at a common shortcut time $k\le j$.
+
+\begin{proof}[Proof of Theorem~\ref{exc}]
+\emph{Lower bound.} Let $J=\lfloor\log_2N\rfloor$. If $n<2^J$ lies in a class modulo $2^J$ that has
+not merged at time $J$, then $n$ is an exception: a meeting at some $k$ with $2^k\le n<2^J$ would,
+by Lemma~\ref{noacc}, merge the class modulo $2^k$, hence modulo $2^J$. By Theorem~\ref{rate} there
+are at least $c_12^J/\sqrt J\ge c_1N/(2\sqrt J)$ such $n$.
+\emph{Upper bound.} Let $K=\lfloor J/8\rfloor$. If $n\ge4^K$ lies in a class that has merged at
+time $K$, with $a\le K$ odd steps, then $C^{K+a}(n)=C^{K+a}(n+1)$ and $2^{K+a}\le4^K\le n$. So an
+exception is below $4^K\le N^{1/4}$ or lies in one of at most $c_22^K/\sqrt K$ unmerged classes
+modulo $2^K$, each of which has at most $N/2^K+1$ members below $N$.
+\end{proof}
+
 \section{Other multipliers}\label{sec:five}
 Let $a\ge5$ be odd and $T_a(x)=x/2$, $(ax+1)/2$. Lemma~\ref{step} holds with $3$ replaced by $a$:
 the state $(d,\mu)$ now means $q=a^dp+\mu$. Put $w=|\mu|/a^d$, $c_d=1+(2/3)^d$ and
@@ -330,16 +381,16 @@ the state $(d,\mu)$ now means $q=a^dp+\mu$. Put $w=|\mu|/a^d$, $c_d=1+(2/3)^d$ a
 \varphi(d,\mu)=\min\Bigl(1,\ c_d\,(8/w)^{1/4}\Bigr),\qquad \varphi=1\ \text{when}\ \mu=0 .
 \]
 \begin{lemma}\label{phi}
-For $a=5$, $\varphi$ is superharmonic at \emph{every} state:
+For every odd $a\ge5$, $\varphi$ is superharmonic at \emph{every} state:
 $\tfrac12(\varphi(X\cdot0)+\varphi(X\cdot1))\le\varphi(X)$.
 \end{lemma}
 \begin{proof}
 If $\varphi(X)=1$ there is nothing to prove. Otherwise $w>8c_d^4\ge8$, and dividing the formulas of
 Lemma~\ref{step} by the new power of $a$ gives, with $\sigma=\tfrac{39}{40}$: a child reached by coin
-$0$ has $w'\ge\sigma w/2$, a child reached by coin $1$ has $w'\ge\sigma\,5w/2$, except that at level
-$0$ with $\mu$ odd both children are at level $1$ with $w'\ge\sigma w/2$. Since
-$\varphi\le c_{d'}(8/w')^{1/4}$ at each child, it suffices that, with $\alpha=2^{1/4}$,
-$\beta=(2/5)^{1/4}$, $\kappa=\sigma^{-1/4}$ and $r=\tfrac23$,
+$0$ has $w'\ge w/2-1/(2a)\ge\sigma w/2$, a child reached by coin $1$ has
+$w'\ge(aw-1)/2\ge\sigma\,5w/2$, except that at level $0$ with $\mu$ odd both children are at level
+$1$ with $w'\ge\sigma w/2$. Since $\varphi\le c_{d'}(8/w')^{1/4}$ at each child, it suffices that,
+with $\alpha=2^{1/4}$, $\beta=(2/5)^{1/4}$, $\kappa=\sigma^{-1/4}$ and $r=\tfrac23$,
 \[
 \kappa(\alpha+\beta)\le2,\qquad \kappa(\alpha r^2+\beta)\le2r,\qquad \kappa\,\alpha\,c_1\le c_0 .
 \]
@@ -347,16 +398,20 @@ The first handles steps with $\mu$ even, the first two together steps with $\mu$
 $0$ (the levels are $d\pm1$), the third the step from level $0$. They hold because
 $\alpha\le1.1893$, $\beta\le0.7953$, $\kappa\le1.0064$.
 \end{proof}
+The point of the weights $c_d$ is that a constant solves the level recursion with room to spare,
+so $c_d\ge1$ and the set where $\varphi<1$ lies inside $\{w>8\}$ at every level; there the additive
+terms of the chain are negligible.
+
 \begin{proof}[Proof of Theorem~\ref{five}]
 A superharmonic $\varphi\ge0$ with $\varphi(0,0)=1$ bounds the absorption probability from every
-state. Thirteen coins equal to $1$ lead from $(0,1)$ to $(0,310)$, where
-$\varphi=2\,(8/310)^{1/4}\le0.802$. Hence the chain is absorbed with probability at most
-$1-2^{-13}\cdot0.19$.
+state, so it suffices to reach, with positive probability, a state where $\varphi<1$. Follow the
+word $1,1,1,\dots$ from $(0,1)$. It stays among the states $(0,m)$, $m\ge1$, and $(1,\mu)$,
+$\mu\le-1$, and within two steps the size $|\mu|$ grows by at least one: $(0,m)$ goes to
+$(0,am/2)$ or to $(1,-(am-1)/2)$; $(1,\mu)$ with $\mu$ even goes to $(1,-(a|\mu|+a-1)/2)$; and
+$(1,\mu)$ with $\mu$ odd goes to $(0,(|\mu|+1)/2)$ and then to a state of size at least
+$(a(|\mu|+1)-2)/4\ge|\mu|+1$. So some state at level at most $1$ with $w\ge648$ is reached, where
+$\varphi\le2\,(8/648)^{1/4}=\tfrac23$. For $a=3$ the proportion tends to $1$ by Theorem~\ref{main}.
 \end{proof}
-For general odd $a\ge5$ the same three inequalities hold with $\beta=(2/a)^{1/4}$ and
-$\sigma=1-1/(8a)$, since their left sides decrease in $a$. The point of the weights $c_d$ is that a
-constant solves the level recursion with room to spare, so $c_d\ge1$ and the set where $\varphi<1$
-lies inside $\{w>8\}$ at every level; there the additive terms of the chain are negligible.
 
 \section{Exact values and checks}\label{sec:checks}
 The chain turns $C_k$ into a transfer computation with about $1.59^k$ states instead of $2^k$
@@ -382,7 +437,7 @@ the unabsorbed fraction is close to $11/\sqrt k$ from $k=10^4$ on, the order of
 Theorem~\ref{rate}.
 
 \medskip\noindent\textbf{Lean.} \texttt{CollatzCoalescence/} (Lean 4.33.0-rc2, Mathlib
-\texttt{51e6992}; about 5800 lines; no \texttt{sorry}, no added axioms, no \texttt{native\_decide}).
+\texttt{51e6992}; about 7000 lines; no \texttt{sorry}, no added axioms, no \texttt{native\_decide}).
 \texttt{lake build} succeeds, and the concatenated sources were replayed on a second machine
 against a separately built Mathlib. \texttt{\#print axioms} reports only \texttt{propext},
 \texttt{Classical.choice}, \texttt{Quot.sound} for:
@@ -404,18 +459,26 @@ $0<c_1,c_2$ with $c_1 2^k/\sqrt k\le 2^k-C_k\le c_2 2^k/\sqrt k$ for all $k\ge1$
 restates it for integers: for each $k\ge1$ the set of $n$ with $T^k(n)\ne T^k(n+1)$ has lower and
 upper natural density between $c_1/\sqrt k$ and $c_2/\sqrt k$. \texttt{offset\_merge\_rate} (\texttt{RateOffsets.lean}) is the
 same two-sided bound for $n,n+m$, $m\ne0$; its upper bound holds from every state of the chain.
-\texttt{five\_merged\_bounded} (\texttt{MultMain.lean}) is Theorem~\ref{five}; the chain, its
-link to residue classes and Lemma~\ref{phi} are \texttt{MultChain.lean}, \texttt{MultLink.lean},
-\texttt{MultPotential.lean}. \texttt{three\_four\_never} (\texttt{Examples.lean}): the orbits of $3$
+\texttt{gao\_exceptions\_rate} and \texttt{gao\_exceptions\_rate\_T} (\texttt{GaoRateC.lean},
+\texttt{GaoRateT.lean}) are Theorem~\ref{exc}; \texttt{class\_merged\_of\_meet} and
+\texttt{Tn\_meet\_of\_Cn\_meet} are Lemma~\ref{noacc} and its $C$ form.
+\texttt{odd\_merged\_bounded} and \texttt{merged\_fraction\_tendsto\_one\_iff}
+(\texttt{MultGeneral.lean}, \texttt{MultIff.lean}) are Theorem~\ref{five}; the chain, its link to
+residue classes and Lemma~\ref{phi} are \texttt{MultChain.lean}, \texttt{MultLink.lean},
+\texttt{MultPotential.lean}, \texttt{MultGeneral.lean}. \texttt{three\_four\_never} (\texttt{Examples.lean}): the orbits of $3$
 and $4$ never meet.
 
 An adversarial audit of the statements by a separate agent, which did not write them, found that
 each Lean statement matches its claim (it re-derived $C_1,\dots,C_{10}$ in the kernel from the
 statement of the rate theorem, checked equivalence of the integer and natural-number forms, and
 tested deliberately wrong variants); it also found the overclaim about Corollary~\ref{gao} that is
-corrected above. No human other than the authors has read the statements.
+corrected above. A second audit of the same kind covered the statements of Theorems~\ref{exc} and~\ref{five} and
+the every-offset rate, again with no defect; it recomputed merged counts for $a=3,5,7$ and
+exception counts up to $N=4096$ from the statements. Both audits note that the normalized counts
+are still rising at every size they could reach, so the square-root rates rest on the proofs and
+not on numerical evidence at small sizes. No human other than the authors has read the statements.
 
-The six claims of \texttt{Challenge.lean} were also put through the Palomar registry's acceptance check
+The claims of \texttt{Challenge.lean} were also put through the Palomar registry's acceptance check
 in a clean Linux VM (\texttt{leanprover/comparator} with \texttt{lean4export}, the independent
 \texttt{nanoda} kernel and the \texttt{landrun} sandbox): each \texttt{Solution} theorem has exactly
 the statement of its \texttt{Challenge} namesake, uses only the three standard axioms, and replays

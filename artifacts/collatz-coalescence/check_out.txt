@@ -1,54 +1,54 @@
-ℹ [8697/8726] Replayed CollatzCoalescence.Generic
+ℹ [8697/8730] Replayed CollatzCoalescence.Generic
 info: CollatzCoalescence/Generic.lean:569:0: 'Coalescence.Generic.G1_bootstrap' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/Generic.lean:570:0: 'Coalescence.Generic.G2_lyapunov_hitting' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/Generic.lean:571:0: 'Coalescence.Generic.G3_assembly' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/Generic.lean:572:0: 'Coalescence.Generic.G4_corollary' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/Generic.lean:573:0: 'Coalescence.Generic.G5_count' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [8700/8726] Replayed CollatzCoalescence.Assembly
+ℹ [8700/8730] Replayed CollatzCoalescence.Assembly
 info: CollatzCoalescence/Assembly.lean:51:0: 'Coalescence.absorption_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [8701/8726] Replayed CollatzCoalescence.Chain
+ℹ [8701/8730] Replayed CollatzCoalescence.Chain
 info: CollatzCoalescence/Chain.lean:258:0: 'Coalescence.step_rel' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/Chain.lean:259:0: 'Coalescence.step_absorbed' depends on axioms: [propext]
 info: CollatzCoalescence/Chain.lean:260:0: 'Coalescence.rel_zero_iff' depends on axioms: [propext]
 info: CollatzCoalescence/Chain.lean:261:0: 'Coalescence.step_dom' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/Chain.lean:262:0: 'Coalescence.step_dom_zero_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [8702/8726] Replayed CollatzCoalescence.Ell
+ℹ [8702/8730] Replayed CollatzCoalescence.Ell
 info: CollatzCoalescence/Ell.lean:206:0: 'Coalescence.e_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/Ell.lean:207:0: 'Coalescence.e_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/Ell.lean:208:0: 'Coalescence.ell_le' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/Ell.lean:209:0: 'Coalescence.ell_eq_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/Ell.lean:210:0: 'Coalescence.ell_even_step' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [8703/8726] Replayed CollatzCoalescence.Potential
+ℹ [8703/8730] Replayed CollatzCoalescence.Potential
 info: CollatzCoalescence/Potential.lean:392:0: 'Coalescence.V_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/Potential.lean:393:0: 'Coalescence.sqrt_le_V' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/Potential.lean:394:0: 'Coalescence.sqrt_mu_le_V' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/Potential.lean:395:0: 'Coalescence.V_superharmonic' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [8704/8726] Replayed CollatzCoalescence.Escape
+ℹ [8704/8730] Replayed CollatzCoalescence.Escape
 info: CollatzCoalescence/Escape.lean:161:0: 'Coalescence.escape' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [8705/8726] Replayed CollatzCoalescence.OffsetsChain
+ℹ [8705/8730] Replayed CollatzCoalescence.OffsetsChain
 info: CollatzCoalescence/OffsetsChain.lean:114:0: 'Coalescence.offset_absorbable' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [8706/8726] Replayed CollatzCoalescence.Link
+ℹ [8706/8730] Replayed CollatzCoalescence.Link
 info: CollatzCoalescence/Link.lean:361:0: 'Coalescence.card_merged_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/Link.lean:362:0: 'Coalescence.card_merged_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [8707/8726] Replayed CollatzCoalescence.Density
+ℹ [8707/8730] Replayed CollatzCoalescence.Density
 info: CollatzCoalescence/Density.lean:94:0: 'Coalescence.card_filter_mod_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/Density.lean:95:0: 'Coalescence.density_one_of_classes' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [8708/8726] Replayed CollatzCoalescence.Offsets
+ℹ [8708/8730] Replayed CollatzCoalescence.Offsets
 info: CollatzCoalescence/Offsets.lean:156:0: 'every_offset_merges' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/Offsets.lean:157:0: 'T_natCast' depends on axioms: [propext, Quot.sound]
-ℹ [8709/8726] Replayed CollatzCoalescence.Bridge
+ℹ [8709/8730] Replayed CollatzCoalescence.Bridge
 info: CollatzCoalescence/Bridge.lean:24:0: 'Coalescence.T_iterate_natCast' depends on axioms: [propext, Quot.sound]
 info: CollatzCoalescence/Bridge.lean:25:0: 'Coalescence.Tn_iterate_eq_of_T' depends on axioms: [propext, Quot.sound]
-ℹ [8710/8726] Replayed CollatzCoalescence.Main
+ℹ [8710/8730] Replayed CollatzCoalescence.Main
 info: CollatzCoalescence/Main.lean:107:0: 'Coalescence.absorbed_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/Main.lean:108:0: 'Coalescence.merged_proportion_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/Main.lean:109:0: 'Coalescence.offset_classes' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/Main.lean:110:0: 'Coalescence.coalescence_density_one' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [8711/8726] Replayed CollatzCoalescence.Gao
+ℹ [8711/8730] Replayed CollatzCoalescence.Gao
 info: CollatzCoalescence/Gao.lean:209:0: 'Coalescence.Cn_iterate_eq_Tn' depends on axioms: [propext, Quot.sound]
 info: CollatzCoalescence/Gao.lean:210:0: 'Coalescence.coalescence_density_one_log' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/Gao.lean:211:0: 'Coalescence.gao_conjecture' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [8712/8726] Replayed CollatzCoalescence.RatePotentials
+ℹ [8712/8730] Replayed CollatzCoalescence.RatePotentials
 info: CollatzCoalescence/RatePotentials.lean:267:0: 'Coalescence.Gam2_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/RatePotentials.lean:268:0: 'Coalescence.V_eq_sqrt_add_Gam2' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/RatePotentials.lean:269:0: 'Coalescence.Gam2_super_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -58,29 +58,35 @@ info: CollatzCoalescence/RatePotentials.lean:272:0: 'Coalescence.step_d_even' de
 info: CollatzCoalescence/RatePotentials.lean:273:0: 'Coalescence.step_d_odd_false' depends on axioms: [propext, Quot.sound]
 info: CollatzCoalescence/RatePotentials.lean:274:0: 'Coalescence.step_d_odd_true' depends on axioms: [propext, Quot.sound]
 info: CollatzCoalescence/RatePotentials.lean:275:0: 'Coalescence.step_d_odd_true_zero' depends on axioms: [propext, Quot.sound]
-ℹ [8713/8726] Replayed CollatzCoalescence.RateTime
+ℹ [8713/8730] Replayed CollatzCoalescence.RateTime
 info: CollatzCoalescence/RateTime.lean:405:0: 'Coalescence.sum_ehat_le' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/RateTime.lean:406:0: 'Coalescence.Gam2_drop_zero_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/RateTime.lean:407:0: 'Coalescence.QL_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/RateTime.lean:408:0: 'Coalescence.QL_step' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/RateTime.lean:409:0: 'Coalescence.QL_le' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [8714/8726] Replayed CollatzCoalescence.RateGeneric
+ℹ [8714/8730] Replayed CollatzCoalescence.RateGeneric
 info: CollatzCoalescence/RateGeneric.lean:270:0: 'Coalescence.Generic.stay_mul_le_of_potential' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/RateGeneric.lean:271:0: 'Coalescence.Generic.one_sub_hit_le' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/RateGeneric.lean:272:0: 'Coalescence.Generic.survival_rate_of_renewal' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [8715/8726] Replayed CollatzCoalescence.RateLower
+ℹ [8715/8730] Replayed CollatzCoalescence.RateLower
 info: CollatzCoalescence/RateLower.lean:290:0: 'Coalescence.survival_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [8716/8726] Replayed CollatzCoalescence.RateMain
+ℹ [8716/8730] Replayed CollatzCoalescence.RateMain
 info: CollatzCoalescence/RateMain.lean:174:0: 'Coalescence.survival_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/RateMain.lean:175:0: 'Coalescence.survival_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/RateMain.lean:176:0: 'Coalescence.neighbour_merge_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [8717/8726] Replayed CollatzCoalescence.RateDensity
+ℹ [8717/8730] Replayed CollatzCoalescence.RateDensity
 info: CollatzCoalescence/RateDensity.lean:217:0: 'Coalescence.unmerged_density_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [8718/8726] Replayed CollatzCoalescence.RateOffsets
+ℹ [8718/8730] Replayed CollatzCoalescence.RateOffsets
 info: CollatzCoalescence/RateOffsets.lean:190:0: 'Coalescence.survival_upper_state' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/RateOffsets.lean:191:0: 'Coalescence.survival_lower_offset' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/RateOffsets.lean:192:0: 'Coalescence.offset_merge_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [8720/8726] Replayed CollatzCoalescence.MultChain
+ℹ [8719/8730] Replayed CollatzCoalescence.GaoRateT
+info: CollatzCoalescence/GaoRateT.lean:360:0: 'Coalescence.class_merged_of_meet' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CollatzCoalescence/GaoRateT.lean:361:0: 'Coalescence.gao_exceptions_rate_T' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8720/8730] Replayed CollatzCoalescence.GaoRateC
+info: CollatzCoalescence/GaoRateC.lean:377:0: 'Coalescence.Tn_meet_of_Cn_meet' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CollatzCoalescence/GaoRateC.lean:378:0: 'Coalescence.gao_exceptions_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8722/8730] Replayed CollatzCoalescence.MultChain
 info: CollatzCoalescence/MultChain.lean:358:0: 'Coalescence.Mult.stepA_rel' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/MultChain.lean:359:0: 'Coalescence.Mult.stepA_d_even' depends on axioms: [propext]
 info: CollatzCoalescence/MultChain.lean:360:0: 'Coalescence.Mult.stepA_d_odd_false' depends on axioms: [propext, Quot.sound]
@@ -90,24 +96,30 @@ info: CollatzCoalescence/MultChain.lean:363:0: 'Coalescence.Mult.wA_step_false_g
 info: CollatzCoalescence/MultChain.lean:364:0: 'Coalescence.Mult.wA_step_true_ge_of_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/MultChain.lean:365:0: 'Coalescence.Mult.wA_step_true_ge_fails_two' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/MultChain.lean:366:0: 'Coalescence.Mult.wA_step_true_zero_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [8721/8726] Replayed CollatzCoalescence.MultLink
+ℹ [8723/8730] Replayed CollatzCoalescence.MultLink
 info: CollatzCoalescence/MultLink.lean:318:0: 'Coalescence.Mult.card_mergedA_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/MultLink.lean:319:0: 'Coalescence.Mult.card_mergedA_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [8722/8726] Replayed CollatzCoalescence.MultPotential
+ℹ [8724/8730] Replayed CollatzCoalescence.MultPotential
 info: CollatzCoalescence/MultPotential.lean:273:0: 'Coalescence.Mult.phi5_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/MultPotential.lean:274:0: 'Coalescence.Mult.phi5_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/MultPotential.lean:275:0: 'Coalescence.Mult.phi5_absorbed' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/MultPotential.lean:276:0: 'Coalescence.Mult.phi5_super' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/MultPotential.lean:277:0: 'Coalescence.Mult.pAbs_le_of_super' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/MultPotential.lean:278:0: 'Coalescence.Mult.saturation_five' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [8723/8726] Replayed CollatzCoalescence.MultMain
+ℹ [8725/8730] Replayed CollatzCoalescence.MultMain
 info: CollatzCoalescence/MultMain.lean:45:0: 'Coalescence.Mult.card_mergedA_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: CollatzCoalescence/MultMain.lean:46:0: 'Coalescence.Mult.five_merged_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [8724/8726] Built CollatzCoalescence.Examples (15s)
+ℹ [8726/8730] Replayed CollatzCoalescence.MultGeneral
+info: CollatzCoalescence/MultGeneral.lean:364:0: 'Coalescence.Mult.phiA_super' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CollatzCoalescence/MultGeneral.lean:365:0: 'Coalescence.Mult.saturation_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CollatzCoalescence/MultGeneral.lean:366:0: 'Coalescence.Mult.odd_merged_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CollatzCoalescence/MultGeneral.lean:367:0: 'Coalescence.Mult.absorbed_tendsto_one_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8727/8730] Replayed CollatzCoalescence.MultIff
+info: CollatzCoalescence/MultIff.lean:36:0: 'Coalescence.Mult.merged_fraction_tendsto_one_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8728/8730] Replayed CollatzCoalescence.Examples
 info: CollatzCoalescence/Examples.lean:43:0: 'Coalescence.three_four_never' depends on axioms: [propext, Quot.sound]
 info: CollatzCoalescence/Examples.lean:44:0: 'Coalescence.four_five_meet' does not depend on any axioms
-✔ [8725/8726] Built CollatzCoalescence (3.3s)
-Build completed successfully (8726 jobs).
+Build completed successfully (8730 jobs).
 def Tn : ℕ → ℕ :=
 fun x => if x % 2 = 0 then x / 2 else (3 * x + 1) / 2
 def Coalescence.Cn : ℕ → ℕ :=
@@ -167,5 +179,26 @@ Mult.five_merged_bounded : ∃ ε,
               ∀ (t : ℤ), (Mult.Ta 5)^[k] (↑r + 2 ^ k * t) = (Mult.Ta 5)^[k] (↑r + 2 ^ k * t + 1)}.card ≤
         (1 - ε) * 2 ^ k
 'Coalescence.Mult.five_merged_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+gao_exceptions_rate : ∃ c₁ c₂,
+  0 < c₁ ∧
+    0 < c₂ ∧
+      ∀ (N : ℕ),
+        4 ≤ N →
+          c₁ * ↑N / √↑(Nat.log 2 N) ≤ ↑{n ∈ Finset.range N | ¬∃ j, 2 ^ j ≤ n ∧ Cn^[j] n = Cn^[j] (n + 1)}.card ∧
+            ↑{n ∈ Finset.range N | ¬∃ j, 2 ^ j ≤ n ∧ Cn^[j] n = Cn^[j] (n + 1)}.card ≤ c₂ * ↑N / √↑(Nat.log 2 N)
+'Coalescence.gao_exceptions_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Coalescence.gao_exceptions_rate_T' depends on axioms: [propext, Classical.choice, Quot.sound]
+Mult.merged_fraction_tendsto_one_iff : ∀ (a : ℕ),
+  a % 2 = 1 →
+    3 ≤ a →
+      (Filter.Tendsto
+          (fun k =>
+            ↑{r ∈ Finset.range (2 ^ k) |
+                    ∀ (t : ℤ), (Mult.Ta ↑a)^[k] (↑r + 2 ^ k * t) = (Mult.Ta ↑a)^[k] (↑r + 2 ^ k * t + 1)}.card /
+              2 ^ k)
+          Filter.atTop (nhds 1) ↔
+        a = 3)
+'Coalescence.Mult.odd_merged_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Coalescence.Mult.merged_fraction_tendsto_one_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
 'Coalescence.three_four_never' depends on axioms: [propext, Quot.sound]
-OK: 10 headline theorems, standard axioms only
+OK: 14 headline theorems, standard axioms only

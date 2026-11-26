@@ -227,29 +227,29 @@
       "37B02",
       "60J05"
     ],
-    "statement": "Let T(x)=x/2 for even x and (3x+1)/2 for odd x. Let U_k be the number of residues r mod 2^k for which T^k(r+2^k t)=T^k(r+2^k t+1) fails for some integer t. There are constants 0<c1≤c2 with c1·2^k/√k ≤ U_k ≤ c2·2^k/√k for every k≥1, and c1=1/8 works. The same two-sided bound holds for the pair x, x+m with any m≠0 (constants depending on m). Also Lean checked in the same project: natural density one of the n whose 3n+1 orbit meets that of n+m within log2 n steps (m=1 is Gao's 1993 conjecture, first proved by Said Duran), and for every m≥1 a full residue class on which x and x+m merge.",
+    "statement": "Let T(x)=x/2 for even x and (3x+1)/2 for odd x. Let U_k be the number of residues r mod 2^k for which T^k(r+2^k t)=T^k(r+2^k t+1) fails for some integer t. There are constants 0<c1≤c2 with c1·2^k/√k ≤ U_k ≤ c2·2^k/√k for every k≥1, and c1=1/8 works. The same two-sided bound holds for the pair x, x+m with any m≠0. In Gao's terms: for every N≥4 the number of n<N whose 3n+1 orbit does not meet that of n+1 within log2 n steps is between c1·N/√(log2 N) and c2·N/√(log2 N). Also Lean checked: density one (Gao's 1993 conjecture, first proved by Said Duran), and for every m≥1 a full residue class on which x and x+m merge.",
     "proof": "On a residue class the two iterates p,q satisfy q=3^d p+μ. The state (d,μ) moves by one fair coin per step and (0,0) is absorbing; U_k/2^k is the probability of not being absorbed by time k. Lower bound: absorption needs level d≤1, and a simple random walk stays above it for k steps with probability at least 1/√(2k+2). Upper bound: a potential that is superharmonic off a finite set F and grows linearly in d bounds the chance of reaching level √t before F; a second potential bounds the expected time below level L by O(L); a renewal argument over successive visits to F gives B/√t.",
     "stress": "Nothing here says any orbit reaches 1: merged classes may still diverge together. The orbits of 3 and 4 never meet (phase mismatch), so no statement for all n is possible. The constant c2 is not effective in any useful sense; simulation puts the proportion near 11/√k for 10^4≤k≤10^8. The contraction used holds for 3x+1 and 3x−1 and fails for 5x+1.",
-    "use": "Settles the order of the convergence in Gao-type coalescence densities: after 66 steps only 48.9% of classes have merged (C_66/2^66=0.4886). The same chain gives exact counts C_k for k≤66 by a transfer computation with about 1.59^k states.",
+    "use": "Settles the order of the convergence in Gao-type coalescence densities, in Gao's own formulation: 1−d(N) is of order 1/√(log N). After 66 steps only 48.9% of classes have merged (C_66/2^66=0.4886). The same chain gives exact counts C_k for k≤66 by a transfer computation with about 1.59^k states.",
     "artifact": "artifacts/collatz-coalescence/CollatzCoalescence/RateMain.lean",
     "source": "artifacts/collatz-coalescence/main.tex; Lean 4.33.0-rc2, Mathlib 51e6992; replayed on a second machine on 2026-11-26"
   },
   {
     "id": "collatz-multiplier-saturation",
-    "title": "For 5x+1 a positive proportion of neighbouring classes never merge",
+    "title": "Neighbour merging tends to probability 1 only for the multiplier 3",
     "kind": "proved theorem",
     "status": "Lean checked on pinned Mathlib project",
-    "novelty": "Not found in Said Duran's 2026 preprints on Gao's conjecture; literature priority otherwise unassessed. Only the multiplier 5 is formalized; the paper argument covers every odd multiplier a≥5.",
+    "novelty": "No earlier statement found. Related: Garcia and Tal (Acta Arith. 90, 1999) prove, for generalized maps below the same contraction threshold, that representatives of merging classes have Banach density zero; they do not treat neighbours, rates, or the range beyond the threshold. Literature priority otherwise unassessed.",
     "codes": [
       "11B05",
       "37B02",
       "60J05"
     ],
-    "statement": "Let T5(x)=x/2 for even x and (5x+1)/2 for odd x. There is ε>0 such that for every k at most (1−ε)·2^k residues r mod 2^k satisfy T5^k(r+2^k t)=T5^k(r+2^k t+1) for all integers t. For the multiplier 3 the same proportion tends to 1.",
-    "proof": "The pair state (d,μ) means q=5^d p+μ and moves by one fair coin per step. With w=|μ|/5^d the function φ=min(1,(1+(2/3)^d)(8/w)^(1/4)) is superharmonic at every state and equals 1 at the merged state, so it bounds the merging probability. Thirteen coins equal to 1 lead from (0,1) to (0,310), where φ≤0.802.",
-    "stress": "The bound ε=0.19/8192 is far from the truth: exact counts and simulation put the merged proportion near 0.8%. The three scalar inequalities behind φ have margins of only 0.001 to 0.005. The orbits of 3 and 4 never meet under 3x+1 (also Lean checked), so density one cannot be upgraded to all n there either.",
+    "statement": "Let a≥5 be odd and Ta(x)=x/2 for even x, (a·x+1)/2 for odd x. There is ε>0, depending on a, such that for every k at most (1−ε)·2^k residues r mod 2^k satisfy Ta^k(r+2^k t)=Ta^k(r+2^k t+1) for all integers t. Consequently, for odd a≥3, the proportion of merged residue classes tends to 1 if and only if a=3.",
+    "proof": "The pair state (d,μ) means q=a^d p+μ and moves by one fair coin per step. With w=|μ|/a^d the function φ=min(1,(1+(2/3)^d)(8/w)^(1/4)) is superharmonic at every state and equals 1 at the merged state, so it bounds the merging probability. Along the all-ones coin word the state stays at levels 0 and 1 and |μ| grows by at least one every two steps, so a state with φ≤2/3 is reached. For a=3 the proportion tends to 1 by the density-one theorem.",
+    "stress": "A statement about residue classes at each k: it does not exclude that one integer in an unmerged class meets its successor later by coincidence. The ε is far from the truth (exact counts and simulation put the merged proportion near 0.8% for a=5 and 10.7% for a=7). The three scalar inequalities behind φ have margins of only 0.001 to 0.005. a=1 is excluded: there 2^k−1 classes merge.",
     "use": "Shows the density-one coalescence of neighbours is special to the multiplier 3 and comes from the contraction (log(1/2)+log(3/2))/2<0.",
-    "artifact": "artifacts/collatz-coalescence/CollatzCoalescence/MultMain.lean",
+    "artifact": "artifacts/collatz-coalescence/CollatzCoalescence/MultIff.lean",
     "source": "artifacts/collatz-coalescence/main.tex, Section 7; Lean 4.33.0-rc2, Mathlib 51e6992"
   }
 ]

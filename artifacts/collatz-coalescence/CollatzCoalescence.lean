@@ -3,5 +3,7 @@ import CollatzCoalescence.Gao
 import CollatzCoalescence.RateMain
 import CollatzCoalescence.RateDensity
 import CollatzCoalescence.RateOffsets
+import CollatzCoalescence.GaoRateC
 import CollatzCoalescence.MultMain
+import CollatzCoalescence.MultIff
 import CollatzCoalescence.Examples

@@ -61,13 +61,48 @@ theorem every_offset_merges (m : ℕ) (hm : 0 < m) :
   sorry
 
 open Classical in
-/-- **Saturation for `5x+1`.** For the map `x ↦ x/2`, `(5x+1)/2` the proportion of residue classes
-mod `2^k` on which `x` and `x + 1` have merged after `k` steps is at most `1 - ε`, for one `ε > 0` and every `k`. -/
-theorem five_merged_bounded :
+/-- **Exceptions to Gao's conjecture.** The number of `n < N` whose `3n+1` orbit does not meet that
+of `n + 1` within `log₂ n` steps is of exact order `N / √(log₂ N)`. -/
+theorem gao_exceptions_rate :
+    ∃ c₁ c₂ : ℝ, 0 < c₁ ∧ 0 < c₂ ∧ ∀ N : ℕ, 4 ≤ N →
+      c₁ * N / Real.sqrt (Nat.log 2 N) ≤
+        (((Finset.range N).filter fun n : ℕ =>
+          ¬ ∃ j : ℕ, 2 ^ j ≤ n ∧ Statement.Cn^[j] n = Statement.Cn^[j] (n + 1)).card : ℝ) ∧
+      (((Finset.range N).filter fun n : ℕ =>
+          ¬ ∃ j : ℕ, 2 ^ j ≤ n ∧ Statement.Cn^[j] n = Statement.Cn^[j] (n + 1)).card : ℝ) ≤
+        c₂ * N / Real.sqrt (Nat.log 2 N) := by
+  sorry
+
+open Classical in
+/-- The same for the shortcut map: no meeting within `log₂ n` shortcut steps. -/
+theorem gao_exceptions_rate_T :
+    ∃ c₁ c₂ : ℝ, 0 < c₁ ∧ 0 < c₂ ∧ ∀ N : ℕ, 4 ≤ N →
+      c₁ * N / Real.sqrt (Nat.log 2 N) ≤
+        (((Finset.range N).filter fun n : ℕ =>
+          ¬ ∃ k : ℕ, 2 ^ k ≤ n ∧ Statement.Tn^[k] n = Statement.Tn^[k] (n + 1)).card : ℝ) ∧
+      (((Finset.range N).filter fun n : ℕ =>
+          ¬ ∃ k : ℕ, 2 ^ k ≤ n ∧ Statement.Tn^[k] n = Statement.Tn^[k] (n + 1)).card : ℝ) ≤
+        c₂ * N / Real.sqrt (Nat.log 2 N) := by
+  sorry
+
+open Classical in
+/-- **Saturation for every odd multiplier `a ≥ 5`.** For `x ↦ x/2`, `(a x + 1)/2` at most
+`(1 - ε) 2^k` residue classes mod `2^k` have merged after `k` steps, for one `ε > 0` and every `k`. -/
+theorem odd_merged_bounded (a : ℕ) (ha : a % 2 = 1) (ha5 : 5 ≤ a) :
     ∃ ε : ℝ, 0 < ε ∧ ∀ k : ℕ,
       (((Finset.range (2 ^ k)).filter fun r : ℕ =>
-        ∀ t : ℤ, (Statement.Ta 5)^[k] ((r : ℤ) + 2 ^ k * t) = (Statement.Ta 5)^[k] ((r : ℤ) + 2 ^ k * t + 1)).card : ℝ) ≤
+        ∀ t : ℤ, (Statement.Ta a)^[k] ((r : ℤ) + 2 ^ k * t) = (Statement.Ta a)^[k] ((r : ℤ) + 2 ^ k * t + 1)).card : ℝ) ≤
         (1 - ε) * 2 ^ k := by
+  sorry
+
+open Classical in
+/-- **The multiplier 3 is characterized by neighbour merging.** For odd `a ≥ 3` the proportion of
+merged residue classes tends to `1` if and only if `a = 3`. -/
+theorem merged_fraction_tendsto_one_iff (a : ℕ) (ha : a % 2 = 1) (ha3 : 3 ≤ a) :
+    Filter.Tendsto (fun k : ℕ =>
+        (((Finset.range (2 ^ k)).filter fun r : ℕ =>
+          ∀ t : ℤ, (Statement.Ta a)^[k] ((r : ℤ) + 2 ^ k * t) = (Statement.Ta a)^[k] ((r : ℤ) + 2 ^ k * t + 1)).card : ℝ)
+          / 2 ^ k) Filter.atTop (nhds 1) ↔ a = 3 := by
   sorry
 
 end Solution

@@ -25,11 +25,11 @@ reproduction script, and the complete Lean sources. Toolchain: \texttt{leanprove
 \texttt{51e6992efd06126df61a496bebf8f49482a4e129}. SHA-256 of the output of
 \texttt{shasum -a 256 CollatzCoalescence/*.lean CollatzCoalescence.lean Statement.lean Challenge.lean Solution.lean}:
 \begin{Verbatim}
-5f5b04d8c50d29616eb0eba13502f113baeb89d042d94b81eb74a946b8c1a5a6
+54a6df2490749d28ec2545caa2aa3e8a4cdd3b647504249a83f73174a54916b6
 \end{Verbatim}
 The library contains no \texttt{sorry}, no added axioms, no \texttt{native\_decide} and no \texttt{set\_option};
 \texttt{Challenge.lean} states the claims with \texttt{sorry} by design. Density one for $n,n+1$ was first proved by
-O.~J.~Said Duran (doi:10.5281/zenodo.23003524); the rate theorem and the $5x+1$ theorem are, to our knowledge, new.
+O.~J.~Said Duran (doi:10.5281/zenodo.23003524); the rate theorems and the theorem on other multipliers are, to our knowledge, new.
 
 \section{Trusted statements}
 \texttt{Statement.lean} (definitions, Mathlib only) and \texttt{Challenge.lean} (the claims). \texttt{Solution.lean}
@@ -63,13 +63,17 @@ File & Content & Lines\\\midrule
 \texttt{RateMain.lean} & the rate theorem & 178\\
 \texttt{RateDensity.lean} & the rate as a natural density of integers & 219\\
 \texttt{RateOffsets.lean} & the rate for every offset $m\ne0$ & 194\\
+\texttt{GaoRateT.lean} & exceptions to Gao's conjecture, shortcut map & 363\\
+\texttt{GaoRateC.lean} & exceptions to Gao's conjecture, $3n+1$ map & 380\\
 \texttt{MultDefs.lean} & the pair chain for a general odd multiplier & 73\\
 \texttt{MultChain.lean} & one step and size bounds, general multiplier & 366\\
 \texttt{MultLink.lean} & merged classes counted by the chain, general multiplier & 319\\
 \texttt{MultPotential.lean} & the potential $\varphi$ for $5x+1$ & 278\\
 \texttt{MultMain.lean} & the $5x+1$ theorem & 48\\
+\texttt{MultGeneral.lean} & every odd multiplier $a\ge5$ & 367\\
+\texttt{MultIff.lean} & merging tends to $1$ iff $a=3$ & 38\\
 \texttt{Examples.lean} & the orbits of 3 and 4 never meet & 46\\
-\midrule total & & 5822\\
+\midrule total & & 6970\\
 \bottomrule\end{tabular}\end{center}
 
 \section{Output of \texttt{check.sh}}
@@ -78,7 +82,7 @@ statements and their axioms.
 \VerbatimInput{check_out.txt}
 
 \section{Output of the Comparator acceptance check}
-Run in a clean Linux VM; both the \texttt{nanoda} kernel and the Lean kernel accept the six claims.
+Run in a clean Linux VM; both the \texttt{nanoda} kernel and the Lean kernel accept the nine claims.
 \VerbatimInput{comparator-check.log}
 
 \section{Library sources}
@@ -148,6 +152,12 @@ Run in a clean Linux VM; both the \texttt{nanoda} kernel and the Lean kernel acc
 \subsection{\texttt{RateOffsets.lean}}
 \VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/RateOffsets.lean}
 
+\subsection{\texttt{GaoRateT.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/GaoRateT.lean}
+
+\subsection{\texttt{GaoRateC.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/GaoRateC.lean}
+
 \subsection{\texttt{MultDefs.lean}}
 \VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/MultDefs.lean}
 
@@ -162,6 +172,12 @@ Run in a clean Linux VM; both the \texttt{nanoda} kernel and the Lean kernel acc
 
 \subsection{\texttt{MultMain.lean}}
 \VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/MultMain.lean}
+
+\subsection{\texttt{MultGeneral.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/MultGeneral.lean}
+
+\subsection{\texttt{MultIff.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/MultIff.lean}
 
 \subsection{\texttt{Examples.lean}}
 \VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Examples.lean}

@@ -30,9 +30,15 @@ open Coalescence
 #print Coalescence.Mult.Ta
 #check @Coalescence.Mult.five_merged_bounded
 #print axioms Coalescence.Mult.five_merged_bounded
+#check @gao_exceptions_rate
+#print axioms gao_exceptions_rate
+#print axioms gao_exceptions_rate_T
+#check @Coalescence.Mult.merged_fraction_tendsto_one_iff
+#print axioms Coalescence.Mult.odd_merged_bounded
+#print axioms Coalescence.Mult.merged_fraction_tendsto_one_iff
 #print axioms three_four_never
 LEAN
 lake env lean "$tmp/Audit.lean" | tee "$tmp/out.txt"
 if grep -q -E 'sorryAx|ofReduceBool' "$tmp/out.txt"; then echo "NON-STANDARD AXIOM"; exit 1; fi
 n=$(grep -c 'depends on axioms: \[propext, Classical.choice, Quot.sound\]' "$tmp/out.txt")
-[ "$n" = 10 ] && echo "OK: 10 headline theorems, standard axioms only" || { echo "UNEXPECTED AXIOM OUTPUT"; exit 1; }
+[ "$n" = 14 ] && echo "OK: 14 headline theorems, standard axioms only" || { echo "UNEXPECTED AXIOM OUTPUT"; exit 1; }
