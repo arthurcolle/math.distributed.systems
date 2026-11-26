@@ -73,6 +73,17 @@ searches), but have not seen the version under review at Qeios. The constant
 $c_2$ produced by the proof is not explicit in any useful sense; numerically
 $\sqrt k\,(1-C_k/2^k)\approx 11$ for $10^4\le k\le10^8$.
 
+\begin{theorem}[$5x+1$]\label{five}
+For the map $T_5(x)=x/2$ ($x$ even), $(5x+1)/2$ ($x$ odd) there is $\varepsilon>0$ such that for
+every $k$ at most $(1-\varepsilon)2^k$ residues $r$ modulo $2^k$ satisfy
+$T_5^k(r+2^kt)=T_5^k(r+1+2^kt)$ for all $t$.
+\end{theorem}
+So the density-one phenomenon of Theorem~\ref{main} is special to the multiplier $3$: for $5x+1$ a
+positive proportion of neighbours never merge. The proof in Section~\ref{sec:five} works for every
+odd multiplier $a\ge5$ (only $a=5$ is formalized). Numerically the merged proportion levels off
+near $0.8\%$ for $a=5$, $10.7\%$ for $a=7$ and $0.2\%$ for $a=9$. No statement for all $n$ can hold
+even for $a=3$: the orbits of $3$ and $4$ never meet.
+
 \paragraph{Prior work and status.} Density one is not new. O.~J.~Said Duran, \emph{Consecutive integers
 coalesce with density one under the Collatz map: a formally verified proof of a conjecture of Gao}
 (Zenodo, 27 September 2026, doi:10.5281/zenodo.23003524; Lean sources at
@@ -80,10 +91,12 @@ coalesce with density one under the Collatz map: a formally verified proof of a 
 what its abstract describes as a Markov chain on pairs $\{v,3^kv+c\}$ driven by fair coins with a
 contraction of $\sqrt{|c|/3^k}$. The present note was written without knowledge of that preprint
 and found it only afterwards; it is an independent proof by the same basic device, and we have
-read only that preprint's abstract and repository page, not its proof. Theorem~\ref{main},
-Corollary~\ref{gao} and Theorem~\ref{rate} below are checked by the Lean kernel
-(Section~\ref{sec:checks}). Theorem~\ref{rate} appears to be new: it answers a question that
-preprint leaves open (we have seen its version~1 only). Nothing here bears on the Collatz conjecture itself.
+read only that preprint's abstract and repository page, not its proof. Checked by the Lean kernel
+(Section~\ref{sec:checks}): Theorem~\ref{main}, the first sentence of Corollary~\ref{gao} (for
+every offset $m$), Theorem~\ref{rate} and Theorem~\ref{five}. Paper proofs only: the remaining
+statements of Corollary~\ref{gao} (runs, stopping times, heights) and the remark that $C_k/2^k$
+is nondecreasing and equals a natural density. Theorems~\ref{rate} and~\ref{five} appear to be
+new: the first answers a question that preprint leaves open (we have seen its version~1 only). Nothing here bears on the Collatz conjecture itself.
 
 \section{The pair chain}
 Extend $T$ to the $2$-adic integers $\Z_2$ with Haar measure. For $x\in\Z_2$ put
@@ -306,8 +319,44 @@ $F$, so one more application of the Markov property finishes.
 The argument uses the contraction $\tfrac12(\log\tfrac12+\log\tfrac32)<0$ through $\rho<1$ and the
 existence of $\theta<1$, and the arithmetic of the $+1$ only through Lemmas~\ref{offsets}
 and~\ref{ell}. It gives the same conclusion for $(3x-1)/2$, which is conjugate by $x\mapsto-x$. For
-$(5x+1)/2$ the corresponding recursion expands on average and the method does not apply.
+$(5x+1)/2$ the corresponding recursion expands on average, and the conclusion fails
+(Theorem~\ref{five}).
 \end{remark}
+
+\section{Other multipliers}\label{sec:five}
+Let $a\ge5$ be odd and $T_a(x)=x/2$, $(ax+1)/2$. Lemma~\ref{step} holds with $3$ replaced by $a$:
+the state $(d,\mu)$ now means $q=a^dp+\mu$. Put $w=|\mu|/a^d$, $c_d=1+(2/3)^d$ and
+\[
+\varphi(d,\mu)=\min\Bigl(1,\ c_d\,(8/w)^{1/4}\Bigr),\qquad \varphi=1\ \text{when}\ \mu=0 .
+\]
+\begin{lemma}\label{phi}
+For $a=5$, $\varphi$ is superharmonic at \emph{every} state:
+$\tfrac12(\varphi(X\cdot0)+\varphi(X\cdot1))\le\varphi(X)$.
+\end{lemma}
+\begin{proof}
+If $\varphi(X)=1$ there is nothing to prove. Otherwise $w>8c_d^4\ge8$, and dividing the formulas of
+Lemma~\ref{step} by the new power of $a$ gives, with $\sigma=\tfrac{39}{40}$: a child reached by coin
+$0$ has $w'\ge\sigma w/2$, a child reached by coin $1$ has $w'\ge\sigma\,5w/2$, except that at level
+$0$ with $\mu$ odd both children are at level $1$ with $w'\ge\sigma w/2$. Since
+$\varphi\le c_{d'}(8/w')^{1/4}$ at each child, it suffices that, with $\alpha=2^{1/4}$,
+$\beta=(2/5)^{1/4}$, $\kappa=\sigma^{-1/4}$ and $r=\tfrac23$,
+\[
+\kappa(\alpha+\beta)\le2,\qquad \kappa(\alpha r^2+\beta)\le2r,\qquad \kappa\,\alpha\,c_1\le c_0 .
+\]
+The first handles steps with $\mu$ even, the first two together steps with $\mu$ odd above level
+$0$ (the levels are $d\pm1$), the third the step from level $0$. They hold because
+$\alpha\le1.1893$, $\beta\le0.7953$, $\kappa\le1.0064$.
+\end{proof}
+\begin{proof}[Proof of Theorem~\ref{five}]
+A superharmonic $\varphi\ge0$ with $\varphi(0,0)=1$ bounds the absorption probability from every
+state. Thirteen coins equal to $1$ lead from $(0,1)$ to $(0,310)$, where
+$\varphi=2\,(8/310)^{1/4}\le0.802$. Hence the chain is absorbed with probability at most
+$1-2^{-13}\cdot0.19$.
+\end{proof}
+For general odd $a\ge5$ the same three inequalities hold with $\beta=(2/a)^{1/4}$ and
+$\sigma=1-1/(8a)$, since their left sides decrease in $a$. The point of the weights $c_d$ is that a
+constant solves the level recursion with room to spare, so $c_d\ge1$ and the set where $\varphi<1$
+lies inside $\{w>8\}$ at every level; there the additive terms of the chain are negligible.
 
 \section{Exact values and checks}\label{sec:checks}
 The chain turns $C_k$ into a transfer computation with about $1.59^k$ states instead of $2^k$
@@ -333,7 +382,7 @@ the unabsorbed fraction is close to $11/\sqrt k$ from $k=10^4$ on, the order of
 Theorem~\ref{rate}.
 
 \medskip\noindent\textbf{Lean.} \texttt{CollatzCoalescence/} (Lean 4.33.0-rc2, Mathlib
-\texttt{51e6992}; about 4700 lines; no \texttt{sorry}, no added axioms, no \texttt{native\_decide}).
+\texttt{51e6992}; about 5800 lines; no \texttt{sorry}, no added axioms, no \texttt{native\_decide}).
 \texttt{lake build} succeeds, and the concatenated sources were replayed on a second machine
 against a separately built Mathlib. \texttt{\#print axioms} reports only \texttt{propext},
 \texttt{Classical.choice}, \texttt{Quot.sound} for:
@@ -355,7 +404,15 @@ $0<c_1,c_2$ with $c_1 2^k/\sqrt k\le 2^k-C_k\le c_2 2^k/\sqrt k$ for all $k\ge1$
 restates it for integers: for each $k\ge1$ the set of $n$ with $T^k(n)\ne T^k(n+1)$ has lower and
 upper natural density between $c_1/\sqrt k$ and $c_2/\sqrt k$. \texttt{offset\_merge\_rate} (\texttt{RateOffsets.lean}) is the
 same two-sided bound for $n,n+m$, $m\ne0$; its upper bound holds from every state of the chain.
-The statements were read by their author only; no independent statement review and no second
-proof checker has been run. Before formalization,
+\texttt{five\_merged\_bounded} (\texttt{MultMain.lean}) is Theorem~\ref{five}; the chain, its
+link to residue classes and Lemma~\ref{phi} are \texttt{MultChain.lean}, \texttt{MultLink.lean},
+\texttt{MultPotential.lean}. \texttt{three\_four\_never} (\texttt{Examples.lean}): the orbits of $3$
+and $4$ never meet.
+
+An adversarial audit of the statements by a separate agent, which did not write them, found that
+each Lean statement matches its claim (it re-derived $C_1,\dots,C_{10}$ in the kernel from the
+statement of the rate theorem, checked equivalence of the integer and natural-number forms, and
+tested deliberately wrong variants); it also found the overclaim about Corollary~\ref{gao} that is
+corrected above. No human other than the authors has read the statements. Before formalization,
 Proposition~\ref{super} was also checked numerically on $2.4\cdot10^5$ states.
 \end{document}

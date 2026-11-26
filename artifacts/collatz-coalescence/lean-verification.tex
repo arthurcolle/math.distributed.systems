@@ -20,17 +20,23 @@
 \date{2026-11-26}
 \begin{document}
 \maketitle
-\noindent This record accompanies \texttt{main.pdf}. It contains the checked statements, the output of the
+\noindent This record accompanies \texttt{main.pdf}. It contains the trusted statements, the output of the
 reproduction script, and the complete Lean sources. Toolchain: \texttt{leanprover/lean4:v4.33.0-rc2}, Mathlib
-\texttt{51e6992efd06126df61a496bebf8f49482a4e129}. SHA-256 of the list of source hashes
-(\texttt{shasum -a 256} of the Lean files listed below, in \texttt{ls} order, hashed again):
+\texttt{51e6992efd06126df61a496bebf8f49482a4e129}. SHA-256 of the output of
+\texttt{shasum -a 256 CollatzCoalescence/*.lean CollatzCoalescence.lean Statement.lean Challenge.lean Solution.lean}:
 \begin{Verbatim}
-6f6a548bff384d44f8d2545ca4fde5d184cf67e08e9e7cd884c5b6d7ee038bae
+5f5b04d8c50d29616eb0eba13502f113baeb89d042d94b81eb74a946b8c1a5a6
 \end{Verbatim}
-The sources contain no \texttt{sorry}, no added axioms, no \texttt{native\_decide} and no \texttt{set\_option}.
-The statements have been read by their authors only; no independent review and no second proof checker has
-been run. Density one for $n,n+1$ was first proved by O.~J.~Said Duran (doi:10.5281/zenodo.23003524); the rate
-theorem is, to our knowledge, new.
+The library contains no \texttt{sorry}, no added axioms, no \texttt{native\_decide} and no \texttt{set\_option};
+\texttt{Challenge.lean} states the claims with \texttt{sorry} by design. Density one for $n,n+1$ was first proved by
+O.~J.~Said Duran (doi:10.5281/zenodo.23003524); the rate theorem and the $5x+1$ theorem are, to our knowledge, new.
+
+\section{Trusted statements}
+\texttt{Statement.lean} (definitions, Mathlib only) and \texttt{Challenge.lean} (the claims). \texttt{Solution.lean}
+proves each claim, with the identical statement, from the library.
+\VerbatimInput[numbers=left,numbersep=4pt]{Statement.lean}
+\VerbatimInput[numbers=left,numbersep=4pt]{Challenge.lean}
+\VerbatimInput[numbers=left,numbersep=4pt]{Solution.lean}
 
 \section{Files}
 \begin{center}\begin{tabular}{llr}\toprule
@@ -57,7 +63,13 @@ File & Content & Lines\\\midrule
 \texttt{RateMain.lean} & the rate theorem & 178\\
 \texttt{RateDensity.lean} & the rate as a natural density of integers & 219\\
 \texttt{RateOffsets.lean} & the rate for every offset $m\ne0$ & 194\\
-\midrule total & & 4692\\
+\texttt{MultDefs.lean} & the pair chain for a general odd multiplier & 73\\
+\texttt{MultChain.lean} & one step and size bounds, general multiplier & 366\\
+\texttt{MultLink.lean} & merged classes counted by the chain, general multiplier & 319\\
+\texttt{MultPotential.lean} & the potential $\varphi$ for $5x+1$ & 278\\
+\texttt{MultMain.lean} & the $5x+1$ theorem & 48\\
+\texttt{Examples.lean} & the orbits of 3 and 4 never meet & 46\\
+\midrule total & & 5822\\
 \bottomrule\end{tabular}\end{center}
 
 \section{Output of \texttt{check.sh}}
@@ -65,7 +77,7 @@ The script scans for forbidden constructs, runs \texttt{lake build}, and prints 
 statements and their axioms.
 \VerbatimInput{check_out.txt}
 
-\section{Sources}
+\section{Library sources}
 \subsection{\texttt{Defs.lean}}
 \VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Defs.lean}
 
@@ -131,5 +143,23 @@ statements and their axioms.
 
 \subsection{\texttt{RateOffsets.lean}}
 \VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/RateOffsets.lean}
+
+\subsection{\texttt{MultDefs.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/MultDefs.lean}
+
+\subsection{\texttt{MultChain.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/MultChain.lean}
+
+\subsection{\texttt{MultLink.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/MultLink.lean}
+
+\subsection{\texttt{MultPotential.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/MultPotential.lean}
+
+\subsection{\texttt{MultMain.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/MultMain.lean}
+
+\subsection{\texttt{Examples.lean}}
+\VerbatimInput[numbers=left,numbersep=4pt]{CollatzCoalescence/Examples.lean}
 
 \end{document}

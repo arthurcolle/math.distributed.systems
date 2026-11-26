@@ -233,5 +233,23 @@
     "use": "Settles the order of the convergence in Gao-type coalescence densities: after 66 steps only 48.9% of classes have merged (C_66/2^66=0.4886). The same chain gives exact counts C_k for k≤66 by a transfer computation with about 1.59^k states.",
     "artifact": "artifacts/collatz-coalescence/CollatzCoalescence/RateMain.lean",
     "source": "artifacts/collatz-coalescence/main.tex; Lean 4.33.0-rc2, Mathlib 51e6992; replayed on a second machine on 2026-11-26"
+  },
+  {
+    "id": "collatz-multiplier-saturation",
+    "title": "For 5x+1 a positive proportion of neighbouring classes never merge",
+    "kind": "proved theorem",
+    "status": "Lean checked on pinned Mathlib project",
+    "novelty": "Not found in Said Duran's 2026 preprints on Gao's conjecture; literature priority otherwise unassessed. Only the multiplier 5 is formalized; the paper argument covers every odd multiplier a≥5.",
+    "codes": [
+      "11B05",
+      "37B02",
+      "60J05"
+    ],
+    "statement": "Let T5(x)=x/2 for even x and (5x+1)/2 for odd x. There is ε>0 such that for every k at most (1−ε)·2^k residues r mod 2^k satisfy T5^k(r+2^k t)=T5^k(r+2^k t+1) for all integers t. For the multiplier 3 the same proportion tends to 1.",
+    "proof": "The pair state (d,μ) means q=5^d p+μ and moves by one fair coin per step. With w=|μ|/5^d the function φ=min(1,(1+(2/3)^d)(8/w)^(1/4)) is superharmonic at every state and equals 1 at the merged state, so it bounds the merging probability. Thirteen coins equal to 1 lead from (0,1) to (0,310), where φ≤0.802.",
+    "stress": "The bound ε=0.19/8192 is far from the truth: exact counts and simulation put the merged proportion near 0.8%. The three scalar inequalities behind φ have margins of only 0.001 to 0.005. The orbits of 3 and 4 never meet under 3x+1 (also Lean checked), so density one cannot be upgraded to all n there either.",
+    "use": "Shows the density-one coalescence of neighbours is special to the multiplier 3 and comes from the contraction (log(1/2)+log(3/2))/2<0.",
+    "artifact": "artifacts/collatz-coalescence/CollatzCoalescence/MultMain.lean",
+    "source": "artifacts/collatz-coalescence/main.tex, Section 7; Lean 4.33.0-rc2, Mathlib 51e6992"
   }
 ]

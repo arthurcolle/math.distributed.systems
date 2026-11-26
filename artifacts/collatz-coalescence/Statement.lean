@@ -4,7 +4,7 @@ import Mathlib
 # Definitions used by the trusted statements
 
 Only Mathlib is imported.  `T` is the shortcut Collatz map on the integers, `Tn` the same map on the
-natural numbers, and `Cn` the `3n+1` map without the shortcut.
+natural numbers, `Cn` the `3n+1` map without the shortcut, and `Ta a` the map `x ↦ x/2`, `(a x + 1)/2`.
 -/
 
 namespace Statement
@@ -17,5 +17,8 @@ def Tn (x : ℕ) : ℕ := if x % 2 = 0 then x / 2 else (3 * x + 1) / 2
 
 /-- The `3n+1` map. -/
 def Cn (x : ℕ) : ℕ := if x % 2 = 0 then x / 2 else 3 * x + 1
+
+/-- `x ↦ x / 2` (even `x`), `(a x + 1) / 2` (odd `x`). -/
+def Ta (a : ℤ) (x : ℤ) : ℤ := if x % 2 = 0 then x / 2 else (a * x + 1) / 2
 
 end Statement
