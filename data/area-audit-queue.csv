@@ -63,7 +63,7 @@ id,code,title,lemma_cards,review_state
 62,05B05,Combinatorial aspects of block designs,0,unreviewed
 63,06B05,Structure theory of lattices,0,unreviewed
 64,08B05,"Equational logic, Mal'tsev conditions",0,unreviewed
-65,11B05,"Density, gaps, topology",1,lemma card exists; literature audit pending
+65,11B05,"Density, gaps, topology",2,lemma card exists; literature audit pending
 66,12E05,"Polynomials in general fields (irreducibility, etc.)",0,unreviewed
 67,13B02,Extension theory of commutative rings,0,unreviewed
 68,14B05,Singularities in algebraic geometry,0,unreviewed
@@ -82,7 +82,7 @@ id,code,title,lemma_cards,review_state
 81,33C05,"Classical hypergeometric functions, \({}_2F_1\)",0,unreviewed
 82,34B05,Linear boundary value problems for ordinary differential equations,0,unreviewed
 83,35B05,"Oscillation, zeros of solutions, mean value theorems, etc. in context of PDEs",0,unreviewed
-84,37B02,Dynamics in general topological spaces,0,unreviewed
+84,37B02,Dynamics in general topological spaces,1,lemma card exists; literature audit pending
 85,39B05,General theory of functional equations and inequalities,0,unreviewed
 86,40B05,Multiple sequences and series,0,unreviewed
 87,41A10,Approximation by polynomials,0,unreviewed
@@ -520,7 +520,7 @@ id,code,title,lemma_cards,review_state
 519,55M10,Dimension theory in algebraic topology,0,unreviewed
 520,57Z05,Relations of manifolds and cell complexes with physics,0,unreviewed
 521,58Z05,Applications of global analysis to the sciences,0,unreviewed
-522,60J05,Discrete-time Markov processes on general state spaces,0,unreviewed
+522,60J05,Discrete-time Markov processes on general state spaces,1,lemma card exists; literature audit pending
 523,62J02,General nonlinear regression,0,unreviewed
 524,65J05,General theory of numerical analysis in abstract spaces,1,lemma card exists; literature audit pending
 525,68W01,General topics in the theory of algorithms,0,unreviewed

@@ -22,7 +22,7 @@ msc_class,title,selected_areas,areas_with_cards,review_state
 33,Special functions,17,0,unreviewed
 34,Ordinary differential equations,17,0,unreviewed
 35,Partial differential equations,17,1,partial
-37,Dynamical systems and ergodic theory,17,1,partial
+37,Dynamical systems and ergodic theory,17,2,partial
 39,Difference and functional equations,17,0,unreviewed
 40,"Sequences, series, summability",17,0,unreviewed
 41,Approximations and expansions,17,0,unreviewed
@@ -40,7 +40,7 @@ msc_class,title,selected_areas,areas_with_cards,review_state
 55,Algebraic topology,17,1,partial
 57,Manifolds and cell complexes,17,0,unreviewed
 58,"Global analysis, analysis on manifolds",17,0,unreviewed
-60,Probability theory and stochastic processes,17,2,partial
+60,Probability theory and stochastic processes,17,3,partial
 62,Statistics,17,0,unreviewed
 65,Numerical analysis,17,3,partial
 68,Computer science,17,2,partial
