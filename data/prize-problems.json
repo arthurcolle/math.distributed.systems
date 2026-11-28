@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "snapshot_date": "2026-11-28",
-  "scope": "Public math prize index assembled from the Prize Problem Ledger snapshot, all numeric Erdős reward records, the fetched Left to Solve prize table, and primary sponsor checks. No worldwide completeness or claim guarantee.",
+  "scope": "Public math prize index assembled from the Prize Problem Ledger, numeric Erdős rewards, the fetched Left to Solve table, the Justin Sun Prize MathDB pilot, and primary sponsor checks. No worldwide completeness or claim guarantee.",
   "source_snapshots": {
     "ppl": {
       "url": "https://prizeproblems.org/",
@@ -15,15 +15,68 @@
     "left_to_solve": {
       "url": "https://lefttosolve.com/prizes",
       "targets": 72
+    },
+    "jsp_mathdb_pilot": {
+      "url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+      "blob_sha": "c4b400372057a3f8a72ac0cfa99a9c7406cca451",
+      "records": 50,
+      "rollout": {
+        "status": "prepared",
+        "effective_at": null,
+        "activation_evidence": null
+      },
+      "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+      "prize_announcement": "https://www.hejustinsun.com/prize/mathdb",
+      "currency": "USD",
+      "pool_tiers": [
+        {
+          "name": "pinnacle",
+          "count": 7,
+          "amount": 1000000
+        },
+        {
+          "name": "tier_1",
+          "count": 8,
+          "maximum": 65537
+        },
+        {
+          "name": "tier_2",
+          "count": 9,
+          "maximum": 5040
+        },
+        {
+          "name": "tier_3",
+          "count": 26,
+          "maximum": 1729
+        }
+      ],
+      "percent_split": {
+        "solution": 50,
+        "lean": 30,
+        "exposition": 20
+      },
+      "lean_gate_for_announcement_and_payment": [
+        "solution",
+        "exposition"
+      ],
+      "unknown_amounts_not_inferred": true
+    },
+    "wolfram_rule30_kit": {
+      "url": "https://github.com/WolframInstitute/Rule30PrizeKit/tree/5fb591588cfa869bfdc47946799b5ddd70a903d1",
+      "log_url": "https://www.wolframcloud.com/obj/rule-30-prize/Agents/submissions.json",
+      "lean": "4.35.0",
+      "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+      "verified_log_snapshot": "2026-11-28T05:35:00Z"
     }
   },
   "counts": {
-    "records": 241,
+    "records": 284,
     "erdos_numeric": 114,
     "erdos_strict_open": 47,
     "erdos_partial_resolution": 7,
-    "primary_sponsor_records": 51,
-    "sponsor_verified_donation_only": 13
+    "primary_sponsor_records": 96,
+    "sponsor_verified_donation_only": 13,
+    "jsp_mathdb_pilot": 50
   },
   "records": [
     {
@@ -176,7 +229,12 @@
       "source_links": [
         "https://prizeproblems.org/problems/100/",
         "https://www.claymath.org/millennium-problems/",
-        "https://www.hejustinsun.com/prize/pinnacle"
+        "https://www.hejustinsun.com/prize/pinnacle",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/315850/birch-and-swinnerton-dyer-conjecture",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000003"
       ],
       "ppl_number": 100,
       "ppl_snapshot_label": "Institutional Verified open",
@@ -199,7 +257,14 @@
           "currency": "USD",
           "rules_url": "https://www.hejustinsun.com/prize/pinnacle",
           "offer_status": "sponsor_published_tier",
-          "condition": "Pinnacle contribution rules apply; not assumed additive with Clay."
+          "condition": "Pinnacle contribution rules apply; not assumed additive with Clay.",
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-000003",
+          "mathdb_id": 315850,
+          "mathdb_url": "https://mathdb.com/p/315850/birch-and-swinnerton-dyer-conjecture",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000003",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
         }
       ],
       "left_to_solve_targets": [
@@ -4376,7 +4441,12 @@
       "math_status": "sponsor_listed",
       "payout_status": "sponsor_published",
       "source_links": [
-        "https://www.hejustinsun.com/prize/pinnacle"
+        "https://www.hejustinsun.com/prize/pinnacle",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/405775/global-langlands-functoriality-conjecture",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001023"
       ],
       "flags": [],
       "offers": [
@@ -4386,7 +4456,14 @@
           "amount": 1000000,
           "currency": "USD",
           "rules_url": "https://www.hejustinsun.com/prize/pinnacle",
-          "offer_status": "sponsor_published_tier"
+          "offer_status": "sponsor_published_tier",
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-001023",
+          "mathdb_id": 405775,
+          "mathdb_url": "https://mathdb.com/p/405775/global-langlands-functoriality-conjecture",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001023",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
         }
       ]
     },
@@ -4394,43 +4471,72 @@
       "id": "goldbach-complementary-multiples",
       "title": "Let’s Prove Goldbach · Complementary n₁-multiples avoiding n₂ and n₃",
       "math_status": "catalog_listed_unresolved",
-      "payout_status": "catalog_listed_recheck",
+      "payout_status": "sponsor_reconfirmation_needed",
       "source_links": [
-        "https://prizeproblems.org/problems/106/"
+        "https://prizeproblems.org/problems/106/",
+        "https://www.dimostriamogoldbach.it/en/prizes/"
       ],
       "ppl_number": 106,
       "ppl_snapshot_label": "Independent · Let’s Prove Goldbach Source-stated",
       "ppl_displayed_reward": "€100",
-      "flags": [],
+      "flags": [
+        "absent_from_current_sponsor_prize_table"
+      ],
       "offers": []
     },
     {
       "id": "goldbach-preceding-spaces-finite-form",
       "title": "Let’s Prove Goldbach · Finite-form representation of preceding spaces",
-      "math_status": "catalog_listed_unresolved",
-      "payout_status": "catalog_listed_recheck",
+      "math_status": "solutions_under_sponsor_review",
+      "payout_status": "not_a_clean_open_bounty",
       "source_links": [
-        "https://prizeproblems.org/problems/029/"
+        "https://prizeproblems.org/problems/029/",
+        "https://www.dimostriamogoldbach.it/en/prizes/"
       ],
       "ppl_number": 29,
       "ppl_snapshot_label": "Independent · Let’s Prove Goldbach Source-stated",
       "ppl_displayed_reward": "€200",
-      "flags": [],
-      "offers": []
+      "flags": [
+        "intake_closed_no_award_decision_verified"
+      ],
+      "offers": [
+        {
+          "sponsor": "Dimostriamo Goldbach",
+          "displayed_reward": "€200",
+          "amount": 200,
+          "currency": "EUR",
+          "rules_url": "https://www.dimostriamogoldbach.it/en/prizes/",
+          "offer_status": "closed_to_new_submissions",
+          "payout_confirmed": null
+        }
+      ]
     },
     {
       "id": "goldbach-t-space-three-moduli",
       "title": "Let’s Prove Goldbach · Approximate t-space for three moduli",
-      "math_status": "catalog_listed_unresolved",
-      "payout_status": "catalog_listed_recheck",
+      "math_status": "solutions_under_sponsor_review",
+      "payout_status": "not_a_clean_open_bounty",
       "source_links": [
-        "https://prizeproblems.org/problems/058/"
+        "https://prizeproblems.org/problems/058/",
+        "https://www.dimostriamogoldbach.it/en/prizes/"
       ],
       "ppl_number": 58,
       "ppl_snapshot_label": "Independent · Let’s Prove Goldbach Source-stated",
       "ppl_displayed_reward": "€100",
-      "flags": [],
-      "offers": []
+      "flags": [
+        "intake_closed_no_award_decision_verified"
+      ],
+      "offers": [
+        {
+          "sponsor": "Dimostriamo Goldbach",
+          "displayed_reward": "€100",
+          "amount": 100,
+          "currency": "EUR",
+          "rules_url": "https://www.dimostriamogoldbach.it/en/prizes/",
+          "offer_status": "closed_to_new_submissions",
+          "payout_confirmed": null
+        }
+      ]
     },
     {
       "id": "hager-reverse-markov-quadrature",
@@ -4454,7 +4560,12 @@
       "source_links": [
         "https://prizeproblems.org/problems/110/",
         "https://www.claymath.org/millennium-problems/",
-        "https://www.hejustinsun.com/prize/pinnacle"
+        "https://www.hejustinsun.com/prize/pinnacle",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/315851/hodge-conjecture",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000004"
       ],
       "ppl_number": 110,
       "ppl_snapshot_label": "Institutional Verified open",
@@ -4477,7 +4588,14 @@
           "currency": "USD",
           "rules_url": "https://www.hejustinsun.com/prize/pinnacle",
           "offer_status": "sponsor_published_tier",
-          "condition": "Pinnacle contribution rules apply; not assumed additive with Clay."
+          "condition": "Pinnacle contribution rules apply; not assumed additive with Clay.",
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-000004",
+          "mathdb_id": 315851,
+          "mathdb_url": "https://mathdb.com/p/315851/hodge-conjecture",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000004",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
         }
       ],
       "left_to_solve_targets": [
@@ -5199,7 +5317,12 @@
         "https://www.claymath.org/millennium-problems/",
         "https://www.hejustinsun.com/prize/pinnacle",
         "https://www.claymath.org/news/navier-stokes-announcement/",
-        "https://www.hejustinsun.com/prize/announcements/justin-sun-establishes-the-justin-sun-prize-%E2%80%9Cmy-wealth-came-from-mathematics-and-will-return-to-mathematics%E2%80%9D"
+        "https://www.hejustinsun.com/prize/announcements/justin-sun-establishes-the-justin-sun-prize-%E2%80%9Cmy-wealth-came-from-mathematics-and-will-return-to-mathematics%E2%80%9D",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/315852/navier-stokes-existence-and-smoothness",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000005"
       ],
       "ppl_number": 11,
       "ppl_snapshot_label": "Institutional Verified open",
@@ -5222,7 +5345,14 @@
           "currency": "USD",
           "rules_url": "https://www.hejustinsun.com/prize/pinnacle",
           "offer_status": "already_awarded",
-          "condition": "Pinnacle contribution rules apply; not assumed additive with Clay."
+          "condition": "Pinnacle contribution rules apply; not assumed additive with Clay.",
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-000005",
+          "mathdb_id": 315852,
+          "mathdb_url": "https://mathdb.com/p/315852/navier-stokes-existence-and-smoothness",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000005",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
         }
       ],
       "left_to_solve_targets": [
@@ -5373,7 +5503,12 @@
       "source_links": [
         "https://prizeproblems.org/problems/091/",
         "https://www.claymath.org/millennium-problems/",
-        "https://www.hejustinsun.com/prize/pinnacle"
+        "https://www.hejustinsun.com/prize/pinnacle",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/315853/p-versus-np-problem",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000002"
       ],
       "ppl_number": 91,
       "ppl_snapshot_label": "Institutional Verified open",
@@ -5396,7 +5531,14 @@
           "currency": "USD",
           "rules_url": "https://www.hejustinsun.com/prize/pinnacle",
           "offer_status": "sponsor_published_tier",
-          "condition": "Pinnacle contribution rules apply; not assumed additive with Clay."
+          "condition": "Pinnacle contribution rules apply; not assumed additive with Clay.",
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-000002",
+          "mathdb_id": 315853,
+          "mathdb_url": "https://mathdb.com/p/315853/p-versus-np-problem",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000002",
+          "statement_mapping_checked_at": "2026-10-21",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
         }
       ],
       "left_to_solve_targets": [
@@ -5590,7 +5732,11 @@
         "https://prizeproblems.org/problems/056/",
         "https://www.claymath.org/millennium-problems/",
         "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000001",
-        "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/"
+        "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/315854/riemann-hypothesis"
       ],
       "ppl_number": 56,
       "ppl_snapshot_label": "Institutional Verified open",
@@ -5615,7 +5761,14 @@
           "currency": "USD",
           "rules_url": "https://www.hejustinsun.com/prize/pinnacle",
           "offer_status": "reported_formal_proof_not_clean_target",
-          "condition": "Pinnacle contribution rules apply; not assumed additive with Clay."
+          "condition": "Pinnacle contribution rules apply; not assumed additive with Clay.",
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-000001",
+          "mathdb_id": 315854,
+          "mathdb_url": "https://mathdb.com/p/315854/riemann-hypothesis",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000001",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
         }
       ]
     },
@@ -5626,7 +5779,10 @@
       "payout_status": "sponsor_published",
       "source_links": [
         "https://prizeproblems.org/problems/125/",
-        "https://rule30prize.org/"
+        "https://rule30prize.org/",
+        "https://github.com/WolframInstitute/Rule30PrizeKit/tree/5fb591588cfa869bfdc47946799b5ddd70a903d1",
+        "https://www.wolframcloud.com/obj/rule-30-prize/Agents/submissions.json",
+        "https://www.wolframcloud.com/obj/rule-30-prize/Agents/skill.md"
       ],
       "ppl_number": 125,
       "ppl_snapshot_label": "Independent · Wolfram Rule 30 prizes Verified open",
@@ -5640,7 +5796,9 @@
           "currency": "USD",
           "rules_url": "https://rule30prize.org/",
           "condition": "Original full proof, identifiable human submitter, sponsor review.",
-          "offer_status": "sponsor_terms_found"
+          "offer_status": "sponsor_terms_found",
+          "verifier": "wolfram_rule30_kit",
+          "problem_number": 1
         }
       ]
     },
@@ -5651,7 +5809,10 @@
       "payout_status": "sponsor_published",
       "source_links": [
         "https://prizeproblems.org/problems/112/",
-        "https://rule30prize.org/"
+        "https://rule30prize.org/",
+        "https://github.com/WolframInstitute/Rule30PrizeKit/tree/5fb591588cfa869bfdc47946799b5ddd70a903d1",
+        "https://www.wolframcloud.com/obj/rule-30-prize/Agents/submissions.json",
+        "https://www.wolframcloud.com/obj/rule-30-prize/Agents/skill.md"
       ],
       "ppl_number": 112,
       "ppl_snapshot_label": "Independent · Wolfram Rule 30 prizes Verified open",
@@ -5665,7 +5826,9 @@
           "currency": "USD",
           "rules_url": "https://rule30prize.org/",
           "condition": "Original full proof, identifiable human submitter, sponsor review.",
-          "offer_status": "sponsor_terms_found"
+          "offer_status": "sponsor_terms_found",
+          "verifier": "wolfram_rule30_kit",
+          "problem_number": 2
         }
       ]
     },
@@ -5676,12 +5839,17 @@
       "payout_status": "sponsor_published",
       "source_links": [
         "https://prizeproblems.org/problems/096/",
-        "https://rule30prize.org/"
+        "https://rule30prize.org/",
+        "https://github.com/WolframInstitute/Rule30PrizeKit/tree/5fb591588cfa869bfdc47946799b5ddd70a903d1",
+        "https://www.wolframcloud.com/obj/rule-30-prize/Agents/submissions.json",
+        "https://www.wolframcloud.com/obj/rule-30-prize/Agents/skill.md"
       ],
       "ppl_number": 96,
       "ppl_snapshot_label": "Independent · Wolfram Rule 30 prizes Verified open",
       "ppl_displayed_reward": "$10,000",
-      "flags": [],
+      "flags": [
+        "lower_bound_depends_on_machine_model"
+      ],
       "offers": [
         {
           "sponsor": "Wolfram Foundation",
@@ -5690,7 +5858,10 @@
           "currency": "USD",
           "rules_url": "https://rule30prize.org/",
           "condition": "Original full proof, identifiable human submitter, sponsor review.",
-          "offer_status": "sponsor_terms_found"
+          "offer_status": "sponsor_terms_found",
+          "verifier": "wolfram_rule30_kit",
+          "problem_number": 3,
+          "scope_note": "State machine model and bound precisely. The kit's one-tape reference is not universal; ruling out O(n), o(n), and subpolynomial time are different claims. Current kit checks for this category feed partial results to human review."
         }
       ]
     },
@@ -6471,7 +6642,12 @@
       "source_links": [
         "https://prizeproblems.org/problems/069/",
         "https://www.claymath.org/millennium-problems/",
-        "https://www.hejustinsun.com/prize/pinnacle"
+        "https://www.hejustinsun.com/prize/pinnacle",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/315855/yang-mills-existence-and-mass-gap",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000006"
       ],
       "ppl_number": 69,
       "ppl_snapshot_label": "Institutional Verified open",
@@ -6494,7 +6670,14 @@
           "currency": "USD",
           "rules_url": "https://www.hejustinsun.com/prize/pinnacle",
           "offer_status": "sponsor_published_tier",
-          "condition": "Pinnacle contribution rules apply; not assumed additive with Clay."
+          "condition": "Pinnacle contribution rules apply; not assumed additive with Clay.",
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-000006",
+          "mathdb_id": 315855,
+          "mathdb_url": "https://mathdb.com/p/315855/yang-mills-existence-and-mass-gap",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000006",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
         }
       ],
       "left_to_solve_targets": [
@@ -6504,6 +6687,1517 @@
           "sponsor": "the Clay Mathematics Institute",
           "site_status": "Open",
           "erdos_number": null
+        }
+      ]
+    },
+    {
+      "id": "jsp-000007",
+      "title": "Poincaré conjecture",
+      "math_status": "solved",
+      "payout_status": "not_a_clean_open_bounty",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/316224/poincare-conjecture",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000007",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/awards/README.md#award-register"
+      ],
+      "flags": [
+        "lean_award_announced_not_payment_verified"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Lean award announced; amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "lean_award_announced",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-000007",
+          "mathdb_id": 316224,
+          "mathdb_url": "https://mathdb.com/p/316224/poincare-conjecture",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000007",
+          "statement_mapping_checked_at": "2026-10-25",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "announced_category": "lean_formalization"
+        }
+      ]
+    },
+    {
+      "id": "jsp-000010",
+      "title": "abc conjecture",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/316096/abc-conjecture",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000010"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-000010",
+          "mathdb_id": 316096,
+          "mathdb_url": "https://mathdb.com/p/316096/abc-conjecture",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000010",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "scope_note": "The abc conjecture, not the separate IUT Challenger Prize."
+        }
+      ]
+    },
+    {
+      "id": "jsp-000021",
+      "title": "Schanuel's conjecture",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/316100/schanuel-s-conjecture",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000021"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-000021",
+          "mathdb_id": 316100,
+          "mathdb_url": "https://mathdb.com/p/316100/schanuel-s-conjecture",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000021",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-001024",
+      "title": "Strominger–Yau–Zaslow conjecture",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/397030/strominger-yau-zaslow-conjecture",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001024"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-001024",
+          "mathdb_id": 397030,
+          "mathdb_url": "https://mathdb.com/p/397030/strominger-yau-zaslow-conjecture",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001024",
+          "statement_mapping_checked_at": "2026-10-21",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-001072",
+      "title": "Hodge-theoretic mirror symmetry conjecture (Katzarkov–Kontsevich–Pantev)",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/408863/hodge-theoretic-mirror-symmetry-conjecture-katzarkov-kontsev",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001072"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-001072",
+          "mathdb_id": 408863,
+          "mathdb_url": "https://mathdb.com/p/408863/hodge-theoretic-mirror-symmetry-conjecture-katzarkov-kontsev",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001072",
+          "statement_mapping_checked_at": "2026-10-21",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "scope_note": "Katzarkov–Kontsevich–Pantev noncommutative Hodge structures, not metric SYZ or categorical mirror symmetry."
+        }
+      ]
+    },
+    {
+      "id": "jsp-001025",
+      "title": "Existence of One-Way Functions",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/405776/existence-of-one-way-functions",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001025"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-001025",
+          "mathdb_id": 405776,
+          "mathdb_url": "https://mathdb.com/p/405776/existence-of-one-way-functions",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001025",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-000015",
+      "title": "Kakeya conjecture",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/315983/kakeya-conjecture",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000015"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-000015",
+          "mathdb_id": 315983,
+          "mathdb_url": "https://mathdb.com/p/315983/kakeya-conjecture",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000015",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-001026",
+      "title": "Standard conjectures",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/315943/standard-conjectures",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001026"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-001026",
+          "mathdb_id": 315943,
+          "mathdb_url": "https://mathdb.com/p/315943/standard-conjectures",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001026",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-000028",
+      "title": "Bateman Horn Conjecture",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/406223/bateman-horn-conjecture",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000028"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-000028",
+          "mathdb_id": 406223,
+          "mathdb_url": "https://mathdb.com/p/406223/bateman-horn-conjecture",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000028",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-001027",
+      "title": "Termination conjecture for flips of klt pairs",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/394012/termination-conjecture-for-flips-of-klt-pairs",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001027"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-001027",
+          "mathdb_id": 394012,
+          "mathdb_url": "https://mathdb.com/p/394012/termination-conjecture-for-flips-of-klt-pairs",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001027",
+          "statement_mapping_checked_at": "2026-10-13",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-000014",
+      "title": "inverse Galois problem",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/315889/inverse-galois-problem",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000014"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-000014",
+          "mathdb_id": 315889,
+          "mathdb_url": "https://mathdb.com/p/315889/inverse-galois-problem",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000014",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-000008",
+      "title": "Goldbach's conjecture",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/316061/goldbach-s-conjecture",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000008"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-000008",
+          "mathdb_id": 316061,
+          "mathdb_url": "https://mathdb.com/p/316061/goldbach-s-conjecture",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000008",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "scope_note": "Strong Goldbach, not the dashed-line auxiliary offers."
+        }
+      ]
+    },
+    {
+      "id": "jsp-000009",
+      "title": "Twin prime conjecture",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/316128/twin-prime-conjecture",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000009"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-000009",
+          "mathdb_id": 316128,
+          "mathdb_url": "https://mathdb.com/p/316128/twin-prime-conjecture",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000009",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-001028",
+      "title": "Tate conjecture",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/315944/tate-conjecture",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001028"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-001028",
+          "mathdb_id": 315944,
+          "mathdb_url": "https://mathdb.com/p/315944/tate-conjecture",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001028",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-000037",
+      "title": "Jacobian conjecture",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/315779/jacobian-conjecture",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000037"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-000037",
+          "mathdb_id": 315779,
+          "mathdb_url": "https://mathdb.com/p/315779/jacobian-conjecture",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000037",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "scope_note": "All dimensions in the sponsor scope, not only dimension two."
+        }
+      ]
+    },
+    {
+      "id": "jsp-001029",
+      "title": "Bombieri–Lang conjecture on Zariski density",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/395886/bombieri-lang-conjecture-on-zariski-density",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001029"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-001029",
+          "mathdb_id": 395886,
+          "mathdb_url": "https://mathdb.com/p/395886/bombieri-lang-conjecture-on-zariski-density",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001029",
+          "statement_mapping_checked_at": "2026-10-13",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-001030",
+      "title": "Novikov conjecture",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/316146/novikov-conjecture",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001030"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-001030",
+          "mathdb_id": 316146,
+          "mathdb_url": "https://mathdb.com/p/316146/novikov-conjecture",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001030",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-001031",
+      "title": "Farrell–Jones conjecture",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/315862/farrell-jones-conjecture",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001031"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-001031",
+          "mathdb_id": 315862,
+          "mathdb_url": "https://mathdb.com/p/315862/farrell-jones-conjecture",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001031",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-000012",
+      "title": "Legendre's conjecture",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/316127/legendre-s-conjecture",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000012"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-000012",
+          "mathdb_id": 316127,
+          "mathdb_url": "https://mathdb.com/p/316127/legendre-s-conjecture",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000012",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-000013",
+      "title": "Hadamard conjecture",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/315867/hadamard-conjecture",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000013"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-000013",
+          "mathdb_id": 315867,
+          "mathdb_url": "https://mathdb.com/p/315867/hadamard-conjecture",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000013",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-000029",
+      "title": "Dickson's conjecture",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/316119/dickson-s-conjecture",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000029"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-000029",
+          "mathdb_id": 316119,
+          "mathdb_url": "https://mathdb.com/p/316119/dickson-s-conjecture",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000029",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-001032",
+      "title": "Generalized Hodge–Grothendieck Conjecture",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/395066/generalized-hodge-grothendieck-conjecture",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001032"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-001032",
+          "mathdb_id": 395066,
+          "mathdb_url": "https://mathdb.com/p/395066/generalized-hodge-grothendieck-conjecture",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001032",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-001033",
+      "title": "The exponent-two conjecture for matrix multiplication",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/346080/the-exponent-two-conjecture-for-matrix-multiplication",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001033"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-001033",
+          "mathdb_id": 346080,
+          "mathdb_url": "https://mathdb.com/p/346080/the-exponent-two-conjecture-for-matrix-multiplication",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001033",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-001034",
+      "title": "Generalized Ramanujan Conjecture for GL_n",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/405783/generalized-ramanujan-conjecture-for-gl-n",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001034"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-001034",
+          "mathdb_id": 405783,
+          "mathdb_url": "https://mathdb.com/p/405783/generalized-ramanujan-conjecture-for-gl-n",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001034",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-001035",
+      "title": "Extended States in the Anderson Model",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/389103/extended-states-in-the-anderson-model",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001035"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-001035",
+          "mathdb_id": 389103,
+          "mathdb_url": "https://mathdb.com/p/389103/extended-states-in-the-anderson-model",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001035",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-001036",
+      "title": "Extension of Kroneckers Theorem on Abelian Fields to Any Algebraic Base Field",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/405786/extension-of-kroneckers-theorem-on-abelian-fields-to-any-alg",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001036"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-001036",
+          "mathdb_id": 405786,
+          "mathdb_url": "https://mathdb.com/p/405786/extension-of-kroneckers-theorem-on-abelian-fields-to-any-alg",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001036",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-001037",
+      "title": "Prove the Penrose inequality or present a counterexample",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/405787/prove-the-penrose-inequality-or-present-a-counterexample",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001037"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-001037",
+          "mathdb_id": 405787,
+          "mathdb_url": "https://mathdb.com/p/405787/prove-the-penrose-inequality-or-present-a-counterexample",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001037",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-001038",
+      "title": "Modularity of Elliptic Curves over Number Fields (End_K(E)=Z)",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/405788/modularity-of-elliptic-curves-over-number-fields-end-k-e-z",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001038"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-001038",
+          "mathdb_id": 405788,
+          "mathdb_url": "https://mathdb.com/p/405788/modularity-of-elliptic-curves-over-number-fields-end-k-e-z",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001038",
+          "statement_mapping_checked_at": "2026-10-13",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-001039",
+      "title": "Fontaine–Mazur geometric Galois-representation conjecture",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/389372/fontaine-mazur-geometric-galois-representation-conjecture",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001039"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-001039",
+          "mathdb_id": 389372,
+          "mathdb_url": "https://mathdb.com/p/389372/fontaine-mazur-geometric-galois-representation-conjecture",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001039",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-001040",
+      "title": "Fourier restriction conjecture for the sphere (Stein)",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/403784/fourier-restriction-conjecture-for-the-sphere-stein",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001040"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-001040",
+          "mathdb_id": 403784,
+          "mathdb_url": "https://mathdb.com/p/403784/fourier-restriction-conjecture-for-the-sphere-stein",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001040",
+          "statement_mapping_checked_at": "2026-10-21",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-001041",
+      "title": "Grothendieck's period conjecture for motivic Galois groups",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/356355/grothendieck-s-period-conjecture-for-motivic-galois-groups",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001041"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-001041",
+          "mathdb_id": 356355,
+          "mathdb_url": "https://mathdb.com/p/356355/grothendieck-s-period-conjecture-for-motivic-galois-groups",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001041",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-001042",
+      "title": "Existence of One-Way Permutations",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/405793/existence-of-one-way-permutations",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001042"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-001042",
+          "mathdb_id": 405793,
+          "mathdb_url": "https://mathdb.com/p/405793/existence-of-one-way-permutations",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001042",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-001043",
+      "title": "Shafarevich–Tate finiteness conjecture for elliptic curves",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/355259/shafarevich-tate-finiteness-conjecture-for-elliptic-curves",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001043"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-001043",
+          "mathdb_id": 355259,
+          "mathdb_url": "https://mathdb.com/p/355259/shafarevich-tate-finiteness-conjecture-for-elliptic-curves",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001043",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-001044",
+      "title": "The weight-monodromy conjecture for proper smooth varieties",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/378011/the-weight-monodromy-conjecture-for-proper-smooth-varieties",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001044"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-001044",
+          "mathdb_id": 378011,
+          "mathdb_url": "https://mathdb.com/p/378011/the-weight-monodromy-conjecture-for-proper-smooth-varieties",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001044",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-001045",
+      "title": "Zilber–Pink conjecture",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/316098/zilber-pink-conjecture",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001045"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-001045",
+          "mathdb_id": 316098,
+          "mathdb_url": "https://mathdb.com/p/316098/zilber-pink-conjecture",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001045",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-001046",
+      "title": "Grothendieck–Teichmüller conjecture",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/348860/grothendieck-teichmuller-conjecture",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001046"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-001046",
+          "mathdb_id": 348860,
+          "mathdb_url": "https://mathdb.com/p/348860/grothendieck-teichmuller-conjecture",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001046",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-001047",
+      "title": "The absolute Hodge conjecture for Hodge classes",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/370916/the-absolute-hodge-conjecture-for-hodge-classes",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001047"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-001047",
+          "mathdb_id": 370916,
+          "mathdb_url": "https://mathdb.com/p/370916/the-absolute-hodge-conjecture-for-hodge-classes",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001047",
+          "statement_mapping_checked_at": "2026-10-13",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-000030",
+      "title": "Elliott–Halberstam conjecture",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/316120/elliott-halberstam-conjecture",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000030"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-000030",
+          "mathdb_id": 316120,
+          "mathdb_url": "https://mathdb.com/p/316120/elliott-halberstam-conjecture",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000030",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-001048",
+      "title": "The Mumford--Tate conjecture for abelian varieties",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/332879/the-mumford-tate-conjecture-for-abelian-varieties",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001048"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-001048",
+          "mathdb_id": 332879,
+          "mathdb_url": "https://mathdb.com/p/332879/the-mumford-tate-conjecture-for-abelian-varieties",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001048",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-001049",
+      "title": "Algorithmic Mordell conjecture",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/332964/algorithmic-mordell-conjecture",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001049"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-001049",
+          "mathdb_id": 332964,
+          "mathdb_url": "https://mathdb.com/p/332964/algorithmic-mordell-conjecture",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-1001-1022.md#JSP-001049",
+          "statement_mapping_checked_at": "2026-10-13",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "scope_note": "Algorithm to compute all rational points over the input number field extension, not a prescribed polynomial height bound."
+        }
+      ]
+    },
+    {
+      "id": "jsp-000016",
+      "title": "Littlewood conjecture",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/316099/littlewood-conjecture",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000016"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-000016",
+          "mathdb_id": 316099,
+          "mathdb_url": "https://mathdb.com/p/316099/littlewood-conjecture",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000016",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-000024",
+      "title": "Invariant subspace problem",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/315900/invariant-subspace-problem",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000024"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-000024",
+          "mathdb_id": 315900,
+          "mathdb_url": "https://mathdb.com/p/315900/invariant-subspace-problem",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000024",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
+        }
+      ]
+    },
+    {
+      "id": "jsp-000025",
+      "title": "Lehmer's conjecture",
+      "math_status": "not_independently_assessed",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.json",
+        "https://www.hejustinsun.com/prize/mathdb",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+        "https://mathdb.com/p/315901/lehmer-s-conjecture",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000025"
+      ],
+      "flags": [
+        "exact_pilot_amount_unverified",
+        "check_category_before_dispatch"
+      ],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "Pilot pool; per-problem amount not verified",
+          "amount": null,
+          "currency": "USD",
+          "rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md",
+          "offer_status": "sponsor_listed_amount_unverified",
+          "payout_confirmed": null,
+          "program": "jsp_mathdb_pilot",
+          "jsp_id": "JSP-000025",
+          "mathdb_id": 315901,
+          "mathdb_url": "https://mathdb.com/p/315901/lehmer-s-conjecture",
+          "scope_url": "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000025",
+          "statement_mapping_checked_at": "2026-10-12",
+          "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
         }
       ]
     }
