@@ -22,7 +22,8 @@
     "erdos_numeric": 114,
     "erdos_strict_open": 47,
     "erdos_partial_resolution": 7,
-    "primary_sponsor_records": 22
+    "primary_sponsor_records": 35,
+    "sponsor_verified_donation_only": 13
   },
   "records": [
     {
@@ -4574,9 +4575,10 @@
       "id": "kimberling-13-a-positive-surjective",
       "title": "Kimberling #13.1 · a(k) visits every positive integer",
       "math_status": "catalog_listed_unresolved",
-      "payout_status": "catalog_listed_recheck",
+      "payout_status": "sponsor_published_donation_only",
       "source_links": [
-        "https://prizeproblems.org/problems/066/"
+        "https://prizeproblems.org/problems/066/",
+        "https://faculty.evansville.edu/ck6/integer/unsolved.html"
       ],
       "ppl_number": 66,
       "ppl_snapshot_label": "Independent · Kimberling rewards Verified open",
@@ -4584,15 +4586,39 @@
       "flags": [
         "donation_to_oeis_not_cash_to_solver"
       ],
-      "offers": []
+      "offers": [
+        {
+          "sponsor": "Clark Kimberling",
+          "sponsor_problem_id": "13.1",
+          "displayed_reward": "$25 proof or $20 counterexample",
+          "currency": "USD",
+          "amount_options": [
+            {
+              "amount": 25,
+              "qualifier": "proof"
+            },
+            {
+              "amount": 20,
+              "qualifier": "counterexample"
+            }
+          ],
+          "rules_url": "https://faculty.evansville.edu/ck6/integer/unsolved.html",
+          "offer_status": "sponsor_terms_found",
+          "payment_type": "donation",
+          "payment_recipient": "Online Encyclopedia of Integer Sequences (OEIS)",
+          "direct_solver_cash": false,
+          "condition": "The sponsor calls for first publication in a refereed journal or may accept a short, correct and complete solution for publication on his site. For qualifying solutions after 2025-01-01, the sponsor donates in the solver’s name rather than paying the solver."
+        }
+      ]
     },
     {
       "id": "kimberling-13-d-integer-surjective",
       "title": "Kimberling #13.2 · d(k) visits every integer",
       "math_status": "catalog_listed_unresolved",
-      "payout_status": "catalog_listed_recheck",
+      "payout_status": "sponsor_published_donation_only",
       "source_links": [
-        "https://prizeproblems.org/problems/156/"
+        "https://prizeproblems.org/problems/156/",
+        "https://faculty.evansville.edu/ck6/integer/unsolved.html"
       ],
       "ppl_number": 156,
       "ppl_snapshot_label": "Independent · Kimberling rewards Verified open",
@@ -4600,15 +4626,39 @@
       "flags": [
         "donation_to_oeis_not_cash_to_solver"
       ],
-      "offers": []
+      "offers": [
+        {
+          "sponsor": "Clark Kimberling",
+          "sponsor_problem_id": "13.2",
+          "displayed_reward": "$25 proof or $20 counterexample",
+          "currency": "USD",
+          "amount_options": [
+            {
+              "amount": 25,
+              "qualifier": "proof"
+            },
+            {
+              "amount": 20,
+              "qualifier": "counterexample"
+            }
+          ],
+          "rules_url": "https://faculty.evansville.edu/ck6/integer/unsolved.html",
+          "offer_status": "sponsor_terms_found",
+          "payment_type": "donation",
+          "payment_recipient": "Online Encyclopedia of Integer Sequences (OEIS)",
+          "direct_solver_cash": false,
+          "condition": "The sponsor calls for first publication in a refereed journal or may accept a short, correct and complete solution for publication on his site. For qualifying solutions after 2025-01-01, the sponsor donates in the solver’s name rather than paying the solver."
+        }
+      ]
     },
     {
       "id": "kimberling-13-negative-d-return",
       "title": "Kimberling #13.4 · Negative d-values recur within three steps",
       "math_status": "catalog_listed_unresolved",
-      "payout_status": "catalog_listed_recheck",
+      "payout_status": "sponsor_published_donation_only",
       "source_links": [
-        "https://prizeproblems.org/problems/150/"
+        "https://prizeproblems.org/problems/150/",
+        "https://faculty.evansville.edu/ck6/integer/unsolved.html"
       ],
       "ppl_number": 150,
       "ppl_snapshot_label": "Independent · Kimberling rewards Verified open",
@@ -4616,15 +4666,39 @@
       "flags": [
         "donation_to_oeis_not_cash_to_solver"
       ],
-      "offers": []
+      "offers": [
+        {
+          "sponsor": "Clark Kimberling",
+          "sponsor_problem_id": "13.4",
+          "displayed_reward": "$25 proof or $20 counterexample",
+          "currency": "USD",
+          "amount_options": [
+            {
+              "amount": 25,
+              "qualifier": "proof"
+            },
+            {
+              "amount": 20,
+              "qualifier": "counterexample"
+            }
+          ],
+          "rules_url": "https://faculty.evansville.edu/ck6/integer/unsolved.html",
+          "offer_status": "sponsor_terms_found",
+          "payment_type": "donation",
+          "payment_recipient": "Online Encyclopedia of Integer Sequences (OEIS)",
+          "direct_solver_cash": false,
+          "condition": "The sponsor calls for first publication in a refereed journal or may accept a short, correct and complete solution for publication on his site. For qualifying solutions after 2025-01-01, the sponsor donates in the solver’s name rather than paying the solver."
+        }
+      ]
     },
     {
       "id": "kimberling-13-positive-d-return",
       "title": "Kimberling #13.3 · Positive d-values recur within three steps",
       "math_status": "catalog_listed_unresolved",
-      "payout_status": "catalog_listed_recheck",
+      "payout_status": "sponsor_published_donation_only",
       "source_links": [
-        "https://prizeproblems.org/problems/143/"
+        "https://prizeproblems.org/problems/143/",
+        "https://faculty.evansville.edu/ck6/integer/unsolved.html"
       ],
       "ppl_number": 143,
       "ppl_snapshot_label": "Independent · Kimberling rewards Verified open",
@@ -4632,15 +4706,39 @@
       "flags": [
         "donation_to_oeis_not_cash_to_solver"
       ],
-      "offers": []
+      "offers": [
+        {
+          "sponsor": "Clark Kimberling",
+          "sponsor_problem_id": "13.3",
+          "displayed_reward": "$25 proof or $20 counterexample",
+          "currency": "USD",
+          "amount_options": [
+            {
+              "amount": 25,
+              "qualifier": "proof"
+            },
+            {
+              "amount": 20,
+              "qualifier": "counterexample"
+            }
+          ],
+          "rules_url": "https://faculty.evansville.edu/ck6/integer/unsolved.html",
+          "offer_status": "sponsor_terms_found",
+          "payment_type": "donation",
+          "payment_recipient": "Online Encyclopedia of Integer Sequences (OEIS)",
+          "direct_solver_cash": false,
+          "condition": "The sponsor calls for first publication in a refereed journal or may accept a short, correct and complete solution for publication on his site. For qualifying solutions after 2025-01-01, the sponsor donates in the solver’s name rather than paying the solver."
+        }
+      ]
     },
     {
       "id": "kimberling-curve-closest-sphere",
       "title": "Kimberling #10 · Curve closest to a sphere",
       "math_status": "catalog_listed_unresolved",
-      "payout_status": "catalog_listed_recheck",
+      "payout_status": "sponsor_published_donation_only",
       "source_links": [
-        "https://prizeproblems.org/problems/172/"
+        "https://prizeproblems.org/problems/172/",
+        "https://faculty.evansville.edu/ck6/integer/unsolved.html"
       ],
       "ppl_number": 172,
       "ppl_snapshot_label": "Independent · Kimberling rewards Verified open",
@@ -4648,15 +4746,37 @@
       "flags": [
         "donation_to_oeis_not_cash_to_solver"
       ],
-      "offers": []
+      "offers": [
+        {
+          "sponsor": "Clark Kimberling",
+          "sponsor_problem_id": "10",
+          "displayed_reward": "$50 or $100",
+          "currency": "USD",
+          "amount_options": [
+            {
+              "amount": 50
+            },
+            {
+              "amount": 100
+            }
+          ],
+          "rules_url": "https://faculty.evansville.edu/ck6/integer/unsolved.html",
+          "offer_status": "sponsor_terms_found",
+          "payment_type": "donation",
+          "payment_recipient": "Online Encyclopedia of Integer Sequences (OEIS)",
+          "direct_solver_cash": false,
+          "condition": "The sponsor lists two alternative amounts and does not clearly match them to the two variants. The sponsor calls for first publication in a refereed journal or may accept a short, correct and complete solution for publication on his site. For qualifying solutions after 2025-01-01, the sponsor donates in the solver’s name rather than paying the solver."
+        }
+      ]
     },
     {
       "id": "kimberling-hard-count",
       "title": "Kimberling #4 · A Hard Count",
       "math_status": "catalog_listed_unresolved",
-      "payout_status": "catalog_listed_recheck",
+      "payout_status": "sponsor_published_donation_only",
       "source_links": [
-        "https://prizeproblems.org/problems/122/"
+        "https://prizeproblems.org/problems/122/",
+        "https://faculty.evansville.edu/ck6/integer/unsolved.html"
       ],
       "ppl_number": 122,
       "ppl_snapshot_label": "Independent · Kimberling rewards Verified open",
@@ -4664,15 +4784,30 @@
       "flags": [
         "donation_to_oeis_not_cash_to_solver"
       ],
-      "offers": []
+      "offers": [
+        {
+          "sponsor": "Clark Kimberling",
+          "sponsor_problem_id": "4",
+          "displayed_reward": "$100",
+          "currency": "USD",
+          "amount": 100,
+          "rules_url": "https://faculty.evansville.edu/ck6/integer/unsolved.html",
+          "offer_status": "sponsor_terms_found",
+          "payment_type": "donation",
+          "payment_recipient": "Online Encyclopedia of Integer Sequences (OEIS)",
+          "direct_solver_cash": false,
+          "condition": "The sponsor calls for first publication in a refereed journal or may accept a short, correct and complete solution for publication on his site. For qualifying solutions after 2025-01-01, the sponsor donates in the solver’s name rather than paying the solver."
+        }
+      ]
     },
     {
       "id": "kimberling-interlacing-triangles",
       "title": "Kimberling #18 · Triangles with interlacing rows",
       "math_status": "catalog_listed_unresolved",
-      "payout_status": "catalog_listed_recheck",
+      "payout_status": "sponsor_published_donation_only",
       "source_links": [
-        "https://prizeproblems.org/problems/078/"
+        "https://prizeproblems.org/problems/078/",
+        "https://faculty.evansville.edu/ck6/integer/unsolved.html"
       ],
       "ppl_number": 78,
       "ppl_snapshot_label": "Independent · Kimberling rewards Verified open",
@@ -4680,15 +4815,30 @@
       "flags": [
         "donation_to_oeis_not_cash_to_solver"
       ],
-      "offers": []
+      "offers": [
+        {
+          "sponsor": "Clark Kimberling",
+          "sponsor_problem_id": "18",
+          "displayed_reward": "$50",
+          "currency": "USD",
+          "amount": 50,
+          "rules_url": "https://faculty.evansville.edu/ck6/integer/unsolved.html",
+          "offer_status": "sponsor_terms_found",
+          "payment_type": "donation",
+          "payment_recipient": "Online Encyclopedia of Integer Sequences (OEIS)",
+          "direct_solver_cash": false,
+          "condition": "The sponsor calls for first publication in a refereed journal or may accept a short, correct and complete solution for publication on his site. For qualifying solutions after 2025-01-01, the sponsor donates in the solver’s name rather than paying the solver."
+        }
+      ]
     },
     {
       "id": "kimberling-kolakoski-five",
       "title": "Kimberling #1 · Five Oldenburger–Kolakoski questions",
       "math_status": "catalog_listed_unresolved",
-      "payout_status": "catalog_listed_recheck",
+      "payout_status": "sponsor_published_donation_only",
       "source_links": [
-        "https://prizeproblems.org/problems/044/"
+        "https://prizeproblems.org/problems/044/",
+        "https://faculty.evansville.edu/ck6/integer/unsolved.html"
       ],
       "ppl_number": 44,
       "ppl_snapshot_label": "Independent · Kimberling rewards Verified open",
@@ -4696,15 +4846,30 @@
       "flags": [
         "donation_to_oeis_not_cash_to_solver"
       ],
-      "offers": []
+      "offers": [
+        {
+          "sponsor": "Clark Kimberling",
+          "sponsor_problem_id": "1",
+          "displayed_reward": "$200",
+          "currency": "USD",
+          "amount": 200,
+          "rules_url": "https://faculty.evansville.edu/ck6/integer/unsolved.html",
+          "offer_status": "sponsor_terms_found",
+          "payment_type": "donation",
+          "payment_recipient": "Online Encyclopedia of Integer Sequences (OEIS)",
+          "direct_solver_cash": false,
+          "condition": "One published solution to any one of the five listed questions qualifies for the stated shared reward. The sponsor calls for first publication in a refereed journal or may accept a short, correct and complete solution for publication on his site. For qualifying solutions after 2025-01-01, the sponsor donates in the solver’s name rather than paying the solver."
+        }
+      ]
     },
     {
       "id": "kimberling-prime-separator-bounded-gaps",
       "title": "Kimberling #12 · Prime-separator first-row gaps",
       "math_status": "catalog_listed_unresolved",
-      "payout_status": "catalog_listed_recheck",
+      "payout_status": "sponsor_published_donation_only",
       "source_links": [
-        "https://prizeproblems.org/problems/049/"
+        "https://prizeproblems.org/problems/049/",
+        "https://faculty.evansville.edu/ck6/integer/unsolved.html"
       ],
       "ppl_number": 49,
       "ppl_snapshot_label": "Independent · Kimberling rewards Verified open",
@@ -4712,15 +4877,30 @@
       "flags": [
         "donation_to_oeis_not_cash_to_solver"
       ],
-      "offers": []
+      "offers": [
+        {
+          "sponsor": "Clark Kimberling",
+          "sponsor_problem_id": "12",
+          "displayed_reward": "$25",
+          "currency": "USD",
+          "amount": 25,
+          "rules_url": "https://faculty.evansville.edu/ck6/integer/unsolved.html",
+          "offer_status": "sponsor_terms_found",
+          "payment_type": "donation",
+          "payment_recipient": "Online Encyclopedia of Integer Sequences (OEIS)",
+          "direct_solver_cash": false,
+          "condition": "The sponsor calls for first publication in a refereed journal or may accept a short, correct and complete solution for publication on his site. For qualifying solutions after 2025-01-01, the sponsor donates in the solver’s name rather than paying the solver."
+        }
+      ]
     },
     {
       "id": "kimberling-primes-every-row",
       "title": "Kimberling #15 · Infinitely many primes in every row",
       "math_status": "catalog_listed_unresolved",
-      "payout_status": "catalog_listed_recheck",
+      "payout_status": "sponsor_published_donation_only",
       "source_links": [
-        "https://prizeproblems.org/problems/040/"
+        "https://prizeproblems.org/problems/040/",
+        "https://faculty.evansville.edu/ck6/integer/unsolved.html"
       ],
       "ppl_number": 40,
       "ppl_snapshot_label": "Independent · Kimberling rewards Verified open",
@@ -4728,15 +4908,30 @@
       "flags": [
         "donation_to_oeis_not_cash_to_solver"
       ],
-      "offers": []
+      "offers": [
+        {
+          "sponsor": "Clark Kimberling",
+          "sponsor_problem_id": "15",
+          "displayed_reward": "$50",
+          "currency": "USD",
+          "amount": 50,
+          "rules_url": "https://faculty.evansville.edu/ck6/integer/unsolved.html",
+          "offer_status": "sponsor_terms_found",
+          "payment_type": "donation",
+          "payment_recipient": "Online Encyclopedia of Integer Sequences (OEIS)",
+          "direct_solver_cash": false,
+          "condition": "The sponsor calls for first publication in a refereed journal or may accept a short, correct and complete solution for publication on his site. For qualifying solutions after 2025-01-01, the sponsor donates in the solver’s name rather than paying the solver."
+        }
+      ]
     },
     {
       "id": "kimberling-run-length-segments",
       "title": "Kimberling #11 · Run-length segment containment",
       "math_status": "catalog_listed_unresolved",
-      "payout_status": "catalog_listed_recheck",
+      "payout_status": "sponsor_published_donation_only",
       "source_links": [
-        "https://prizeproblems.org/problems/140/"
+        "https://prizeproblems.org/problems/140/",
+        "https://faculty.evansville.edu/ck6/integer/unsolved.html"
       ],
       "ppl_number": 140,
       "ppl_snapshot_label": "Independent · Kimberling rewards Verified open",
@@ -4744,15 +4939,30 @@
       "flags": [
         "donation_to_oeis_not_cash_to_solver"
       ],
-      "offers": []
+      "offers": [
+        {
+          "sponsor": "Clark Kimberling",
+          "sponsor_problem_id": "11",
+          "displayed_reward": "$75",
+          "currency": "USD",
+          "amount": 75,
+          "rules_url": "https://faculty.evansville.edu/ck6/integer/unsolved.html",
+          "offer_status": "sponsor_terms_found",
+          "payment_type": "donation",
+          "payment_recipient": "Online Encyclopedia of Integer Sequences (OEIS)",
+          "direct_solver_cash": false,
+          "condition": "The sponsor calls for first publication in a refereed journal or may accept a short, correct and complete solution for publication on his site. For qualifying solutions after 2025-01-01, the sponsor donates in the solver’s name rather than paying the solver."
+        }
+      ]
     },
     {
       "id": "kimberling-sequence-surjectivity",
       "title": "Kimberling #2 · Does the Kimberling sequence contain every integer?",
       "math_status": "catalog_listed_unresolved",
-      "payout_status": "catalog_listed_recheck",
+      "payout_status": "sponsor_published_donation_only",
       "source_links": [
-        "https://prizeproblems.org/problems/134/"
+        "https://prizeproblems.org/problems/134/",
+        "https://faculty.evansville.edu/ck6/integer/unsolved.html"
       ],
       "ppl_number": 134,
       "ppl_snapshot_label": "Independent · Kimberling rewards Verified open",
@@ -4760,15 +4970,30 @@
       "flags": [
         "donation_to_oeis_not_cash_to_solver"
       ],
-      "offers": []
+      "offers": [
+        {
+          "sponsor": "Clark Kimberling",
+          "sponsor_problem_id": "2",
+          "displayed_reward": "$300",
+          "currency": "USD",
+          "amount": 300,
+          "rules_url": "https://faculty.evansville.edu/ck6/integer/unsolved.html",
+          "offer_status": "sponsor_terms_found",
+          "payment_type": "donation",
+          "payment_recipient": "Online Encyclopedia of Integer Sequences (OEIS)",
+          "direct_solver_cash": false,
+          "condition": "The sponsor calls for first publication in a refereed journal or may accept a short, correct and complete solution for publication on his site. For qualifying solutions after 2025-01-01, the sponsor donates in the solver’s name rather than paying the solver."
+        }
+      ]
     },
     {
       "id": "kimberling-special-numbers",
       "title": "Kimberling #23 · Special linearly recurrent Beatty subsequences",
       "math_status": "catalog_listed_unresolved",
-      "payout_status": "catalog_listed_recheck",
+      "payout_status": "sponsor_published_donation_only",
       "source_links": [
-        "https://prizeproblems.org/problems/034/"
+        "https://prizeproblems.org/problems/034/",
+        "https://faculty.evansville.edu/ck6/integer/unsolved.html"
       ],
       "ppl_number": 34,
       "ppl_snapshot_label": "Independent · Kimberling rewards Verified open",
@@ -4776,7 +5001,21 @@
       "flags": [
         "donation_to_oeis_not_cash_to_solver"
       ],
-      "offers": []
+      "offers": [
+        {
+          "sponsor": "Clark Kimberling",
+          "sponsor_problem_id": "23",
+          "displayed_reward": "$50",
+          "currency": "USD",
+          "amount": 50,
+          "rules_url": "https://faculty.evansville.edu/ck6/integer/unsolved.html",
+          "offer_status": "sponsor_terms_found",
+          "payment_type": "donation",
+          "payment_recipient": "Online Encyclopedia of Integer Sequences (OEIS)",
+          "direct_solver_cash": false,
+          "condition": "The sponsor calls for first publication in a refereed journal or may accept a short, correct and complete solution for publication on his site. For qualifying solutions after 2025-01-01, the sponsor donates in the solver’s name rather than paying the solver."
+        }
+      ]
     },
     {
       "id": "krenn-inherited-vertex-coloring",
