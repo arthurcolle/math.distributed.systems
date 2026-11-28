@@ -2,10 +2,11 @@
 
 Snapshot: 2026-11-28. This is a source-backed lead list, not a promise of payment.
 
-- **241** distinct problem records, with listed variants attached to their parent problem. **18** have separately checked primary sponsor terms, including two Clay targets with reported proofs. The remaining records are leads, not independently confirmed active cash awards.
+- **241** distinct problem records, with listed variants attached to their parent problem. **22** have separately checked primary sponsor terms, including two Clay targets with reported proofs. The remaining records are leads, not independently confirmed active cash awards.
 - Includes all **177** entries in the [Prize Problem Ledger snapshot](https://prizeproblems.org/), all **114** numeric entries in the [Erdős reward data](https://github.com/teorth/erdosproblems/blob/main/data/problems.yaml), and all **72** visible targets in the fetched [Left to Solve table](https://lefttosolve.com/prizes). Left to Solve is not a payer. Its table and headline counts can change independently.
 - Erdős rows include **47** strictly open problems and **7** with a specific verifiable, falsifiable, or decidable direction. Read the exact statement and required direction before dispatching work. The [Combinatorics Foundation](https://www.combinatoricsfoundation.org/erd%C5%91s-problems) makes discretionary awards, with documentation of Erdős's published offer and publication of a qualifying solution required.
 - **Start here for fixed-dollar proof targets with direct terms:** [Wolfram S-combinator](https://www.combinatorprize.org/) ($20,000), the three [Rule 30 questions](https://rule30prize.org/) ($10,000 each), and [Krenn–Gu](https://mariokrenn.wordpress.com/graph-theory-question/) (€3,000; qualifying journal). **Erdős #142** is the $10,000 historical entry; **#282** is not.
+- [Althöfer’s Collatz prizes](https://althofer.de/collatz-prizes.html): the €500 optimal-play game was explicitly reaffirmed open on November 26. His €1,000 offer for original Collatz is separate from Bakuage, and he currently requests no proof attempts for the original problem.
 - Prize statuses apply to exact award criteria. Clay lists RH and Navier–Stokes as active, but the index does not treat them as clean first-solution targets. A prize pool, award split, or second program is not an extra guaranteed payout. Kimberling's current terms direct payments to OEIS rather than to solvers.
 - See [machine-readable records](data/prize-problems.json) for original currencies, offer-specific rules, links, variant status, and source snapshots. No proof attempts or automated applications are launched by this index.
 
@@ -15,7 +16,7 @@ Snapshot: 2026-11-28. This is a source-backed lead list, not a promise of paymen
 | --- | --- | --- |
 | [Beal conjecture](https://prizeproblems.org/problems/126/) | $1,000,000 | Sponsor terms |
 | [Birch–Swinnerton-Dyer conjecture](https://prizeproblems.org/problems/100/) | $1,000,000 / $1,000,000 | Sponsor terms |
-| [Collatz conjecture](https://prizeproblems.org/problems/142/) | ¥120,000,000 | Sponsor discretion |
+| [Collatz conjecture](https://prizeproblems.org/problems/142/) | ¥120,000,000 / €1,000 | [Sponsor terms](https://althofer.de/collatz-prizes.html); Bakuage discretionary; Althöfer currently requests no original-Collatz attempts |
 | [Global Langlands functoriality](https://www.hejustinsun.com/prize/pinnacle) | $1,000,000 | Sponsor terms |
 | [Hodge conjecture](https://prizeproblems.org/problems/110/) | $1,000,000 / $1,000,000 | Sponsor terms |
 | [IUT Challenger Prize](https://prizeproblems.org/problems/102/) | $1,000,000 | Sponsor discretion |
@@ -31,6 +32,10 @@ Snapshot: 2026-11-28. This is a source-backed lead list, not a promise of paymen
 | [Rule 30 computational irreducibility](https://prizeproblems.org/problems/096/) | $10,000 | Sponsor terms |
 | [Is the S combinator computation-universal by itself?](https://prizeproblems.org/problems/004/) | $20,000 | Sponsor terms |
 | [Yang–Mills existence and mass gap](https://prizeproblems.org/problems/069/) | $1,000,000 / $1,000,000 | Sponsor terms |
+| [Althöfer · Stochastic ± Collatz convergence](https://prizeproblems.org/problems/116/) | €300 | [Sponsor terms](https://althofer.de/collatz-prizes.html) |
+| [Althöfer · A divergent Xn+1 orbit](https://prizeproblems.org/problems/055/) | €25 | [Sponsor terms](https://althofer.de/collatz-prizes.html) |
+| [Althöfer · Does the 9n+1 orbit from 1 diverge?](https://prizeproblems.org/problems/028/) | €50 | [Sponsor terms](https://althofer.de/collatz-prizes.html) |
+| [Althöfer · Optimal-play 3n±1 game](https://prizeproblems.org/problems/119/) | €500 | [Sponsor terms](https://althofer.de/collatz-prizes.html) |
 
 ## Erdős rewards: open or partial directions
 
@@ -95,10 +100,6 @@ Snapshot: 2026-11-28. This is a source-backed lead list, not a promise of paymen
 
 | Problem | Published or listed amount (not additive) | Payout status |
 | --- | --- | --- |
-| [Althöfer · Does the 9n+1 orbit from 1 diverge?](https://prizeproblems.org/problems/028/) | €50 | Catalog only / recheck |
-| [Althöfer · A divergent Xn+1 orbit](https://prizeproblems.org/problems/055/) | €25 | Catalog only / recheck |
-| [Althöfer · Optimal-play 3n±1 game](https://prizeproblems.org/problems/119/) | €500 | Catalog only / recheck |
-| [Althöfer · Stochastic ± Collatz convergence](https://prizeproblems.org/problems/116/) | €300 | Catalog only / recheck |
 | [Boyer enigma #6 · 5×5 additive–multiplicative magic square](https://prizeproblems.org/problems/101/) | €1,000 | Sponsor reconfirmation needed |
 | [Boyer enigma #6a · 6×6 additive–multiplicative magic square](https://prizeproblems.org/problems/127/) | €500 | Sponsor reconfirmation needed |
 | [Boyer enigma #2 · 5×5 bimagic square with distinct positive integers](https://prizeproblems.org/problems/151/) | €1,000 | Sponsor reconfirmation needed |
