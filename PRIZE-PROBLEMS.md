@@ -2,7 +2,7 @@
 
 Snapshot: 2026-11-28. This is a source-backed lead list, not a promise of payment.
 
-- **241** distinct problem records, with listed variants attached to their parent problem. **22** have separately checked primary sponsor terms, including two Clay targets with reported proofs. The remaining records are leads, not independently confirmed active cash awards.
+- **241** distinct problem records, with listed variants attached to their parent problem. **35** have separately checked primary sponsor terms, including 13 donation-only records and two Clay targets with reported proofs. The remaining records are leads, not independently confirmed active cash awards.
 - Includes all **177** entries in the [Prize Problem Ledger snapshot](https://prizeproblems.org/), all **114** numeric entries in the [Erdős reward data](https://github.com/teorth/erdosproblems/blob/main/data/problems.yaml), and all **72** visible targets in the fetched [Left to Solve table](https://lefttosolve.com/prizes). Left to Solve is not a payer. Its table and headline counts can change independently.
 - Erdős rows include **47** strictly open problems and **7** with a specific verifiable, falsifiable, or decidable direction. Read the exact statement and required direction before dispatching work. The [Combinatorics Foundation](https://www.combinatoricsfoundation.org/erd%C5%91s-problems) makes discretionary awards, with documentation of Erdős's published offer and publication of a qualifying solution required.
 - **Start here for fixed-dollar proof targets with direct terms:** [Wolfram S-combinator](https://www.combinatorprize.org/) ($20,000), the three [Rule 30 questions](https://rule30prize.org/) ($10,000 each), and [Krenn–Gu](https://mariokrenn.wordpress.com/graph-theory-question/) (€3,000; qualifying journal). **Erdős #142** is the $10,000 historical entry; **#282** is not.
@@ -131,19 +131,6 @@ Snapshot: 2026-11-28. This is a source-backed lead list, not a promise of paymen
 | [KCIK #4 · NPT bound entanglement](https://prizeproblems.org/problems/152/) | ≈€2,026 | Renewal unconfirmed |
 | [KCIK #1 · SIC-POVM dimensions](https://prizeproblems.org/problems/145/) | ≈€2,026 | Renewal unconfirmed |
 | [KCIK #5 · Two-copy non-distillability](https://prizeproblems.org/problems/075/) | ≈€2,026 | Renewal unconfirmed |
-| [Kimberling #13.1 · a(k) visits every positive integer](https://prizeproblems.org/problems/066/) | $25 proof · $20 counterexample | Catalog only / recheck; donation to OEIS |
-| [Kimberling #13.2 · d(k) visits every integer](https://prizeproblems.org/problems/156/) | $25 proof · $20 counterexample | Catalog only / recheck; donation to OEIS |
-| [Kimberling #13.4 · Negative d-values recur within three steps](https://prizeproblems.org/problems/150/) | $25 proof · $20 counterexample | Catalog only / recheck; donation to OEIS |
-| [Kimberling #13.3 · Positive d-values recur within three steps](https://prizeproblems.org/problems/143/) | $25 proof · $20 counterexample | Catalog only / recheck; donation to OEIS |
-| [Kimberling #10 · Curve closest to a sphere](https://prizeproblems.org/problems/172/) | $50–$100 | Catalog only / recheck; donation to OEIS |
-| [Kimberling #4 · A Hard Count](https://prizeproblems.org/problems/122/) | $100 | Catalog only / recheck; donation to OEIS |
-| [Kimberling #18 · Triangles with interlacing rows](https://prizeproblems.org/problems/078/) | $50 | Catalog only / recheck; donation to OEIS |
-| [Kimberling #1 · Five Oldenburger–Kolakoski questions](https://prizeproblems.org/problems/044/) | $200 shared offer | Catalog only / recheck; donation to OEIS |
-| [Kimberling #12 · Prime-separator first-row gaps](https://prizeproblems.org/problems/049/) | $25 | Catalog only / recheck; donation to OEIS |
-| [Kimberling #15 · Infinitely many primes in every row](https://prizeproblems.org/problems/040/) | $50 | Catalog only / recheck; donation to OEIS |
-| [Kimberling #11 · Run-length segment containment](https://prizeproblems.org/problems/140/) | $75 | Catalog only / recheck; donation to OEIS |
-| [Kimberling #2 · Does the Kimberling sequence contain every integer?](https://prizeproblems.org/problems/134/) | $300 | Catalog only / recheck; donation to OEIS |
-| [Kimberling #23 · Special linearly recurrent Beatty subsequences](https://prizeproblems.org/problems/034/) | $50 | Catalog only / recheck; donation to OEIS |
 | [MiMC collision over BLS12-381](https://prizeproblems.org/problems/020/) | $20,000 | Catalog only / recheck; separate crypto challenge |
 | [MiMC collision over BN254](https://prizeproblems.org/problems/093/) | $20,000 | Catalog only / recheck; separate crypto challenge |
 | [Nanongkai · Cut-query reachability](https://prizeproblems.org/problems/170/) | €110 main target+ 1 linked offer | Catalog only / recheck |
@@ -204,6 +191,24 @@ Snapshot: 2026-11-28. This is a source-backed lead list, not a promise of paymen
 | [Talagrand · Simple combinatorics / discrete convexity](https://prizeproblems.org/problems/089/) | $1,000 | Catalog only / recheck |
 | [Talagrand · Ultimate matching conjecture in dimension two](https://prizeproblems.org/problems/171/) | $1,000 | Sponsor reconfirmation needed |
 | [Does a Type II [72,36,16] binary code exist?](https://prizeproblems.org/problems/158/) | $200 · nonexistence+ 2 linked offer | Sponsor reconfirmation needed |
+
+## Sponsor-confirmed donations, not cash to the solver
+
+| Problem | Donation amount | Recipient and terms |
+| --- | --- | --- |
+| [Kimberling #1 · Five Oldenburger–Kolakoski questions](https://prizeproblems.org/problems/044/) | $200 | [Kimberling #1](https://faculty.evansville.edu/ck6/integer/unsolved.html); donation to OEIS |
+| [Kimberling #2 · Does the Kimberling sequence contain every integer?](https://prizeproblems.org/problems/134/) | $300 | [Kimberling #2](https://faculty.evansville.edu/ck6/integer/unsolved.html); donation to OEIS |
+| [Kimberling #4 · A Hard Count](https://prizeproblems.org/problems/122/) | $100 | [Kimberling #4](https://faculty.evansville.edu/ck6/integer/unsolved.html); donation to OEIS |
+| [Kimberling #10 · Curve closest to a sphere](https://prizeproblems.org/problems/172/) | $50 or $100 | [Kimberling #10](https://faculty.evansville.edu/ck6/integer/unsolved.html); donation to OEIS |
+| [Kimberling #11 · Run-length segment containment](https://prizeproblems.org/problems/140/) | $75 | [Kimberling #11](https://faculty.evansville.edu/ck6/integer/unsolved.html); donation to OEIS |
+| [Kimberling #12 · Prime-separator first-row gaps](https://prizeproblems.org/problems/049/) | $25 | [Kimberling #12](https://faculty.evansville.edu/ck6/integer/unsolved.html); donation to OEIS |
+| [Kimberling #13.1 · a(k) visits every positive integer](https://prizeproblems.org/problems/066/) | $25 proof or $20 counterexample | [Kimberling #13.1](https://faculty.evansville.edu/ck6/integer/unsolved.html); donation to OEIS |
+| [Kimberling #13.2 · d(k) visits every integer](https://prizeproblems.org/problems/156/) | $25 proof or $20 counterexample | [Kimberling #13.2](https://faculty.evansville.edu/ck6/integer/unsolved.html); donation to OEIS |
+| [Kimberling #13.3 · Positive d-values recur within three steps](https://prizeproblems.org/problems/143/) | $25 proof or $20 counterexample | [Kimberling #13.3](https://faculty.evansville.edu/ck6/integer/unsolved.html); donation to OEIS |
+| [Kimberling #13.4 · Negative d-values recur within three steps](https://prizeproblems.org/problems/150/) | $25 proof or $20 counterexample | [Kimberling #13.4](https://faculty.evansville.edu/ck6/integer/unsolved.html); donation to OEIS |
+| [Kimberling #15 · Infinitely many primes in every row](https://prizeproblems.org/problems/040/) | $50 | [Kimberling #15](https://faculty.evansville.edu/ck6/integer/unsolved.html); donation to OEIS |
+| [Kimberling #18 · Triangles with interlacing rows](https://prizeproblems.org/problems/078/) | $50 | [Kimberling #18](https://faculty.evansville.edu/ck6/integer/unsolved.html); donation to OEIS |
+| [Kimberling #23 · Special linearly recurrent Beatty subsequences](https://prizeproblems.org/problems/034/) | $50 | [Kimberling #23](https://faculty.evansville.edu/ck6/integer/unsolved.html); donation to OEIS |
 
 ## Historical and status exceptions
 
