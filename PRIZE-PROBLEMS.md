@@ -2,7 +2,7 @@
 
 Snapshot: 2026-11-28. This is a source-backed lead list, not a promise of payment.
 
-- **241** distinct problem records, with listed variants attached to their parent problem. **49** have separately checked primary sponsor terms, including 13 donation-only records and two Clay targets with reported proofs. The remaining records are leads, not independently confirmed active cash awards.
+- **241** distinct problem records, with listed variants attached to their parent problem. **51** have separately checked primary sponsor terms, including two withdrawn Talagrand offers, 13 donation-only records and two Clay targets with reported proofs. The remaining records are leads, not independently confirmed active cash awards.
 - Includes all **177** entries in the [Prize Problem Ledger snapshot](https://prizeproblems.org/), all **114** numeric entries in the [Erdős reward data](https://github.com/teorth/erdosproblems/blob/main/data/problems.yaml), and all **72** visible targets in the fetched [Left to Solve table](https://lefttosolve.com/prizes). Left to Solve is not a payer. Its table and headline counts can change independently.
 - Erdős rows include **47** strictly open problems and **7** with a specific verifiable, falsifiable, or decidable direction. Read the exact statement and required direction before dispatching work. The [Combinatorics Foundation](https://www.combinatoricsfoundation.org/erd%C5%91s-problems) makes discretionary awards, with documentation of Erdős's published offer and publication of a qualifying solution required.
 - **Start here for fixed-dollar proof targets with direct terms:** [Wolfram S-combinator](https://www.combinatorprize.org/) ($20,000), the three [Rule 30 questions](https://rule30prize.org/) ($10,000 each), and [Krenn–Gu](https://mariokrenn.wordpress.com/graph-theory-question/) (€3,000; qualifying journal). **Erdős #142** is the $10,000 historical entry; **#282** is not.
@@ -149,9 +149,9 @@ Snapshot: 2026-11-28. This is a source-backed lead list, not a promise of paymen
 | [Poseidon 2026 zero-test record](https://prizeproblems.org/problems/047/) | Share of $40,000 ranking pool | Catalog only / recheck; separate crypto challenge |
 | [Proximity Prize · Grand list-decoding challenge](https://prizeproblems.org/problems/097/) | Share of $1,000,000 pool | Renewal unconfirmed; separate crypto challenge |
 | [Proximity Prize · Grand MCA challenge](https://prizeproblems.org/problems/162/) | Share of $1,000,000 pool | Renewal unconfirmed; separate crypto challenge |
-| [Ridgway Scott · Inf-sup condition for quartics on the Freudenthal mesh](https://prizeproblems.org/problems/148/) | $1,000 | Catalog only / recheck |
+| [Ridgway Scott · Inf-sup condition for quartics on the Freudenthal mesh](https://prizeproblems.org/problems/148/) | | [Ridgway Scott · Inf-sup condition for quartics on the Freudenthal mesh](https://prizeproblems.org/problems/148/) |,000 listed | [Sponsor page](https://www.people.cs.uchicago.edu/~ridg/prizes/prizes.html) indexed as closed until further notice; direct fetch unavailable |
 | [Ridgway Scott · Strouhal Prize · Periodic flow around a cylinder](https://prizeproblems.org/problems/010/) | $1,000 | Catalog only / recheck |
-| [Ridgway Scott · Zero-gradient / Scott–Vogelius–Nitsche convergence](https://prizeproblems.org/problems/115/) | $1,000 | Catalog only / recheck |
+| [Ridgway Scott · Zero-gradient / Scott–Vogelius–Nitsche convergence](https://prizeproblems.org/problems/115/) | | [Ridgway Scott · Zero-gradient / Scott–Vogelius–Nitsche convergence](https://prizeproblems.org/problems/115/) |,000 listed | [Sponsor page](https://www.people.cs.uchicago.edu/~ridg/prizes/prizes.html) indexed as closed until further notice; direct fetch unavailable |
 | [Shallit #2 · Tight bounds for CFG word separation](https://prizeproblems.org/problems/146/) | £10 | Catalog only / recheck |
 | [Shallit #3 · NFA separating-word bounds](https://prizeproblems.org/problems/090/) | £50 | Catalog only / recheck |
 | [Shallit #7 · Are primitive binary words context-free?](https://prizeproblems.org/problems/165/) | £200 | Catalog only / recheck |
@@ -176,8 +176,8 @@ Snapshot: 2026-11-28. This is a source-backed lead list, not a promise of paymen
 | [Sun · Prime-shifted unit fractions](https://prizeproblems.org/problems/024/) | $1,000 | Catalog only / recheck |
 | [Sun · Prime and triangular-number representations](https://prizeproblems.org/problems/120/) | $1,000 proof · $200 counterexample | Catalog only / recheck |
 | [Sun · Write n=k+m with 2ᵏ+m prime](https://prizeproblems.org/problems/164/) | $1,000 | Catalog only / recheck |
-| [Talagrand · Simple combinatorics / discrete convexity](https://prizeproblems.org/problems/089/) | $1,000 | Catalog only / recheck |
-| [Talagrand · Ultimate matching conjecture in dimension two](https://prizeproblems.org/problems/171/) | $1,000 | Sponsor reconfirmation needed |
+| [Talagrand · Simple combinatorics / discrete convexity](https://prizeproblems.org/problems/089/) | | [Talagrand · Simple combinatorics / discrete convexity](https://prizeproblems.org/problems/089/) |,000 historical | [Withdrawn by sponsor](https://michel.talagrand.net/); [reported result](https://github.com/openai/math/blob/main/lean/ComparatorChallenges/TalagrandDiscreteConvexity.lean) |
+| [Talagrand · Ultimate matching conjecture in dimension two](https://prizeproblems.org/problems/171/) | | [Talagrand · Ultimate matching conjecture in dimension two](https://prizeproblems.org/problems/171/) |,000 historical | [Withdrawn by sponsor](https://michel.talagrand.net/); [reported result](https://hexagonmath.org/2611.00294v1) |
 | [Does a Type II [72,36,16] binary code exist?](https://prizeproblems.org/problems/158/) | $200 · nonexistence+ 2 linked offer | Sponsor reconfirmation needed |
 | [Shallit #1 · Improve the separating-words upper bound](https://prizeproblems.org/problems/161/) | £100 | [Sponsor update; availability unconfirmed](https://cs.uwaterloo.ca/~shallit/talks.html) |
 | [Shallit #4 · DFA versus NFA separation gap](https://prizeproblems.org/problems/121/) | £50 | [Sponsor update; availability unconfirmed](https://cs.uwaterloo.ca/~shallit/talks.html) |
