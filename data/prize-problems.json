@@ -22,7 +22,7 @@
     "erdos_numeric": 114,
     "erdos_strict_open": 47,
     "erdos_partial_resolution": 7,
-    "primary_sponsor_records": 49,
+    "primary_sponsor_records": 51,
     "sponsor_verified_donation_only": 13
   },
   "records": [
@@ -5698,14 +5698,17 @@
       "id": "scott-freudenthal-inf-sup",
       "title": "Ridgway Scott · Inf-sup condition for quartics on the Freudenthal mesh",
       "math_status": "catalog_listed_unresolved",
-      "payout_status": "catalog_listed_recheck",
+      "payout_status": "not_a_clean_open_bounty",
       "source_links": [
-        "https://prizeproblems.org/problems/148/"
+        "https://prizeproblems.org/problems/148/",
+        "https://www.people.cs.uchicago.edu/~ridg/prizes/prizes.html"
       ],
       "ppl_number": 148,
       "ppl_snapshot_label": "Institutional · Ridgway Scott Foundation Verified open",
       "ppl_displayed_reward": "$1,000",
-      "flags": [],
+      "flags": [
+        "sponsor_closure_reported_via_search_snapshot"
+      ],
       "offers": []
     },
     {
@@ -5726,14 +5729,17 @@
       "id": "scott-zero-gradient",
       "title": "Ridgway Scott · Zero-gradient / Scott–Vogelius–Nitsche convergence",
       "math_status": "catalog_listed_unresolved",
-      "payout_status": "catalog_listed_recheck",
+      "payout_status": "not_a_clean_open_bounty",
       "source_links": [
-        "https://prizeproblems.org/problems/115/"
+        "https://prizeproblems.org/problems/115/",
+        "https://www.people.cs.uchicago.edu/~ridg/prizes/prizes.html"
       ],
       "ppl_number": 115,
       "ppl_snapshot_label": "Institutional · Ridgway Scott Foundation Verified open",
       "ppl_displayed_reward": "$1,000",
-      "flags": [],
+      "flags": [
+        "sponsor_closure_reported_via_search_snapshot"
+      ],
       "offers": []
     },
     {
@@ -6355,30 +6361,66 @@
     {
       "id": "talagrand-simple-combinatorics",
       "title": "Talagrand · Simple combinatorics / discrete convexity",
-      "math_status": "catalog_listed_unresolved",
-      "payout_status": "catalog_listed_recheck",
+      "math_status": "reported_formalized_result",
+      "payout_status": "not_a_clean_open_bounty",
       "source_links": [
-        "https://prizeproblems.org/problems/089/"
+        "https://prizeproblems.org/problems/089/",
+        "https://michel.talagrand.net/",
+        "https://michel.talagrand.net/prizes/combinatorics.pdf",
+        "https://github.com/openai/math/blob/main/lean/ComparatorChallenges/TalagrandDiscreteConvexity.lean",
+        "https://mathcommunity.github.io/oai-math-revised/papers/Talagrands-discrete-convexity-conjecture-September-23-2026/"
       ],
       "ppl_number": 89,
       "ppl_snapshot_label": "Independent · Talagrand prize problems Verified open",
       "ppl_displayed_reward": "$1,000",
-      "flags": [],
-      "offers": []
+      "flags": [
+        "sponsor_withdrew_personal_prizes",
+        "historical_amount_only"
+      ],
+      "offers": [
+        {
+          "sponsor": "Michel Talagrand",
+          "displayed_reward": "$1,000",
+          "amount": 1000,
+          "currency": "USD",
+          "rules_url": "https://michel.talagrand.net/prizes/combinatorics.pdf",
+          "offer_status": "withdrawn_by_sponsor",
+          "payout_confirmed": null,
+          "condition": "The comparator is reported accepted; it targets the stronger original-density version. No independent Lean run or payment verification."
+        }
+      ]
     },
     {
       "id": "talagrand-ultimate-matching-d2",
       "title": "Talagrand · Ultimate matching conjecture in dimension two",
-      "math_status": "catalog_listed_unresolved",
-      "payout_status": "sponsor_reconfirmation_needed",
+      "math_status": "reported_preprint_resolution",
+      "payout_status": "not_a_clean_open_bounty",
       "source_links": [
-        "https://prizeproblems.org/problems/171/"
+        "https://prizeproblems.org/problems/171/",
+        "https://michel.talagrand.net/",
+        "https://michel.talagrand.net/prizes/matchings.pdf",
+        "https://hexagonmath.org/2611.00294v1",
+        "https://hexagonmath.org/pdf/2611.00294v1#page=53"
       ],
       "ppl_number": 171,
       "ppl_snapshot_label": "Independent · Talagrand prize problems Reconfirm sponsor",
       "ppl_displayed_reward": "$1,000",
-      "flags": [],
-      "offers": []
+      "flags": [
+        "sponsor_withdrew_personal_prizes",
+        "historical_amount_only"
+      ],
+      "offers": [
+        {
+          "sponsor": "Michel Talagrand",
+          "displayed_reward": "$1,000",
+          "amount": 1000,
+          "currency": "USD",
+          "rules_url": "https://michel.talagrand.net/prizes/matchings.pdf",
+          "offer_status": "withdrawn_by_sponsor",
+          "payout_confirmed": null,
+          "condition": "The preprint reports a positive result for finite critical pairs including (4,4), and a negative result at (2,∞) and (∞,2) for independent uniform samples. No independent proof or payment verification."
+        }
+      ]
     },
     {
       "id": "type-ii-72-36-16-code",
