@@ -2,12 +2,13 @@
 
 Snapshot: 2026-11-28. This is a source-backed lead list, not a promise of payment.
 
-- **241** distinct problem records, with listed variants attached to their parent problem. **35** have separately checked primary sponsor terms, including 13 donation-only records and two Clay targets with reported proofs. The remaining records are leads, not independently confirmed active cash awards.
+- **241** distinct problem records, with listed variants attached to their parent problem. **49** have separately checked primary sponsor terms, including 13 donation-only records and two Clay targets with reported proofs. The remaining records are leads, not independently confirmed active cash awards.
 - Includes all **177** entries in the [Prize Problem Ledger snapshot](https://prizeproblems.org/), all **114** numeric entries in the [Erdős reward data](https://github.com/teorth/erdosproblems/blob/main/data/problems.yaml), and all **72** visible targets in the fetched [Left to Solve table](https://lefttosolve.com/prizes). Left to Solve is not a payer. Its table and headline counts can change independently.
 - Erdős rows include **47** strictly open problems and **7** with a specific verifiable, falsifiable, or decidable direction. Read the exact statement and required direction before dispatching work. The [Combinatorics Foundation](https://www.combinatoricsfoundation.org/erd%C5%91s-problems) makes discretionary awards, with documentation of Erdős's published offer and publication of a qualifying solution required.
 - **Start here for fixed-dollar proof targets with direct terms:** [Wolfram S-combinator](https://www.combinatorprize.org/) ($20,000), the three [Rule 30 questions](https://rule30prize.org/) ($10,000 each), and [Krenn–Gu](https://mariokrenn.wordpress.com/graph-theory-question/) (€3,000; qualifying journal). **Erdős #142** is the $10,000 historical entry; **#282** is not.
 - [Althöfer’s Collatz prizes](https://althofer.de/collatz-prizes.html): the €500 optimal-play game was explicitly reaffirmed open on November 26. His €1,000 offer for original Collatz is separate from Bakuage, and he currently requests no proof attempts for the original problem.
-- Prize statuses apply to exact award criteria. Clay lists RH and Navier–Stokes as active, but the index does not treat them as clean first-solution targets. A prize pool, award split, or second program is not an extra guaranteed payout. Kimberling's current terms direct payments to OEIS rather than to solvers.
+- [Ordinary OMv](https://sites.google.com/site/dannanongkai/open) has a €500 first-solution offer through 2028. The distinct €300 hinted conjecture has a [reported refutation](https://arxiv.org/pdf/2610.06783#page=59), with prize acceptance unverified.
+- Prize statuses apply to exact award criteria. Clay lists RH and Navier–Stokes as active; the [independent Lean verification of RH](https://leanprover-community.github.io/blog/posts/riemann-hypothesis/) is separate from award status, but the index does not treat them as clean first-solution targets. A prize pool, award split, or second program is not an extra guaranteed payout. Kimberling's current terms direct payments to OEIS rather than to solvers.
 - See [machine-readable records](data/prize-problems.json) for original currencies, offer-specific rules, links, variant status, and source snapshots. No proof attempts or automated applications are launched by this index.
 
 ## Sponsor terms checked
@@ -36,6 +37,7 @@ Snapshot: 2026-11-28. This is a source-backed lead list, not a promise of paymen
 | [Althöfer · A divergent Xn+1 orbit](https://prizeproblems.org/problems/055/) | €25 | [Sponsor terms](https://althofer.de/collatz-prizes.html) |
 | [Althöfer · Does the 9n+1 orbit from 1 diverge?](https://prizeproblems.org/problems/028/) | €50 | [Sponsor terms](https://althofer.de/collatz-prizes.html) |
 | [Althöfer · Optimal-play 3n±1 game](https://prizeproblems.org/problems/119/) | €500 | [Sponsor terms](https://althofer.de/collatz-prizes.html) |
+| [Nanongkai · Online Matrix–Vector Multiplication conjecture](https://prizeproblems.org/problems/111/) | €500 | [Open; 2028 expiry, exact date unstated](https://sites.google.com/site/dannanongkai/open) |
 
 ## Erdős rewards: open or partial directions
 
@@ -133,10 +135,6 @@ Snapshot: 2026-11-28. This is a source-backed lead list, not a promise of paymen
 | [KCIK #5 · Two-copy non-distillability](https://prizeproblems.org/problems/075/) | ≈€2,026 | Renewal unconfirmed |
 | [MiMC collision over BLS12-381](https://prizeproblems.org/problems/020/) | $20,000 | Catalog only / recheck; separate crypto challenge |
 | [MiMC collision over BN254](https://prizeproblems.org/problems/093/) | $20,000 | Catalog only / recheck; separate crypto challenge |
-| [Nanongkai · Cut-query reachability](https://prizeproblems.org/problems/170/) | €110 main target+ 1 linked offer | Catalog only / recheck |
-| [Nanongkai · Faster algorithm, larger description](https://prizeproblems.org/problems/037/) | €5 | Catalog only / recheck |
-| [Nanongkai · Online Matrix–Vector Multiplication conjecture](https://prizeproblems.org/problems/111/) | €500 | Catalog only / recheck |
-| [Nanongkai · v-hinted Matrix–Vector conjecture](https://prizeproblems.org/problems/108/) | €300 | Catalog only / recheck |
 | [Okhotin · Limitations of Boolean grammars](https://prizeproblems.org/problems/144/) | C$360 | Sponsor reconfirmation needed |
 | [Okhotin · Complement closure of conjunctive languages](https://prizeproblems.org/problems/131/) | C$360 | Sponsor reconfirmation needed |
 | [Okhotin · Greibach normal form for Boolean grammars](https://prizeproblems.org/problems/105/) | C$360 | Sponsor reconfirmation needed |
@@ -154,24 +152,14 @@ Snapshot: 2026-11-28. This is a source-backed lead list, not a promise of paymen
 | [Ridgway Scott · Inf-sup condition for quartics on the Freudenthal mesh](https://prizeproblems.org/problems/148/) | $1,000 | Catalog only / recheck |
 | [Ridgway Scott · Strouhal Prize · Periodic flow around a cylinder](https://prizeproblems.org/problems/010/) | $1,000 | Catalog only / recheck |
 | [Ridgway Scott · Zero-gradient / Scott–Vogelius–Nitsche convergence](https://prizeproblems.org/problems/115/) | $1,000 | Catalog only / recheck |
-| [Shallit #1 · Improve the separating-words upper bound](https://prizeproblems.org/problems/161/) | £100 | Catalog only / recheck |
 | [Shallit #2 · Tight bounds for CFG word separation](https://prizeproblems.org/problems/146/) | £10 | Catalog only / recheck |
 | [Shallit #3 · NFA separating-word bounds](https://prizeproblems.org/problems/090/) | £50 | Catalog only / recheck |
-| [Shallit #4 · DFA versus NFA separation gap](https://prizeproblems.org/problems/121/) | £50 | Catalog only / recheck |
-| [Shallit #5 · Reversal gap for separating words](https://prizeproblems.org/problems/070/) | £10 | Catalog only / recheck |
-| [Shallit #6 · Context-free language interpolation](https://prizeproblems.org/problems/154/) | £100 | Catalog only / recheck |
 | [Shallit #7 · Are primitive binary words context-free?](https://prizeproblems.org/problems/165/) | £200 | Catalog only / recheck |
-| [Shallit #8 · A ternary sequence with nonzero Hankel determinants](https://prizeproblems.org/problems/065/) | £100 | Catalog only / recheck |
 | [Shallit #9 · Nonzero Hankel determinants for a morphic word](https://prizeproblems.org/problems/036/) | £50 | Catalog only / recheck |
 | [Shallit #11 · Is the Thue–Morse word prime under transduction?](https://prizeproblems.org/problems/095/) | £20 | Catalog only / recheck |
 | [Shallit #12 · Kolakoski letter frequencies](https://prizeproblems.org/problems/059/) | £100 | Catalog only / recheck |
 | [Shallit #13 · Prime acceptance by an automaton](https://prizeproblems.org/problems/073/) | £50 | Catalog only / recheck |
 | [Shallit #14 · Divisibility and automata](https://prizeproblems.org/problems/068/) | £50 | Catalog only / recheck |
-| [Shallit #15 · NFA length-universality complexity](https://prizeproblems.org/problems/130/) | £25 | Catalog only / recheck |
-| [Shallit #16 · When is a finite language’s star infinite?](https://prizeproblems.org/problems/053/) | £25 | Catalog only / recheck |
-| [Shallit #17 · Factor universality of a finite language](https://prizeproblems.org/problems/109/) | £25 | Catalog only / recheck |
-| [Shallit #18 · Shortest forbidden factor bounds](https://prizeproblems.org/problems/160/) | £200 | Catalog only / recheck |
-| [Shallit #19 · Pierce expansion length](https://prizeproblems.org/problems/026/) | £200 | Catalog only / recheck |
 | [Simons cryptography · Interactive proofs for DTISP(t,s)](https://prizeproblems.org/problems/005/) | $100 | Sponsor reconfirmation needed |
 | [Simons cryptography · Indistinguishability obfuscation from plain LWE](https://prizeproblems.org/problems/085/) | $100 | Sponsor reconfirmation needed |
 | [Simons cryptography · One-way permutations from a worst-case lattice assumption](https://prizeproblems.org/problems/064/) | $100 | Sponsor reconfirmation needed |
@@ -191,6 +179,9 @@ Snapshot: 2026-11-28. This is a source-backed lead list, not a promise of paymen
 | [Talagrand · Simple combinatorics / discrete convexity](https://prizeproblems.org/problems/089/) | $1,000 | Catalog only / recheck |
 | [Talagrand · Ultimate matching conjecture in dimension two](https://prizeproblems.org/problems/171/) | $1,000 | Sponsor reconfirmation needed |
 | [Does a Type II [72,36,16] binary code exist?](https://prizeproblems.org/problems/158/) | $200 · nonexistence+ 2 linked offer | Sponsor reconfirmation needed |
+| [Shallit #1 · Improve the separating-words upper bound](https://prizeproblems.org/problems/161/) | £100 | [Sponsor update; availability unconfirmed](https://cs.uwaterloo.ca/~shallit/talks.html) |
+| [Shallit #4 · DFA versus NFA separation gap](https://prizeproblems.org/problems/121/) | £50 | [Sponsor update; availability unconfirmed](https://cs.uwaterloo.ca/~shallit/talks.html) |
+| [Shallit #19 · Pierce expansion length](https://prizeproblems.org/problems/026/) | £200 | [Sponsor update; availability unconfirmed](https://cs.uwaterloo.ca/~shallit/talks.html) |
 
 ## Sponsor-confirmed donations, not cash to the solver
 
@@ -275,3 +266,13 @@ Snapshot: 2026-11-28. This is a source-backed lead list, not a promise of paymen
 | [Erdős #1123](https://www.erdosproblems.com/1123) | $100 | Historical / not a clean target |
 | [Erdős #1128](https://www.erdosproblems.com/1128) | $50 | Historical / not a clean target |
 | [Erdős #1134](https://www.erdosproblems.com/1134) | £10 | Historical / not a clean target |
+| [Nanongkai · v-hinted Matrix–Vector conjecture](https://prizeproblems.org/problems/108/) | €300 | [Refutation reported; payment unverified](https://sites.google.com/site/dannanongkai/open) |
+| [Nanongkai · Cut-query reachability](https://prizeproblems.org/problems/170/) | €110 | [Sponsor update; not an open prize target](https://sites.google.com/site/dannanongkai/open) |
+| [Nanongkai · Faster algorithm, larger description](https://prizeproblems.org/problems/037/) | €5 | [Discontinued](https://sites.google.com/site/dannanongkai/open) |
+| [Shallit #5 · Reversal gap for separating words](https://prizeproblems.org/problems/070/) | £10 | [Sponsor update; not an open prize target](https://cs.uwaterloo.ca/~shallit/talks.html) |
+| [Shallit #6 · Context-free language interpolation](https://prizeproblems.org/problems/154/) | £100 | [Sponsor update; not an open prize target](https://cs.uwaterloo.ca/~shallit/talks.html) |
+| [Shallit #8 · A ternary sequence with nonzero Hankel determinants](https://prizeproblems.org/problems/065/) | £100 | [Sponsor update; not an open prize target](https://cs.uwaterloo.ca/~shallit/talks.html) |
+| [Shallit #15 · NFA length-universality complexity](https://prizeproblems.org/problems/130/) | £25 | [Sponsor update; not an open prize target](https://cs.uwaterloo.ca/~shallit/talks.html) |
+| [Shallit #16: Cofiniteness of the Kleene star](https://prizeproblems.org/problems/053/) | £25 | [Sponsor update; not an open prize target](https://cs.uwaterloo.ca/~shallit/talks.html) |
+| [Shallit #17 · Factor universality of a finite language](https://prizeproblems.org/problems/109/) | £25 | [Sponsor update; not an open prize target](https://cs.uwaterloo.ca/~shallit/talks.html) |
+| [Shallit #18 · Shortest forbidden factor bounds](https://prizeproblems.org/problems/160/) | £200 | [Sponsor update; not an open prize target](https://cs.uwaterloo.ca/~shallit/talks.html) |
