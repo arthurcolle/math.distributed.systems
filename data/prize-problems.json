@@ -1,0 +1,5965 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-11-28",
+  "scope": "Public math prize index assembled from the Prize Problem Ledger snapshot, all numeric Erdős reward records, the fetched Left to Solve prize table, and primary sponsor checks. No worldwide completeness or claim guarantee.",
+  "source_snapshots": {
+    "ppl": {
+      "url": "https://prizeproblems.org/",
+      "records": 177
+    },
+    "erdos": {
+      "url": "https://github.com/teorth/erdosproblems/blob/main/data/problems.yaml",
+      "blob_sha": "f68a3cf54876718b7bbb3873f8062df6d698bfb8",
+      "numeric_rewards": 114
+    },
+    "left_to_solve": {
+      "url": "https://lefttosolve.com/prizes",
+      "targets": 72
+    }
+  },
+  "counts": {
+    "records": 241,
+    "erdos_numeric": 114,
+    "erdos_strict_open": 47,
+    "erdos_partial_resolution": 7,
+    "primary_sponsor_records": 18
+  },
+  "records": [
+    {
+      "id": "althofer-9n1-from-one",
+      "title": "Althöfer · Does the 9n+1 orbit from 1 diverge?",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/028/"
+      ],
+      "ppl_number": 28,
+      "ppl_snapshot_label": "Independent · Althöfer Collatz prizes Verified open",
+      "ppl_displayed_reward": "€50",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "althofer-generalized-xn1-divergence",
+      "title": "Althöfer · A divergent Xn+1 orbit",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/055/"
+      ],
+      "ppl_number": 55,
+      "ppl_snapshot_label": "Independent · Althöfer Collatz prizes Verified open",
+      "ppl_displayed_reward": "€25",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "althofer-optimal-3n-plus-minus-game",
+      "title": "Althöfer · Optimal-play 3n±1 game",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/119/"
+      ],
+      "ppl_number": 119,
+      "ppl_snapshot_label": "Independent · Althöfer Collatz prizes Verified open",
+      "ppl_displayed_reward": "€500",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "althofer-stochastic-collatz",
+      "title": "Althöfer · Stochastic ± Collatz convergence",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/116/"
+      ],
+      "ppl_number": 116,
+      "ppl_snapshot_label": "Independent · Althöfer Collatz prizes Verified open",
+      "ppl_displayed_reward": "€300",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "beal-conjecture",
+      "title": "Beal conjecture",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_published",
+      "source_links": [
+        "https://prizeproblems.org/problems/126/",
+        "https://www.ams.org/about-us/governance/council-meetings/council-minutes0114.pdf"
+      ],
+      "ppl_number": 126,
+      "ppl_snapshot_label": "Institutional Verified open",
+      "ppl_displayed_reward": "$1,000,000",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Andrew Beal / American Mathematical Society",
+          "displayed_reward": "$1,000,000",
+          "amount": 1000000,
+          "currency": "USD",
+          "rules_url": "https://www.ams.org/about-us/governance/council-meetings/council-minutes0114.pdf",
+          "condition": "Published amount confirmed via AMS minutes; consult current AMS administration rules.",
+          "offer_status": "sponsor_terms_found"
+        }
+      ],
+      "left_to_solve_targets": [
+        {
+          "target": "Beal conjecture",
+          "displayed_reward": "$1,000,000",
+          "sponsor": "Andrew Beal; the money is held in trust by the American Mathematical Society",
+          "site_status": "Open",
+          "erdos_number": null
+        }
+      ]
+    },
+    {
+      "id": "birch-swinnerton-dyer",
+      "title": "Birch–Swinnerton-Dyer conjecture",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_published",
+      "source_links": [
+        "https://prizeproblems.org/problems/100/",
+        "https://www.claymath.org/millennium-problems/",
+        "https://www.hejustinsun.com/prize/pinnacle"
+      ],
+      "ppl_number": 100,
+      "ppl_snapshot_label": "Institutional Verified open",
+      "ppl_displayed_reward": "$1,000,000",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Clay Mathematics Institute",
+          "displayed_reward": "$1,000,000",
+          "amount": 1000000,
+          "currency": "USD",
+          "rules_url": "https://www.claymath.org/millennium-problems/rules/",
+          "offer_status": "sponsor_published",
+          "condition": "Complete official problem; qualifying publication, at least two years, and general acceptance."
+        },
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "$1,000,000",
+          "amount": 1000000,
+          "currency": "USD",
+          "rules_url": "https://www.hejustinsun.com/prize/pinnacle",
+          "offer_status": "sponsor_published_tier",
+          "condition": "Pinnacle contribution rules apply; not assumed additive with Clay."
+        }
+      ],
+      "left_to_solve_targets": [
+        {
+          "target": "The Birch and Swinnerton-Dyer (BSD) Conjecture — strongBSD",
+          "displayed_reward": "$1,000,000",
+          "sponsor": "the Clay Mathematics Institute",
+          "site_status": "Open",
+          "erdos_number": null
+        },
+        {
+          "target": "The Birch and Swinnerton-Dyer (BSD) Conjecture — weakBSD",
+          "displayed_reward": "$1,000,000",
+          "sponsor": "the Clay Mathematics Institute",
+          "site_status": "Open",
+          "erdos_number": null
+        },
+        {
+          "target": "Birch and Swinnerton-Dyer conjecture",
+          "displayed_reward": "$1,000,000",
+          "sponsor": "the Clay Mathematics Institute",
+          "site_status": "Open",
+          "erdos_number": null
+        }
+      ]
+    },
+    {
+      "id": "boyer-add-mult-5",
+      "title": "Boyer enigma #6 · 5×5 additive–multiplicative magic square",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://prizeproblems.org/problems/101/"
+      ],
+      "ppl_number": 101,
+      "ppl_snapshot_label": "Independent · Boyer magic-square enigmas Reconfirm sponsor",
+      "ppl_displayed_reward": "€1,000",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "boyer-add-mult-6",
+      "title": "Boyer enigma #6a · 6×6 additive–multiplicative magic square",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://prizeproblems.org/problems/127/"
+      ],
+      "ppl_number": 127,
+      "ppl_snapshot_label": "Independent · Boyer magic-square enigmas Reconfirm sponsor",
+      "ppl_displayed_reward": "€500",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "boyer-bimagic-5",
+      "title": "Boyer enigma #2 · 5×5 bimagic square with distinct positive integers",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://prizeproblems.org/problems/151/"
+      ],
+      "ppl_number": 151,
+      "ppl_snapshot_label": "Independent · Boyer magic-square enigmas Reconfirm sponsor",
+      "ppl_displayed_reward": "€1,000",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "boyer-magic-cubes-4",
+      "title": "Boyer enigma #4 · 4×4 magic square of cubes",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://prizeproblems.org/problems/048/"
+      ],
+      "ppl_number": 48,
+      "ppl_snapshot_label": "Independent · Boyer magic-square enigmas Reconfirm sponsor",
+      "ppl_displayed_reward": "€1,000",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "boyer-magic-cubes-5",
+      "title": "Boyer enigma #4a · 5×5 magic square of cubes",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://prizeproblems.org/problems/051/"
+      ],
+      "ppl_number": 51,
+      "ppl_snapshot_label": "Independent · Boyer magic-square enigmas Reconfirm sponsor",
+      "ppl_displayed_reward": "€500",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "boyer-magic-cubes-6",
+      "title": "Boyer enigma #4b · 6×6 magic square of cubes",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://prizeproblems.org/problems/103/"
+      ],
+      "ppl_number": 103,
+      "ppl_snapshot_label": "Independent · Boyer magic-square enigmas Reconfirm sponsor",
+      "ppl_displayed_reward": "€500",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "boyer-magic-square-squares",
+      "title": "Boyer enigma #1 · 3×3 magic square using at least seven squares",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://prizeproblems.org/problems/081/"
+      ],
+      "ppl_number": 81,
+      "ppl_snapshot_label": "Independent · Boyer magic-square enigmas Reconfirm sponsor",
+      "ppl_displayed_reward": "€1,000",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "boyer-semi-magic-cubes-3",
+      "title": "Boyer enigma #3 · 3×3 semi-magic square of cubes",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://prizeproblems.org/problems/082/"
+      ],
+      "ppl_number": 82,
+      "ppl_snapshot_label": "Independent · Boyer magic-square enigmas Reconfirm sponsor",
+      "ppl_displayed_reward": "€1,000",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "certicom-ecc2-131",
+      "title": "Certicom ECC challenge · ECC2-131",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/132/"
+      ],
+      "ppl_number": 132,
+      "ppl_snapshot_label": "Institutional · Certicom ECC Challenge Source-stated",
+      "ppl_displayed_reward": "$20,000",
+      "flags": [
+        "separate_cryptography_or_compute_challenge"
+      ],
+      "offers": []
+    },
+    {
+      "id": "certicom-ecc2-163",
+      "title": "Certicom ECC challenge · ECC2-163",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/169/"
+      ],
+      "ppl_number": 169,
+      "ppl_snapshot_label": "Institutional · Certicom ECC Challenge Source-stated",
+      "ppl_displayed_reward": "$30,000",
+      "flags": [
+        "separate_cryptography_or_compute_challenge"
+      ],
+      "offers": []
+    },
+    {
+      "id": "certicom-ecc2-191",
+      "title": "Certicom ECC challenge · ECC2-191",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/019/"
+      ],
+      "ppl_number": 19,
+      "ppl_snapshot_label": "Institutional · Certicom ECC Challenge Source-stated",
+      "ppl_displayed_reward": "$40,000",
+      "flags": [
+        "separate_cryptography_or_compute_challenge"
+      ],
+      "offers": []
+    },
+    {
+      "id": "certicom-ecc2-238",
+      "title": "Certicom ECC challenge · ECC2-238",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/001/"
+      ],
+      "ppl_number": 1,
+      "ppl_snapshot_label": "Institutional · Certicom ECC Challenge Source-stated",
+      "ppl_displayed_reward": "$50,000",
+      "flags": [
+        "separate_cryptography_or_compute_challenge"
+      ],
+      "offers": []
+    },
+    {
+      "id": "certicom-ecc2-353",
+      "title": "Certicom ECC challenge · ECC2-353",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/045/"
+      ],
+      "ppl_number": 45,
+      "ppl_snapshot_label": "Institutional · Certicom ECC Challenge Source-stated",
+      "ppl_displayed_reward": "$100,000",
+      "flags": [
+        "separate_cryptography_or_compute_challenge"
+      ],
+      "offers": []
+    },
+    {
+      "id": "certicom-ecc2k-130",
+      "title": "Certicom ECC challenge · ECC2K-130",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/175/"
+      ],
+      "ppl_number": 175,
+      "ppl_snapshot_label": "Institutional · Certicom ECC Challenge Source-stated",
+      "ppl_displayed_reward": "$20,000",
+      "flags": [
+        "separate_cryptography_or_compute_challenge"
+      ],
+      "offers": []
+    },
+    {
+      "id": "certicom-ecc2k-163",
+      "title": "Certicom ECC challenge · ECC2K-163",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/012/"
+      ],
+      "ppl_number": 12,
+      "ppl_snapshot_label": "Institutional · Certicom ECC Challenge Source-stated",
+      "ppl_displayed_reward": "$30,000",
+      "flags": [
+        "separate_cryptography_or_compute_challenge"
+      ],
+      "offers": []
+    },
+    {
+      "id": "certicom-ecc2k-238",
+      "title": "Certicom ECC challenge · ECC2K-238",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/052/"
+      ],
+      "ppl_number": 52,
+      "ppl_snapshot_label": "Institutional · Certicom ECC Challenge Source-stated",
+      "ppl_displayed_reward": "$50,000",
+      "flags": [
+        "separate_cryptography_or_compute_challenge"
+      ],
+      "offers": []
+    },
+    {
+      "id": "certicom-ecc2k-358",
+      "title": "Certicom ECC challenge · ECC2K-358",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/118/"
+      ],
+      "ppl_number": 118,
+      "ppl_snapshot_label": "Institutional · Certicom ECC Challenge Source-stated",
+      "ppl_displayed_reward": "$100,000",
+      "flags": [
+        "separate_cryptography_or_compute_challenge"
+      ],
+      "offers": []
+    },
+    {
+      "id": "certicom-eccp-131",
+      "title": "Certicom ECC challenge · ECCp-131",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/136/"
+      ],
+      "ppl_number": 136,
+      "ppl_snapshot_label": "Institutional · Certicom ECC Challenge Source-stated",
+      "ppl_displayed_reward": "$20,000",
+      "flags": [
+        "separate_cryptography_or_compute_challenge"
+      ],
+      "offers": []
+    },
+    {
+      "id": "certicom-eccp-163",
+      "title": "Certicom ECC challenge · ECCp-163",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/138/"
+      ],
+      "ppl_number": 138,
+      "ppl_snapshot_label": "Institutional · Certicom ECC Challenge Source-stated",
+      "ppl_displayed_reward": "$30,000",
+      "flags": [
+        "separate_cryptography_or_compute_challenge"
+      ],
+      "offers": []
+    },
+    {
+      "id": "certicom-eccp-191",
+      "title": "Certicom ECC challenge · ECCp-191",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/159/"
+      ],
+      "ppl_number": 159,
+      "ppl_snapshot_label": "Institutional · Certicom ECC Challenge Source-stated",
+      "ppl_displayed_reward": "$40,000",
+      "flags": [
+        "separate_cryptography_or_compute_challenge"
+      ],
+      "offers": []
+    },
+    {
+      "id": "certicom-eccp-239",
+      "title": "Certicom ECC challenge · ECCp-239",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/002/"
+      ],
+      "ppl_number": 2,
+      "ppl_snapshot_label": "Institutional · Certicom ECC Challenge Source-stated",
+      "ppl_displayed_reward": "$50,000",
+      "flags": [
+        "separate_cryptography_or_compute_challenge"
+      ],
+      "offers": []
+    },
+    {
+      "id": "certicom-eccp-359",
+      "title": "Certicom ECC challenge · ECCp-359",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/041/"
+      ],
+      "ppl_number": 41,
+      "ppl_snapshot_label": "Institutional · Certicom ECC Challenge Source-stated",
+      "ppl_displayed_reward": "$100,000",
+      "flags": [
+        "separate_cryptography_or_compute_challenge"
+      ],
+      "offers": []
+    },
+    {
+      "id": "collatz-conjecture",
+      "title": "Collatz conjecture",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_discretion",
+      "source_links": [
+        "https://prizeproblems.org/problems/142/",
+        "https://mathprize.net/files/collatz-conjecture-rule-en-20210707.pdf"
+      ],
+      "ppl_number": 142,
+      "ppl_snapshot_label": "Institutional Verified open",
+      "ppl_displayed_reward": "¥120,000,000+ 1 linked offer",
+      "flags": [
+        "not_a_single_unconditional_payout"
+      ],
+      "offers": [
+        {
+          "sponsor": "Bakuage Co., Ltd.",
+          "displayed_reward": "¥120,000,000",
+          "amount": 120000000,
+          "currency": "JPY",
+          "rules_url": "https://mathprize.net/files/collatz-conjecture-rule-en-20210707.pdf",
+          "condition": "Host discretion; no direct submissions; qualifying paper and review.",
+          "offer_status": "sponsor_terms_found"
+        }
+      ],
+      "left_to_solve_targets": [
+        {
+          "target": "Collatz conjecture",
+          "displayed_reward": "¥120,000,000 (about $1M at the 2021 rate)",
+          "sponsor": "Bakuage Co., Ltd.",
+          "site_status": "Open",
+          "erdos_number": null
+        }
+      ]
+    },
+    {
+      "id": "distributed-net-rc5-72",
+      "title": "distributed.net RC5-72 key recovery",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/025/"
+      ],
+      "ppl_number": 25,
+      "ppl_snapshot_label": "Institutional · distributed.net Verified open",
+      "ppl_displayed_reward": "$4,000 allocation",
+      "flags": [
+        "separate_cryptography_or_compute_challenge",
+        "not_a_single_unconditional_payout"
+      ],
+      "offers": []
+    },
+    {
+      "id": "erdos-1",
+      "title": "Erdős Problem #1",
+      "math_status": "disproved",
+      "payout_status": "not_a_clean_open_bounty",
+      "source_links": [
+        "https://prizeproblems.org/problems/054/",
+        "https://www.erdosproblems.com/1"
+      ],
+      "ppl_number": 54,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$500",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 1,
+        "informal": "disproved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-2",
+      "title": "Erdős #2",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/2"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$1000",
+          "amount": 1000,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "disproved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 2,
+        "informal": "disproved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-3",
+      "title": "Erdős Problem #3",
+      "math_status": "published_formal_proof_listed",
+      "payout_status": "not_a_clean_open_bounty",
+      "source_links": [
+        "https://prizeproblems.org/problems/076/",
+        "https://www.erdosproblems.com/3"
+      ],
+      "ppl_number": 76,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$5000",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$5000",
+          "amount": 5000,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 3,
+        "informal": "open",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-4",
+      "title": "Erdős #4",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/4"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$10000",
+          "amount": 10000,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 4,
+        "informal": "proved",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-6",
+      "title": "Erdős #6",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/6"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 6,
+        "informal": "proved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-7",
+      "title": "Erdős #7",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/7"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$25",
+          "amount": 25,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "partial_resolution_directions",
+      "payout_status": "historic_discretionary",
+      "erdos": {
+        "number": 7,
+        "informal": "verifiable",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 7",
+          "displayed_reward": "$25",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 7
+        }
+      ]
+    },
+    {
+      "id": "erdos-13",
+      "title": "Erdős #13",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/13"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 13,
+        "informal": "proved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-18",
+      "title": "Erdős #18",
+      "flags": [
+        "some_left_to_solve_targets_marked_solved"
+      ],
+      "source_links": [
+        "https://www.erdosproblems.com/18"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$250",
+          "amount": 250,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "erdos": {
+        "number": 18,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Conjecture 1.",
+          "displayed_reward": "$250",
+          "sponsor": "Paul Erdős",
+          "site_status": "Solved here",
+          "erdos_number": 18
+        },
+        {
+          "target": "Conjecture 2.",
+          "displayed_reward": "$250",
+          "sponsor": "Paul Erdős",
+          "site_status": "Solved here",
+          "erdos_number": 18
+        },
+        {
+          "target": "Conjecture 3.",
+          "displayed_reward": "$250",
+          "sponsor": "Paul Erdős",
+          "site_status": "Solved here",
+          "erdos_number": 18
+        }
+      ]
+    },
+    {
+      "id": "erdos-19",
+      "title": "Erdős #19",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/19"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "partial_resolution_directions",
+      "payout_status": "historic_discretionary",
+      "erdos": {
+        "number": 19,
+        "informal": "decidable",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 19",
+          "displayed_reward": "$500",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 19
+        }
+      ]
+    },
+    {
+      "id": "erdos-20",
+      "title": "Erdős Problem #20",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/038/",
+        "https://www.erdosproblems.com/20"
+      ],
+      "ppl_number": 38,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$1000",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$1000",
+          "amount": 1000,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 20,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 20",
+          "displayed_reward": "$1000",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 20
+        }
+      ]
+    },
+    {
+      "id": "erdos-21",
+      "title": "Erdős #21",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/21"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 21,
+        "informal": "proved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-27",
+      "title": "Erdős #27",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/27"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "disproved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 27,
+        "informal": "disproved",
+        "formal": "unformalized",
+        "lean_statement": "no"
+      }
+    },
+    {
+      "id": "erdos-28",
+      "title": "Erdős Problem #28",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/050/",
+        "https://www.erdosproblems.com/28"
+      ],
+      "ppl_number": 50,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$500",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 28,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 28",
+          "displayed_reward": "$500",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 28
+        }
+      ]
+    },
+    {
+      "id": "erdos-29",
+      "title": "Erdős #29",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/29"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 29,
+        "informal": "proved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-30",
+      "title": "Erdős Problem #30",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/088/",
+        "https://www.erdosproblems.com/30"
+      ],
+      "ppl_number": 88,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$1000",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$1000",
+          "amount": 1000,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 30,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 30",
+          "displayed_reward": "$1000",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 30
+        }
+      ]
+    },
+    {
+      "id": "erdos-32",
+      "title": "Erdős #32",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/32"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$50",
+          "amount": 50,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "erdos": {
+        "number": 32,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 32",
+          "displayed_reward": "$50",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 32
+        }
+      ]
+    },
+    {
+      "id": "erdos-39",
+      "title": "Erdős Problem #39",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/124/",
+        "https://www.erdosproblems.com/39"
+      ],
+      "ppl_number": 124,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$500",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 39,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 39",
+          "displayed_reward": "$500",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 39
+        }
+      ]
+    },
+    {
+      "id": "erdos-40",
+      "title": "Erdős Problem #40",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/163/",
+        "https://www.erdosproblems.com/40"
+      ],
+      "ppl_number": 163,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$500",
+      "flags": [
+        "some_left_to_solve_targets_marked_solved"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 40,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 40",
+          "displayed_reward": "$500",
+          "sponsor": "Paul Erdős",
+          "site_status": "Solved here",
+          "erdos_number": 40
+        }
+      ]
+    },
+    {
+      "id": "erdos-41",
+      "title": "Erdős Problem #41",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/168/",
+        "https://www.erdosproblems.com/41"
+      ],
+      "ppl_number": 168,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$500",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 41,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 41",
+          "displayed_reward": "$500",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 41
+        }
+      ]
+    },
+    {
+      "id": "erdos-43",
+      "title": "Erdős #43",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/43"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "disproved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 43,
+        "informal": "disproved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-47",
+      "title": "Erdős #47",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/47"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 47,
+        "informal": "proved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-50",
+      "title": "Erdős Problem #50",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/003/",
+        "https://www.erdosproblems.com/50"
+      ],
+      "ppl_number": 3,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$250",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$250",
+          "amount": 250,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 50,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 50 — erdos 50",
+          "displayed_reward": "$250",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 50
+        }
+      ]
+    },
+    {
+      "id": "erdos-52",
+      "title": "Erdős Problem #52",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/139/",
+        "https://www.erdosproblems.com/52"
+      ],
+      "ppl_number": 139,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$250",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$250",
+          "amount": 250,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 52,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 52",
+          "displayed_reward": "$250",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 52
+        }
+      ]
+    },
+    {
+      "id": "erdos-54",
+      "title": "Erdős #54",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/54"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "solved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 54,
+        "informal": "solved",
+        "formal": "unformalized",
+        "lean_statement": "no"
+      }
+    },
+    {
+      "id": "erdos-55",
+      "title": "Erdős #55",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/55"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$250",
+          "amount": 250,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "solved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 55,
+        "informal": "solved",
+        "formal": "unformalized",
+        "lean_statement": "no"
+      }
+    },
+    {
+      "id": "erdos-56",
+      "title": "Erdős #56",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/56"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$10",
+          "amount": 10,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "disproved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 56,
+        "informal": "disproved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-64",
+      "title": "Erdős #64",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/64"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$1000",
+          "amount": 1000,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "partial_resolution_directions",
+      "payout_status": "historic_discretionary",
+      "erdos": {
+        "number": 64,
+        "informal": "falsifiable",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 64",
+          "displayed_reward": "$1000",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 64
+        }
+      ]
+    },
+    {
+      "id": "erdos-66",
+      "title": "Erdős Problem #66",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/098/",
+        "https://www.erdosproblems.com/66"
+      ],
+      "ppl_number": 98,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$500",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 66,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 66",
+          "displayed_reward": "$500",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 66
+        }
+      ]
+    },
+    {
+      "id": "erdos-67",
+      "title": "Erdős #67",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/67"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 67,
+        "informal": "proved",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-72",
+      "title": "Erdős #72",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/72"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 72,
+        "informal": "proved",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-74",
+      "title": "Erdős Problem #74",
+      "math_status": "disproved",
+      "payout_status": "not_a_clean_open_bounty",
+      "source_links": [
+        "https://prizeproblems.org/problems/046/",
+        "https://www.erdosproblems.com/74"
+      ],
+      "ppl_number": 46,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$500",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 74,
+        "informal": "disproved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-77",
+      "title": "Erdős Problem #77",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/042/",
+        "https://www.erdosproblems.com/77"
+      ],
+      "ppl_number": 42,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$250",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$250",
+          "amount": 250,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 77,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 77",
+          "displayed_reward": "$250",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 77
+        }
+      ]
+    },
+    {
+      "id": "erdos-78",
+      "title": "Erdős Problem #78",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/177/",
+        "https://www.erdosproblems.com/78"
+      ],
+      "ppl_number": 177,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$100",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 78,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 78",
+          "displayed_reward": "$100",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 78
+        }
+      ]
+    },
+    {
+      "id": "erdos-83",
+      "title": "Erdős #83",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/83"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 83,
+        "informal": "proved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-86",
+      "title": "Erdős Problem #86",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/033/",
+        "https://www.erdosproblems.com/86"
+      ],
+      "ppl_number": 33,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$100",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 86,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 86",
+          "displayed_reward": "$100",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 86
+        }
+      ]
+    },
+    {
+      "id": "erdos-88",
+      "title": "Erdős #88",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/88"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 88,
+        "informal": "proved",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-89",
+      "title": "Erdős Problem #89",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/071/",
+        "https://www.erdosproblems.com/89"
+      ],
+      "ppl_number": 71,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$500",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 89,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 89",
+          "displayed_reward": "$500",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 89
+        }
+      ]
+    },
+    {
+      "id": "erdos-90",
+      "title": "Erdős #90",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/90"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "disproved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 90,
+        "informal": "disproved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-92",
+      "title": "Erdős #92",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/92"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "disproved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 92,
+        "informal": "disproved",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-94",
+      "title": "Erdős #94",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/94"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "£25",
+          "amount": 25,
+          "currency": "GBP",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 94,
+        "informal": "proved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-95",
+      "title": "Erdős #95",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/95"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 95,
+        "informal": "proved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-97",
+      "title": "Erdős #97",
+      "flags": [
+        "some_left_to_solve_targets_marked_solved"
+      ],
+      "source_links": [
+        "https://www.erdosproblems.com/97"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "disproved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 97,
+        "informal": "disproved",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 97",
+          "displayed_reward": "$100",
+          "sponsor": "Paul Erdős",
+          "site_status": "Solved here",
+          "erdos_number": 97
+        }
+      ]
+    },
+    {
+      "id": "erdos-99",
+      "title": "Erdős Problem #99",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/083/",
+        "https://www.erdosproblems.com/99"
+      ],
+      "ppl_number": 83,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$100",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 99,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 99",
+          "displayed_reward": "$100",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 99
+        }
+      ]
+    },
+    {
+      "id": "erdos-101",
+      "title": "Erdős Problem #101",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/099/",
+        "https://www.erdosproblems.com/101"
+      ],
+      "ppl_number": 99,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$100",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 101,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 101",
+          "displayed_reward": "$100",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 101
+        }
+      ]
+    },
+    {
+      "id": "erdos-104",
+      "title": "Erdős Problem #104",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/077/",
+        "https://www.erdosproblems.com/104"
+      ],
+      "ppl_number": 77,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$100",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 104,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 104",
+          "displayed_reward": "$100",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 104
+        }
+      ]
+    },
+    {
+      "id": "erdos-105",
+      "title": "Erdős #105",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/105"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$50",
+          "amount": 50,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "disproved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 105,
+        "informal": "disproved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-107",
+      "title": "Erdős #107",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/107"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "partial_resolution_directions",
+      "payout_status": "historic_discretionary",
+      "erdos": {
+        "number": 107,
+        "informal": "falsifiable",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 107",
+          "displayed_reward": "$500",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 107
+        }
+      ]
+    },
+    {
+      "id": "erdos-113",
+      "title": "Erdős #113",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/113"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "disproved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 113,
+        "informal": "disproved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-114",
+      "title": "Erdős #114",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/114"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$250",
+          "amount": 250,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "partial_resolution_directions",
+      "payout_status": "historic_discretionary",
+      "erdos": {
+        "number": 114,
+        "informal": "falsifiable",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 114",
+          "displayed_reward": "$250",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 114
+        }
+      ]
+    },
+    {
+      "id": "erdos-119",
+      "title": "Erdős #119",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/119"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "solved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 119,
+        "informal": "solved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-120",
+      "title": "Erdős Problem #120",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/060/",
+        "https://www.erdosproblems.com/120"
+      ],
+      "ppl_number": 60,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$100",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 120,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 120",
+          "displayed_reward": "$100",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 120
+        }
+      ]
+    },
+    {
+      "id": "erdos-123",
+      "title": "Erdős #123",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/123"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$250",
+          "amount": 250,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 123,
+        "informal": "proved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-126",
+      "title": "Erdős Problem #126",
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "source_links": [
+        "https://prizeproblems.org/problems/017/",
+        "https://www.erdosproblems.com/126"
+      ],
+      "ppl_number": 17,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$250",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$250",
+          "amount": 250,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 126,
+        "informal": "proved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-128",
+      "title": "Erdős #128",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/128"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$250",
+          "amount": 250,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "partial_resolution_directions",
+      "payout_status": "historic_discretionary",
+      "erdos": {
+        "number": 128,
+        "informal": "falsifiable",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 128",
+          "displayed_reward": "$250",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 128
+        }
+      ]
+    },
+    {
+      "id": "erdos-132",
+      "title": "Erdős Problem #132",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/149/",
+        "https://www.erdosproblems.com/132"
+      ],
+      "ppl_number": 149,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$100",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 132,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "no"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 132",
+          "displayed_reward": "$100",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 132
+        }
+      ]
+    },
+    {
+      "id": "erdos-135",
+      "title": "Erdős #135",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/135"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$250",
+          "amount": 250,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "disproved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 135,
+        "informal": "disproved",
+        "formal": "Lean",
+        "lean_statement": "no"
+      }
+    },
+    {
+      "id": "erdos-138",
+      "title": "Erdős Problem #138",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/061/",
+        "https://www.erdosproblems.com/138"
+      ],
+      "ppl_number": 61,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$500",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 138,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-139",
+      "title": "Erdős #139",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/139"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$1000",
+          "amount": 1000,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 139,
+        "informal": "proved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-140",
+      "title": "Erdős #140",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/140"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 140,
+        "informal": "proved",
+        "formal": "Lean",
+        "lean_statement": "no"
+      }
+    },
+    {
+      "id": "erdos-142",
+      "title": "Erdős Problem #142",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/123/",
+        "https://www.erdosproblems.com/142"
+      ],
+      "ppl_number": 123,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$10000",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$10000",
+          "amount": 10000,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 142,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 142",
+          "displayed_reward": "$10000",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 142
+        }
+      ]
+    },
+    {
+      "id": "erdos-143",
+      "title": "Erdős Problem #143",
+      "math_status": "solved",
+      "payout_status": "not_a_clean_open_bounty",
+      "source_links": [
+        "https://prizeproblems.org/problems/014/",
+        "https://www.erdosproblems.com/143"
+      ],
+      "ppl_number": 14,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$500",
+      "flags": [
+        "some_left_to_solve_targets_marked_solved"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 143,
+        "informal": "solved",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 143 — ii",
+          "displayed_reward": "$500",
+          "sponsor": "Paul Erdős",
+          "site_status": "Solved here",
+          "erdos_number": 143
+        }
+      ]
+    },
+    {
+      "id": "erdos-144",
+      "title": "Erdős #144",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/144"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$250",
+          "amount": 250,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 144,
+        "informal": "proved",
+        "formal": "Lean",
+        "lean_statement": "no"
+      }
+    },
+    {
+      "id": "erdos-146",
+      "title": "Erdős Problem #146",
+      "math_status": "disproved",
+      "payout_status": "not_a_clean_open_bounty",
+      "source_links": [
+        "https://prizeproblems.org/problems/114/",
+        "https://www.erdosproblems.com/146"
+      ],
+      "ppl_number": 114,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$500",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 146,
+        "informal": "disproved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-147",
+      "title": "Erdős #147",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/147"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "disproved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 147,
+        "informal": "disproved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-159",
+      "title": "Erdős #159",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/159"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "erdos": {
+        "number": 159,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 159",
+          "displayed_reward": "$100",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 159
+        }
+      ]
+    },
+    {
+      "id": "erdos-161",
+      "title": "Erdős Problem #161",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/063/",
+        "https://www.erdosproblems.com/161"
+      ],
+      "ppl_number": 63,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$500",
+      "flags": [
+        "some_left_to_solve_targets_marked_solved"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 161,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 161 — i",
+          "displayed_reward": "$500",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 161
+        },
+        {
+          "target": "Erdős Problem 161 — ii",
+          "displayed_reward": "$500",
+          "sponsor": "Paul Erdős",
+          "site_status": "Solved here",
+          "erdos_number": 161
+        }
+      ]
+    },
+    {
+      "id": "erdos-165",
+      "title": "Erdős Problem #165",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/030/",
+        "https://www.erdosproblems.com/165"
+      ],
+      "ppl_number": 30,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$250",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$250",
+          "amount": 250,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 165,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 165",
+          "displayed_reward": "$250",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 165
+        }
+      ]
+    },
+    {
+      "id": "erdos-166",
+      "title": "Erdős #166",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/166"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$250",
+          "amount": 250,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 166,
+        "informal": "proved",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-182",
+      "title": "Erdős #182",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/182"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 182,
+        "informal": "proved",
+        "formal": "unformalized",
+        "lean_statement": "no"
+      }
+    },
+    {
+      "id": "erdos-183",
+      "title": "Erdős Problem #183",
+      "math_status": "solved",
+      "payout_status": "not_a_clean_open_bounty",
+      "source_links": [
+        "https://prizeproblems.org/problems/084/",
+        "https://www.erdosproblems.com/183"
+      ],
+      "ppl_number": 84,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$250",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$250",
+          "amount": 250,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 183,
+        "informal": "solved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-211",
+      "title": "Erdős #211",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/211"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 211,
+        "informal": "proved",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-220",
+      "title": "Erdős #220",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/220"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 220,
+        "informal": "proved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-241",
+      "title": "Erdős Problem #241",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/009/",
+        "https://www.erdosproblems.com/241"
+      ],
+      "ppl_number": 9,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$100",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 241,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 241",
+          "displayed_reward": "$100",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 241
+        }
+      ]
+    },
+    {
+      "id": "erdos-282",
+      "title": "Erdős #282: odd greedy Egyptian fractions",
+      "math_status": "open_catalog",
+      "payout_status": "no_fixed_offer_verified",
+      "source_links": [
+        "https://www.erdosproblems.com/282",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0201-0300.md#JSP-000240"
+      ],
+      "flags": [
+        "graham_variant_not_same_problem"
+      ],
+      "offers": []
+    },
+    {
+      "id": "erdos-426",
+      "title": "Erdős #426",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/426"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$25",
+          "amount": 25,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "disproved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 426,
+        "informal": "disproved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-470",
+      "title": "Erdős Problem #470",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/086/",
+        "https://www.erdosproblems.com/470"
+      ],
+      "ppl_number": 86,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$10",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$10",
+          "amount": 10,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 470,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 470 — i",
+          "displayed_reward": "$10",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 470
+        },
+        {
+          "target": "Erdős Problem 470 — ii",
+          "displayed_reward": "$10",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 470
+        }
+      ]
+    },
+    {
+      "id": "erdos-474",
+      "title": "Erdős #474",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/474"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "not provable",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 474,
+        "informal": "not provable",
+        "formal": "unformalized",
+        "lean_statement": "no"
+      }
+    },
+    {
+      "id": "erdos-500",
+      "title": "Erdős Problem #500",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/074/",
+        "https://www.erdosproblems.com/500"
+      ],
+      "ppl_number": 74,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$500",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 500,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 500",
+          "displayed_reward": "$500",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 500
+        }
+      ]
+    },
+    {
+      "id": "erdos-548",
+      "title": "Erdős #548",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/548"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 548,
+        "informal": "proved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-552",
+      "title": "Erdős #552",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/552"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "erdos": {
+        "number": 552,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 552 — i",
+          "displayed_reward": "$100",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 552
+        },
+        {
+          "target": "Erdős Problem 552 — ii",
+          "displayed_reward": "$100",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 552
+        }
+      ]
+    },
+    {
+      "id": "erdos-564",
+      "title": "Erdős Problem #564",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/039/",
+        "https://www.erdosproblems.com/564"
+      ],
+      "ppl_number": 39,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$500",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 564,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 564",
+          "displayed_reward": "$500",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 564
+        }
+      ]
+    },
+    {
+      "id": "erdos-582",
+      "title": "Erdős #582",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/582"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 582,
+        "informal": "proved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-588",
+      "title": "Erdős Problem #588",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/022/",
+        "https://www.erdosproblems.com/588"
+      ],
+      "ppl_number": 22,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$100",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 588,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 588",
+          "displayed_reward": "$100",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 588
+        }
+      ]
+    },
+    {
+      "id": "erdos-590",
+      "title": "Erdős #590",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/590"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$250",
+          "amount": 250,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 590,
+        "informal": "proved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-591",
+      "title": "Erdős #591",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/591"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$250",
+          "amount": 250,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 591,
+        "informal": "proved",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-592",
+      "title": "Erdős Problem #592",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/035/",
+        "https://www.erdosproblems.com/592"
+      ],
+      "ppl_number": 35,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$1000",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$1000",
+          "amount": 1000,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 592,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 592",
+          "displayed_reward": "$1000",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 592
+        }
+      ]
+    },
+    {
+      "id": "erdos-593",
+      "title": "Erdős Problem #593",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/117/",
+        "https://www.erdosproblems.com/593"
+      ],
+      "ppl_number": 117,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$500",
+      "flags": [
+        "some_left_to_solve_targets_marked_solved"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 593,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 593 (\\$500)",
+          "displayed_reward": "$500",
+          "sponsor": "Paul Erdős",
+          "site_status": "Solved here",
+          "erdos_number": 593
+        }
+      ]
+    },
+    {
+      "id": "erdos-595",
+      "title": "Erdős Problem #595",
+      "math_status": "not disprovable",
+      "payout_status": "not_a_clean_open_bounty",
+      "source_links": [
+        "https://prizeproblems.org/problems/032/",
+        "https://www.erdosproblems.com/595"
+      ],
+      "ppl_number": 32,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$250",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$250",
+          "amount": 250,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 595,
+        "informal": "not disprovable",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 595 (\\$250)",
+          "displayed_reward": "$250",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 595
+        }
+      ]
+    },
+    {
+      "id": "erdos-601",
+      "title": "Erdős Problem #601",
+      "math_status": "not provable",
+      "payout_status": "not_a_clean_open_bounty",
+      "source_links": [
+        "https://prizeproblems.org/problems/141/",
+        "https://www.erdosproblems.com/601"
+      ],
+      "ppl_number": 141,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$500",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 601,
+        "informal": "not provable",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 601",
+          "displayed_reward": "$500",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 601
+        }
+      ]
+    },
+    {
+      "id": "erdos-604",
+      "title": "Erdős Problem #604",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/174/",
+        "https://www.erdosproblems.com/604"
+      ],
+      "ppl_number": 174,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$500",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 604,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-607",
+      "title": "Erdős #607",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/607"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$250",
+          "amount": 250,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 607,
+        "informal": "proved",
+        "formal": "unformalized",
+        "lean_statement": "no"
+      }
+    },
+    {
+      "id": "erdos-625",
+      "title": "Erdős Problem #625",
+      "math_status": "solved",
+      "payout_status": "not_a_clean_open_bounty",
+      "source_links": [
+        "https://prizeproblems.org/problems/062/",
+        "https://www.erdosproblems.com/625"
+      ],
+      "ppl_number": 62,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$1000",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$1000",
+          "amount": 1000,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 625,
+        "informal": "solved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-633",
+      "title": "Erdős #633",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/633"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$25",
+          "amount": 25,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "solved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 633,
+        "informal": "solved",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-634",
+      "title": "Erdős Problem #634",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/079/",
+        "https://www.erdosproblems.com/634"
+      ],
+      "ppl_number": 79,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$25",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$25",
+          "amount": 25,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 634,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "no"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 634",
+          "displayed_reward": "$25",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 634
+        }
+      ]
+    },
+    {
+      "id": "erdos-647",
+      "title": "Erdős #647",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/647"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "£25",
+          "amount": 25,
+          "currency": "GBP",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "partial_resolution_directions",
+      "payout_status": "historic_discretionary",
+      "erdos": {
+        "number": 647,
+        "informal": "verifiable",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 647",
+          "displayed_reward": "£25",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 647
+        }
+      ]
+    },
+    {
+      "id": "erdos-661",
+      "title": "Erdős Problem #661",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/015/",
+        "https://www.erdosproblems.com/661"
+      ],
+      "ppl_number": 15,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$50",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$50",
+          "amount": 50,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 661,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 661",
+          "displayed_reward": "$50",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 661
+        }
+      ]
+    },
+    {
+      "id": "erdos-671",
+      "title": "Erdős Problem #671",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/128/",
+        "https://www.erdosproblems.com/671"
+      ],
+      "ppl_number": 128,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$250",
+      "flags": [
+        "some_left_to_solve_targets_marked_solved"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$250",
+          "amount": 250,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 671,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "no"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 671",
+          "displayed_reward": "$250",
+          "sponsor": "Paul Erdős",
+          "site_status": "Solved here",
+          "erdos_number": 671
+        }
+      ]
+    },
+    {
+      "id": "erdos-687",
+      "title": "Erdős Problem #687",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/137/",
+        "https://www.erdosproblems.com/687"
+      ],
+      "ppl_number": 137,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$1000",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$1000",
+          "amount": 1000,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 687,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 687 — i",
+          "displayed_reward": "$1000",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 687
+        },
+        {
+          "target": "Erdős Problem 687 — iii",
+          "displayed_reward": "$1000",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 687
+        }
+      ]
+    },
+    {
+      "id": "erdos-703",
+      "title": "Erdős #703",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/703"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$250",
+          "amount": 250,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 703,
+        "informal": "proved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-707",
+      "title": "Erdős #707",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/707"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$1000",
+          "amount": 1000,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "disproved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 707,
+        "informal": "disproved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-708",
+      "title": "Erdős Problem #708",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/176/",
+        "https://www.erdosproblems.com/708"
+      ],
+      "ppl_number": 176,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$100",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 708,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "no"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 708",
+          "displayed_reward": "$100",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 708
+        }
+      ]
+    },
+    {
+      "id": "erdos-710",
+      "title": "Erdős Problem #710",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/129/",
+        "https://www.erdosproblems.com/710"
+      ],
+      "ppl_number": 129,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "₹2000",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "₹2000",
+          "amount": 2000,
+          "currency": "INR",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 710,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-711",
+      "title": "Erdős Problem #711",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/173/",
+        "https://www.erdosproblems.com/711"
+      ],
+      "ppl_number": 173,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "₹1000",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "₹1000",
+          "amount": 1000,
+          "currency": "INR",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 711,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-712",
+      "title": "Erdős Problem #712",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/023/",
+        "https://www.erdosproblems.com/712"
+      ],
+      "ppl_number": 23,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$500",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 712,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 712",
+          "displayed_reward": "$500",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 712
+        }
+      ]
+    },
+    {
+      "id": "erdos-713",
+      "title": "Erdős Problem #713",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/067/",
+        "https://www.erdosproblems.com/713"
+      ],
+      "ppl_number": 67,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$500",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 713,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 713 — i",
+          "displayed_reward": "$500",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 713
+        },
+        {
+          "target": "Erdős Problem 713 — ii",
+          "displayed_reward": "$500",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 713
+        }
+      ]
+    },
+    {
+      "id": "erdos-720",
+      "title": "Erdős #720",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/720"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 720,
+        "informal": "proved",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-825",
+      "title": "Erdős #825",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/825"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$25",
+          "amount": 25,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 825,
+        "informal": "proved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-1029",
+      "title": "Erdős Problem #1029",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/027/",
+        "https://www.erdosproblems.com/1029"
+      ],
+      "ppl_number": 27,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$100",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 1029,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 1029",
+          "displayed_reward": "$100",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 1029
+        }
+      ]
+    },
+    {
+      "id": "erdos-1052",
+      "title": "Erdős Problem #1052",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/133/",
+        "https://www.erdosproblems.com/1052"
+      ],
+      "ppl_number": 133,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$10",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$10",
+          "amount": 10,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 1052,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 1052",
+          "displayed_reward": "$10",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 1052
+        }
+      ]
+    },
+    {
+      "id": "erdos-1071",
+      "title": "Erdős #1071",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/1071"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$10",
+          "amount": 10,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "proved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 1071,
+        "informal": "proved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-1123",
+      "title": "Erdős #1123",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/1123"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$100",
+          "amount": 100,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "independent",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 1123,
+        "informal": "independent",
+        "formal": "unformalized",
+        "lean_statement": "no"
+      }
+    },
+    {
+      "id": "erdos-1128",
+      "title": "Erdős #1128",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/1128"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$50",
+          "amount": 50,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "disproved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 1128,
+        "informal": "disproved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-1134",
+      "title": "Erdős #1134",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/1134"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "£10",
+          "amount": 10,
+          "currency": "GBP",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "disproved",
+      "payout_status": "not_a_clean_open_bounty",
+      "erdos": {
+        "number": 1134,
+        "informal": "disproved",
+        "formal": "Lean",
+        "lean_statement": "yes"
+      }
+    },
+    {
+      "id": "erdos-1135",
+      "title": "Erdős #1135",
+      "flags": [],
+      "source_links": [
+        "https://www.erdosproblems.com/1135"
+      ],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$500",
+          "amount": 500,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "erdos": {
+        "number": 1135,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 1135",
+          "displayed_reward": "$500",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 1135
+        }
+      ]
+    },
+    {
+      "id": "erdos-1191",
+      "title": "Erdős Problem #1191",
+      "math_status": "open_catalog",
+      "payout_status": "historic_discretionary",
+      "source_links": [
+        "https://prizeproblems.org/problems/018/",
+        "https://www.erdosproblems.com/1191"
+      ],
+      "ppl_number": 18,
+      "ppl_snapshot_label": "Erdős Verified open",
+      "ppl_displayed_reward": "$1000",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Paul Erdős; possible Combinatorics Foundation discretionary award",
+          "displayed_reward": "$1000",
+          "amount": 1000,
+          "currency": "USD",
+          "rules_url": "https://www.combinatoricsfoundation.org/erd%C5%91s-problems",
+          "condition": "Original published offer and qualifying first peer-reviewed solution required."
+        }
+      ],
+      "erdos": {
+        "number": 1191,
+        "informal": "open",
+        "formal": "unformalized",
+        "lean_statement": "yes"
+      },
+      "left_to_solve_targets": [
+        {
+          "target": "Erdős Problem 1191 — i",
+          "displayed_reward": "$1000",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 1191
+        },
+        {
+          "target": "Erdős Problem 1191 — ii",
+          "displayed_reward": "$1000",
+          "sponsor": "Paul Erdős",
+          "site_status": "Open",
+          "erdos_number": 1191
+        }
+      ]
+    },
+    {
+      "id": "global-langlands-functoriality",
+      "title": "Global Langlands functoriality",
+      "math_status": "sponsor_listed",
+      "payout_status": "sponsor_published",
+      "source_links": [
+        "https://www.hejustinsun.com/prize/pinnacle"
+      ],
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "$1,000,000",
+          "amount": 1000000,
+          "currency": "USD",
+          "rules_url": "https://www.hejustinsun.com/prize/pinnacle",
+          "offer_status": "sponsor_published_tier"
+        }
+      ]
+    },
+    {
+      "id": "goldbach-complementary-multiples",
+      "title": "Let’s Prove Goldbach · Complementary n₁-multiples avoiding n₂ and n₃",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/106/"
+      ],
+      "ppl_number": 106,
+      "ppl_snapshot_label": "Independent · Let’s Prove Goldbach Source-stated",
+      "ppl_displayed_reward": "€100",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "goldbach-preceding-spaces-finite-form",
+      "title": "Let’s Prove Goldbach · Finite-form representation of preceding spaces",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/029/"
+      ],
+      "ppl_number": 29,
+      "ppl_snapshot_label": "Independent · Let’s Prove Goldbach Source-stated",
+      "ppl_displayed_reward": "€200",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "goldbach-t-space-three-moduli",
+      "title": "Let’s Prove Goldbach · Approximate t-space for three moduli",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/058/"
+      ],
+      "ppl_number": 58,
+      "ppl_snapshot_label": "Independent · Let’s Prove Goldbach Source-stated",
+      "ppl_displayed_reward": "€100",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "hager-reverse-markov-quadrature",
+      "title": "Hager · Reverse-Markov quadrature conjecture",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://prizeproblems.org/problems/031/"
+      ],
+      "ppl_number": 31,
+      "ppl_snapshot_label": "Independent · Hager prize problem Reconfirm sponsor",
+      "ppl_displayed_reward": "¥10,000",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "hodge-conjecture",
+      "title": "Hodge conjecture",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_published",
+      "source_links": [
+        "https://prizeproblems.org/problems/110/",
+        "https://www.claymath.org/millennium-problems/",
+        "https://www.hejustinsun.com/prize/pinnacle"
+      ],
+      "ppl_number": 110,
+      "ppl_snapshot_label": "Institutional Verified open",
+      "ppl_displayed_reward": "$1,000,000",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Clay Mathematics Institute",
+          "displayed_reward": "$1,000,000",
+          "amount": 1000000,
+          "currency": "USD",
+          "rules_url": "https://www.claymath.org/millennium-problems/rules/",
+          "offer_status": "sponsor_published",
+          "condition": "Complete official problem; qualifying publication, at least two years, and general acceptance."
+        },
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "$1,000,000",
+          "amount": 1000000,
+          "currency": "USD",
+          "rules_url": "https://www.hejustinsun.com/prize/pinnacle",
+          "offer_status": "sponsor_published_tier",
+          "condition": "Pinnacle contribution rules apply; not assumed additive with Clay."
+        }
+      ],
+      "left_to_solve_targets": [
+        {
+          "target": "Hodge conjecture",
+          "displayed_reward": "$1,000,000",
+          "sponsor": "the Clay Mathematics Institute",
+          "site_status": "Open",
+          "erdos_number": null
+        }
+      ]
+    },
+    {
+      "id": "iut-challenger",
+      "title": "IUT Challenger Prize",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_discretion",
+      "source_links": [
+        "https://prizeproblems.org/problems/102/",
+        "https://zen.ac.jp/en/lp/icp"
+      ],
+      "ppl_number": 102,
+      "ppl_snapshot_label": "Institutional Verified open",
+      "ppl_displayed_reward": "$1,000,000",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Nobuo Kawakami",
+          "displayed_reward": "$1,000,000",
+          "amount": 1000000,
+          "currency": "USD",
+          "rules_url": "https://zen.ac.jp/en/lp/icp",
+          "condition": "Qualifying arithmetic-geometry journal; sponsor adjudication, not a prize for proving abc.",
+          "offer_status": "sponsor_terms_found"
+        }
+      ]
+    },
+    {
+      "id": "kcik-mub-d6",
+      "title": "KCIK #2 · Mutually unbiased bases in dimension 6",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "renewal_unconfirmed",
+      "source_links": [
+        "https://prizeproblems.org/problems/008/"
+      ],
+      "ppl_number": 8,
+      "ppl_snapshot_label": "Independent Renewal check",
+      "ppl_displayed_reward": "≈€2,026",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "kcik-npt-bound-entanglement",
+      "title": "KCIK #4 · NPT bound entanglement",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "renewal_unconfirmed",
+      "source_links": [
+        "https://prizeproblems.org/problems/152/"
+      ],
+      "ppl_number": 152,
+      "ppl_snapshot_label": "Independent Renewal check",
+      "ppl_displayed_reward": "≈€2,026",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "kcik-sic-povm",
+      "title": "KCIK #1 · SIC-POVM dimensions",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "renewal_unconfirmed",
+      "source_links": [
+        "https://prizeproblems.org/problems/145/"
+      ],
+      "ppl_number": 145,
+      "ppl_snapshot_label": "Independent Renewal check",
+      "ppl_displayed_reward": "≈€2,026",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "kcik-werner-state",
+      "title": "KCIK #5 · Two-copy non-distillability",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "renewal_unconfirmed",
+      "source_links": [
+        "https://prizeproblems.org/problems/075/"
+      ],
+      "ppl_number": 75,
+      "ppl_snapshot_label": "Independent Renewal check",
+      "ppl_displayed_reward": "≈€2,026",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "kimberling-13-a-positive-surjective",
+      "title": "Kimberling #13.1 · a(k) visits every positive integer",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/066/"
+      ],
+      "ppl_number": 66,
+      "ppl_snapshot_label": "Independent · Kimberling rewards Verified open",
+      "ppl_displayed_reward": "$25 proof · $20 counterexample",
+      "flags": [
+        "donation_to_oeis_not_cash_to_solver"
+      ],
+      "offers": []
+    },
+    {
+      "id": "kimberling-13-d-integer-surjective",
+      "title": "Kimberling #13.2 · d(k) visits every integer",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/156/"
+      ],
+      "ppl_number": 156,
+      "ppl_snapshot_label": "Independent · Kimberling rewards Verified open",
+      "ppl_displayed_reward": "$25 proof · $20 counterexample",
+      "flags": [
+        "donation_to_oeis_not_cash_to_solver"
+      ],
+      "offers": []
+    },
+    {
+      "id": "kimberling-13-negative-d-return",
+      "title": "Kimberling #13.4 · Negative d-values recur within three steps",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/150/"
+      ],
+      "ppl_number": 150,
+      "ppl_snapshot_label": "Independent · Kimberling rewards Verified open",
+      "ppl_displayed_reward": "$25 proof · $20 counterexample",
+      "flags": [
+        "donation_to_oeis_not_cash_to_solver"
+      ],
+      "offers": []
+    },
+    {
+      "id": "kimberling-13-positive-d-return",
+      "title": "Kimberling #13.3 · Positive d-values recur within three steps",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/143/"
+      ],
+      "ppl_number": 143,
+      "ppl_snapshot_label": "Independent · Kimberling rewards Verified open",
+      "ppl_displayed_reward": "$25 proof · $20 counterexample",
+      "flags": [
+        "donation_to_oeis_not_cash_to_solver"
+      ],
+      "offers": []
+    },
+    {
+      "id": "kimberling-curve-closest-sphere",
+      "title": "Kimberling #10 · Curve closest to a sphere",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/172/"
+      ],
+      "ppl_number": 172,
+      "ppl_snapshot_label": "Independent · Kimberling rewards Verified open",
+      "ppl_displayed_reward": "$50–$100",
+      "flags": [
+        "donation_to_oeis_not_cash_to_solver"
+      ],
+      "offers": []
+    },
+    {
+      "id": "kimberling-hard-count",
+      "title": "Kimberling #4 · A Hard Count",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/122/"
+      ],
+      "ppl_number": 122,
+      "ppl_snapshot_label": "Independent · Kimberling rewards Verified open",
+      "ppl_displayed_reward": "$100",
+      "flags": [
+        "donation_to_oeis_not_cash_to_solver"
+      ],
+      "offers": []
+    },
+    {
+      "id": "kimberling-interlacing-triangles",
+      "title": "Kimberling #18 · Triangles with interlacing rows",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/078/"
+      ],
+      "ppl_number": 78,
+      "ppl_snapshot_label": "Independent · Kimberling rewards Verified open",
+      "ppl_displayed_reward": "$50",
+      "flags": [
+        "donation_to_oeis_not_cash_to_solver"
+      ],
+      "offers": []
+    },
+    {
+      "id": "kimberling-kolakoski-five",
+      "title": "Kimberling #1 · Five Oldenburger–Kolakoski questions",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/044/"
+      ],
+      "ppl_number": 44,
+      "ppl_snapshot_label": "Independent · Kimberling rewards Verified open",
+      "ppl_displayed_reward": "$200 shared offer",
+      "flags": [
+        "donation_to_oeis_not_cash_to_solver"
+      ],
+      "offers": []
+    },
+    {
+      "id": "kimberling-prime-separator-bounded-gaps",
+      "title": "Kimberling #12 · Prime-separator first-row gaps",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/049/"
+      ],
+      "ppl_number": 49,
+      "ppl_snapshot_label": "Independent · Kimberling rewards Verified open",
+      "ppl_displayed_reward": "$25",
+      "flags": [
+        "donation_to_oeis_not_cash_to_solver"
+      ],
+      "offers": []
+    },
+    {
+      "id": "kimberling-primes-every-row",
+      "title": "Kimberling #15 · Infinitely many primes in every row",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/040/"
+      ],
+      "ppl_number": 40,
+      "ppl_snapshot_label": "Independent · Kimberling rewards Verified open",
+      "ppl_displayed_reward": "$50",
+      "flags": [
+        "donation_to_oeis_not_cash_to_solver"
+      ],
+      "offers": []
+    },
+    {
+      "id": "kimberling-run-length-segments",
+      "title": "Kimberling #11 · Run-length segment containment",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/140/"
+      ],
+      "ppl_number": 140,
+      "ppl_snapshot_label": "Independent · Kimberling rewards Verified open",
+      "ppl_displayed_reward": "$75",
+      "flags": [
+        "donation_to_oeis_not_cash_to_solver"
+      ],
+      "offers": []
+    },
+    {
+      "id": "kimberling-sequence-surjectivity",
+      "title": "Kimberling #2 · Does the Kimberling sequence contain every integer?",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/134/"
+      ],
+      "ppl_number": 134,
+      "ppl_snapshot_label": "Independent · Kimberling rewards Verified open",
+      "ppl_displayed_reward": "$300",
+      "flags": [
+        "donation_to_oeis_not_cash_to_solver"
+      ],
+      "offers": []
+    },
+    {
+      "id": "kimberling-special-numbers",
+      "title": "Kimberling #23 · Special linearly recurrent Beatty subsequences",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/034/"
+      ],
+      "ppl_number": 34,
+      "ppl_snapshot_label": "Independent · Kimberling rewards Verified open",
+      "ppl_displayed_reward": "$50",
+      "flags": [
+        "donation_to_oeis_not_cash_to_solver"
+      ],
+      "offers": []
+    },
+    {
+      "id": "krenn-inherited-vertex-coloring",
+      "title": "Krenn-Gu conjecture",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_published",
+      "source_links": [
+        "https://prizeproblems.org/problems/007/",
+        "https://mariokrenn.wordpress.com/graph-theory-question/"
+      ],
+      "ppl_number": 7,
+      "ppl_snapshot_label": "Independent Verified open",
+      "ppl_displayed_reward": "€3,000",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Mario Krenn and Dominik Leitner",
+          "displayed_reward": "€3,000",
+          "amount": 3000,
+          "currency": "EUR",
+          "rules_url": "https://mariokrenn.wordpress.com/graph-theory-question/",
+          "condition": "First proof or counterexample in a respected peer-reviewed journal.",
+          "offer_status": "sponsor_terms_found"
+        }
+      ]
+    },
+    {
+      "id": "mimc-bls12-381-collision",
+      "title": "MiMC collision over BLS12-381",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/020/"
+      ],
+      "ppl_number": 20,
+      "ppl_snapshot_label": "Institutional · Ethereum cryptography bounties Verified open",
+      "ppl_displayed_reward": "$20,000",
+      "flags": [
+        "separate_cryptography_or_compute_challenge"
+      ],
+      "offers": []
+    },
+    {
+      "id": "mimc-bn254-collision",
+      "title": "MiMC collision over BN254",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/093/"
+      ],
+      "ppl_number": 93,
+      "ppl_snapshot_label": "Institutional · Ethereum cryptography bounties Verified open",
+      "ppl_displayed_reward": "$20,000",
+      "flags": [
+        "separate_cryptography_or_compute_challenge"
+      ],
+      "offers": []
+    },
+    {
+      "id": "nanongkai-cut-query-reachability",
+      "title": "Nanongkai · Cut-query reachability",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/170/"
+      ],
+      "ppl_number": 170,
+      "ppl_snapshot_label": "Independent · Nanongkai Open €Verified open",
+      "ppl_displayed_reward": "€110 main target+ 1 linked offer",
+      "flags": [
+        "not_a_single_unconditional_payout"
+      ],
+      "offers": []
+    },
+    {
+      "id": "nanongkai-faster-algorithm-larger-description",
+      "title": "Nanongkai · Faster algorithm, larger description",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/037/"
+      ],
+      "ppl_number": 37,
+      "ppl_snapshot_label": "Independent · Nanongkai Open €Source-stated",
+      "ppl_displayed_reward": "€5",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "nanongkai-omv",
+      "title": "Nanongkai · Online Matrix–Vector Multiplication conjecture",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/111/"
+      ],
+      "ppl_number": 111,
+      "ppl_snapshot_label": "Independent · Nanongkai Open €Verified open",
+      "ppl_displayed_reward": "€500",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "nanongkai-v-hinted-mv",
+      "title": "Nanongkai · v-hinted Matrix–Vector conjecture",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/108/"
+      ],
+      "ppl_number": 108,
+      "ppl_snapshot_label": "Independent · Nanongkai Open €Verified open",
+      "ppl_displayed_reward": "€300",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "navier-stokes",
+      "title": "Navier–Stokes existence and smoothness",
+      "math_status": "proof_reported_sponsor_review",
+      "payout_status": "proof_review_do_not_queue",
+      "source_links": [
+        "https://prizeproblems.org/problems/011/",
+        "https://www.claymath.org/millennium-problems/",
+        "https://www.hejustinsun.com/prize/pinnacle",
+        "https://www.claymath.org/news/navier-stokes-announcement/",
+        "https://www.hejustinsun.com/prize/announcements/justin-sun-establishes-the-justin-sun-prize-%E2%80%9Cmy-wealth-came-from-mathematics-and-will-return-to-mathematics%E2%80%9D"
+      ],
+      "ppl_number": 11,
+      "ppl_snapshot_label": "Institutional Verified open",
+      "ppl_displayed_reward": "$1,000,000",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Clay Mathematics Institute",
+          "displayed_reward": "$1,000,000",
+          "amount": 1000000,
+          "currency": "USD",
+          "rules_url": "https://www.claymath.org/millennium-problems/rules/",
+          "offer_status": "sponsor_active_proof_review_not_clean_target",
+          "condition": "Complete official problem; qualifying publication, at least two years, and general acceptance."
+        },
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "$1,000,000",
+          "amount": 1000000,
+          "currency": "USD",
+          "rules_url": "https://www.hejustinsun.com/prize/pinnacle",
+          "offer_status": "already_awarded",
+          "condition": "Pinnacle contribution rules apply; not assumed additive with Clay."
+        }
+      ],
+      "left_to_solve_targets": [
+        {
+          "target": "Existence And Smoothness Of The Navier–Stokes Equation — navier stokes existence and smoothness R3",
+          "displayed_reward": "$1,000,000",
+          "sponsor": "the Clay Mathematics Institute",
+          "site_status": "Open",
+          "erdos_number": null
+        },
+        {
+          "target": "Existence And Smoothness Of The Navier–Stokes Equation — navier stokes existence and smoothness periodic",
+          "displayed_reward": "$1,000,000",
+          "sponsor": "the Clay Mathematics Institute",
+          "site_status": "Open",
+          "erdos_number": null
+        }
+      ]
+    },
+    {
+      "id": "next-mersenne-prime",
+      "title": "Discover the next qualifying Mersenne prime",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_published",
+      "source_links": [
+        "https://prizeproblems.org/problems/016/",
+        "https://www.mersenne.org/legal/default.php"
+      ],
+      "ppl_number": 16,
+      "ppl_snapshot_label": "Institutional Verified open",
+      "ppl_displayed_reward": "$3,000",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "GIMPS",
+          "displayed_reward": "$3,000",
+          "amount": 3000,
+          "currency": "USD",
+          "rules_url": "https://www.mersenne.org/legal/default.php",
+          "condition": "Verified qualifying discovery below 100 million digits; program terms apply.",
+          "offer_status": "sponsor_terms_found"
+        }
+      ]
+    },
+    {
+      "id": "okhotin-boolean-limitations",
+      "title": "Okhotin · Limitations of Boolean grammars",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://prizeproblems.org/problems/144/"
+      ],
+      "ppl_number": 144,
+      "ppl_snapshot_label": "Independent · Okhotin grammar problems Reconfirm sponsor",
+      "ppl_displayed_reward": "C$360",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "okhotin-complementation",
+      "title": "Okhotin · Complement closure of conjunctive languages",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://prizeproblems.org/problems/131/"
+      ],
+      "ppl_number": 131,
+      "ppl_snapshot_label": "Independent · Okhotin grammar problems Reconfirm sponsor",
+      "ppl_displayed_reward": "C$360",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "okhotin-greibach-normal-form",
+      "title": "Okhotin · Greibach normal form for Boolean grammars",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://prizeproblems.org/problems/105/"
+      ],
+      "ppl_number": 105,
+      "ppl_snapshot_label": "Independent · Okhotin grammar problems Reconfirm sponsor",
+      "ppl_displayed_reward": "C$360",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "okhotin-inherent-ambiguity",
+      "title": "Okhotin · Inherent ambiguity for Boolean grammars",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://prizeproblems.org/problems/166/"
+      ],
+      "ppl_number": 166,
+      "ppl_snapshot_label": "Independent · Okhotin grammar problems Reconfirm sponsor",
+      "ppl_displayed_reward": "C$360",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "okhotin-ll-hierarchy",
+      "title": "Okhotin · Collapse of the Boolean LL(k) hierarchy",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://prizeproblems.org/problems/155/"
+      ],
+      "ppl_number": 155,
+      "ppl_snapshot_label": "Independent · Okhotin grammar problems Reconfirm sponsor",
+      "ppl_displayed_reward": "C$360",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "okhotin-nonterminal-complexity",
+      "title": "Okhotin · Bounded nonterminal complexity of Boolean grammars",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://prizeproblems.org/problems/153/"
+      ],
+      "ppl_number": 153,
+      "ppl_snapshot_label": "Independent · Okhotin grammar problems Reconfirm sponsor",
+      "ppl_displayed_reward": "C$360",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "okhotin-space-complexity",
+      "title": "Okhotin · Sublinear space for Boolean-grammar languages",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://prizeproblems.org/problems/135/"
+      ],
+      "ppl_number": 135,
+      "ppl_snapshot_label": "Independent · Okhotin grammar problems Reconfirm sponsor",
+      "ppl_displayed_reward": "C$360",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "p-versus-np",
+      "title": "P versus NP",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_published",
+      "source_links": [
+        "https://prizeproblems.org/problems/091/",
+        "https://www.claymath.org/millennium-problems/",
+        "https://www.hejustinsun.com/prize/pinnacle"
+      ],
+      "ppl_number": 91,
+      "ppl_snapshot_label": "Institutional Verified open",
+      "ppl_displayed_reward": "$1,000,000",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Clay Mathematics Institute",
+          "displayed_reward": "$1,000,000",
+          "amount": 1000000,
+          "currency": "USD",
+          "rules_url": "https://www.claymath.org/millennium-problems/rules/",
+          "offer_status": "sponsor_published",
+          "condition": "Complete official problem; qualifying publication, at least two years, and general acceptance."
+        },
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "$1,000,000",
+          "amount": 1000000,
+          "currency": "USD",
+          "rules_url": "https://www.hejustinsun.com/prize/pinnacle",
+          "offer_status": "sponsor_published_tier",
+          "condition": "Pinnacle contribution rules apply; not assumed additive with Clay."
+        }
+      ],
+      "left_to_solve_targets": [
+        {
+          "target": "P ≠ NP",
+          "displayed_reward": "$1,000,000",
+          "sponsor": "the Clay Mathematics Institute",
+          "site_status": "Open",
+          "erdos_number": null
+        }
+      ]
+    },
+    {
+      "id": "poseidon-31-reduced-round",
+      "title": "Poseidon-31 reduced-round attack",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/167/"
+      ],
+      "ppl_number": 167,
+      "ppl_snapshot_label": "Institutional · Poseidon Initiative Verified open",
+      "ppl_displayed_reward": "At least $5,000 from $90,000 fund",
+      "flags": [
+        "separate_cryptography_or_compute_challenge",
+        "not_a_single_unconditional_payout"
+      ],
+      "offers": []
+    },
+    {
+      "id": "poseidon-64-reduced-round",
+      "title": "Poseidon-64 reduced-round attack",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/157/"
+      ],
+      "ppl_number": 157,
+      "ppl_snapshot_label": "Institutional · Poseidon Initiative Verified open",
+      "ppl_displayed_reward": "At least $5,000 from $90,000 fund",
+      "flags": [
+        "separate_cryptography_or_compute_challenge",
+        "not_a_single_unconditional_payout"
+      ],
+      "offers": []
+    },
+    {
+      "id": "poseidon-256-reduced-round",
+      "title": "Poseidon-256 reduced-round attack",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/147/"
+      ],
+      "ppl_number": 147,
+      "ppl_snapshot_label": "Institutional · Poseidon Initiative Verified open",
+      "ppl_displayed_reward": "At least $5,000 from $90,000 fund",
+      "flags": [
+        "separate_cryptography_or_compute_challenge",
+        "not_a_single_unconditional_payout"
+      ],
+      "offers": []
+    },
+    {
+      "id": "poseidon-koalabear-partial-collision",
+      "title": "Poseidon1/KoalaBear partial-collision milestones",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/113/"
+      ],
+      "ppl_number": 113,
+      "ppl_snapshot_label": "Institutional · Poseidon Initiative Verified open",
+      "ppl_displayed_reward": "$512,000 · q=7+ 3 linked offer",
+      "flags": [
+        "separate_cryptography_or_compute_challenge",
+        "not_a_single_unconditional_payout"
+      ],
+      "offers": []
+    },
+    {
+      "id": "poseidon-zero-test-record-2026",
+      "title": "Poseidon 2026 zero-test record",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/047/"
+      ],
+      "ppl_number": 47,
+      "ppl_snapshot_label": "Institutional · Poseidon Initiative Verified open",
+      "ppl_displayed_reward": "Share of $40,000 ranking pool",
+      "flags": [
+        "separate_cryptography_or_compute_challenge",
+        "not_a_single_unconditional_payout"
+      ],
+      "offers": []
+    },
+    {
+      "id": "prime-1b-digits",
+      "title": "Find a one-billion-digit prime",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_published",
+      "source_links": [
+        "https://prizeproblems.org/problems/104/",
+        "https://www.eff.org/awards/coop"
+      ],
+      "ppl_number": 104,
+      "ppl_snapshot_label": "Institutional Verified open",
+      "ppl_displayed_reward": "$250,000",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "EFF",
+          "displayed_reward": "$250,000",
+          "amount": 250000,
+          "currency": "USD",
+          "rules_url": "https://www.eff.org/awards/coop",
+          "condition": "First qualifying prime; cooperative award rules apply.",
+          "offer_status": "sponsor_terms_found"
+        }
+      ]
+    },
+    {
+      "id": "prime-100m-digits",
+      "title": "Find a 100-million-digit prime",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_published",
+      "source_links": [
+        "https://prizeproblems.org/problems/107/",
+        "https://www.eff.org/awards/coop"
+      ],
+      "ppl_number": 107,
+      "ppl_snapshot_label": "Institutional Verified open",
+      "ppl_displayed_reward": "$150,000+ 1 linked offer",
+      "flags": [
+        "not_a_single_unconditional_payout",
+        "gimps_share_is_not_an_additional_eff_prize"
+      ],
+      "offers": [
+        {
+          "sponsor": "EFF",
+          "displayed_reward": "$150,000",
+          "amount": 150000,
+          "currency": "USD",
+          "rules_url": "https://www.eff.org/awards/coop",
+          "condition": "First qualifying prime; GIMPS entrant may receive $50,000 share, not $150,000 plus $50,000.",
+          "offer_status": "sponsor_terms_found"
+        }
+      ]
+    },
+    {
+      "id": "proximity-grand-list-decoding",
+      "title": "Proximity Prize · Grand list-decoding challenge",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "renewal_unconfirmed",
+      "source_links": [
+        "https://prizeproblems.org/problems/097/"
+      ],
+      "ppl_number": 97,
+      "ppl_snapshot_label": "Institutional · Ethereum Proximity Prize Renewal check",
+      "ppl_displayed_reward": "Share of $1,000,000 pool",
+      "flags": [
+        "separate_cryptography_or_compute_challenge",
+        "not_a_single_unconditional_payout"
+      ],
+      "offers": []
+    },
+    {
+      "id": "proximity-grand-mca",
+      "title": "Proximity Prize · Grand MCA challenge",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "renewal_unconfirmed",
+      "source_links": [
+        "https://prizeproblems.org/problems/162/"
+      ],
+      "ppl_number": 162,
+      "ppl_snapshot_label": "Institutional · Ethereum Proximity Prize Renewal check",
+      "ppl_displayed_reward": "Share of $1,000,000 pool",
+      "flags": [
+        "separate_cryptography_or_compute_challenge",
+        "not_a_single_unconditional_payout"
+      ],
+      "offers": []
+    },
+    {
+      "id": "riemann-hypothesis",
+      "title": "Riemann hypothesis",
+      "math_status": "proof_reported_sponsor_review",
+      "payout_status": "proof_review_do_not_queue",
+      "source_links": [
+        "https://prizeproblems.org/problems/056/",
+        "https://www.claymath.org/millennium-problems/",
+        "https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0001-0100.md#JSP-000001"
+      ],
+      "ppl_number": 56,
+      "ppl_snapshot_label": "Institutional Verified open",
+      "ppl_displayed_reward": "$1,000,000",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Clay Mathematics Institute",
+          "displayed_reward": "$1,000,000",
+          "amount": 1000000,
+          "currency": "USD",
+          "rules_url": "https://www.claymath.org/millennium-problems/rules/",
+          "offer_status": "sponsor_active_proof_review_not_clean_target",
+          "condition": "Complete official problem; qualifying publication, at least two years, and general acceptance."
+        },
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "$1,000,000",
+          "amount": 1000000,
+          "currency": "USD",
+          "rules_url": "https://www.hejustinsun.com/prize/pinnacle",
+          "offer_status": "reported_formal_proof_not_clean_target",
+          "condition": "Pinnacle contribution rules apply; not assumed additive with Clay."
+        }
+      ]
+    },
+    {
+      "id": "rule30-center-nonperiodic",
+      "title": "Rule 30 center-column non-periodicity",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_published",
+      "source_links": [
+        "https://prizeproblems.org/problems/125/",
+        "https://rule30prize.org/"
+      ],
+      "ppl_number": 125,
+      "ppl_snapshot_label": "Independent · Wolfram Rule 30 prizes Verified open",
+      "ppl_displayed_reward": "$10,000",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Wolfram Foundation",
+          "displayed_reward": "$10,000",
+          "amount": 10000,
+          "currency": "USD",
+          "rules_url": "https://rule30prize.org/",
+          "condition": "Original full proof, identifiable human submitter, sponsor review.",
+          "offer_status": "sponsor_terms_found"
+        }
+      ]
+    },
+    {
+      "id": "rule30-equal-frequency",
+      "title": "Rule 30 center-column equal frequencies",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_published",
+      "source_links": [
+        "https://prizeproblems.org/problems/112/",
+        "https://rule30prize.org/"
+      ],
+      "ppl_number": 112,
+      "ppl_snapshot_label": "Independent · Wolfram Rule 30 prizes Verified open",
+      "ppl_displayed_reward": "$10,000",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Wolfram Foundation",
+          "displayed_reward": "$10,000",
+          "amount": 10000,
+          "currency": "USD",
+          "rules_url": "https://rule30prize.org/",
+          "condition": "Original full proof, identifiable human submitter, sponsor review.",
+          "offer_status": "sponsor_terms_found"
+        }
+      ]
+    },
+    {
+      "id": "rule30-irreducibility",
+      "title": "Rule 30 computational irreducibility",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_published",
+      "source_links": [
+        "https://prizeproblems.org/problems/096/",
+        "https://rule30prize.org/"
+      ],
+      "ppl_number": 96,
+      "ppl_snapshot_label": "Independent · Wolfram Rule 30 prizes Verified open",
+      "ppl_displayed_reward": "$10,000",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Wolfram Foundation",
+          "displayed_reward": "$10,000",
+          "amount": 10000,
+          "currency": "USD",
+          "rules_url": "https://rule30prize.org/",
+          "condition": "Original full proof, identifiable human submitter, sponsor review.",
+          "offer_status": "sponsor_terms_found"
+        }
+      ]
+    },
+    {
+      "id": "scott-freudenthal-inf-sup",
+      "title": "Ridgway Scott · Inf-sup condition for quartics on the Freudenthal mesh",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/148/"
+      ],
+      "ppl_number": 148,
+      "ppl_snapshot_label": "Institutional · Ridgway Scott Foundation Verified open",
+      "ppl_displayed_reward": "$1,000",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "scott-strouhal",
+      "title": "Ridgway Scott · Strouhal Prize · Periodic flow around a cylinder",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/010/"
+      ],
+      "ppl_number": 10,
+      "ppl_snapshot_label": "Institutional · Ridgway Scott Foundation Verified open",
+      "ppl_displayed_reward": "$1,000",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "scott-zero-gradient",
+      "title": "Ridgway Scott · Zero-gradient / Scott–Vogelius–Nitsche convergence",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/115/"
+      ],
+      "ppl_number": 115,
+      "ppl_snapshot_label": "Institutional · Ridgway Scott Foundation Verified open",
+      "ppl_displayed_reward": "$1,000",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "shallit-1",
+      "title": "Shallit #1 · Improve the separating-words upper bound",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/161/"
+      ],
+      "ppl_number": 161,
+      "ppl_snapshot_label": "Independent Source-stated",
+      "ppl_displayed_reward": "£100",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "shallit-2",
+      "title": "Shallit #2 · Tight bounds for CFG word separation",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/146/"
+      ],
+      "ppl_number": 146,
+      "ppl_snapshot_label": "Independent Source-stated",
+      "ppl_displayed_reward": "£10",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "shallit-3",
+      "title": "Shallit #3 · NFA separating-word bounds",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/090/"
+      ],
+      "ppl_number": 90,
+      "ppl_snapshot_label": "Independent Source-stated",
+      "ppl_displayed_reward": "£50",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "shallit-4",
+      "title": "Shallit #4 · DFA versus NFA separation gap",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/121/"
+      ],
+      "ppl_number": 121,
+      "ppl_snapshot_label": "Independent Source-stated",
+      "ppl_displayed_reward": "£50",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "shallit-5",
+      "title": "Shallit #5 · Reversal gap for separating words",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/070/"
+      ],
+      "ppl_number": 70,
+      "ppl_snapshot_label": "Independent Source-stated",
+      "ppl_displayed_reward": "£10",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "shallit-6",
+      "title": "Shallit #6 · Context-free language interpolation",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/154/"
+      ],
+      "ppl_number": 154,
+      "ppl_snapshot_label": "Independent Source-stated",
+      "ppl_displayed_reward": "£100",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "shallit-7",
+      "title": "Shallit #7 · Are primitive binary words context-free?",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/165/"
+      ],
+      "ppl_number": 165,
+      "ppl_snapshot_label": "Independent Source-stated",
+      "ppl_displayed_reward": "£200",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "shallit-8",
+      "title": "Shallit #8 · A ternary sequence with nonzero Hankel determinants",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/065/"
+      ],
+      "ppl_number": 65,
+      "ppl_snapshot_label": "Independent Source-stated",
+      "ppl_displayed_reward": "£100",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "shallit-9",
+      "title": "Shallit #9 · Nonzero Hankel determinants for a morphic word",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/036/"
+      ],
+      "ppl_number": 36,
+      "ppl_snapshot_label": "Independent Source-stated",
+      "ppl_displayed_reward": "£50",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "shallit-11",
+      "title": "Shallit #11 · Is the Thue–Morse word prime under transduction?",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/095/"
+      ],
+      "ppl_number": 95,
+      "ppl_snapshot_label": "Independent Source-stated",
+      "ppl_displayed_reward": "£20",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "shallit-12",
+      "title": "Shallit #12 · Kolakoski letter frequencies",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/059/"
+      ],
+      "ppl_number": 59,
+      "ppl_snapshot_label": "Independent Source-stated",
+      "ppl_displayed_reward": "£100",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "shallit-13",
+      "title": "Shallit #13 · Prime acceptance by an automaton",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/073/"
+      ],
+      "ppl_number": 73,
+      "ppl_snapshot_label": "Independent Source-stated",
+      "ppl_displayed_reward": "£50",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "shallit-14",
+      "title": "Shallit #14 · Divisibility and automata",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/068/"
+      ],
+      "ppl_number": 68,
+      "ppl_snapshot_label": "Independent Source-stated",
+      "ppl_displayed_reward": "£50",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "shallit-15",
+      "title": "Shallit #15 · NFA length-universality complexity",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/130/"
+      ],
+      "ppl_number": 130,
+      "ppl_snapshot_label": "Independent Source-stated",
+      "ppl_displayed_reward": "£25",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "shallit-16",
+      "title": "Shallit #16 · When is a finite language’s star infinite?",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/053/"
+      ],
+      "ppl_number": 53,
+      "ppl_snapshot_label": "Independent Source-stated",
+      "ppl_displayed_reward": "£25",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "shallit-17",
+      "title": "Shallit #17 · Factor universality of a finite language",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/109/"
+      ],
+      "ppl_number": 109,
+      "ppl_snapshot_label": "Independent Source-stated",
+      "ppl_displayed_reward": "£25",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "shallit-18",
+      "title": "Shallit #18 · Shortest forbidden factor bounds",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/160/"
+      ],
+      "ppl_number": 160,
+      "ppl_snapshot_label": "Independent Source-stated",
+      "ppl_displayed_reward": "£200",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "shallit-19",
+      "title": "Shallit #19 · Pierce expansion length",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/026/"
+      ],
+      "ppl_number": 26,
+      "ppl_snapshot_label": "Independent Source-stated",
+      "ppl_displayed_reward": "£200",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "simons-dtisp-interactive-proofs",
+      "title": "Simons cryptography · Interactive proofs for DTISP(t,s)",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://prizeproblems.org/problems/005/"
+      ],
+      "ppl_number": 5,
+      "ppl_snapshot_label": "Institutional · Simons 2015 cryptography problems Reconfirm sponsor",
+      "ppl_displayed_reward": "$100",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "simons-io-from-plain-lwe",
+      "title": "Simons cryptography · Indistinguishability obfuscation from plain LWE",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://prizeproblems.org/problems/085/"
+      ],
+      "ppl_number": 85,
+      "ppl_snapshot_label": "Institutional · Simons 2015 cryptography problems Reconfirm sponsor",
+      "ppl_displayed_reward": "$100",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "simons-lattice-one-way-permutation",
+      "title": "Simons cryptography · One-way permutations from a worst-case lattice assumption",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://prizeproblems.org/problems/064/"
+      ],
+      "ppl_number": 64,
+      "ppl_snapshot_label": "Institutional · Simons 2015 cryptography problems Reconfirm sponsor",
+      "ppl_displayed_reward": "$100",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "simons-szk-equals-pzk",
+      "title": "Simons cryptography · Does SZK equal PZK?",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://prizeproblems.org/problems/080/"
+      ],
+      "ppl_number": 80,
+      "ppl_snapshot_label": "Institutional · Simons 2015 cryptography problems Reconfirm sponsor",
+      "ppl_displayed_reward": "$100",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "simons-three-linear-map",
+      "title": "Simons cryptography · A secure 3-linear map with unique encoding and no noise",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://prizeproblems.org/problems/092/"
+      ],
+      "ppl_number": 92,
+      "ppl_snapshot_label": "Institutional · Simons 2015 cryptography problems Reconfirm sponsor",
+      "ppl_displayed_reward": "$1,000",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "sun-1-3-5",
+      "title": "Sun · The 1–3–5 conjecture",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/006/"
+      ],
+      "ppl_number": 6,
+      "ppl_snapshot_label": "Independent · Zhi-Wei Sun prizes Source-stated",
+      "ppl_displayed_reward": "$1,350",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "sun-24-conjecture",
+      "title": "Sun · The 24-conjecture",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/021/"
+      ],
+      "ppl_number": 21,
+      "ppl_snapshot_label": "Independent · Zhi-Wei Sun prizes Source-stated",
+      "ppl_displayed_reward": "$2,400",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "sun-alternating-consecutive-primes",
+      "title": "Sun · Alternating sums of consecutive primes",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/043/"
+      ],
+      "ppl_number": 43,
+      "ppl_snapshot_label": "Independent · Zhi-Wei Sun prizes Source-stated",
+      "ppl_displayed_reward": "$1,000",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "sun-disjoint-coset-indices",
+      "title": "Sun · Indices of pairwise disjoint group cosets",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/057/"
+      ],
+      "ppl_number": 57,
+      "ppl_snapshot_label": "Independent · Zhi-Wei Sun prizes Source-stated",
+      "ppl_displayed_reward": "$200",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "sun-n-plus-k-primes",
+      "title": "Sun · Simultaneous primes n+k and n+k²",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/087/"
+      ],
+      "ppl_number": 87,
+      "ppl_snapshot_label": "Independent · Zhi-Wei Sun prizes Source-stated",
+      "ppl_displayed_reward": "$100",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "sun-prime-fibonacci-catalan",
+      "title": "Hou–Zeng · A prime, Fibonacci number and Catalan number",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/013/"
+      ],
+      "ppl_number": 13,
+      "ppl_snapshot_label": "Independent · Zhi-Wei Sun prizes Source-stated",
+      "ppl_displayed_reward": "$1,000 proof · $200 counterexample",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "sun-prime-pell",
+      "title": "Sun · A prime plus Pell numbers",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/094/"
+      ],
+      "ppl_number": 94,
+      "ppl_snapshot_label": "Independent · Zhi-Wei Sun prizes Source-stated",
+      "ppl_displayed_reward": "$1,000 proof · $100 counterexample",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "sun-prime-two-fibonacci",
+      "title": "Sun · A prime plus two Fibonacci numbers",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/072/"
+      ],
+      "ppl_number": 72,
+      "ppl_snapshot_label": "Independent · Zhi-Wei Sun prizes Source-stated",
+      "ppl_displayed_reward": "$5,000 proof · $250 counterexample",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "sun-prime-unit-fractions",
+      "title": "Sun · Prime-shifted unit fractions",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/024/"
+      ],
+      "ppl_number": 24,
+      "ppl_snapshot_label": "Independent · Zhi-Wei Sun prizes Source-stated",
+      "ppl_displayed_reward": "$1,000",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "sun-primes-triangular-representations",
+      "title": "Sun · Prime and triangular-number representations",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/120/"
+      ],
+      "ppl_number": 120,
+      "ppl_snapshot_label": "Independent · Zhi-Wei Sun prizes Source-stated",
+      "ppl_displayed_reward": "$1,000 proof · $200 counterexample",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "sun-two-power-plus-remainder-prime",
+      "title": "Sun · Write n=k+m with 2ᵏ+m prime",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/164/"
+      ],
+      "ppl_number": 164,
+      "ppl_snapshot_label": "Independent · Zhi-Wei Sun prizes Source-stated",
+      "ppl_displayed_reward": "$1,000",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "talagrand-simple-combinatorics",
+      "title": "Talagrand · Simple combinatorics / discrete convexity",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "catalog_listed_recheck",
+      "source_links": [
+        "https://prizeproblems.org/problems/089/"
+      ],
+      "ppl_number": 89,
+      "ppl_snapshot_label": "Independent · Talagrand prize problems Verified open",
+      "ppl_displayed_reward": "$1,000",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "talagrand-ultimate-matching-d2",
+      "title": "Talagrand · Ultimate matching conjecture in dimension two",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://prizeproblems.org/problems/171/"
+      ],
+      "ppl_number": 171,
+      "ppl_snapshot_label": "Independent · Talagrand prize problems Reconfirm sponsor",
+      "ppl_displayed_reward": "$1,000",
+      "flags": [],
+      "offers": []
+    },
+    {
+      "id": "type-ii-72-36-16-code",
+      "title": "Does a Type II [72,36,16] binary code exist?",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_reconfirmation_needed",
+      "source_links": [
+        "https://prizeproblems.org/problems/158/"
+      ],
+      "ppl_number": 158,
+      "ppl_snapshot_label": "Independent · Length-72 coding prize Reconfirm sponsor",
+      "ppl_displayed_reward": "$200 · nonexistence+ 2 linked offer",
+      "flags": [
+        "not_a_single_unconditional_payout"
+      ],
+      "offers": []
+    },
+    {
+      "id": "wolfram-s-combinator-universality",
+      "title": "Is the S combinator computation-universal by itself?",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_published",
+      "source_links": [
+        "https://prizeproblems.org/problems/004/",
+        "https://www.combinatorprize.org/"
+      ],
+      "ppl_number": 4,
+      "ppl_snapshot_label": "Institutional · Wolfram Foundation challenges Verified open",
+      "ppl_displayed_reward": "$20,000",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Wolfram Foundation",
+          "displayed_reward": "$20,000",
+          "amount": 20000,
+          "currency": "USD",
+          "rules_url": "https://www.combinatorprize.org/",
+          "condition": "Full original proof or refutation; sponsor review.",
+          "offer_status": "sponsor_terms_found"
+        }
+      ]
+    },
+    {
+      "id": "yang-mills",
+      "title": "Yang–Mills existence and mass gap",
+      "math_status": "catalog_listed_unresolved",
+      "payout_status": "sponsor_published",
+      "source_links": [
+        "https://prizeproblems.org/problems/069/",
+        "https://www.claymath.org/millennium-problems/",
+        "https://www.hejustinsun.com/prize/pinnacle"
+      ],
+      "ppl_number": 69,
+      "ppl_snapshot_label": "Institutional Verified open",
+      "ppl_displayed_reward": "$1,000,000",
+      "flags": [],
+      "offers": [
+        {
+          "sponsor": "Clay Mathematics Institute",
+          "displayed_reward": "$1,000,000",
+          "amount": 1000000,
+          "currency": "USD",
+          "rules_url": "https://www.claymath.org/millennium-problems/rules/",
+          "offer_status": "sponsor_published",
+          "condition": "Complete official problem; qualifying publication, at least two years, and general acceptance."
+        },
+        {
+          "sponsor": "Justin Sun Prize",
+          "displayed_reward": "$1,000,000",
+          "amount": 1000000,
+          "currency": "USD",
+          "rules_url": "https://www.hejustinsun.com/prize/pinnacle",
+          "offer_status": "sponsor_published_tier",
+          "condition": "Pinnacle contribution rules apply; not assumed additive with Clay."
+        }
+      ],
+      "left_to_solve_targets": [
+        {
+          "target": "Yang–Mills existence and mass gap",
+          "displayed_reward": "$1,000,000",
+          "sponsor": "the Clay Mathematics Institute",
+          "site_status": "Open",
+          "erdos_number": null
+        }
+      ]
+    }
+  ]
+}
