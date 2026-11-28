@@ -22,64 +22,116 @@
     "erdos_numeric": 114,
     "erdos_strict_open": 47,
     "erdos_partial_resolution": 7,
-    "primary_sponsor_records": 18
+    "primary_sponsor_records": 22
   },
   "records": [
     {
       "id": "althofer-9n1-from-one",
       "title": "Althöfer · Does the 9n+1 orbit from 1 diverge?",
       "math_status": "catalog_listed_unresolved",
-      "payout_status": "catalog_listed_recheck",
+      "payout_status": "sponsor_published",
       "source_links": [
-        "https://prizeproblems.org/problems/028/"
+        "https://prizeproblems.org/problems/028/",
+        "https://althofer.de/collatz-prizes.html"
       ],
       "ppl_number": 28,
       "ppl_snapshot_label": "Independent · Althöfer Collatz prizes Verified open",
       "ppl_displayed_reward": "€50",
       "flags": [],
-      "offers": []
+      "offers": [
+        {
+          "sponsor": "Ingo Althöfer",
+          "displayed_reward": "€50",
+          "amount": 50,
+          "currency": "EUR",
+          "rules_url": "https://althofer.de/collatz-prizes.html",
+          "offer_status": "sponsor_terms_found",
+          "deadline_date": "2037-12-31",
+          "deadline_time": null,
+          "condition": "Resolve whether the accelerated 9n+1 orbit starting at 1 tends to infinity. First qualifying solution only; correct computer-assisted proofs accepted; no exact cutoff time is given."
+        }
+      ]
     },
     {
       "id": "althofer-generalized-xn1-divergence",
       "title": "Althöfer · A divergent Xn+1 orbit",
       "math_status": "catalog_listed_unresolved",
-      "payout_status": "catalog_listed_recheck",
+      "payout_status": "sponsor_published",
       "source_links": [
-        "https://prizeproblems.org/problems/055/"
+        "https://prizeproblems.org/problems/055/",
+        "https://althofer.de/collatz-prizes.html"
       ],
       "ppl_number": 55,
       "ppl_snapshot_label": "Independent · Althöfer Collatz prizes Verified open",
       "ppl_displayed_reward": "€25",
       "flags": [],
-      "offers": []
+      "offers": [
+        {
+          "sponsor": "Ingo Althöfer",
+          "displayed_reward": "€25",
+          "amount": 25,
+          "currency": "EUR",
+          "rules_url": "https://althofer.de/collatz-prizes.html",
+          "offer_status": "sponsor_terms_found",
+          "deadline_date": "2037-12-31",
+          "deadline_time": null,
+          "condition": "Resolve whether some odd X ≥ 5 and positive odd start give an accelerated Xn+1 orbit tending to infinity. First qualifying solution only; correct computer-assisted proofs accepted; no exact cutoff time is given."
+        }
+      ]
     },
     {
       "id": "althofer-optimal-3n-plus-minus-game",
       "title": "Althöfer · Optimal-play 3n±1 game",
       "math_status": "catalog_listed_unresolved",
-      "payout_status": "catalog_listed_recheck",
+      "payout_status": "sponsor_published",
       "source_links": [
-        "https://prizeproblems.org/problems/119/"
+        "https://prizeproblems.org/problems/119/",
+        "https://althofer.de/collatz-prizes.html"
       ],
       "ppl_number": 119,
       "ppl_snapshot_label": "Independent · Althöfer Collatz prizes Verified open",
       "ppl_displayed_reward": "€500",
       "flags": [],
-      "offers": []
+      "offers": [
+        {
+          "sponsor": "Ingo Althöfer",
+          "displayed_reward": "€500",
+          "amount": 500,
+          "currency": "EUR",
+          "rules_url": "https://althofer.de/collatz-prizes.html",
+          "offer_status": "sponsor_terms_found",
+          "deadline_date": "2037-12-31",
+          "deadline_time": null,
+          "condition": "Prove termination at 1 from every positive odd start under optimal alternating play. The sponsor explicitly reaffirmed the open prize after a submitted approach had gaps. First qualifying solution only; correct computer-assisted proofs accepted; no exact cutoff time is given."
+        }
+      ]
     },
     {
       "id": "althofer-stochastic-collatz",
       "title": "Althöfer · Stochastic ± Collatz convergence",
       "math_status": "catalog_listed_unresolved",
-      "payout_status": "catalog_listed_recheck",
+      "payout_status": "sponsor_published",
       "source_links": [
-        "https://prizeproblems.org/problems/116/"
+        "https://prizeproblems.org/problems/116/",
+        "https://althofer.de/collatz-prizes.html"
       ],
       "ppl_number": 116,
       "ppl_snapshot_label": "Independent · Althöfer Collatz prizes Verified open",
       "ppl_displayed_reward": "€300",
       "flags": [],
-      "offers": []
+      "offers": [
+        {
+          "sponsor": "Ingo Althöfer",
+          "displayed_reward": "€300",
+          "amount": 300,
+          "currency": "EUR",
+          "rules_url": "https://althofer.de/collatz-prizes.html",
+          "offer_status": "sponsor_terms_found",
+          "deadline_date": "2037-12-31",
+          "deadline_time": null,
+          "condition": "Prove almost-sure arrival at 1 from every positive odd start, using independent fair choices of odd(3n+1) and odd(3n−1). First qualifying solution only; correct computer-assisted proofs accepted; no exact cutoff time is given."
+        }
+      ]
     },
     {
       "id": "beal-conjecture",
@@ -516,13 +568,15 @@
       "payout_status": "sponsor_discretion",
       "source_links": [
         "https://prizeproblems.org/problems/142/",
-        "https://mathprize.net/files/collatz-conjecture-rule-en-20210707.pdf"
+        "https://mathprize.net/files/collatz-conjecture-rule-en-20210707.pdf",
+        "https://althofer.de/collatz-prizes.html"
       ],
       "ppl_number": 142,
       "ppl_snapshot_label": "Institutional Verified open",
       "ppl_displayed_reward": "¥120,000,000+ 1 linked offer",
       "flags": [
-        "not_a_single_unconditional_payout"
+        "not_a_single_unconditional_payout",
+        "althofer_currently_requests_no_original_collatz_proof_attempts"
       ],
       "offers": [
         {
@@ -533,6 +587,17 @@
           "rules_url": "https://mathprize.net/files/collatz-conjecture-rule-en-20210707.pdf",
           "condition": "Host discretion; no direct submissions; qualifying paper and review.",
           "offer_status": "sponsor_terms_found"
+        },
+        {
+          "sponsor": "Ingo Althöfer",
+          "displayed_reward": "€1,000",
+          "amount": 1000,
+          "currency": "EUR",
+          "rules_url": "https://althofer.de/collatz-prizes.html",
+          "offer_status": "sponsor_published_intake_caveat",
+          "deadline_date": "2037-12-31",
+          "deadline_time": null,
+          "condition": "Prove or disprove original Collatz, or prove undecidability. The sponsor currently asks not to be sent original-Collatz proof attempts; this listing is not an invitation to submit one. First qualifying solution only; correct computer-assisted proofs accepted; no exact cutoff time is given."
         }
       ],
       "left_to_solve_targets": [
