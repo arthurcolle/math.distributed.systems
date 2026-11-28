@@ -156,7 +156,13 @@
           "offer_status": "sponsor_terms_found",
           "deadline_date": "2037-12-31",
           "deadline_time": null,
-          "condition": "Prove termination at 1 from every positive odd start under optimal alternating play. The sponsor explicitly reaffirmed the open prize after a submitted approach had gaps. First qualifying solution only; correct computer-assisted proofs accepted; no exact cutoff time is given."
+          "condition": "Prove termination at 1 from every positive odd start under optimal alternating play. The sponsor explicitly reaffirmed the open prize after a submitted approach had gaps. First qualifying solution only; correct computer-assisted proofs accepted; no exact cutoff time is given.",
+          "latest_sponsor_update": {
+            "date": "2026-11-26",
+            "finite_verification_maximum_start": 999999999,
+            "scope": "positive odd starts under optimal play",
+            "note": "Sponsor reports finite verification and gaps in the earlier manuscript; the unbounded target is still open."
+          }
         }
       ]
     },
@@ -6616,12 +6622,17 @@
       "payout_status": "sponsor_published",
       "source_links": [
         "https://prizeproblems.org/problems/004/",
-        "https://www.combinatorprize.org/"
+        "https://www.combinatorprize.org/",
+        "https://writings.stephenwolfram.com/2021/06/1920-2020-and-a-20000-prize-announcing-the-s-combinator-challenge/#the-basic-setup",
+        "https://arxiv.org/abs/2210.12893",
+        "https://doi.org/10.1006/inco.2000.2874"
       ],
       "ppl_number": 4,
       "ppl_snapshot_label": "Institutional · Wolfram Foundation challenges Verified open",
       "ppl_displayed_reward": "$20,000",
-      "flags": [],
+      "flags": [
+        "requires_precise_emulation_model"
+      ],
       "offers": [
         {
           "sponsor": "Wolfram Foundation",
@@ -6630,7 +6641,9 @@
           "currency": "USD",
           "rules_url": "https://www.combinatorprize.org/",
           "condition": "Full original proof or refutation; sponsor review.",
-          "offer_status": "sponsor_terms_found"
+          "offer_status": "sponsor_terms_found",
+          "scope_note": "The sponsor's broader formulation extracts computations from ongoing pure-S rewrites. State the simulated model, rewrite strategy or branch quantifier, and restricted classes for the encoder, detector and decoder; the auxiliary procedures cannot themselves provide universal computation.",
+          "prior_art_note": "Waldmann decides finite-term normalization. Vatan's direct finite pure-S expressibility obstruction for identity and K is not a disproof of the broader ongoing-evolution formulation."
         }
       ]
     },
@@ -8200,6 +8213,34 @@
           "pilot_rules_url": "https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md"
         }
       ]
+    }
+  ],
+  "provisional_leads": [
+    {
+      "id": "althofer-derivative-root-chains",
+      "sponsor": "Ingo Althöfer",
+      "announced_offers": 2,
+      "date_announced": "2026-08-15",
+      "status": "announced_terms_unverified_do_not_dispatch",
+      "amounts": [
+        null,
+        null
+      ],
+      "current_intake_verified": false,
+      "source_links": [
+        "https://althofer.de/math-with-ai-diary.html",
+        "https://althofer.de/prize-money-1.jpg",
+        "https://althofer.de/prize-money-2.jpg",
+        "https://althofer.de/general_derivative_chain_bound.pdf",
+        "https://gist.github.com/Amal-David/d6612109c98595b12561cd638c60edf5"
+      ],
+      "scope_note": "Select a root from each nonconstant derivative row of a polynomial whose roots are in the closed unit disk. Check original image terms for the exact two tiers, eligibility, strict thresholds and any deadline. The public Lean record's L ≤ 4 does not imply L < 4; its bound is not assumed to be the sponsor's exact award condition.",
+      "latest_sponsor_report": {
+        "date": "2026-11-26",
+        "general_bound": "n^(1/3) times polylog(n)",
+        "strictly_convex_rows_bound": "O(log(n)^3)",
+        "uniform_constant_established": false
+      }
     }
   ]
 }
